@@ -1,6 +1,6 @@
 import { ReactNode, useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon, Rss, Linkedin, Github, Twitter } from 'lucide-react';
+import { Menu, X, Sun, Moon, Linkedin, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface LayoutProps {
@@ -171,32 +171,22 @@ export function Layout({ children }: LayoutProps) {
               </div>
               <div className="flex items-center gap-3">
                 <a 
-                  href="#" 
+                  href="https://github.com/markhazleton"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label="GitHub"
                 >
                   <Github className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://linkedin.com/in/markhazleton"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5" />
-                </a>
-                <a 
-                  href="#" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="h-5 w-5" />
-                </a>
-                <a 
-                  href="#" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label="RSS Feed"
-                >
-                  <Rss className="h-5 w-5" />
                 </a>
               </div>
             </div>

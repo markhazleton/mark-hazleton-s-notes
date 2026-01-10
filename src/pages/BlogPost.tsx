@@ -1,15 +1,139 @@
+import { useEffect, useMemo, useState, isValidElement } from 'react';
+import type { ReactNode } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { ArrowLeft, Calendar, Clock, Share2 } from 'lucide-react';
 import { Layout } from '@/components/Layout';
 import { BlogCard } from '@/components/BlogCard';
 import { TableOfContents } from '@/components/TableOfContents';
-import { Callout } from '@/components/Callout';
 import { Button } from '@/components/ui/button';
 import { posts } from '@/data/posts';
+
+type MarkdownState = {
+  status: 'idle' | 'loading' | 'success' | 'error';
+  content: string;
+  error: string | null;
+};
+
+type TocItem = {
+  id: string;
+  title: string;
+  level: number;
+};
+
+const markdownModules = import.meta.glob('../data/content/*.md', { as: 'raw' });
+
+const slugify = (value: string) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+const getPlainText = (node: ReactNode): string => {
+  if (typeof node === 'string') {
+    return node;
+  }
+
+  if (Array.isArray(node)) {
+    return node.map(getPlainText).join('');
+  }
+
+  if (isValidElement(node)) {
+    return getPlainText(node.props.children);
+  }
+
+  return '';
+};
+
+const extractHeadings = (markdown: string): TocItem[] => {
+  const headings: TocItem[] = [];
+  const lines = markdown.split('\n');
+  let inCodeBlock = false;
+
+  lines.forEach((line) => {
+    const trimmed = line.trim();
+    if (trimmed.startsWith('```')) {
+      inCodeBlock = !inCodeBlock;
+      return;
+    }
+
+    if (inCodeBlock) {
+      return;
+    }
+
+    const match = /^(#{2,3})\s+(.+)/.exec(trimmed);
+    if (!match) {
+      return;
+    }
+
+    const level = match[1].length;
+    const title = match[2].replace(/\s+#+\s*$/, '').trim();
+    const id = slugify(title);
+
+    if (id) {
+      headings.push({ id, title, level });
+    }
+  });
+
+  return headings;
+};
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = posts.find((p) => p.slug === slug);
+  const contentFile = post?.contentFile;
+  const [markdownState, setMarkdownState] = useState<MarkdownState>({
+    status: 'idle',
+    content: '',
+    error: null,
+  });
+
+  useEffect(() => {
+    if (!contentFile) {
+      return undefined;
+    }
+
+    let isActive = true;
+    const loadMarkdown = async () => {
+      const markdownPath = `../data/content/${contentFile}`;
+      const loader = markdownModules[markdownPath];
+
+      if (!loader) {
+        if (isActive) {
+          setMarkdownState({
+            status: 'error',
+            content: '',
+            error: 'Content unavailable for this article.',
+          });
+        }
+        return;
+      }
+
+      setMarkdownState({ status: 'loading', content: '', error: null });
+
+      try {
+        const content = await loader();
+        if (isActive) {
+          setMarkdownState({ status: 'success', content, error: null });
+        }
+      } catch (error) {
+        if (isActive) {
+          setMarkdownState({
+            status: 'error',
+            content: '',
+            error: 'Unable to load this article right now.',
+          });
+        }
+      }
+    };
+
+    void loadMarkdown();
+
+    return () => {
+      isActive = false;
+    };
+  }, [contentFile]);
 
   if (!post) {
     return <Navigate to="/blog" replace />;
@@ -20,12 +144,43 @@ export default function BlogPost() {
     .filter((p) => p.slug !== post.slug && p.tags.some((tag) => post.tags.includes(tag)))
     .slice(0, 3);
 
-  // Mock table of contents
-  const tocItems = [
-    { id: 'section-1', title: 'The Fallacy of "Highly Available"', level: 2 },
-    { id: 'section-2', title: 'Design Principles That Actually Work', level: 2 },
-    { id: 'section-3', title: 'Real Talk: What Goes Wrong', level: 2 },
-  ];
+  const tocItems = useMemo(
+    () => extractHeadings(markdownState.content),
+    [markdownState.content]
+  );
+
+  const markdownComponents = useMemo(
+    () => ({
+      h2({ children }: { children: ReactNode }) {
+        const text = getPlainText(children);
+        const id = slugify(text);
+        return <h2 id={id}>{children}</h2>;
+      },
+      h3({ children }: { children: ReactNode }) {
+        const text = getPlainText(children);
+        const id = slugify(text);
+        return <h3 id={id}>{children}</h3>;
+      },
+      pre({ children }: { children: ReactNode }) {
+        return <pre className="code-block">{children}</pre>;
+      },
+      code({
+        inline,
+        className,
+        children,
+      }: {
+        inline?: boolean;
+        className?: string;
+        children: ReactNode;
+      }) {
+        if (inline) {
+          return <code className="inline-code">{children}</code>;
+        }
+        return <code className={className}>{children}</code>;
+      },
+    }),
+    []
+  );
 
   return (
     <Layout>
@@ -87,84 +242,26 @@ export default function BlogPost() {
             <div className="lg:grid lg:grid-cols-[1fr_200px] lg:gap-8">
               {/* Main Content */}
               <div className="prose-blog">
-                {post.content ? (
-                  <>
-                    {post.content.split('\n\n').map((paragraph, index) => {
-                      if (paragraph.startsWith('## ')) {
-                        return (
-                          <h2 key={index} id={`section-${index}`}>
-                            {paragraph.replace('## ', '')}
-                          </h2>
-                        );
-                      }
-                      if (paragraph.startsWith('### ')) {
-                        return (
-                          <h3 key={index}>
-                            {paragraph.replace('### ', '')}
-                          </h3>
-                        );
-                      }
-                      if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                        return (
-                          <Callout key={index} type="tip" title="Key Insight">
-                            {paragraph.replace(/\*\*/g, '')}
-                          </Callout>
-                        );
-                      }
-                      if (paragraph.startsWith('- ')) {
-                        const items = paragraph.split('\n');
-                        return (
-                          <ul key={index}>
-                            {items.map((item, i) => (
-                              <li key={i}>{item.replace('- ', '')}</li>
-                            ))}
-                          </ul>
-                        );
-                      }
-                      return <p key={index}>{paragraph}</p>;
-                    })}
-                  </>
-                ) : (
-                  <>
-                    <p>
-                      This is a placeholder for the full blog post content. In a real implementation, 
-                      this would be loaded from MDX files or a content management system.
-                    </p>
-
-                    <Callout type="info" title="Note">
-                      The content structure is ready for MDX or any markdown-based content pipeline.
-                    </Callout>
-
-                    <h2 id="section-1">Getting Started</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                      quis nostrud exercitation ullamco laboris.
-                    </p>
-
-                    <h2 id="section-2">Key Concepts</h2>
-                    <p>
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-                    </p>
-
-                    <div className="code-block">
-                      <code>
-                        {`// Example code block
-const config = {
-  resilience: true,
-  retries: 3,
-  timeout: 5000
-};`}
-                      </code>
-                    </div>
-
-                    <h2 id="section-3">Conclusion</h2>
-                    <p>
-                      Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut 
-                      perspiciatis unde omnis iste natus error sit voluptatem accusantium.
-                    </p>
-                  </>
+                {markdownState.status === 'loading' && (
+                  <p className="text-muted-foreground animate-pulse">
+                    Loading article content...
+                  </p>
+                )}
+                {markdownState.status === 'error' && (
+                  <p className="text-muted-foreground">{markdownState.error}</p>
+                )}
+                {markdownState.status === 'success' && markdownState.content && (
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={markdownComponents}
+                  >
+                    {markdownState.content}
+                  </ReactMarkdown>
+                )}
+                {markdownState.status === 'success' && !markdownState.content && (
+                  <p className="text-muted-foreground">
+                    Content is not available for this article yet.
+                  </p>
                 )}
               </div>
 

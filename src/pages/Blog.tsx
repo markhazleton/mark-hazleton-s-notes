@@ -18,11 +18,13 @@ export default function Blog() {
     // Filter by search
     if (search) {
       const searchLower = search.toLowerCase();
-      result = result.filter(
-        (post) =>
-          post.title.toLowerCase().includes(searchLower) ||
-          post.excerpt.toLowerCase().includes(searchLower)
-      );
+      result = result.filter((post) => {
+        const haystack = [post.title, post.excerpt, post.keywords]
+          .filter(Boolean)
+          .join(' ')
+          .toLowerCase();
+        return haystack.includes(searchLower);
+      });
     }
 
     // Filter by tags
