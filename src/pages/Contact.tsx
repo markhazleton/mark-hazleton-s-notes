@@ -1,9 +1,16 @@
 import { Layout } from '@/components/Layout';
 import { Linkedin, Github, ArrowUpRight, Coffee } from 'lucide-react';
+import { Seo } from '@/components/Seo';
 
 export default function Contact() {
   return (
     <Layout>
+      <Seo
+        title="Contact Mark Hazleton"
+        description="Get in touch with Mark Hazleton to collaborate on cloud architecture, integration patterns, and distributed systems."
+        keywords="contact Mark Hazleton, cloud architecture consulting, distributed systems, integration patterns, technical solutions architect"
+        canonical="/contact"
+      />
       <section className="section">
         <div className="container-blog">
           <div className="max-w-xl mx-auto text-center animate-fade-up">

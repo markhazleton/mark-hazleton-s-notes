@@ -9,6 +9,7 @@ import { BlogCard } from '@/components/BlogCard';
 import { TableOfContents } from '@/components/TableOfContents';
 import { Button } from '@/components/ui/button';
 import { posts } from '@/data/posts';
+import { Seo } from '@/components/Seo';
 
 type MarkdownState = {
   status: 'idle' | 'loading' | 'success' | 'error';
@@ -22,7 +23,10 @@ type TocItem = {
   level: number;
 };
 
-const markdownModules = import.meta.glob('../data/content/*.md', { as: 'raw' });
+const markdownModules = import.meta.glob('../data/content/*.md', {
+  query: '?raw',
+  import: 'default',
+});
 
 const slugify = (value: string) =>
   value
@@ -187,8 +191,19 @@ export default function BlogPost() {
     return <Navigate to="/blog" replace />;
   }
 
+  const keywordList = post.keywords || post.tags.join(", ");
+  const canonicalPath = `/blog/${post.slug}`;
+
   return (
     <Layout>
+      <Seo
+        title={`${post.title} | Mark Hazleton`}
+        description={post.excerpt}
+        keywords={keywordList}
+        canonical={canonicalPath}
+        image={post.image ?? undefined}
+        type="article"
+      />
       <article className="section">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">

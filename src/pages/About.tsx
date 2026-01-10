@@ -1,6 +1,7 @@
 import { Layout } from '@/components/Layout';
 import { Toolbox } from '@/components/Toolbox';
 import { CheckCircle2 } from 'lucide-react';
+import { Seo } from '@/components/Seo';
 
 const howIWork = [
   {
@@ -28,6 +29,12 @@ const howIWork = [
 export default function About() {
   return (
     <Layout>
+      <Seo
+        title="About Mark Hazleton | Technical Solutions Architect"
+        description="Learn about Mark Hazleton, a Technical Solutions Architect focused on cloud-native, event-driven systems and resilient architecture."
+        keywords="About Mark Hazleton, technical solutions architect, cloud-native architecture, event-driven systems, Azure architect"
+        canonical="/about"
+      />
       <section className="section">
         <div className="container-blog">
           {/* Intro */}

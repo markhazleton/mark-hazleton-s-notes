@@ -6,6 +6,7 @@ import { TagFilter } from '@/components/TagFilter';
 import { posts, allTags } from '@/data/posts';
 import { ArrowUpDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Seo } from '@/components/Seo';
 
 export default function Blog() {
   const [search, setSearch] = useState('');
@@ -52,6 +53,12 @@ export default function Blog() {
 
   return (
     <Layout>
+      <Seo
+        title="Blog | Mark Hazleton"
+        description="Practical notes on cloud architecture, integration patterns, and engineering practices from Mark Hazleton."
+        keywords="Mark Hazleton blog, cloud architecture, Azure, integration patterns, software architecture, engineering practices"
+        canonical="/blog"
+      />
       <section className="section">
         <div className="container-wide">
           {/* Header */}

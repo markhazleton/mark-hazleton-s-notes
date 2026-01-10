@@ -3,6 +3,7 @@ import { ArrowLeft, ExternalLink, FolderOpen } from 'lucide-react';
 import { Layout } from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { projects } from '@/data/projects';
+import { Seo } from '@/components/Seo';
 
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -17,8 +18,28 @@ export default function ProjectDetail() {
     return <Navigate to="/projects" replace />;
   }
 
+  const seoTitle = project.seo?.title
+    ? `${project.seo.title}${project.seo.titleSuffix ?? ''}`
+    : `${project.title} | Mark Hazleton`;
+  const seoDescription = project.seo?.description ?? project.summary;
+  const seoKeywords =
+    project.seo?.keywords ?? project.keywords.join(", ");
+  const seoCanonical = project.seo?.canonical ?? `/projects/${project.slug}`;
+  const seoImage = project.og?.image ?? project.image;
+  const seoType = project.og?.type === "article" ? "article" : "website";
+  const seoRobots = project.seo?.robots;
+
   return (
     <Layout>
+      <Seo
+        title={seoTitle}
+        description={seoDescription}
+        keywords={seoKeywords}
+        canonical={seoCanonical}
+        image={seoImage ?? undefined}
+        type={seoType}
+        robots={seoRobots}
+      />
       <section className="section">
         <div className="container-blog">
           {/* Back Link */}

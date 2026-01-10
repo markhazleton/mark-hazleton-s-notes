@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Callout } from '@/components/Callout';
 import { useRepositoryStats } from '@/hooks/use-repository-stats';
 import type { Repository } from '@/types/repositories';
+import { Seo } from '@/components/Seo';
 
 const isPlainObject = (value: unknown): value is Record<string, unknown> =>
   Object.prototype.toString.call(value) === '[object Object]';
@@ -126,6 +127,16 @@ export default function RepositoryDetail() {
 
           {repositoryState.status === 'success' && repository && (
             <>
+              <Seo
+                title={`Repository Metrics: ${repository.name} | Mark Hazleton`}
+                description={
+                  repository.description ??
+                  `Detailed repository metrics and activity for ${repository.name}.`
+                }
+                keywords={`repository metrics, ${repository.name}, GitHub analytics, commit history, Mark Hazleton`}
+                canonical={`/now/repositories/${encodeURIComponent(repository.name)}`}
+                type="article"
+              />
               <header className="mb-10 animate-fade-up">
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <div>

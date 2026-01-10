@@ -1,10 +1,17 @@
 import { Layout } from '@/components/Layout';
 import { ProjectCard } from '@/components/ProjectCard';
 import { projects } from '@/data/projects';
+import { Seo } from '@/components/Seo';
 
 export default function Projects() {
   return (
     <Layout>
+      <Seo
+        title="Projects | Mark Hazleton"
+        description="Selected work across web applications, tooling, and product experiments from Mark Hazleton."
+        keywords="Mark Hazleton projects, software architecture, developer tools, web applications, product experiments"
+        canonical="/projects"
+      />
       <section className="section">
         <div className="container-wide">
           {/* Header */}

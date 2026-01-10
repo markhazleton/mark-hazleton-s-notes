@@ -8,6 +8,7 @@ import remarkGfm from 'remark-gfm';
 import { useRepositoryStats } from '@/hooks/use-repository-stats';
 import type { Repository } from '@/types/repositories';
 import { posts } from '@/data/posts';
+import { Seo } from '@/components/Seo';
 
 export default function Now() {
   const repositoryState = useRepositoryStats();
@@ -194,6 +195,12 @@ export default function Now() {
 
   return (
     <Layout>
+      <Seo
+        title="Now | Mark Hazleton"
+        description="A snapshot of what Mark Hazleton is working on right now, including recent repositories and articles."
+        keywords="Mark Hazleton now, current projects, repository updates, recent articles, technical focus"
+        canonical="/now"
+      />
       <section className="section">
         <div className="container-blog">
           <div className="animate-fade-up">

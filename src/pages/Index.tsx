@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Cloud, Workflow, Server, Sparkles } from 'lucide-react';
 import { Layout } from '@/components/Layout';
@@ -5,12 +6,95 @@ import { FeatureCard } from '@/components/FeatureCard';
 import { BlogCard } from '@/components/BlogCard';
 import { Button } from '@/components/ui/button';
 import { posts } from '@/data/posts';
+import { useRepositoryStats } from '@/hooks/use-repository-stats';
+import type { Repository } from '@/types/repositories';
+import { Seo } from '@/components/Seo';
+import { DEFAULT_DESCRIPTION, DEFAULT_KEYWORDS, DEFAULT_TITLE } from '@/lib/site';
 
 export default function Index() {
+  const repositoryState = useRepositoryStats();
   const latestPosts = posts.slice(0, 6);
+  const latestPost = posts[0];
+
+  const formatDate = (value?: string | Date) => {
+    if (!value) {
+      return 'Unknown';
+    }
+
+    const parsed = value instanceof Date ? value : new Date(value);
+    if (Number.isNaN(parsed.getTime())) {
+      return 'Unknown';
+    }
+
+    return parsed.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    });
+  };
+
+  const getMostRecentRepository = (repositories: Repository[]) => {
+    let latestRepo: Repository | null = null;
+    let latestDate: Date | null = null;
+
+    repositories.forEach((repo) => {
+      const candidateDates = [
+        repo.last_commit_date,
+        repo.updated_at,
+        repo.pushed_at,
+        repo.created_at,
+      ]
+        .map((value) => (value ? new Date(value) : null))
+        .filter((value): value is Date => Boolean(value && !Number.isNaN(value.getTime())));
+
+      if (candidateDates.length === 0) {
+        return;
+      }
+
+      const repoLatest = candidateDates.sort((a, b) => b.getTime() - a.getTime())[0];
+      if (!latestDate || repoLatest.getTime() > latestDate.getTime()) {
+        latestDate = repoLatest;
+        latestRepo = repo;
+      }
+    });
+
+    return { repo: latestRepo, date: latestDate };
+  };
+
+  const latestRepositoryInfo = useMemo(
+    () => getMostRecentRepository(repositoryState.data),
+    [repositoryState.data],
+  );
+
+  const lastUpdated = useMemo(() => {
+    const dates: Date[] = [];
+    if (latestPost?.date) {
+      const parsed = new Date(latestPost.date);
+      if (!Number.isNaN(parsed.getTime())) {
+        dates.push(parsed);
+      }
+    }
+    if (latestRepositoryInfo.date) {
+      dates.push(latestRepositoryInfo.date);
+    }
+    if (repositoryState.metadata?.generated_at) {
+      const parsed = new Date(repositoryState.metadata.generated_at as string);
+      if (!Number.isNaN(parsed.getTime())) {
+        dates.push(parsed);
+      }
+    }
+
+    return dates.sort((a, b) => b.getTime() - a.getTime())[0] ?? null;
+  }, [latestPost?.date, latestRepositoryInfo.date, repositoryState.metadata]);
 
   return (
     <Layout>
+      <Seo
+        title={DEFAULT_TITLE}
+        description={DEFAULT_DESCRIPTION}
+        keywords={DEFAULT_KEYWORDS}
+        canonical="/"
+      />
       {/* Hero Section */}
       <section className="section border-b border-border">
         <div className="container-wide">
@@ -126,15 +210,52 @@ export default function Index() {
               </div>
               <div>
                 <h3 className="font-heading font-semibold text-foreground">What I'm up to now</h3>
-                <p className="text-sm text-muted-foreground">Updated January 2024</p>
+                <p className="text-sm text-muted-foreground">
+                  Updated {lastUpdated ? formatDate(lastUpdated) : '--'}
+                </p>
               </div>
             </div>
             <div className="flex-1 text-muted-foreground">
-              Currently exploring observability patterns with OpenTelemetry and building a reference 
-              architecture for event-driven microservices on Azure.{' '}
-              <Link to="/now" className="text-primary hover:underline underline-offset-2">
-                Read more →
-              </Link>
+              <div className="flex flex-col gap-2 text-sm">
+                {latestPost ? (
+                  <span>
+                    Latest article:{' '}
+                    <Link
+                      to={`/blog/${latestPost.slug}`}
+                      className="text-primary hover:underline underline-offset-2"
+                    >
+                      {latestPost.title}
+                    </Link>
+                  </span>
+                ) : (
+                  <span>Latest article: Unavailable</span>
+                )}
+                {latestRepositoryInfo.repo ? (
+                  <span>
+                    Latest repository update:{' '}
+                    <Link
+                      to={`/now/repositories/${encodeURIComponent(latestRepositoryInfo.repo.name)}`}
+                      className="text-primary hover:underline underline-offset-2"
+                    >
+                      {latestRepositoryInfo.repo.name}
+                    </Link>
+                    {latestRepositoryInfo.date && (
+                      <span className="text-muted-foreground">
+                        {' '}
+                        on {formatDate(latestRepositoryInfo.date)}
+                      </span>
+                    )}
+                  </span>
+                ) : (
+                  <span>
+                    Latest repository update:{' '}
+                    {repositoryState.status === 'loading' ? 'Loading...' : 'Unavailable'}
+                  </span>
+                )}
+                <Link to="/now" className="text-primary hover:underline underline-offset-2">
+                  See the full /now update
+                </Link>
+              </div>
             </div>
           </div>
         </div>

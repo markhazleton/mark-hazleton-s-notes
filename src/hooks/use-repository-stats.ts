@@ -13,15 +13,40 @@ type RepositoryState = {
   error: string | null;
 };
 
+const getBootstrapPayload = () => {
+  const globalPayload =
+    typeof globalThis !== "undefined"
+      ? (globalThis as { __REPOSITORY_STATS__?: RepositoryStatsPayload }).__REPOSITORY_STATS__
+      : undefined;
+  if (globalPayload?.repositories) {
+    return globalPayload;
+  }
+
+  if (typeof window !== "undefined") {
+    const windowPayload = (window as { __REPOSITORY_STATS__?: RepositoryStatsPayload })
+      .__REPOSITORY_STATS__;
+    if (windowPayload?.repositories) {
+      return windowPayload;
+    }
+  }
+
+  return null;
+};
+
 export function useRepositoryStats() {
+  const bootstrapPayload = getBootstrapPayload();
   const [repositoryState, setRepositoryState] = useState<RepositoryState>({
-    status: 'idle',
-    data: [],
-    metadata: null,
+    status: bootstrapPayload ? 'success' : 'idle',
+    data: bootstrapPayload?.repositories ?? [],
+    metadata: bootstrapPayload?.metadata ?? null,
     error: null,
   });
 
   useEffect(() => {
+    if (bootstrapPayload) {
+      return;
+    }
+
     const controller = new AbortController();
     const loadRepositories = async () => {
       setRepositoryState((prev) => ({
@@ -71,7 +96,7 @@ export function useRepositoryStats() {
     void loadRepositories();
 
     return () => controller.abort();
-  }, []);
+  }, [bootstrapPayload]);
 
   return repositoryState;
 }
