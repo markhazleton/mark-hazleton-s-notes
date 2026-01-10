@@ -31,6 +31,7 @@ export interface Post {
   source: string;
   section: string;
   keywords: string;
+  image?: string | null;
 }
 
 const rawArticles = articlesData as ArticleEntry[];
@@ -79,6 +80,7 @@ export const posts: Post[] = rawArticles
     source: entry.source,
     section: entry.Section,
     keywords: entry.keywords,
+    image: entry.img_src ?? null,
   }))
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 

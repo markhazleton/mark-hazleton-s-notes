@@ -51,6 +51,16 @@ export function BlogCard({ post, variant = 'default' }: BlogCardProps) {
       to={`/blog/${post.slug}`}
       className="group block paper-card p-6 transition-all duration-300 hover:-translate-y-1"
     >
+      {post.image && (
+        <div className="mb-4 overflow-hidden rounded-md border border-border">
+          <img
+            src={post.image}
+            alt={post.title}
+            loading="lazy"
+            className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+          />
+        </div>
+      )}
       <div className="flex flex-wrap gap-1.5 mb-3">
         {post.tags.map((tag) => (
           <span key={tag} className="tag-pill">
