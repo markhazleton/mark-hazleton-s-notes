@@ -1,175 +1,78 @@
-import { useState } from 'react';
 import { Layout } from '@/components/Layout';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { Mail, Calendar, Send, CheckCircle } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+import { Linkedin, Github, ArrowUpRight, Coffee } from 'lucide-react';
 
 export default function Contact() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast({
-      title: 'Message sent!',
-      description: 'Thanks for reaching out. I\'ll get back to you soon.',
-    });
-  };
-
   return (
     <Layout>
       <section className="section">
         <div className="container-blog">
-          <div className="animate-fade-up">
+          <div className="max-w-xl mx-auto text-center animate-fade-up">
+            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+              <Coffee className="h-8 w-8 text-primary" />
+            </div>
+            
             <h1 className="font-heading text-4xl font-bold text-foreground mb-4">
-              Get in Touch
+              Let's Collaborate
             </h1>
-            <p className="text-lg text-muted-foreground mb-8">
-              Have a question, want to collaborate, or just want to say hello? 
-              I'd love to hear from you.
+            
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Got an interesting problem to solve? Want to chat about architecture, 
+              cloud patterns, or just geek out about distributed systems? 
+              I'm always up for a good conversation.
             </p>
-          </div>
 
-          <div className="grid gap-8 lg:grid-cols-[1fr_300px]">
-            {/* Form */}
-            <div className="paper-card p-6 lg:p-8">
-              {isSubmitted ? (
-                <div className="text-center py-12">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <CheckCircle className="h-8 w-8 text-primary" />
-                  </div>
-                  <h2 className="font-heading text-2xl font-semibold text-foreground mb-2">
-                    Message Sent!
-                  </h2>
-                  <p className="text-muted-foreground mb-6">
-                    Thanks for reaching out. I typically respond within 1-2 business days.
+            <p className="text-xl text-foreground font-heading font-medium mb-10">
+              Let's build something great together.
+            </p>
+
+            {/* Social Links */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://linkedin.com/in/markhazleton"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group paper-card p-6 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30"
+              >
+                <div className="w-12 h-12 rounded-lg bg-[#0A66C2]/10 flex items-center justify-center">
+                  <Linkedin className="h-6 w-6 text-[#0A66C2]" />
+                </div>
+                <div className="text-left">
+                  <p className="font-heading font-semibold text-foreground group-hover:text-primary transition-colors">
+                    LinkedIn
                   </p>
-                  <Button variant="outline" onClick={() => setIsSubmitted(false)}>
-                    Send another message
-                  </Button>
+                  <p className="text-sm text-muted-foreground">
+                    Connect professionally
+                  </p>
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid gap-6 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        placeholder="Your name"
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="your@email.com"
-                        required
-                      />
-                    </div>
-                  </div>
+                <ArrowUpRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors ml-auto" />
+              </a>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      placeholder="What's this about?"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      placeholder="Your message..."
-                      rows={6}
-                      required
-                    />
-                  </div>
-
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? (
-                      'Sending...'
-                    ) : (
-                      <>
-                        <Send className="h-4 w-4 mr-2" />
-                        Send Message
-                      </>
-                    )}
-                  </Button>
-                </form>
-              )}
+              <a
+                href="https://github.com/markhazleton"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group paper-card p-6 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30"
+              >
+                <div className="w-12 h-12 rounded-lg bg-foreground/10 flex items-center justify-center">
+                  <Github className="h-6 w-6 text-foreground" />
+                </div>
+                <div className="text-left">
+                  <p className="font-heading font-semibold text-foreground group-hover:text-primary transition-colors">
+                    GitHub
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Check out my code
+                  </p>
+                </div>
+                <ArrowUpRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors ml-auto" />
+              </a>
             </div>
 
-            {/* Sidebar */}
-            <div className="space-y-6">
-              <div className="paper-card p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Mail className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="font-heading font-semibold text-foreground">
-                    Email
-                  </h3>
-                </div>
-                <p className="text-sm text-muted-foreground mb-2">
-                  For general inquiries or quick questions.
-                </p>
-                <a 
-                  href="mailto:hello@markhazleton.com"
-                  className="text-sm text-primary hover:underline underline-offset-2"
-                >
-                  hello@markhazleton.com
-                </a>
-              </div>
-
-              <div className="paper-card p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <Calendar className="h-5 w-5 text-accent" />
-                  </div>
-                  <h3 className="font-heading font-semibold text-foreground">
-                    Schedule a Call
-                  </h3>
-                </div>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Want to discuss a project or architecture review?
-                </p>
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    Book a 30-min chat
-                  </a>
-                </Button>
-              </div>
-
-              <div className="p-6 bg-muted/50 rounded-lg">
-                <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Response time:</strong>{' '}
-                  I typically respond within 1-2 business days. For urgent matters, 
-                  scheduling a call is usually faster.
-                </p>
-              </div>
-            </div>
+            {/* Additional context */}
+            <p className="mt-12 text-sm text-muted-foreground">
+              Whether it's a quick question or a longer collaboration, 
+              I typically respond within a day or two.
+            </p>
           </div>
         </div>
       </section>
