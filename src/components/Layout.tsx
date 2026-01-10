@@ -20,10 +20,7 @@ export function Layout({ children }: LayoutProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [location.pathname]);
+  const handleNavClick = () => setIsMenuOpen(false);
 
   useEffect(() => {
     if (isDark) {
@@ -53,6 +50,7 @@ export function Layout({ children }: LayoutProps) {
                 <Link
                   key={link.href}
                   to={link.href}
+                  onClick={handleNavClick}
                   className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                     location.pathname === link.href
                       ? 'text-primary bg-primary/5'
@@ -102,6 +100,7 @@ export function Layout({ children }: LayoutProps) {
                   <Link
                     key={link.href}
                     to={link.href}
+                    onClick={handleNavClick}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                       location.pathname === link.href
                         ? 'text-primary bg-primary/5'
@@ -144,6 +143,7 @@ export function Layout({ children }: LayoutProps) {
                   <li key={link.href}>
                     <Link 
                       to={link.href}
+                      onClick={handleNavClick}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       {link.label}

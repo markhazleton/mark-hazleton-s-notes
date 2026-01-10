@@ -1,0 +1,77 @@
+import { useEffect, useState } from 'react';
+import type { Repository, RepositoryStatsPayload } from '@/types/repositories';
+
+const REPOSITORY_STATS_URL =
+  'https://raw.githubusercontent.com/markhazleton/github-stats-spark/main/data/repositories.json';
+
+type RepositoryStatus = 'idle' | 'loading' | 'success' | 'error';
+
+type RepositoryState = {
+  status: RepositoryStatus;
+  data: Repository[];
+  metadata: RepositoryStatsPayload["metadata"] | null;
+  error: string | null;
+};
+
+export function useRepositoryStats() {
+  const [repositoryState, setRepositoryState] = useState<RepositoryState>({
+    status: 'idle',
+    data: [],
+    metadata: null,
+    error: null,
+  });
+
+  useEffect(() => {
+    const controller = new AbortController();
+    const loadRepositories = async () => {
+      setRepositoryState((prev) => ({
+        ...prev,
+        status: 'loading',
+        error: null,
+      }));
+
+      try {
+        const response = await fetch(REPOSITORY_STATS_URL, {
+          signal: controller.signal,
+          cache: 'no-store',
+          headers: {
+            Accept: 'application/json',
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error(`Request failed (${response.status})`);
+        }
+
+        const payload = (await response.json()) as RepositoryStatsPayload;
+        const repositories = Array.isArray(payload.repositories)
+          ? payload.repositories
+          : [];
+
+        setRepositoryState({
+          status: 'success',
+          data: repositories,
+          metadata: payload.metadata ?? null,
+          error: null,
+        });
+      } catch (error) {
+        if (controller.signal.aborted) {
+          return;
+        }
+
+        setRepositoryState({
+          status: 'error',
+          data: [],
+          metadata: null,
+          error: 'Unable to load repository updates right now.',
+        });
+      }
+    };
+
+    void loadRepositories();
+
+    return () => controller.abort();
+  }, []);
+
+  return repositoryState;
+}

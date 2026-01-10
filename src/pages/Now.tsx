@@ -1,97 +1,49 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { Layout } from '@/components/Layout';
 import { Callout } from '@/components/Callout';
-import { BookOpen, Code, Users, MapPin, GitBranch } from 'lucide-react';
-
-const REPOSITORY_STATS_URL =
-  'https://raw.githubusercontent.com/markhazleton/github-stats-spark/main/data/repositories.json';
-
-type Repository = {
-  name: string;
-  description?: string | null;
-  url: string;
-  stars: number;
-  forks: number;
-  language?: string | null;
-  updated_at?: string;
-  last_commit_date?: string;
-  total_commits?: number;
-  recent_commits_90d?: number;
-};
-
-type RepositoryStatsPayload = {
-  repositories: Repository[];
-};
-
-type RepositoryStatus = 'idle' | 'loading' | 'success' | 'error';
-
-type RepositoryState = {
-  status: RepositoryStatus;
-  data: Repository[];
-  error: string | null;
-};
+import { BookOpen, Code, Users, MapPin, GitBranch, FileText } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { useRepositoryStats } from '@/hooks/use-repository-stats';
+import type { Repository } from '@/types/repositories';
+import { posts } from '@/data/posts';
 
 export default function Now() {
-  const [repositoryState, setRepositoryState] = useState<RepositoryState>({
-    status: 'idle',
-    data: [],
-    error: null,
-  });
-
-  useEffect(() => {
-    const controller = new AbortController();
-    const loadRepositories = async () => {
-      setRepositoryState((prev) => ({
-        ...prev,
-        status: 'loading',
-        error: null,
-      }));
-
-      try {
-        const response = await fetch(REPOSITORY_STATS_URL, {
-          signal: controller.signal,
-          cache: 'no-store',
-          headers: {
-            Accept: 'application/json',
-          },
-        });
-
-        if (!response.ok) {
-          throw new Error(`Request failed (${response.status})`);
-        }
-
-        const payload = (await response.json()) as RepositoryStatsPayload;
-        const repositories = Array.isArray(payload.repositories)
-          ? payload.repositories
-          : [];
-
-        setRepositoryState({
-          status: 'success',
-          data: repositories,
-          error: null,
-        });
-      } catch (error) {
-        if (controller.signal.aborted) {
-          return;
-        }
-
-        setRepositoryState({
-          status: 'error',
-          data: [],
-          error: 'Unable to load repository updates right now.',
-        });
-      }
-    };
-
-    void loadRepositories();
-
-    return () => controller.abort();
-  }, []);
+  const repositoryState = useRepositoryStats();
 
   const recentRepositories = useMemo(
     () => repositoryState.data.slice(0, 6),
     [repositoryState.data],
   );
+
+  const recentArticles = useMemo(() => posts.slice(0, 4), []);
+
+  const stripMarkdown = (value: string) =>
+    value
+      .replace(/```[\s\S]*?```/g, '')
+      .replace(/`[^`]*`/g, '')
+      .replace(/!\[.*?\]\(.*?\)/g, '')
+      .replace(/\[(.*?)\]\(.*?\)/g, '$1')
+      .replace(/^#{1,6}\s+/gm, '')
+      .replace(/^\s*>+\s?/gm, '')
+      .replace(/^\s*[-*+]\s+/gm, '')
+      .replace(/[*_~]/g, '')
+      .replace(/\r?\n+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  const buildExcerptPreview = (value: string, maxLength = 100) => {
+    const plainText = stripMarkdown(value);
+    if (plainText.length <= maxLength) {
+      return { text: plainText, truncated: false };
+    }
+
+    const truncated = plainText.slice(0, maxLength);
+    const clipped = truncated.replace(/\s+\S*$/, '').trim();
+
+    return { text: clipped || truncated, truncated: true };
+  };
 
   const formatDate = (value?: string) => {
     if (!value) {
@@ -110,6 +62,136 @@ export default function Now() {
     });
   };
 
+  const formatNumber = (value: number) => value.toLocaleString('en-US');
+
+  const getRepositoryDetailPath = (repo: Repository) =>
+    `/now/repositories/${encodeURIComponent(repo.name)}`;
+
+  const getMostRecentDate = (
+    repositories: Repository[],
+    metadata: Record<string, unknown> | null,
+  ) => {
+    const dateStrings: string[] = [];
+
+    const metadataDate = metadata?.generated_at;
+    if (typeof metadataDate === 'string') {
+      dateStrings.push(metadataDate);
+    }
+
+    repositories.forEach((repo) => {
+      const repoDates = [
+        repo.last_commit_date,
+        repo.updated_at,
+        repo.pushed_at,
+        repo.created_at,
+        repo.summary?.generated_at,
+      ];
+
+      repoDates.forEach((value) => {
+        if (typeof value === 'string') {
+          dateStrings.push(value);
+        }
+      });
+    });
+
+    const mostRecent = dateStrings
+      .map((value) => new Date(value))
+      .filter((date) => !Number.isNaN(date.getTime()))
+      .sort((a, b) => b.getTime() - a.getTime())[0];
+
+    return mostRecent ?? null;
+  };
+
+  const lastUpdated = useMemo(
+    () => getMostRecentDate(repositoryState.data, repositoryState.metadata),
+    [repositoryState.data, repositoryState.metadata],
+  );
+
+  const getSummaryText = (repo: Repository) => {
+    const rawSummary = repo.summary?.text ?? repo.ai_summary ?? '';
+    if (!rawSummary) {
+      return '';
+    }
+
+    return rawSummary.replace(/\s+/g, ' ').trim();
+  };
+
+  const getSummarySnippet = (repo: Repository, maxLength = 180) => {
+    const summary = getSummaryText(repo);
+    if (!summary) {
+      return null;
+    }
+
+    if (summary.length <= maxLength) {
+      return summary;
+    }
+
+    return `${summary.slice(0, Math.max(0, maxLength - 3))}...`;
+  };
+
+  const buildSummaryMetrics = (repo: Repository) => {
+    const metrics: string[] = [];
+
+    if (typeof repo.composite_score === 'number') {
+      metrics.push(`Spark score ${repo.composite_score.toFixed(1)}`);
+    }
+    if (typeof repo.rank === 'number') {
+      metrics.push(`Rank #${repo.rank}`);
+    }
+    if (typeof repo.commit_velocity === 'number') {
+      metrics.push(`Velocity ${repo.commit_velocity.toFixed(1)}/mo`);
+    }
+
+    if (typeof repo.recent_commits_90d === 'number') {
+      metrics.push(`${formatNumber(repo.recent_commits_90d)} commits (90d)`);
+    } else if (typeof repo.total_commits === 'number') {
+      metrics.push(`${formatNumber(repo.total_commits)} total commits`);
+    }
+
+    const lastUpdate = repo.last_commit_date ?? repo.updated_at;
+    if (lastUpdate) {
+      metrics.push(`Updated ${formatDate(lastUpdate)}`);
+    }
+
+    if (typeof repo.days_since_last_push === 'number') {
+      metrics.push(`${repo.days_since_last_push} days since push`);
+    }
+
+    if (typeof repo.age_days === 'number') {
+      metrics.push(`Age ${repo.age_days} days`);
+    }
+
+    if (typeof repo.size_kb === 'number') {
+      metrics.push(`${formatNumber(repo.size_kb)} KB`);
+    }
+
+    if (typeof repo.stars === 'number') {
+      metrics.push(`${formatNumber(repo.stars)} stars`);
+    }
+
+    if (typeof repo.forks === 'number') {
+      metrics.push(`${formatNumber(repo.forks)} forks`);
+    }
+
+    if (typeof repo.watchers === 'number') {
+      metrics.push(`${formatNumber(repo.watchers)} watchers`);
+    }
+
+    if (typeof repo.language_count === 'number') {
+      metrics.push(`${repo.language_count} languages`);
+    }
+
+    if (typeof repo.tech_stack?.total_dependencies === 'number') {
+      metrics.push(`${repo.tech_stack.total_dependencies} deps`);
+    }
+
+    if (typeof repo.tech_stack?.outdated_count === 'number') {
+      metrics.push(`${repo.tech_stack.outdated_count} outdated`);
+    }
+
+    return metrics;
+  };
+
   return (
     <Layout>
       <section className="section">
@@ -119,7 +201,7 @@ export default function Now() {
               What I'm Doing Now
             </h1>
             <p className="text-muted-foreground mb-2">
-              Last updated: January 2024
+              Last updated: {lastUpdated ? formatDate(lastUpdated.toISOString()) : '--'}
             </p>
             <p className="text-lg text-muted-foreground mb-8">
               A snapshot of what I'm focused on right now. Inspired by{' '}
@@ -207,16 +289,13 @@ export default function Now() {
                 recentRepositories.length > 0 && (
                   <div className="grid gap-4 md:grid-cols-2 stagger-children">
                     {recentRepositories.map((repo) => {
-                      const lastUpdate = repo.last_commit_date ?? repo.updated_at;
-                      const recentCommits = repo.recent_commits_90d;
-                      const totalCommits = repo.total_commits;
+                      const summarySnippet = getSummarySnippet(repo);
+                      const metrics = buildSummaryMetrics(repo);
+                      const patterns = repo.commit_history?.patterns ?? [];
 
                       return (
-                        <a
+                        <div
                           key={repo.name}
-                          href={repo.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
                           className="group paper-card p-5 transition-all duration-300 hover:-translate-y-1"
                         >
                           <div className="flex items-start justify-between gap-4">
@@ -228,27 +307,130 @@ export default function Now() {
                                 {repo.description ?? 'No description yet.'}
                               </p>
                             </div>
-                            {repo.language && (
-                              <span className="tag-pill">{repo.language}</span>
-                            )}
-                          </div>
-                          <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-                            {typeof recentCommits === 'number' && (
-                              <span>{recentCommits} commits (90d)</span>
-                            )}
-                            {typeof recentCommits !== 'number' &&
-                              typeof totalCommits === 'number' && (
-                                <span>{totalCommits} total commits</span>
+                            <div className="flex flex-wrap gap-2">
+                              {repo.language && (
+                                <span className="tag-pill">{repo.language}</span>
                               )}
-                            <span>Updated {formatDate(lastUpdate)}</span>
-                            <span>{repo.stars} stars</span>
-                            <span>{repo.forks} forks</span>
+                              {repo.is_private && (
+                                <span className="tag-pill">Private</span>
+                              )}
+                              {repo.is_fork && (
+                                <span className="tag-pill">Fork</span>
+                              )}
+                            </div>
                           </div>
-                        </a>
+                          {summarySnippet && (
+                            <p className="mt-3 text-sm text-muted-foreground">
+                              {summarySnippet}
+                            </p>
+                          )}
+                          {patterns.length > 0 && (
+                            <div className="mt-3 flex flex-wrap gap-2">
+                              {patterns.map((pattern, index) => (
+                                <span key={`${pattern}-${index}`} className="tag-pill">
+                                  {pattern.replace(/_/g, ' ')}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                          {metrics.length > 0 && (
+                            <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                              {metrics.map((metric, index) => (
+                                <span key={`${repo.name}-metric-${index}`}>
+                                  {metric}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                          <div className="mt-4">
+                            <Link
+                              to={getRepositoryDetailPath(repo)}
+                              className="text-sm text-primary hover:underline underline-offset-2"
+                            >
+                              View repository metrics
+                            </Link>
+                          </div>
+                        </div>
                       );
                     })}
                   </div>
                 )}
+            </div>
+
+            {/* Recent Articles */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <FileText className="h-5 w-5 text-primary" />
+                </div>
+                <h2 className="font-heading text-2xl font-semibold text-foreground">
+                  Recent Articles
+                </h2>
+              </div>
+              <div className="prose-blog mb-6">
+                <p>Fresh writing pulled from the latest articles feed.</p>
+              </div>
+              {recentArticles.length === 0 && (
+                <p className="text-muted-foreground">No articles available yet.</p>
+              )}
+              {recentArticles.length > 0 && (
+                <div className="grid gap-4 md:grid-cols-2 stagger-children">
+                  {recentArticles.map((article) => {
+                    const excerptPreview = buildExcerptPreview(article.excerpt);
+
+                    return (
+                      <Link
+                        key={article.slug}
+                        to={`/blog/${article.slug}`}
+                        className="group paper-card p-5 transition-all duration-300 hover:-translate-y-1"
+                      >
+                        {article.image && (
+                          <div className="mb-4 overflow-hidden rounded-lg border border-border bg-card">
+                            <img
+                              src={article.image}
+                              alt={article.title}
+                              className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                              loading="lazy"
+                            />
+                          </div>
+                        )}
+                        <div className="flex items-start justify-between gap-4">
+                          <div>
+                            <h3 className="font-heading text-xl font-semibold text-foreground mb-1">
+                              {article.title}
+                            </h3>
+                            <div className="text-sm text-muted-foreground">
+                              <ReactMarkdown
+                                remarkPlugins={[remarkGfm]}
+                                components={{
+                                  p({ children }) {
+                                    return <span>{children}</span>;
+                                  },
+                                }}
+                              >
+                                {excerptPreview.text}
+                              </ReactMarkdown>
+                              {excerptPreview.truncated && (
+                                <span className="text-primary hover:underline underline-offset-2">
+                                  {' '}
+                                  ... more
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                          {article.tags.length > 0 && (
+                            <span className="tag-pill">{article.tags[0]}</span>
+                          )}
+                        </div>
+                        <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                          <span>{formatDate(article.date)}</span>
+                          <span>{article.readingTime}</span>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
             </div>
 
             {/* Learning */}
@@ -346,8 +528,8 @@ export default function Now() {
                 </h2>
               </div>
               <p className="text-muted-foreground">
-                Based in the Dallas-Fort Worth area, working remotely. Occasionally 
-                traveling for conferences and client work.
+                Based in Wichita, KS, working remotely. Occasionally traveling for
+                conferences and client work.
               </p>
             </div>
 

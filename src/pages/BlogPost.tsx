@@ -135,19 +135,20 @@ export default function BlogPost() {
     };
   }, [contentFile]);
 
-  if (!post) {
-    return <Navigate to="/blog" replace />;
-  }
-
-  // Get related posts (same tags, different post)
-  const relatedPosts = posts
-    .filter((p) => p.slug !== post.slug && p.tags.some((tag) => post.tags.includes(tag)))
-    .slice(0, 3);
-
   const tocItems = useMemo(
     () => extractHeadings(markdownState.content),
     [markdownState.content]
   );
+
+  const relatedPosts = useMemo(() => {
+    if (!post) {
+      return [];
+    }
+
+    return posts
+      .filter((p) => p.slug !== post.slug && p.tags.some((tag) => post.tags.includes(tag)))
+      .slice(0, 3);
+  }, [post]);
 
   const markdownComponents = useMemo(
     () => ({
@@ -181,6 +182,10 @@ export default function BlogPost() {
     }),
     []
   );
+
+  if (!post) {
+    return <Navigate to="/blog" replace />;
+  }
 
   return (
     <Layout>
