@@ -1,8 +1,115 @@
+import { useEffect, useMemo, useState } from 'react';
 import { Layout } from '@/components/Layout';
 import { Callout } from '@/components/Callout';
-import { BookOpen, Code, Users, MapPin } from 'lucide-react';
+import { BookOpen, Code, Users, MapPin, GitBranch } from 'lucide-react';
+
+const REPOSITORY_STATS_URL =
+  'https://raw.githubusercontent.com/markhazleton/github-stats-spark/main/data/repositories.json';
+
+type Repository = {
+  name: string;
+  description?: string | null;
+  url: string;
+  stars: number;
+  forks: number;
+  language?: string | null;
+  updated_at?: string;
+  last_commit_date?: string;
+  total_commits?: number;
+  recent_commits_90d?: number;
+};
+
+type RepositoryStatsPayload = {
+  repositories: Repository[];
+};
+
+type RepositoryStatus = 'idle' | 'loading' | 'success' | 'error';
+
+type RepositoryState = {
+  status: RepositoryStatus;
+  data: Repository[];
+  error: string | null;
+};
 
 export default function Now() {
+  const [repositoryState, setRepositoryState] = useState<RepositoryState>({
+    status: 'idle',
+    data: [],
+    error: null,
+  });
+
+  useEffect(() => {
+    const controller = new AbortController();
+    const loadRepositories = async () => {
+      setRepositoryState((prev) => ({
+        ...prev,
+        status: 'loading',
+        error: null,
+      }));
+
+      try {
+        const response = await fetch(REPOSITORY_STATS_URL, {
+          signal: controller.signal,
+          cache: 'no-store',
+          headers: {
+            Accept: 'application/json',
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error(`Request failed (${response.status})`);
+        }
+
+        const payload = (await response.json()) as RepositoryStatsPayload;
+        const repositories = Array.isArray(payload.repositories)
+          ? payload.repositories
+          : [];
+
+        setRepositoryState({
+          status: 'success',
+          data: repositories,
+          error: null,
+        });
+      } catch (error) {
+        if (controller.signal.aborted) {
+          return;
+        }
+
+        setRepositoryState({
+          status: 'error',
+          data: [],
+          error: 'Unable to load repository updates right now.',
+        });
+      }
+    };
+
+    void loadRepositories();
+
+    return () => controller.abort();
+  }, []);
+
+  const recentRepositories = useMemo(
+    () => repositoryState.data.slice(0, 6),
+    [repositoryState.data],
+  );
+
+  const formatDate = (value?: string) => {
+    if (!value) {
+      return 'Unknown';
+    }
+
+    const parsed = new Date(value);
+    if (Number.isNaN(parsed.getTime())) {
+      return 'Unknown';
+    }
+
+    return parsed.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    });
+  };
+
   return (
     <Layout>
       <section className="section">
@@ -57,6 +164,91 @@ export default function Now() {
                   </li>
                 </ul>
               </div>
+            </div>
+
+            {/* Recently Updated Repositories */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
+                  <GitBranch className="h-5 w-5 text-foreground" />
+                </div>
+                <h2 className="font-heading text-2xl font-semibold text-foreground">
+                  Recently Updated Repositories
+                </h2>
+              </div>
+              <div className="prose-blog mb-6">
+                <p>
+                  Live snapshot from{' '}
+                  <a
+                    href="https://github.com/markhazleton/github-stats-spark"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    github-stats-spark
+                  </a>{' '}
+                  with activity summaries pulled from the latest repository data.
+                </p>
+              </div>
+              {repositoryState.status === 'loading' && (
+                <p className="text-muted-foreground animate-pulse">
+                  Loading recent repository activity...
+                </p>
+              )}
+              {repositoryState.status === 'error' && (
+                <p className="text-muted-foreground">{repositoryState.error}</p>
+              )}
+              {repositoryState.status === 'success' &&
+                recentRepositories.length === 0 && (
+                  <p className="text-muted-foreground">
+                    No repository updates available yet.
+                  </p>
+                )}
+              {repositoryState.status === 'success' &&
+                recentRepositories.length > 0 && (
+                  <div className="grid gap-4 md:grid-cols-2 stagger-children">
+                    {recentRepositories.map((repo) => {
+                      const lastUpdate = repo.last_commit_date ?? repo.updated_at;
+                      const recentCommits = repo.recent_commits_90d;
+                      const totalCommits = repo.total_commits;
+
+                      return (
+                        <a
+                          key={repo.name}
+                          href={repo.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group paper-card p-5 transition-all duration-300 hover:-translate-y-1"
+                        >
+                          <div className="flex items-start justify-between gap-4">
+                            <div>
+                              <h3 className="font-heading text-xl font-semibold text-foreground mb-1">
+                                {repo.name}
+                              </h3>
+                              <p className="text-sm text-muted-foreground">
+                                {repo.description ?? 'No description yet.'}
+                              </p>
+                            </div>
+                            {repo.language && (
+                              <span className="tag-pill">{repo.language}</span>
+                            )}
+                          </div>
+                          <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                            {typeof recentCommits === 'number' && (
+                              <span>{recentCommits} commits (90d)</span>
+                            )}
+                            {typeof recentCommits !== 'number' &&
+                              typeof totalCommits === 'number' && (
+                                <span>{totalCommits} total commits</span>
+                              )}
+                            <span>Updated {formatDate(lastUpdate)}</span>
+                            <span>{repo.stars} stars</span>
+                            <span>{repo.forks} forks</span>
+                          </div>
+                        </a>
+                      );
+                    })}
+                  </div>
+                )}
             </div>
 
             {/* Learning */}
