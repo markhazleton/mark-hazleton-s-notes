@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @layer base {
@@ -96,11 +95,32 @@
     --sidebar-border: 30 10% 22%;
     --sidebar-ring: 175 30% 55%;
   }
+  
+  /* Custom keyframes */
+  @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+  }
+  
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+  }
+  
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
 
   html {
@@ -108,13 +128,17 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
     font-family: var(--body-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    @apply font-semibold tracking-tight;
+    font-weight: 600;
+    letter-spacing: -0.025em;
   }
 
   code, pre {
@@ -125,7 +149,9 @@
 @layer components {
   /* Paper-like card effect */
   .paper-card {
-    @apply bg-card rounded-lg border border-border;
+    background-color: hsl(var(--card));
+    border-radius: 0.5rem;
+    border: 1px solid hsl(var(--border));
     box-shadow: 
       0 1px 3px 0 hsl(var(--foreground) / 0.04),
       0 4px 6px -1px hsl(var(--foreground) / 0.02);
