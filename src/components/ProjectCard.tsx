@@ -8,6 +8,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const tags = project.keywords.slice(0, 4);
+  const hasImage = Boolean(project.image);
 
   return (
     <Link 
@@ -15,8 +16,23 @@ export function ProjectCard({ project }: ProjectCardProps) {
       className="group block paper-card p-6 transition-all duration-300 hover:-translate-y-1"
     >
       <div className="flex items-start gap-4">
-        <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 bg-primary/10 text-primary">
-          <FolderOpen className="h-5 w-5" />
+        <div
+          className={
+            hasImage
+              ? "w-10 h-10 rounded-lg overflow-hidden shrink-0"
+              : "w-10 h-10 rounded-lg flex items-center justify-center shrink-0 bg-primary/10 text-primary"
+          }
+        >
+          {hasImage ? (
+            <img
+              src={project.image}
+              alt={project.title}
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+          ) : (
+            <FolderOpen className="h-5 w-5" />
+          )}
         </div>
         
         <div className="flex-1 min-w-0">

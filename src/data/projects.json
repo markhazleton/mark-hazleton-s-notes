@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "assets/img/frogsfolly.png",
+        "image": "/src/data/img/frogsfolly.png",
         "p": "Frogsfolly.com Main",
         "d": "Frogsfolly.com is the original website I created in 1999 when learning web technologies.",
         "h": "https://frogsfolly.com",
@@ -20,13 +20,13 @@
             "title": "Web Project Mechanics - Advanced ASP.Net CMS",
             "description": "Explore Web Project Mechanics, a powerful ASP.Net CMS designed for efficient multi-site management with enhanced performance features.",
             "type": "website",
-            "image": "/assets/img/frogsfolly.png",
+            "image": "/src/data/img/frogsfolly.png",
             "imageAlt": "Frogsfolly project preview"
         },
         "twitter": {
             "title": "Web Project Mechanics - ASP.Net CMS Solution",
             "description": "Learn about Web Project Mechanics, a versatile ASP.Net CMS for managing multiple websites with ease and efficiency.",
-            "image": "/assets/img/frogsfolly.png",
+            "image": "/src/data/img/frogsfolly.png",
             "imageAlt": "Frogsfolly project preview"
         },
         "repository": {
@@ -46,7 +46,7 @@
     },
     {
         "id": 2,
-        "image": "assets/img/travelfrogsfolly.png",
+        "image": "/src/data/img/travelfrogsfolly.png",
         "p": "Travel Frogsfolly",
         "d": "A website with places we have traveld with a few pictures and descriptions of the highlights. The site is built with  Web Project Mechanics CMS",
         "h": "https://travel.frogsfolly.com",
@@ -65,19 +65,19 @@
             "title": "Travel Frogsfolly",
             "description": "A website with places we have traveld with a few pictures and descriptions of the highlights. The site is built with Web Project Mechanics CMS",
             "type": "website",
-            "image": "/assets/img/travelfrogsfolly.png",
+            "image": "/src/data/img/travelfrogsfolly.png",
             "imageAlt": "Travel Frogsfolly project preview"
         },
         "twitter": {
             "title": "Travel Frogsfolly",
             "description": "A website with places we have traveld with a few pictures and descriptions of the highlights. The site is built with Web Project Mechanics CMS",
-            "image": "/assets/img/travelfrogsfolly.png",
+            "image": "/src/data/img/travelfrogsfolly.png",
             "imageAlt": "Travel Frogsfolly project preview"
         }
     },
     {
         "id": 3,
-        "image": "assets/img/jmshawminerals.jpg",
+        "image": "/src/data/img/jmshawminerals.jpg",
         "p": "JM Shaw Minerals",
         "d": "A website for a collector of fine gemstones.  Uses Web Project Mechanics CMS and some custom code for tracking each item in the collection.",
         "h": "https://jmshawminerals.com",
@@ -96,19 +96,19 @@
             "title": "JM Shaw Minerals",
             "description": "A website for a collector of fine gemstones. Uses Web Project Mechanics CMS and some custom code for tracking each item in the collection.",
             "type": "website",
-            "image": "/assets/img/jmshawminerals.jpg",
+            "image": "/src/data/img/jmshawminerals.jpg",
             "imageAlt": "JM Shaw Minerals project preview"
         },
         "twitter": {
             "title": "JM Shaw Minerals",
             "description": "A website for a collector of fine gemstones. Uses Web Project Mechanics CMS and some custom code for tracking each item in the collection.",
-            "image": "/assets/img/jmshawminerals.jpg",
+            "image": "/src/data/img/jmshawminerals.jpg",
             "imageAlt": "JM Shaw Minerals project preview"
         }
     },
     {
         "id": 4,
-        "image": "assets/img/controlorigins.jpg",
+        "image": "/src/data/img/controlorigins.jpg",
         "p": "Control Origins: Innovative Tech Solutions",
         "d": "Control Origins empowers organizations with cutting-edge technology solutions to drive value creation and achieve business goals. Our expertise helps streamline operations and align with regulatory requirements.",
         "h": "https://controlorigins.com",
@@ -127,13 +127,13 @@
             "title": "Control Origins: Innovative Tech Solutions for Business",
             "description": "Explore Control Origins\u0027 mission to empower organizations with cutting-edge technology solutions, enhancing efficiency and compliance.",
             "type": "website",
-            "image": "/assets/img/controlorigins.jpg",
+            "image": "/src/data/img/controlorigins.jpg",
             "imageAlt": "Control Origins project preview"
         },
         "twitter": {
             "title": "Control Origins: Tech Solutions for Business Success",
             "description": "Learn how Control Origins leverages technology to drive business value and streamline operations.",
-            "image": "/assets/img/controlorigins.jpg",
+            "image": "/src/data/img/controlorigins.jpg",
             "imageAlt": "Control Origins project preview"
         },
         "repository": {
@@ -153,7 +153,7 @@
     },
     {
         "id": 5,
-        "image": "assets/img/pmcontrolorigins.png",
+        "image": "/src/data/img/pmcontrolorigins.png",
         "p": "Project Mechanics",
         "d": "A resource sharing insights and strategies on effective project management and IT service delivery.",
         "h": "https://markhazleton.com/projectmechanics/",
@@ -172,19 +172,19 @@
             "title": "Project Mechanics",
             "description": "A resource sharing insights and strategies on effective project management and IT service delivery.",
             "type": "website",
-            "image": "/assets/img/pmcontrolorigins.png",
+            "image": "/src/data/img/pmcontrolorigins.png",
             "imageAlt": "Project Mechanics project preview"
         },
         "twitter": {
             "title": "Project Mechanics",
             "description": "A resource sharing insights and strategies on effective project management and IT service delivery.",
-            "image": "/assets/img/pmcontrolorigins.png",
+            "image": "/src/data/img/pmcontrolorigins.png",
             "imageAlt": "Project Mechanics project preview"
         }
     },
     {
         "id": 6,
-        "image": "assets/img/dataanalysiscontrolorigins.png",
+        "image": "/src/data/img/dataanalysiscontrolorigins.png",
         "p": "Data Analytics Web Project Manager",
         "d": "A comprehensive web application that transforms CSV data into interactive visualizations and analytics using ASP.NET WebForms and Bootstrap.",
         "h": "https://dataanalysisdemo.markhazleton.com",
@@ -203,13 +203,13 @@
             "title": "Data Analytics Web Project Manager",
             "description": "Explore DAWPM, a modern web application that converts CSV data into interactive visualizations and analytics, built with ASP.NET WebForms and Bootstrap.",
             "type": "website",
-            "image": "/assets/img/dataanalysiscontrolorigins.png",
+            "image": "/src/data/img/dataanalysiscontrolorigins.png",
             "imageAlt": "Data Analysis Demo project preview"
         },
         "twitter": {
             "title": "Data Analytics Web Project Manager",
             "description": "Learn how DAWPM transforms CSV files into interactive visualizations and analytics using ASP.NET WebForms and Bootstrap.",
-            "image": "/assets/img/dataanalysiscontrolorigins.png",
+            "image": "/src/data/img/dataanalysiscontrolorigins.png",
             "imageAlt": "Data Analysis Demo project preview"
         },
         "repository": {
@@ -228,7 +228,7 @@
     },
     {
         "id": 7,
-        "image": "assets/img/employeemvccrudcontrolorigins.png",
+        "image": "/src/data/img/employeemvccrudcontrolorigins.png",
         "p": "Net 9 Sample MVC CRUD",
         "d": "A project to try out new approaches and technologies.  This started in Active Server Pages (ASP) but has evolved to use some of the latest features of ASP.NET version 9. The project is on GitHub.",
         "h": "https://samplecrud.markhazleton.com/",
@@ -247,13 +247,13 @@
             "title": "Net 9 Sample MVC CRUD",
             "description": "A project to try out new approaches and technologies. This started in Active Server Pages (ASP) but has evolved to use some of the latest features of ASP.NET version 9. The project is on Git\u2026",
             "type": "website",
-            "image": "/assets/img/employeemvccrudcontrolorigins.png",
+            "image": "/src/data/img/employeemvccrudcontrolorigins.png",
             "imageAlt": "Net 9 Sample MVC CRUD project preview"
         },
         "twitter": {
             "title": "Net 9 Sample MVC CRUD",
             "description": "A project to try out new approaches and technologies. This started in Active Server Pages (ASP) but has evolved to use some of the latest features of ASP.NET version 9. The project is on GitHub.",
-            "image": "/assets/img/employeemvccrudcontrolorigins.png",
+            "image": "/src/data/img/employeemvccrudcontrolorigins.png",
             "imageAlt": "Net 9 Sample MVC CRUD project preview"
         },
         "repository": {
@@ -291,7 +291,7 @@
     },
     {
         "id": 8,
-        "image": "assets/img/asyncwebsamplecontrolorigins.png",
+        "image": "/src/data/img/asyncwebsamplecontrolorigins.png",
         "p": "Net 9 Async Demo",
         "d": "A demonstration of Asyc methods for Api and Web pages. Includes integration with Open Weather. Source is on Github github.com/markhazleton/webspark ",
         "h": "https://webspark.markhazleton.com/asyncspark",
@@ -310,19 +310,19 @@
             "title": "Net 9 Async Demo",
             "description": "A demonstration of Asyc methods for Api and Web pages. Includes integration with Open Weather. Source is on Github github.com/markhazleton/webspark",
             "type": "website",
-            "image": "/assets/img/asyncwebsamplecontrolorigins.png",
+            "image": "/src/data/img/asyncwebsamplecontrolorigins.png",
             "imageAlt": "Net 9 Async Demo project preview"
         },
         "twitter": {
             "title": "Net 9 Async Demo",
             "description": "A demonstration of Asyc methods for Api and Web pages. Includes integration with Open Weather. Source is on Github github.com/markhazleton/webspark",
-            "image": "/assets/img/asyncwebsamplecontrolorigins.png",
+            "image": "/src/data/img/asyncwebsamplecontrolorigins.png",
             "imageAlt": "Net 9 Async Demo project preview"
         }
     },
     {
         "id": 9,
-        "image": "assets/img/mechanicsofmotherhood.png",
+        "image": "/src/data/img/mechanicsofmotherhood.png",
         "p": "Mechanics of Motherhood: Recipe Management Platform",
         "d": "Mechanics of Motherhood is a modern web application designed to streamline recipe management for busy working mothers. Built with React and TypeScript, it offers over 108 curated recipes, smart categorization, and a mobile-first design, ensuring an organized culinary experience.",
         "h": "https://mechanicsofmotherhood.com/",
@@ -341,13 +341,13 @@
             "title": "Mechanics of Motherhood: Recipe Management Platform",
             "description": "Transform your kitchen with Mechanics of Motherhood, offering 108\u002B curated recipes and a mobile-first design for busy mothers.",
             "type": "website",
-            "image": "/assets/img/mechanicsofmotherhood.png",
+            "image": "/src/data/img/mechanicsofmotherhood.png",
             "imageAlt": "Mechanics Of Motherhood project preview"
         },
         "twitter": {
             "title": "Mechanics of Motherhood: Streamlined Recipe Management",
             "description": "Discover 108\u002B recipes and a mobile-first design with Mechanics of Motherhood, the perfect platform for busy moms.",
-            "image": "/assets/img/mechanicsofmotherhood.png",
+            "image": "/src/data/img/mechanicsofmotherhood.png",
             "imageAlt": "Mechanics Of Motherhood project preview"
         },
         "repository": {
@@ -367,7 +367,7 @@
     },
     {
         "id": 10,
-        "image": "assets/img/promptspark.png",
+        "image": "/src/data/img/promptspark.png",
         "p": "PromptSpark",
         "d": "A LLM prompt management and comparison tool. Prompt Spark helps developers and businesses optimize the use of LLM models by managing, tracking, and comparing system prompts efficiently. ",
         "h": "https://webspark.markhazleton.com/promptspark",
@@ -386,13 +386,13 @@
             "title": "PromptSpark",
             "description": "A LLM prompt management and comparison tool. Prompt Spark helps developers and businesses optimize the use of LLM models by managing, tracking, and comparing system prompts efficiently.",
             "type": "website",
-            "image": "/assets/img/promptspark.png",
+            "image": "/src/data/img/promptspark.png",
             "imageAlt": "PromptSpark project preview"
         },
         "twitter": {
             "title": "PromptSpark",
             "description": "A LLM prompt management and comparison tool. Prompt Spark helps developers and businesses optimize the use of LLM models by managing, tracking, and comparing system prompts efficiently.",
-            "image": "/assets/img/promptspark.png",
+            "image": "/src/data/img/promptspark.png",
             "imageAlt": "PromptSpark project preview"
         },
         "repository": {
@@ -430,7 +430,7 @@
     },
     {
         "id": 11,
-        "image": "assets/img/reactspark.png",
+        "image": "/src/data/img/reactspark.png",
         "p": "ReactSpark",
         "d": "A modern, responsive portfolio website built with React 19, TypeScript, and Vite. ReactSpark demonstrates contemporary web development best practices and serves as a reference implementation for building React applications. Source code available on GitHub at github.com/markhazleton/reactsparkportfolio.",
         "h": "https://reactspark.markhazleton.com",
@@ -449,13 +449,13 @@
             "title": "ReactSpark",
             "description": "A modern, responsive portfolio website built with React 19, TypeScript, and Vite. ReactSpark demonstrates contemporary web development best practices and serves as a reference implementation\u2026",
             "type": "website",
-            "image": "/assets/img/reactspark.png",
+            "image": "/src/data/img/reactspark.png",
             "imageAlt": "ReactSpark project preview"
         },
         "twitter": {
             "title": "ReactSpark",
             "description": "A modern, responsive portfolio website built with React 19, TypeScript, and Vite. ReactSpark demonstrates contemporary web development best practices and serves as a reference implementation for build\u2026",
-            "image": "/assets/img/reactspark.png",
+            "image": "/src/data/img/reactspark.png",
             "imageAlt": "ReactSpark project preview"
         },
         "repository": {
@@ -493,7 +493,7 @@
     },
     {
         "id": 12,
-        "image": "assets/img/MarkHazleton-PrismSpark-Home.png",
+        "image": "/src/data/img/MarkHazleton-PrismSpark-Home.png",
         "p": "PrismSpark: Advanced C#/.NET Syntax Highlighting Library",
         "d": "PrismSpark is a high-performance C#/.NET library that ports PrismJS for syntax highlighting, theming, and extensibility in web applications, supporting over 20 languages with advanced features.",
         "h": "https://prismspark.markhazleton.com",
@@ -512,13 +512,13 @@
             "title": "PrismSpark: C#/.NET Syntax Highlighting Library",
             "description": "PrismSpark offers advanced syntax highlighting and theming for .NET web applications, porting PrismJS features.",
             "type": "website",
-            "image": "/assets/img/prismspark-card.png",
+            "image": "/src/data/img/prismspark-card.png",
             "imageAlt": "PrismSpark library screenshot"
         },
         "twitter": {
             "title": "PrismSpark: C#/.NET Library",
             "description": "High-performance syntax highlighting and theming in .NET web apps with PrismSpark.",
-            "image": "/assets/img/twitter-prismspark.png",
+            "image": "/src/data/img/twitter-prismspark.png",
             "imageAlt": "PrismSpark library image"
         },
         "repository": {
@@ -554,7 +554,7 @@
     },
     {
         "id": 13,
-        "image": "assets/img/MarkHazleton-ArtSpark-ChatWithArtCurator.png",
+        "image": "/src/data/img/MarkHazleton-ArtSpark-ChatWithArtCurator.png",
         "p": "WebSpark.ArtSpark",
         "d": "WebSpark.ArtSpark is an innovative .NET 9 web application that combines art exploration with cutting-edge AI technology. Built using the Art Institute of Chicago API and OpenAI integration, this platform demonstrates modern web development practices including Semantic Kernel, Entity Framework Core, and responsive Bootstrap design.",
         "h": "https://ArtSpark.MarkHazleton.com",
@@ -573,13 +573,13 @@
             "title": "WebSpark.ArtSpark",
             "description": "WebSpark.ArtSpark is an innovative .NET 9 web application that combines art exploration with cutting-edge AI technology. Built using the Art Institute of Chicago API and OpenAI integration,\u2026",
             "type": "website",
-            "image": "/assets/img/MarkHazleton-ArtSpark-ChatWithArtCurator.png",
+            "image": "/src/data/img/MarkHazleton-ArtSpark-ChatWithArtCurator.png",
             "imageAlt": "WebSpark.ArtSpark project preview"
         },
         "twitter": {
             "title": "WebSpark.ArtSpark",
             "description": "WebSpark.ArtSpark is an innovative .NET 9 web application that combines art exploration with cutting-edge AI technology. Built using the Art Institute of Chicago API and OpenAI integration, this platf\u2026",
-            "image": "/assets/img/MarkHazleton-ArtSpark-ChatWithArtCurator.png",
+            "image": "/src/data/img/MarkHazleton-ArtSpark-ChatWithArtCurator.png",
             "imageAlt": "WebSpark.ArtSpark project preview"
         },
         "repository": {
@@ -616,7 +616,7 @@
     },
     {
         "id": 14,
-        "image": "assets/img/MarkHazleton-js-dev-env-Home.png",
+        "image": "/src/data/img/MarkHazleton-js-dev-env-Home.png",
         "p": "Bootstrap 5 \u002B Express.js Web Development Starter Kit",
         "d": "A robust JavaScript development environment featuring Bootstrap 5 and Express.js, ideal for building modern, responsive web applications.",
         "h": "https://markhazleton.github.io/js-dev-env/",
@@ -635,13 +635,13 @@
             "title": "Bootstrap 5 \u002B Express.js Starter Kit",
             "description": "Discover a comprehensive JavaScript starter kit with Bootstrap 5 and Express.js for creating modern, responsive web applications.",
             "type": "website",
-            "image": "/assets/img/project-card.png",
+            "image": "/src/data/img/project-card.png",
             "imageAlt": "Bootstrap 5 \u002B Express.js Starter Kit Screenshot"
         },
         "twitter": {
             "title": "Bootstrap 5 \u002B Express.js Kit",
             "description": "Build modern web apps with this JavaScript starter kit featuring Bootstrap 5 and Express.js.",
-            "image": "/assets/img/twitter-card.png",
+            "image": "/src/data/img/twitter-card.png",
             "imageAlt": "Bootstrap 5 \u002B Express.js Starter Kit Screenshot"
         },
         "repository": {
@@ -677,7 +677,7 @@
     },
     {
         "id": 15,
-        "image": "assets/img/MarkHazleton-TailwindSpark-Home.png",
+        "image": "/src/data/img/MarkHazleton-TailwindSpark-Home.png",
         "p": "TailwindSpark: Tailwind CSS React Showcase",
         "d": "TailwindSpark is a modern React TypeScript monorepo demonstrating a comprehensive Tailwind CSS design system, featuring responsive design, monorepo architecture, and CI/CD integration.",
         "h": "https://markhazleton.github.io/tailwind-demo/",
@@ -696,13 +696,13 @@
             "title": "TailwindSpark: Tailwind CSS React Showcase",
             "description": "TailwindSpark is a comprehensive showcase of Tailwind CSS in a modern React TypeScript monorepo, featuring responsive design and CI/CD integration.",
             "type": "website",
-            "image": "/assets/img/tailwindspark-og.png",
+            "image": "/src/data/img/tailwindspark-og.png",
             "imageAlt": "TailwindSpark project screenshot"
         },
         "twitter": {
             "title": "TailwindSpark: CSS React Showcase",
             "description": "Explore TailwindSpark, a React TypeScript monorepo with Tailwind CSS, responsive design, and CI/CD.",
-            "image": "/assets/img/tailwindspark-twitter.png",
+            "image": "/src/data/img/tailwindspark-twitter.png",
             "imageAlt": "TailwindSpark project image"
         },
         "repository": {
@@ -738,7 +738,7 @@
     },
     {
         "id": 16,
-        "image": "assets/img/git-spark-npm-package.png",
+        "image": "/src/data/img/git-spark-npm-package.png",
         "p": "Git Spark: Advanced Git Repository Analytics Tool",
         "d": "Git Spark is an enterprise-grade analytics tool that transforms Git history into actionable insights through interactive reports, designed for performance, reliability, and security.",
         "h": "https://markhazleton.github.io/git-spark/",
@@ -757,13 +757,13 @@
             "title": "Git Spark: Enterprise-Grade Git Analytics",
             "description": "Transform your Git history into actionable insights with Git Spark\u0027s interactive reports. Built for performance and security.",
             "type": "website",
-            "image": "/assets/img/git-spark-card.png",
+            "image": "/src/data/img/git-spark-card.png",
             "imageAlt": "Git Spark interactive report screenshot"
         },
         "twitter": {
             "title": "Git Spark: Git Analytics Tool",
             "description": "Enterprise-grade Git analytics tool offering interactive reports and insights.",
-            "image": "/assets/img/twitter-git-spark-card.png",
+            "image": "/src/data/img/twitter-git-spark-card.png",
             "imageAlt": "Git Spark report screenshot"
         },
         "repository": {
@@ -799,7 +799,7 @@
     },
     {
         "id": 17,
-        "image": "assets/img/MarkHazleton-WebSpark-Bootswatch.png",
+        "image": "/src/data/img/MarkHazleton-WebSpark-Bootswatch.png",
         "p": "WebSpark Bootswatch Theme Integration Library",
         "d": "WebSpark.Bootswatch is a .NET 9 Razor NuGet Package enabling seamless Bootswatch theme integration into ASP.NET Core applications, featuring dynamic theme switching, light/dark mode, and high-performance caching.",
         "h": "https://bootswatch.markhazleton.com/",
@@ -818,13 +818,13 @@
             "title": "WebSpark Bootswatch: ASP.NET Core Theme Integration",
             "description": "Seamlessly integrate Bootswatch themes into ASP.NET Core applications with WebSpark.Bootswatch.",
             "type": "NuGet Package",
-            "image": "/assets/img/webspark-bootswatch.png",
+            "image": "/src/data/img/webspark-bootswatch.png",
             "imageAlt": "WebSpark Bootswatch theme integration screenshot"
         },
         "twitter": {
             "title": "WebSpark Bootswatch Theme Integration",
             "description": "Integrate Bootswatch themes into ASP.NET Core with WebSpark.Bootswatch.",
-            "image": "/assets/img/webspark-bootswatch-twitter.png",
+            "image": "/src/data/img/webspark-bootswatch-twitter.png",
             "imageAlt": "WebSpark Bootswatch theme integration screenshot"
         },
         "repository": {
@@ -860,7 +860,7 @@
     },
     {
         "id": 18,
-        "image": "assets/img/MarkHazleton-TeachSpark-Home.png",
+        "image": "/src/data/img/MarkHazleton-TeachSpark-Home.png",
         "p": "TeachSpark: AI-Driven Educational Platform",
         "d": "TeachSpark is an innovative educational web application leveraging Large Language Models to deliver personalized learning experiences. Built with .NET 9 MVC and Node.js, it offers adaptive content, interactive curriculum, and comprehensive analytics.",
         "h": "https://teachspark.markhazleton.com",
@@ -879,13 +879,13 @@
             "title": "TeachSpark: AI-Driven Educational Platform",
             "description": "TeachSpark offers a modern, AI-powered educational experience with personalized learning pathways and interactive curriculum.",
             "type": "website",
-            "image": "/assets/img/teachspark-og.png",
+            "image": "/src/data/img/teachspark-og.png",
             "imageAlt": "TeachSpark platform screenshot"
         },
         "twitter": {
             "title": "TeachSpark: AI-Driven Learning",
             "description": "Explore TeachSpark, an AI-powered platform for personalized education using LLMs.",
-            "image": "/assets/img/teachspark-twitter.png",
+            "image": "/src/data/img/teachspark-twitter.png",
             "imageAlt": "TeachSpark platform preview"
         },
         "repository": {

@@ -7,6 +7,7 @@ import { projects } from '@/data/projects';
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
   const project = projects.find((p) => p.slug === slug);
+  const hasImage = Boolean(project?.image);
   const links = [
     project?.url && { label: 'Visit Site', url: project.url },
     project?.repository?.url && { label: 'Repository', url: project.repository.url },
@@ -30,15 +31,51 @@ export default function ProjectDetail() {
           </Link>
 
           {/* Header */}
-          <header className="mb-12 animate-fade-up">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-primary/10 text-primary">
-                <FolderOpen className="h-6 w-6" />
+          <header
+            className={`mb-12 animate-fade-up${
+              hasImage
+                ? " relative overflow-hidden rounded-2xl border border-border bg-card/60 p-6 sm:p-8"
+                : ""
+            }`}
+          >
+            {hasImage && project?.image && (
+              <>
+                <div
+                  className="absolute inset-0 bg-cover bg-center opacity-25"
+                  style={{ backgroundImage: `url(${project.image})` }}
+                  aria-hidden="true"
+                />
+                <div
+                  className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/70 to-background"
+                  aria-hidden="true"
+                />
+              </>
+            )}
+
+            <div className={hasImage ? "relative z-10" : undefined}>
+              <div className="flex items-center gap-3 mb-4">
+                <div
+                  className={
+                    hasImage
+                      ? "w-12 h-12 rounded-lg overflow-hidden bg-card border border-border"
+                      : "w-12 h-12 rounded-lg flex items-center justify-center bg-primary/10 text-primary"
+                  }
+                >
+                  {hasImage && project?.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <FolderOpen className="h-6 w-6" />
+                  )}
+                </div>
+                <span className="tag-pill">
+                  Project
+                </span>
               </div>
-              <span className="tag-pill">
-                Project
-              </span>
-            </div>
 
             <h1 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-4">
               {project.title}
@@ -47,6 +84,17 @@ export default function ProjectDetail() {
             <p className="text-xl text-muted-foreground leading-relaxed">
               {project.summary}
             </p>
+
+            {hasImage && project?.image && (
+              <div className="mt-6 overflow-hidden rounded-xl border border-border bg-card">
+                <img
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  className="h-56 w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            )}
 
             {/* Keywords */}
             {project.keywords.length > 0 && (
@@ -75,6 +123,7 @@ export default function ProjectDetail() {
                 ))}
               </div>
             )}
+            </div>
           </header>
 
           {/* Content */}
@@ -195,4 +244,3 @@ export default function ProjectDetail() {
     </Layout>
   );
 }
- 
