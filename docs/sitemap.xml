@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://markhazleton.com/</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/blog</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/about</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/contact</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/now</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
+  <url><loc>https://markhazleton.com/</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/blog</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/about</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/contact</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/now</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
   <url><loc>https://markhazleton.com/blog/building-a-quick-estimation-template</loc><lastmod>2025-12-28T00:00:00.000Z</lastmod></url>
   <url><loc>https://markhazleton.com/blog/test-driving-githubs-spec-kit</loc><lastmod>2025-11-02T00:00:00.000Z</lastmod></url>
   <url><loc>https://markhazleton.com/blog/engineering-metrics-git-spark-real-story</loc><lastmod>2025-10-07T00:00:00.000Z</lastmod></url>
@@ -99,24 +99,24 @@
   <url><loc>https://markhazleton.com/blog/git-flow-rethink</loc><lastmod>2023-07-28T00:00:00.000Z</lastmod></url>
   <url><loc>https://markhazleton.com/blog/using-chatgpt-for-developers</loc><lastmod>2023-07-28T00:00:00.000Z</lastmod></url>
   <url><loc>https://markhazleton.com/blog/trivia-spark-development</loc><lastmod>2023-07-28T00:00:00.000Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/frogsfolly</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/travel-frogsfolly</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/jm-shaw-minerals</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/control-origins</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/project-mechanics</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/data-analysis-demo</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/net-9-sample-mvc-crud</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/net-9-async-demo</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/mechanics-of-motherhood</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/promptspark</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/reactspark</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/webspark-prismspark</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/webspark-artspark</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/js-dev-env</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/tailwind-spark</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/git-spark</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/websparkbootswatch</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
-  <url><loc>https://markhazleton.com/projects/teachspark</loc><lastmod>2026-01-11T13:48:20.598Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/frogsfolly</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/travel-frogsfolly</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/jm-shaw-minerals</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/control-origins</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/project-mechanics</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/data-analysis-demo</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/net-9-sample-mvc-crud</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/net-9-async-demo</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/mechanics-of-motherhood</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/promptspark</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/reactspark</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/webspark-prismspark</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/webspark-artspark</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/js-dev-env</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/tailwind-spark</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/git-spark</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/websparkbootswatch</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
+  <url><loc>https://markhazleton.com/projects/teachspark</loc><lastmod>2026-01-11T14:47:45.539Z</lastmod></url>
   <url><loc>https://markhazleton.com/now/repositories/github-stats-spark</loc><lastmod>2026-01-11T00:40:23.443Z</lastmod></url>
   <url><loc>https://markhazleton.com/now/repositories/WebSpark.HttpClientUtility</loc><lastmod>2026-01-11T00:40:23.443Z</lastmod></url>
   <url><loc>https://markhazleton.com/now/repositories/git-spark</loc><lastmod>2026-01-11T00:40:23.443Z</lastmod></url>

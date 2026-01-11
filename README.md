@@ -25,16 +25,17 @@ Personal site for Mark Hazleton, a Technical Solutions Architect. The site combi
   - Blog content in Markdown under `src/data/content/*.md`.
   - Project metadata in `src/data/projects.json`.
   - Images and media in `src/data/img` and `src/data/video`.
+  - Static site assets in `src/static` (favicon, placeholder, .nojekyll).
 - Rendering pipeline:
   - Client bundle built with Vite.
   - SSR bundle generated from `src/entry-server.tsx`.
-  - `scripts/prerender.mjs` renders static HTML for all routes (including blog posts, projects, /now, and repository detail pages).
-  - The output is copied to `docs/` for GitHub Pages.
+  - `src/scripts/prerender.mjs` renders static HTML for all routes (including blog posts, projects, /now, and repository detail pages).
+  - Build output is written directly to `docs/` for GitHub Pages.
 - Live repository metrics:
   - `/now` pulls data from `https://raw.githubusercontent.com/markhazleton/github-stats-spark/main/data/repositories.json`.
   - During prerendering, the data is inlined so the first paint includes repository stats.
 - SEO:
-  - `scripts/generate-seo-assets.mjs` builds `public/sitemap.xml`, `public/robots.txt`, and `public/feed.xml`.
+  - `src/scripts/generate-seo-assets.mjs` builds `docs/sitemap.xml`, `docs/robots.txt`, and `docs/feed.xml`.
   - The `Seo` component manages canonical URLs, Open Graph, and Twitter meta tags.
 
 ## Local development
@@ -61,10 +62,10 @@ npm run build
 
 The build pipeline:
 
-- Generates SEO assets.
 - Builds client and SSR bundles.
 - Prerenders routes to static HTML.
-- Copies output into `docs/` for GitHub Pages.
+- Syncs content assets into `docs/`.
+- Generates SEO assets in `docs/`.
 
 GitHub Pages deployment is automated in `.github/workflows/deploy.yml` on pushes to `main`.
 
@@ -94,11 +95,10 @@ src/
   hooks/          data-fetching and client state
   lib/            shared site utilities and SEO helpers
   pages/          route-level pages
+  scripts/        build helpers (SEO, prerender, asset sync)
+  static/         favicon, placeholder, and other static assets
   types/          TypeScript models
-scripts/          build helpers (SEO, prerender, publish)
-public/           static assets + generated SEO files
 docs/             GitHub Pages output (generated)
-dist/             Vite build output (generated)
 ```
 
 ## Content updates

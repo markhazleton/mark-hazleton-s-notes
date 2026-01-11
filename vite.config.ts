@@ -26,6 +26,7 @@ export default defineConfig(({ mode, ssrBuild }) => {
 
   return {
     base,
+    publicDir: path.resolve(__dirname, "src/static"),
     server: {
       host: "::",
       port: 8080,
@@ -47,6 +48,7 @@ export default defineConfig(({ mode, ssrBuild }) => {
     build: ssrBuild
       ? {}
       : {
+          outDir: "docs",
           rollupOptions: {
             output: {
               entryFileNames: "assets/site.js",
