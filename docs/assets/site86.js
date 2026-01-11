@@ -1,1 +1,1 @@
-const e="Trivia Spark with ChatGPT offers a revolutionary way to engage users through AI-powered quizzes. Explore how this innovative tool transforms interactive gaming experiences.\n";export{e as default};
+const e="Trivia Spark with ChatGPT offers a revolutionary way to engage users through AI-powered quizzes. Explore how this innovative tool transforms interactive gaming experiences.\r\n";export{e as default};

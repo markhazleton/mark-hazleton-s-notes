@@ -1,1 +1,1 @@
-const e="Discover the Mountains of Misunderstanding and learn about the AI Confidence Trap. Navigate dangerous peaks and valleys in your AI-assisted learning journey effectively.\n";export{e as default};
+const e="Discover the Mountains of Misunderstanding and learn about the AI Confidence Trap. Navigate dangerous peaks and valleys in your AI-assisted learning journey effectively.\r\n";export{e as default};
