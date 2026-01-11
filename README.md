@@ -40,10 +40,12 @@ Personal site for Mark Hazleton, a Technical Solutions Architect. The site combi
 ## Local development
 
 Prerequisites:
+
 - Node.js 20 (matches CI)
 - npm
 
 Commands:
+
 ```sh
 npm install
 npm run dev
@@ -58,6 +60,7 @@ npm run build
 ```
 
 The build pipeline:
+
 - Generates SEO assets.
 - Builds client and SSR bundles.
 - Prerenders routes to static HTML.
@@ -77,13 +80,14 @@ GitHub Pages deployment is automated in `.github/workflows/deploy.yml` on pushes
 ## Configuration
 
 Build-time environment variables:
+
 - `VITE_BASE_PATH` - base path for assets and routing (e.g. `/mark-hazleton-s-notes/` for GitHub Pages).
 - `VITE_SITE_URL` - canonical site URL used in SEO metadata.
 - `SITE_URL` - used by SEO asset generation scripts; defaults to `VITE_SITE_URL` if provided.
 
 ## Repository structure
 
-```
+```text
 src/
   components/     UI building blocks
   data/           articles, projects, and media assets
@@ -110,4 +114,5 @@ dist/             Vite build output (generated)
 
 ## License
 
-No license file is currently included in this repository.
+- Code (source, build scripts, and configuration) is licensed under the MIT License. See `LICENSE`.
+- Written content (blog posts, project descriptions, and other prose in `src/data`) is licensed under CC BY-NC 4.0. See `LICENSE-CONTENT`.
