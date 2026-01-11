@@ -3,13 +3,18 @@ import { AppProviders } from "./AppProviders";
 import { AppRoutes } from "./AppRoutes";
 import { HeadProvider } from "@/components/HeadProvider";
 import { createHeadManager } from "@/lib/head-context";
+import { BASE_PATH } from "@/lib/site";
 
 const headManager = createHeadManager();
+const routerBasename = BASE_PATH === "/" ? undefined : BASE_PATH.replace(/\/$/, "");
 
 const App = () => (
   <HeadProvider manager={headManager}>
     <AppProviders>
-      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <BrowserRouter
+        basename={routerBasename}
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      >
         <AppRoutes />
       </BrowserRouter>
     </AppProviders>

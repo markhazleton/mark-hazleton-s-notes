@@ -6,6 +6,7 @@ import {
   DEFAULT_IMAGE,
   DEFAULT_KEYWORDS,
   DEFAULT_TITLE,
+  BASE_PATH,
 } from "@/lib/site";
 import { HeadState } from "@/lib/head-context";
 import { useHeadManager } from "@/hooks/use-head-manager";
@@ -27,6 +28,11 @@ const normalizeUrl = (value?: string) => {
 
   if (value.startsWith("http")) {
     return value;
+  }
+
+  const basePath = BASE_PATH === "/" ? "" : BASE_PATH.replace(/\/$/, "");
+  if (basePath && value.startsWith(`${basePath}/`)) {
+    return `${SITE_URL}${value.slice(basePath.length)}`;
   }
 
   const trimmed = value.startsWith("/") ? value : `/${value}`;

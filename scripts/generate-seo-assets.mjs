@@ -1,7 +1,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const siteUrl = "https://markhazleton.com";
+const rawSiteUrl =
+  process.env.SITE_URL ?? process.env.VITE_SITE_URL ?? "https://markhazleton.com";
+const siteUrl = rawSiteUrl.replace(/\/$/, "");
 const rootDir = process.cwd();
 
 const readJson = async (relativePath) => {
@@ -126,5 +128,25 @@ const feedXml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
 
 await fs.writeFile(path.join(rootDir, "public", "sitemap.xml"), sitemapXml, "utf-8");
 await fs.writeFile(path.join(rootDir, "public", "feed.xml"), feedXml, "utf-8");
+const robotsTxt = [
+  "User-agent: Googlebot",
+  "Allow: /",
+  "",
+  "User-agent: Bingbot",
+  "Allow: /",
+  "",
+  "User-agent: Twitterbot",
+  "Allow: /",
+  "",
+  "User-agent: facebookexternalhit",
+  "Allow: /",
+  "",
+  "User-agent: *",
+  "Allow: /",
+  "",
+  `Sitemap: ${siteUrl}/sitemap.xml`,
+  "",
+].join("\n");
+await fs.writeFile(path.join(rootDir, "public", "robots.txt"), robotsTxt, "utf-8");
 
 console.log("Generated sitemap.xml and feed.xml");

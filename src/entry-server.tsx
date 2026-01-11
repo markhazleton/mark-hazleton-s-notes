@@ -4,13 +4,16 @@ import { AppProviders } from "./AppProviders";
 import { AppRoutes } from "./AppRoutes";
 import { HeadProvider } from "@/components/HeadProvider";
 import { createHeadManager } from "@/lib/head-context";
+import { BASE_PATH } from "@/lib/site";
 
 export function render(url: string) {
   const headManager = createHeadManager();
+  const basename = BASE_PATH === "/" ? undefined : BASE_PATH.replace(/\/$/, "");
+  const location = basename ? `${basename}${url}` : url;
   const app = (
     <HeadProvider manager={headManager}>
       <AppProviders>
-        <StaticRouter location={url}>
+        <StaticRouter location={location} basename={basename}>
           <AppRoutes />
         </StaticRouter>
       </AppProviders>

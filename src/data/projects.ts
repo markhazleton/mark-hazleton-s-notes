@@ -1,4 +1,5 @@
 import projectsData from "./projects.json";
+import { withBasePath } from "@/lib/site";
 
 export interface ProjectRepository {
   provider: string;
@@ -83,6 +84,13 @@ const parseKeywords = (keywords?: string) =>
     .filter(Boolean);
 
 const rawProjects = projectsData as ProjectSource[];
+const normalizeSocial = (social?: ProjectSocial) =>
+  social
+    ? {
+        ...social,
+        image: withBasePath(social.image),
+      }
+    : undefined;
 
 export const projects: Project[] = rawProjects.map((project) => ({
   id: project.id,
@@ -91,11 +99,11 @@ export const projects: Project[] = rawProjects.map((project) => ({
   description: project.d,
   summary: project.summary ?? project.d,
   url: project.h,
-  image: project.image,
+  image: withBasePath(project.image),
   keywords: parseKeywords(project.keywords),
   seo: project.seo,
-  og: project.og,
-  twitter: project.twitter,
+  og: normalizeSocial(project.og),
+  twitter: normalizeSocial(project.twitter),
   repository: project.repository,
   promotion: project.promotion,
 }));

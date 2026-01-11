@@ -1,0 +1,1 @@
+const e="In the evolving landscape of software development, traditional Git Flow strategies may need a rethink. This article explores a modern approach to Git Flow, offering insights into optimizing your branching strategy for better efficiency and collaboration.\n";export{e as default};

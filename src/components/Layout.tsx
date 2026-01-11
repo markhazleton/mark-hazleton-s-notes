@@ -159,16 +159,6 @@ export function Layout({ children }: LayoutProps) {
               <p className="text-sm text-muted-foreground mb-4">
                 Occasional thoughts on architecture and engineering.
               </p>
-              <div className="flex items-center gap-2 mb-4">
-                <input
-                  type="email"
-                  placeholder="your@email.com"
-                  className="flex-1 px-3 py-2 text-sm bg-background border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring"
-                />
-                <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  Subscribe
-                </Button>
-              </div>
               <div className="flex items-center gap-3">
                 <a 
                   href="https://github.com/markhazleton"

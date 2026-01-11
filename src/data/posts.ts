@@ -1,4 +1,5 @@
 import articlesData from '@/data/articles.json';
+import { withBasePath } from '@/lib/site';
 
 type ArticleEntry = {
   id: number;
@@ -80,7 +81,7 @@ export const posts: Post[] = rawArticles
     source: entry.source,
     section: entry.Section,
     keywords: entry.keywords,
-    image: entry.img_src ?? null,
+    image: withBasePath(entry.img_src),
   }))
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 

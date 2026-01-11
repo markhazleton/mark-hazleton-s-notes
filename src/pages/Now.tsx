@@ -543,7 +543,10 @@ export default function Now() {
             <Callout type="info" title="Want to connect?">
               If any of these topics resonate with you, I'd love to chat. The best way 
               to reach me is through the{' '}
-              <a href="/contact" className="text-primary hover:underline">contact page</a>.
+              <Link to="/contact" className="text-primary hover:underline">
+                contact page
+              </Link>
+              .
             </Callout>
           </div>
         </div>

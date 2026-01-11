@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm-run-all clean generate:seo build:client build:ssr prerender",
+    "build": "npm-run-all clean generate:seo build:client build:ssr prerender publish:docs",
     "build:client": "vite build",
     "build:ssr": "vite build --ssr src/entry-server.tsx --outDir dist/server",
     "build:dev": "cross-env NODE_ENV=development vite build --mode development",
@@ -17,6 +17,7 @@
     "prebuild": "npm run clean",
     "generate:seo": "node scripts/generate-seo-assets.mjs",
     "prerender": "node scripts/prerender.mjs",
+    "publish:docs": "node scripts/publish-docs.mjs",
     "type-check": "tsc --noEmit",
     "test:build": "npm-run-all clean build preview"
   },

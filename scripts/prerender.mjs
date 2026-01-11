@@ -36,7 +36,7 @@ const articles = await readJson("src/data/articles.json");
 const projects = await readJson("src/data/projects.json");
 const posts = articles.filter((entry) => entry.contentFile && entry.contentFile !== "articles.md");
 
-const staticRoutes = ["/", "/blog", "/about", "/projects", "/contact", "/now"];
+const staticRoutes = ["/", "/blog", "/about", "/projects", "/contact", "/now", "/404"];
 const blogRoutes = posts.map((entry) => `/blog/${buildSlug(entry)}`);
 const projectRoutes = projects.map((project) => `/projects/${project.slug}`);
 const repositoryPayload = await getRepositoryData();
@@ -109,5 +109,13 @@ await Promise.all(
     await fs.writeFile(filePath, page, "utf-8");
   }),
 );
+
+const notFoundSource = path.join(distDir, "404", "index.html");
+const notFoundTarget = path.join(distDir, "404.html");
+try {
+  await fs.copyFile(notFoundSource, notFoundTarget);
+} catch (error) {
+  // Ignore if the 404 page did not render.
+}
 
 console.log(`Prerendered ${routes.length} routes.`);
