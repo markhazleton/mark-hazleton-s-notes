@@ -10,9 +10,8 @@ interface LayoutProps {
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/blog', label: 'Blog' },
-  { href: '/about', label: 'About' },
   { href: '/projects', label: 'Projects' },
-  { href: '/now', label: 'Now' },
+  { href: '/github', label: 'GitHub' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -183,7 +182,10 @@ export function Layout({ children }: LayoutProps) {
           </div>
 
           <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Mark Hazleton. Built with curiosity and caffeine.</p>
+            <p>
+              © <span suppressHydrationWarning>{new Date().getFullYear()}</span>{" "}
+              Mark Hazleton. Built with curiosity and caffeine.
+            </p>
           </div>
         </div>
       </footer>

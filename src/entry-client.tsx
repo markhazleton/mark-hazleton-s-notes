@@ -5,7 +5,8 @@ import "./index.css";
 const container = document.getElementById("root");
 
 if (container) {
-  if (container.hasChildNodes()) {
+  const hasServerMarkup = container.firstElementChild !== null;
+  if (hasServerMarkup) {
     hydrateRoot(container, <App />);
   } else {
     createRoot(container).render(<App />);

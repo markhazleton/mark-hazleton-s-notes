@@ -49,7 +49,7 @@ const getRepositoryRoutes = async () => {
     }
     const payload = await response.json();
     const routes = Array.isArray(payload.repositories)
-      ? payload.repositories.map((repo) => `/now/repositories/${encodeURIComponent(repo.name)}`)
+      ? payload.repositories.map((repo) => `/github/repositories/${encodeURIComponent(repo.name)}`)
       : [];
     const lastmod = normalizeDate(payload.metadata?.generated_at);
     return { routes, lastmod };
@@ -71,7 +71,7 @@ const posts = articles
   }))
   .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
 
-const staticRoutes = ["/", "/blog", "/about", "/projects", "/contact", "/now"];
+const staticRoutes = ["/", "/blog", "/projects", "/contact", "/github"];
 const blogRoutes = posts.map((post) => `/blog/${post.slug}`);
 const projectRoutes = projects.map((project) => `/projects/${project.slug}`);
 const repositoryResult = await getRepositoryRoutes();

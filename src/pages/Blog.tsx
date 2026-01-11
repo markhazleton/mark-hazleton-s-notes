@@ -3,7 +3,7 @@ import { Layout } from '@/components/Layout';
 import { BlogCard } from '@/components/BlogCard';
 import { SearchInput } from '@/components/SearchInput';
 import { TagFilter } from '@/components/TagFilter';
-import { posts, allTags } from '@/data/posts';
+import { posts, allTags } from '@/lib/data/posts';
 import { ArrowUpDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Seo } from '@/components/Seo';

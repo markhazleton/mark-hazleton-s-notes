@@ -3,10 +3,7 @@ import path from "node:path";
 
 const rootDir = process.cwd();
 const docsDir = path.join(rootDir, "docs");
-const imageSourceDir = path.join(rootDir, "src", "data", "img");
-const videoSourceDir = path.join(rootDir, "src", "data", "video");
-const imageTargetDir = path.join(docsDir, "src", "data", "img");
-const videoTargetDir = path.join(docsDir, "src", "data", "video");
+const staticSourceDir = path.join(rootDir, "src", "static");
 
 const ensureDocs = async () => {
   try {
@@ -34,7 +31,6 @@ const copyIfExists = async (sourceDir, targetDir) => {
 };
 
 await ensureDocs();
-await copyIfExists(imageSourceDir, imageTargetDir);
-await copyIfExists(videoSourceDir, videoTargetDir);
+await copyIfExists(staticSourceDir, docsDir);
 
-console.log("Synced content assets into /docs.");
+console.log("Synced static assets into /docs.");

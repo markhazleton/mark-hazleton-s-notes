@@ -8,8 +8,9 @@ import { Layout } from '@/components/Layout';
 import { BlogCard } from '@/components/BlogCard';
 import { TableOfContents } from '@/components/TableOfContents';
 import { Button } from '@/components/ui/button';
-import { posts } from '@/data/posts';
+import { posts } from '@/lib/data/posts';
 import { Seo } from '@/components/Seo';
+import { formatDateLong } from '@/lib/date';
 
 type MarkdownState = {
   status: 'idle' | 'loading' | 'success' | 'error';
@@ -23,7 +24,7 @@ type TocItem = {
   level: number;
 };
 
-const markdownModules = import.meta.glob('../data/content/*.md', {
+const markdownModules = import.meta.glob('../content/*.md', {
   query: '?raw',
   import: 'default',
 });
@@ -100,7 +101,7 @@ export default function BlogPost() {
 
     let isActive = true;
     const loadMarkdown = async () => {
-      const markdownPath = `../data/content/${contentFile}`;
+      const markdownPath = `../content/${contentFile}`;
       const loader = markdownModules[markdownPath];
 
       if (!loader) {
@@ -237,11 +238,7 @@ export default function BlogPost() {
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
                 <span className="flex items-center gap-1.5">
                   <Calendar className="h-4 w-4" />
-                  {new Date(post.date).toLocaleDateString('en-US', {
-                    month: 'long',
-                    day: 'numeric',
-                    year: 'numeric',
-                  })}
+                  {formatDateLong(post.date)}
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Clock className="h-4 w-4" />

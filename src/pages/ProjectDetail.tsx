@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, FolderOpen } from 'lucide-react';
 import { Layout } from '@/components/Layout';
 import { Button } from '@/components/ui/button';
-import { projects } from '@/data/projects';
+import { projects } from '@/lib/data/projects';
 import { Seo } from '@/components/Seo';
 
 export default function ProjectDetail() {

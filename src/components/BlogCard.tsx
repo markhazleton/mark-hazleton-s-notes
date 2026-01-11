@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Calendar, Clock } from 'lucide-react';
-import type { Post } from '@/data/posts';
+import type { Post } from '@/lib/data/posts';
+import { formatDateShort } from '@/lib/date';
 
 interface BlogCardProps {
   post: Post;
@@ -22,11 +23,7 @@ export function BlogCard({ post, variant = 'default' }: BlogCardProps) {
             <div className="flex items-center gap-3 mt-1 text-sm text-muted-foreground">
               <span className="flex items-center gap-1">
                 <Calendar className="h-3.5 w-3.5" />
-                {new Date(post.date).toLocaleDateString('en-US', { 
-                  month: 'short', 
-                  day: 'numeric',
-                  year: 'numeric'
-                })}
+                {formatDateShort(post.date)}
               </span>
               <span className="flex items-center gap-1">
                 <Clock className="h-3.5 w-3.5" />
@@ -80,11 +77,7 @@ export function BlogCard({ post, variant = 'default' }: BlogCardProps) {
       <div className="flex items-center gap-4 text-sm text-muted-foreground">
         <span className="flex items-center gap-1.5">
           <Calendar className="h-4 w-4" />
-          {new Date(post.date).toLocaleDateString('en-US', { 
-            month: 'short', 
-            day: 'numeric',
-            year: 'numeric'
-          })}
+          {formatDateShort(post.date)}
         </span>
         <span className="flex items-center gap-1.5">
           <Clock className="h-4 w-4" />

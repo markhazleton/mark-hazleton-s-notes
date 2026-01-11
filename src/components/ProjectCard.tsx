@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, FolderOpen } from 'lucide-react';
-import type { Project } from '@/data/projects';
+import type { Project } from '@/lib/data/projects';
 
 interface ProjectCardProps {
   project: Project;

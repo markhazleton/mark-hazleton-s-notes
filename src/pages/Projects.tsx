@@ -1,6 +1,6 @@
 import { Layout } from '@/components/Layout';
 import { ProjectCard } from '@/components/ProjectCard';
-import { projects } from '@/data/projects';
+import { projects } from '@/lib/data/projects';
 import { Seo } from '@/components/Seo';
 
 export default function Projects() {

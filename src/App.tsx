@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import { AppProviders } from "./AppProviders";
 import { AppRoutes } from "./AppRoutes";
 import { HeadProvider } from "@/components/HeadProvider";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { createHeadManager } from "@/lib/head-context";
 import { BASE_PATH } from "@/lib/site";
 
@@ -15,6 +16,7 @@ const App = () => (
         basename={routerBasename}
         future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
       >
+        <ScrollToTop />
         <AppRoutes />
       </BrowserRouter>
     </AppProviders>

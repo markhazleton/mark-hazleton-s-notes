@@ -36,12 +36,12 @@ const articles = await readJson("src/data/articles.json");
 const projects = await readJson("src/data/projects.json");
 const posts = articles.filter((entry) => entry.contentFile && entry.contentFile !== "articles.md");
 
-const staticRoutes = ["/", "/blog", "/about", "/projects", "/contact", "/now", "/404"];
+const staticRoutes = ["/", "/blog", "/projects", "/contact", "/github", "/404"];
 const blogRoutes = posts.map((entry) => `/blog/${buildSlug(entry)}`);
 const projectRoutes = projects.map((project) => `/projects/${project.slug}`);
 const repositoryPayload = await getRepositoryData();
 const repositoryRoutes = Array.isArray(repositoryPayload?.repositories)
-  ? repositoryPayload.repositories.map((repo) => `/now/repositories/${encodeURIComponent(repo.name)}`)
+  ? repositoryPayload.repositories.map((repo) => `/github/repositories/${encodeURIComponent(repo.name)}`)
   : [];
 
 const routes = Array.from(

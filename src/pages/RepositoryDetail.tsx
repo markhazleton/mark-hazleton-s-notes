@@ -7,26 +7,10 @@ import { Callout } from '@/components/Callout';
 import { useRepositoryStats } from '@/hooks/use-repository-stats';
 import type { Repository } from '@/types/repositories';
 import { Seo } from '@/components/Seo';
+import { formatDateShort } from '@/lib/date';
 
 const isPlainObject = (value: unknown): value is Record<string, unknown> =>
   Object.prototype.toString.call(value) === '[object Object]';
-
-const formatDate = (value?: string) => {
-  if (!value) {
-    return 'Unknown';
-  }
-
-  const parsed = new Date(value);
-  if (Number.isNaN(parsed.getTime())) {
-    return 'Unknown';
-  }
-
-  return parsed.toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric',
-  });
-};
 
 const formatNumber = (value: number) => value.toLocaleString('en-US');
 
@@ -100,11 +84,11 @@ export default function RepositoryDetail() {
       <section className="section">
         <div className="container-blog">
           <Link
-            to="/now"
+            to="/github"
             className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to /now
+            Back to GitHub activity
           </Link>
 
           {repositoryState.status === 'loading' && (
@@ -134,7 +118,7 @@ export default function RepositoryDetail() {
                   `Detailed repository metrics and activity for ${repository.name}.`
                 }
                 keywords={`repository metrics, ${repository.name}, GitHub analytics, commit history, Mark Hazleton`}
-                canonical={`/now/repositories/${encodeURIComponent(repository.name)}`}
+                canonical={`/github/repositories/${encodeURIComponent(repository.name)}`}
                 type="article"
               />
               <header className="mb-10 animate-fade-up">
@@ -250,19 +234,19 @@ export default function RepositoryDetail() {
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <dt className="font-medium text-foreground">Last commit</dt>
-                      <dd>{formatDate(repository.last_commit_date)}</dd>
+                      <dd>{formatDateShort(repository.last_commit_date)}</dd>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <dt className="font-medium text-foreground">Last push</dt>
-                      <dd>{formatDate(repository.pushed_at)}</dd>
+                      <dd>{formatDateShort(repository.pushed_at)}</dd>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <dt className="font-medium text-foreground">Created</dt>
-                      <dd>{formatDate(repository.created_at)}</dd>
+                      <dd>{formatDateShort(repository.created_at)}</dd>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <dt className="font-medium text-foreground">Updated</dt>
-                      <dd>{formatDate(repository.updated_at)}</dd>
+                      <dd>{formatDateShort(repository.updated_at)}</dd>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <dt className="font-medium text-foreground">Age</dt>
