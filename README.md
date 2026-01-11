@@ -1,73 +1,113 @@
-# Welcome to your Lovable project
+# Mark Hazleton's Notes
 
-## Project info
+Personal site for Mark Hazleton, a Technical Solutions Architect. The site combines long-form writing, a project portfolio, and a living /now page that highlights current focus areas and recent GitHub activity.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## What this site includes
 
-## How can I edit this code?
+- Blog posts on cloud architecture, integration patterns, and engineering practices.
+- A /now page with current focus areas, recent articles, and live repository metrics.
+- Project pages with summaries, metadata, and links to live demos or repos.
+- About and contact pages for context and collaboration.
 
-There are several ways of editing your application.
+## Tech stack
 
-**Use Lovable**
+- React 19 + React Router
+- Vite 7 with SSR rendering and static prerendering
+- TypeScript
+- Tailwind CSS, shadcn/ui, Radix UI
+- React Markdown + remark-gfm for article content
+- GitHub Pages deployment via GitHub Actions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Architecture and data flow
 
-Changes made via Lovable will be committed automatically to this repo.
+- Content sources:
+  - Blog metadata in `src/data/articles.json`.
+  - Blog content in Markdown under `src/data/content/*.md`.
+  - Project metadata in `src/data/projects.json`.
+  - Images and media in `src/data/img` and `src/data/video`.
+- Rendering pipeline:
+  - Client bundle built with Vite.
+  - SSR bundle generated from `src/entry-server.tsx`.
+  - `scripts/prerender.mjs` renders static HTML for all routes (including blog posts, projects, /now, and repository detail pages).
+  - The output is copied to `docs/` for GitHub Pages.
+- Live repository metrics:
+  - `/now` pulls data from `https://raw.githubusercontent.com/markhazleton/github-stats-spark/main/data/repositories.json`.
+  - During prerendering, the data is inlined so the first paint includes repository stats.
+- SEO:
+  - `scripts/generate-seo-assets.mjs` builds `public/sitemap.xml`, `public/robots.txt`, and `public/feed.xml`.
+  - The `Seo` component manages canonical URLs, Open Graph, and Twitter meta tags.
 
-**Use your preferred IDE**
+## Local development
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Prerequisites:
+- Node.js 20 (matches CI)
+- npm
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+Commands:
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The dev server runs on `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Build and deploy
 
-**Use GitHub Codespaces**
+```sh
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The build pipeline:
+- Generates SEO assets.
+- Builds client and SSR bundles.
+- Prerenders routes to static HTML.
+- Copies output into `docs/` for GitHub Pages.
 
-## What technologies are used for this project?
+GitHub Pages deployment is automated in `.github/workflows/deploy.yml` on pushes to `main`.
 
-This project is built with:
+## Common scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `npm run dev` - local development server
+- `npm run build` - full production build + prerender + publish to `docs/`
+- `npm run build:docs` - GitHub Pages build with base path and site URL
+- `npm run preview` - preview the production build locally
+- `npm run lint` - lint with ESLint
+- `npm run type-check` - TypeScript type check
 
-## How can I deploy this project?
+## Configuration
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Build-time environment variables:
+- `VITE_BASE_PATH` - base path for assets and routing (e.g. `/mark-hazleton-s-notes/` for GitHub Pages).
+- `VITE_SITE_URL` - canonical site URL used in SEO metadata.
+- `SITE_URL` - used by SEO asset generation scripts; defaults to `VITE_SITE_URL` if provided.
 
-## Can I connect a custom domain to my Lovable project?
+## Repository structure
 
-Yes, you can!
+```
+src/
+  components/     UI building blocks
+  data/           articles, projects, and media assets
+  hooks/          data-fetching and client state
+  lib/            shared site utilities and SEO helpers
+  pages/          route-level pages
+  types/          TypeScript models
+scripts/          build helpers (SEO, prerender, publish)
+public/           static assets + generated SEO files
+docs/             GitHub Pages output (generated)
+dist/             Vite build output (generated)
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Content updates
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- Add a blog post:
+  1) Add a Markdown file in `src/data/content/`.
+  2) Add metadata to `src/data/articles.json`.
+  3) Optional images go in `src/data/img`.
+- Update projects:
+  - Edit `src/data/projects.json`. The `projects.ts` adapter normalizes data at runtime.
+- Update /now repository metrics:
+  - Update the `github-stats-spark` data feed; the site will pick up new JSON on build or client fetch.
+
+## License
+
+No license file is currently included in this repository.
