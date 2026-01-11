@@ -1,4 +1,5 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Layout } from '@/components/Layout';
 import { BlogCard } from '@/components/BlogCard';
 import { SearchInput } from '@/components/SearchInput';
@@ -8,10 +9,37 @@ import { ArrowUpDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Seo } from '@/components/Seo';
 
+const parseTagsFromSearch = (search: string) => {
+  if (!search) {
+    return [];
+  }
+
+  const params = new URLSearchParams(search);
+  const rawTags = params.getAll('tag');
+
+  return rawTags
+    .flatMap((tagList) => tagList.split(','))
+    .map((tag) => tag.trim())
+    .filter(Boolean);
+};
+
+const areTagsEqual = (left: string[], right: string[]) =>
+  left.length === right.length && left.every((tag, index) => tag === right[index]);
+
 export default function Blog() {
+  const location = useLocation();
   const [search, setSearch] = useState('');
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [selectedTags, setSelectedTags] = useState<string[]>(() =>
+    parseTagsFromSearch(location.search)
+  );
   const [sortNewest, setSortNewest] = useState(true);
+
+  useEffect(() => {
+    const tagsFromQuery = parseTagsFromSearch(location.search);
+    setSelectedTags((prev) =>
+      areTagsEqual(prev, tagsFromQuery) ? prev : tagsFromQuery
+    );
+  }, [location.search]);
 
   const filteredPosts = useMemo(() => {
     let result = posts;

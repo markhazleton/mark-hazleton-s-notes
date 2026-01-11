@@ -1,13 +1,22 @@
 import { useEffect, useMemo, useState, isValidElement } from 'react';
-import type { ReactNode } from 'react';
+import type { ComponentPropsWithoutRef, ReactNode } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { ArrowLeft, Calendar, Clock, Share2 } from 'lucide-react';
+import Prism from 'prismjs';
+import 'prismjs/components/prism-clike';
+import 'prismjs/components/prism-markup';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-json';
+import 'prismjs/components/prism-python';
+import 'prismjs/components/prism-bash';
+import 'prismjs/components/prism-csharp';
+import { ArrowLeft, Calendar, Clock, Copy, Share2 } from 'lucide-react';
 import { Layout } from '@/components/Layout';
 import { BlogCard } from '@/components/BlogCard';
 import { TableOfContents } from '@/components/TableOfContents';
 import { Button } from '@/components/ui/button';
+import { toast } from '@/components/ui/use-toast';
 import { posts } from '@/lib/data/posts';
 import { Seo } from '@/components/Seo';
 import { formatDateLong } from '@/lib/date';
@@ -84,6 +93,40 @@ const extractHeadings = (markdown: string): TocItem[] => {
   return headings;
 };
 
+const copyToClipboard = async (value: string) => {
+  if (!value) {
+    return false;
+  }
+
+  if (typeof navigator !== 'undefined' && navigator.clipboard?.writeText) {
+    try {
+      await navigator.clipboard.writeText(value);
+      return true;
+    } catch (error) {
+      // Fall through to legacy fallback.
+    }
+  }
+
+  if (typeof document === 'undefined') {
+    return false;
+  }
+
+  try {
+    const textarea = document.createElement('textarea');
+    textarea.value = value;
+    textarea.style.position = 'fixed';
+    textarea.style.top = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    const succeeded = document.execCommand('copy');
+    document.body.removeChild(textarea);
+    return succeeded;
+  } catch (error) {
+    return false;
+  }
+};
+
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = posts.find((p) => p.slug === slug);
@@ -140,6 +183,14 @@ export default function BlogPost() {
     };
   }, [contentFile]);
 
+  useEffect(() => {
+    if (markdownState.status !== 'success' || !markdownState.content) {
+      return;
+    }
+
+    Prism.highlightAll();
+  }, [markdownState.content, markdownState.status]);
+
   const tocItems = useMemo(
     () => extractHeadings(markdownState.content),
     [markdownState.content]
@@ -168,7 +219,7 @@ export default function BlogPost() {
         return <h3 id={id}>{children}</h3>;
       },
       pre({ children }: { children: ReactNode }) {
-        return <pre className="code-block">{children}</pre>;
+        return <>{children}</>;
       },
       code({
         inline,
@@ -182,7 +233,38 @@ export default function BlogPost() {
         if (inline) {
           return <code className="inline-code">{children}</code>;
         }
-        return <code className={className}>{children}</code>;
+        const codeText = getPlainText(children);
+        const trimmedText = codeText.replace(/\n$/, '');
+        return (
+          <div className="code-block">
+            <button
+              type="button"
+              className="code-copy"
+              aria-label="Copy code to clipboard"
+              onClick={async () => {
+                const copied = await copyToClipboard(trimmedText);
+                toast({
+                  title: copied ? 'Copied to clipboard' : 'Copy failed',
+                  description: copied
+                    ? 'The code snippet is ready to paste.'
+                    : 'Unable to access the clipboard in this browser.',
+                });
+              }}
+            >
+              <Copy className="h-4 w-4" />
+            </button>
+            <pre>
+              <code className={className}>{trimmedText}</code>
+            </pre>
+          </div>
+        );
+      },
+      table({ children, ...props }: ComponentPropsWithoutRef<'table'>) {
+        return (
+          <div className="table-wrapper">
+            <table {...props}>{children}</table>
+          </div>
+        );
       },
     }),
     []

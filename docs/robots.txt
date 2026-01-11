@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://markhazleton.github.io/mark-hazleton-s-notes/sitemap.xml
+Sitemap: https://markhazleton.com/sitemap.xml

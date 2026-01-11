@@ -126,8 +126,8 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section className="section">
-        <div className="container-blog">
+      <section className="section border-b border-border">
+        <div className="container-wide">
           <div className="animate-fade-up">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-6">
               About Mark
@@ -223,7 +223,7 @@ export default function Index() {
       </section>
 
       {/* Featured Areas */}
-      <section className="section bg-muted/30">
+      <section className="section border-b border-border">
         <div className="container-wide">
           <div className="mb-10">
             <h2 className="font-heading text-2xl font-semibold text-foreground mb-2">
@@ -260,7 +260,7 @@ export default function Index() {
       </section>
 
       {/* Latest Posts */}
-      <section className="section">
+      <section className="section border-b border-border">
         <div className="container-wide">
           <div className="flex items-center justify-between mb-8">
             <div>
@@ -299,7 +299,7 @@ export default function Index() {
       </section>
 
       {/* GitHub Strip */}
-      <section className="py-12 bg-primary/5 border-y border-primary/10">
+      <section className="py-12 border-b border-border">
         <div className="container-wide">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
             <div className="flex items-center gap-3">

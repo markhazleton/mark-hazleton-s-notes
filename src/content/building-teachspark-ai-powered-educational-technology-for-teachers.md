@@ -1,20 +1,17 @@
-# Building TeachSpark: AI-Powered Educational Technology for Teachers
 
-## Subtitle: Leveraging .NET 9 and OpenAI for Educational Innovation
-
-### Introduction
+# Introduction
 
 In the ever-evolving landscape of educational technology, the integration of artificial intelligence offers unprecedented opportunities. TeachSpark is a pioneering platform designed to empower teachers by generating Common Core-aligned worksheets using advanced AI capabilities. This article delves into the journey of creating TeachSpark, exploring its technical architecture and providing practical code examples.
 
-### The Inspiration Behind TeachSpark
+## The Inspiration Behind TeachSpark
 
 > "A simple conversation with my daughter sparked the idea for TeachSpark. Her struggles with finding engaging educational materials led me to envision a tool that could simplify this process for teachers everywhere."
 
-### The Role of .NET 9
+## The Role of .NET 10
 
-TeachSpark is built on the robust .NET 9 framework, offering a scalable and efficient platform for educational content generation. The choice of .NET 9 was driven by its performance capabilities and seamless integration with AI technologies.
+TeachSpark is built on the robust .NET 10 framework, offering a scalable and efficient platform for educational content generation. The choice of .NET 9 was driven by its performance capabilities and seamless integration with AI technologies.
 
-### Integrating OpenAI
+## Integrating OpenAI
 
 OpenAI's powerful language models are at the core of TeachSpark's functionality. By leveraging these models, TeachSpark can generate high-quality, Common Core-aligned worksheets tailored to specific educational needs.
 
@@ -55,11 +52,9 @@ public class WorksheetGenerator
 }
 ```
 
-### Conclusion
+## Conclusion
 
 TeachSpark represents a significant step forward in educational technology, harnessing the power of AI to support teachers in their mission to provide quality education.
-
-## Conclusion
 
 ### Key Takeaways
 

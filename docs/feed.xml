@@ -2,14 +2,14 @@
 <rss version="2.0">
   <channel>
     <title>Mark Hazleton Blog</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog</link>
+    <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Jan 2026 17:53:21 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 19:17:20 GMT</lastBuildDate>
   <item>
     <title>Building a Quick Estimation Template When You Have Almost Nothing to Go On</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-a-quick-estimation-template</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-a-quick-estimation-template</guid>
+    <link>https://markhazleton.com/blog/building-a-quick-estimation-template</link>
+    <guid>https://markhazleton.com/blog/building-a-quick-estimation-template</guid>
     <pubDate>Sun, 28 Dec 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[# Building a Quick Estimation Template When You Have Almost Nothing to Go On
 
@@ -25,645 +25,645 @@ There are moments in project management when leadership asks, “How long will t
   </item>
   <item>
     <title>Test Driving GitHub&apos;s Spec Kit: AI-Maintained Documentation That Stays Accurate</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/test-driving-githubs-spec-kit</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/test-driving-githubs-spec-kit</guid>
+    <link>https://markhazleton.com/blog/test-driving-githubs-spec-kit</link>
+    <guid>https://markhazleton.com/blog/test-driving-githubs-spec-kit</guid>
     <pubDate>Sun, 02 Nov 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Specs always become outdated because humans won't maintain them post-implementation. GitHub's Spec Kit solves this with AI agents in the feedback loop: when you fix bugs and tweak implementations, you tell the agent to update the spec. Documentation evolves to match reality. Real-world case: 7 hours implementation + 20 minutes documentation sync = zero documentation debt.]]></description>
   </item>
   <item>
     <title>Building Git Spark: My First npm Package Journey</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/engineering-metrics-git-spark-real-story</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/engineering-metrics-git-spark-real-story</guid>
+    <link>https://markhazleton.com/blog/engineering-metrics-git-spark-real-story</link>
+    <guid>https://markhazleton.com/blog/engineering-metrics-git-spark-real-story</guid>
     <pubDate>Tue, 07 Oct 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Creating git-spark, my first npm package, from frustration to published tool. Learn Git analytics limits and the value of honest metrics.]]></description>
   </item>
   <item>
     <title>Measuring AI&apos;s Contribution to Code</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/measuring-ais-contribution-to-code</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/measuring-ais-contribution-to-code</guid>
+    <link>https://markhazleton.com/blog/measuring-ais-contribution-to-code</link>
+    <guid>https://markhazleton.com/blog/measuring-ais-contribution-to-code</guid>
     <pubDate>Sat, 13 Sep 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Artificial Intelligence is reshaping the software development landscape by enhancing productivity, improving code quality, and fostering innovation. This article delves into the metrics and tools used to measure AI's impact on coding.]]></description>
   </item>
   <item>
     <title>Modernizing Client Libraries in a .NET 4.8 Framework Application</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/modernizing-client-libraries-in-a-net-48-framework-application</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/modernizing-client-libraries-in-a-net-48-framework-application</guid>
+    <link>https://markhazleton.com/blog/modernizing-client-libraries-in-a-net-48-framework-application</link>
+    <guid>https://markhazleton.com/blog/modernizing-client-libraries-in-a-net-48-framework-application</guid>
     <pubDate>Mon, 08 Sep 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Modernizing client libraries in a .NET 4.8 framework application is essential for maintaining performance, security, and compatibility. This article provides a step-by-step guide to updating and optimizing your codebase.]]></description>
   </item>
   <item>
     <title>Creating a PHP Website with ChatGPT</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/creating-a-php-website-with-chat-gpt</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/creating-a-php-website-with-chat-gpt</guid>
+    <link>https://markhazleton.com/blog/creating-a-php-website-with-chat-gpt</link>
+    <guid>https://markhazleton.com/blog/creating-a-php-website-with-chat-gpt</guid>
     <pubDate>Mon, 11 Aug 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Discover how to create a PHP website with ChatGPT integration. This guide covers setup, API access, and frontend interaction to enhance user engagement.]]></description>
   </item>
   <item>
     <title>Evolving PHP Development</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/evolving-php-development</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/evolving-php-development</guid>
+    <link>https://markhazleton.com/blog/evolving-php-development</link>
+    <guid>https://markhazleton.com/blog/evolving-php-development</guid>
     <pubDate>Mon, 11 Aug 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[PHP has been a cornerstone of web development for decades. This article explores its evolution, highlighting significant advancements and emerging trends that keep PHP relevant.]]></description>
   </item>
   <item>
     <title>Hotfix Prioritization Matrix &amp; Decision Framework</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/hotfix-prioritization-matrix-decision-framework</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/hotfix-prioritization-matrix-decision-framework</guid>
+    <link>https://markhazleton.com/blog/hotfix-prioritization-matrix-decision-framework</link>
+    <guid>https://markhazleton.com/blog/hotfix-prioritization-matrix-decision-framework</guid>
     <pubDate>Wed, 30 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In software development, addressing bugs quickly is vital. This article introduces a Hotfix Prioritization Matrix and Decision Framework to help prioritize critical issues efficiently.]]></description>
   </item>
   <item>
     <title>TailwindSpark: Ignite Your Web Development</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/tailwindspark-ignite-your-web-development</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/tailwindspark-ignite-your-web-development</guid>
+    <link>https://markhazleton.com/blog/tailwindspark-ignite-your-web-development</link>
+    <guid>https://markhazleton.com/blog/tailwindspark-ignite-your-web-development</guid>
     <pubDate>Wed, 30 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[TailwindSpark is your ultimate guide to mastering Tailwind CSS and Spark frameworks. Learn how to enhance your web development skills and create stunning, responsive designs with this powerful combination.]]></description>
   </item>
   <item>
     <title>The Building of React-native-web-start</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-building-of-react-native-web-start</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-building-of-react-native-web-start</guid>
+    <link>https://markhazleton.com/blog/the-building-of-react-native-web-start</link>
+    <guid>https://markhazleton.com/blog/the-building-of-react-native-web-start</guid>
     <pubDate>Sun, 27 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[React-native-web-start is designed to streamline web and mobile app development using React Native. This article explores its creation, challenges, and benefits.]]></description>
   </item>
   <item>
     <title>Enhancing HttpClient with Decorator Pattern</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/decorator-pattern-http-client</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/decorator-pattern-http-client</guid>
+    <link>https://markhazleton.com/blog/decorator-pattern-http-client</link>
+    <guid>https://markhazleton.com/blog/decorator-pattern-http-client</guid>
     <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[The Decorator Pattern is a powerful tool for enhancing HttpClient functionality in ASP.NET. This article explores how to dynamically add behaviors like logging without modifying existing code.]]></description>
   </item>
   <item>
     <title>Mastering ChatGPT Prompt Crafting</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/crafting-chatgpt-prompt</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/crafting-chatgpt-prompt</guid>
+    <link>https://markhazleton.com/blog/crafting-chatgpt-prompt</link>
+    <guid>https://markhazleton.com/blog/crafting-chatgpt-prompt</guid>
     <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In the rapidly evolving world of AI, crafting effective prompts for models like ChatGPT is crucial for maximizing their potential. In this guide, we will delve into the art of prompt creation, focusing on context, techniques, and practical applications.]]></description>
   </item>
   <item>
     <title>Mastering Blog Management Tools</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-a-web-application-to-manage-your-blog-articles</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-a-web-application-to-manage-your-blog-articles</guid>
+    <link>https://markhazleton.com/blog/building-a-web-application-to-manage-your-blog-articles</link>
+    <guid>https://markhazleton.com/blog/building-a-web-application-to-manage-your-blog-articles</guid>
     <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In today's digital age, creating and managing a blog is essential for sharing insights and expertise. This article explores the development of a custom CMS for blog management, highlighting parallels with the Web Project Mechanics framework.]]></description>
   </item>
   <item>
     <title>Harnessing the Power of Caching in ASP.NET</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/harnessing-the-power-of-caching-in-aspnet-with-memorycachemanager</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/harnessing-the-power-of-caching-in-aspnet-with-memorycachemanager</guid>
+    <link>https://markhazleton.com/blog/harnessing-the-power-of-caching-in-aspnet-with-memorycachemanager</link>
+    <guid>https://markhazleton.com/blog/harnessing-the-power-of-caching-in-aspnet-with-memorycachemanager</guid>
     <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Caching is essential for optimizing ASP.NET applications. This article explores how to use MemoryCacheManager to implement effective caching strategies, improving performance and scalability.]]></description>
   </item>
   <item>
     <title>Exploring Microsoft Copilot Studio</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/taking-microsoft-copilot-studio-for-a-test-drive</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/taking-microsoft-copilot-studio-for-a-test-drive</guid>
+    <link>https://markhazleton.com/blog/taking-microsoft-copilot-studio-for-a-test-drive</link>
+    <guid>https://markhazleton.com/blog/taking-microsoft-copilot-studio-for-a-test-drive</guid>
     <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In this article, we take a deep dive into Microsoft Copilot Studio, a cutting-edge platform that allows users to create personalized AI chatbots. Led by Mark Hazleton, we explore the features and functionalities of this innovative tool and its potential to transform digital interactions.]]></description>
   </item>
   <item>
     <title>English: The New Programming Language of Choice</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/english-is-the-new-programming-language-of-choice</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/english-is-the-new-programming-language-of-choice</guid>
+    <link>https://markhazleton.com/blog/english-is-the-new-programming-language-of-choice</link>
+    <guid>https://markhazleton.com/blog/english-is-the-new-programming-language-of-choice</guid>
     <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Explore the pivotal role of English in the evolution of the Microsoft .NET technologies. Understand why English is becoming as crucial as traditional programming languages in software development.]]></description>
   </item>
   <item>
     <title>AI Observability: Understanding Its Importance</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/ai-observability-is-no-joke</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/ai-observability-is-no-joke</guid>
+    <link>https://markhazleton.com/blog/ai-observability-is-no-joke</link>
+    <guid>https://markhazleton.com/blog/ai-observability-is-no-joke</guid>
     <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In this article, we delve into the importance of AI observability, a key factor in ensuring transparency and accountability in AI systems. Through a humorous lens, we illustrate why understanding AI actions is crucial.]]></description>
   </item>
   <item>
     <title>Mountains of Misunderstanding</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-ai-confidence-trap</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-ai-confidence-trap</guid>
+    <link>https://markhazleton.com/blog/the-ai-confidence-trap</link>
+    <guid>https://markhazleton.com/blog/the-ai-confidence-trap</guid>
     <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Artificial Intelligence is transforming industries, but overconfidence in AI systems can lead to significant challenges. This article delves into the AI Confidence Trap, offering insights and strategies to navigate these issues effectively.]]></description>
   </item>
   <item>
     <title>ChatGPT Meets Jeopardy: C# Solution for Trivia Aficionados</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/chatgpt-meets-jeopardy-c-solution-for-trivia-aficionados</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/chatgpt-meets-jeopardy-c-solution-for-trivia-aficionados</guid>
+    <link>https://markhazleton.com/blog/chatgpt-meets-jeopardy-c-solution-for-trivia-aficionados</link>
+    <guid>https://markhazleton.com/blog/chatgpt-meets-jeopardy-c-solution-for-trivia-aficionados</guid>
     <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Explore how the integration of ChatGPT and C# creates a unique trivia experience using Jeopardy questions. This project blends data analysis with interactive quizzes, showcasing the power of .NET.]]></description>
   </item>
   <item>
     <title>My Journey as a NuGet Gallery Developer and Educator</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/nuget-gallery-developer-and-educator</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/nuget-gallery-developer-and-educator</guid>
+    <link>https://markhazleton.com/blog/nuget-gallery-developer-and-educator</link>
+    <guid>https://markhazleton.com/blog/nuget-gallery-developer-and-educator</guid>
     <pubDate>Thu, 17 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In this article, I share my personal journey as a developer and educator within the NuGet ecosystem. From creating the WebSpark.HttpClientUtility to teaching best practices for NuGet packages, I aim to provide insights and guidance for fellow developers.]]></description>
   </item>
   <item>
     <title>NuGet Packages: Benefits and Challenges</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/nuget-packages-pros-cons</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/nuget-packages-pros-cons</guid>
+    <link>https://markhazleton.com/blog/nuget-packages-pros-cons</link>
+    <guid>https://markhazleton.com/blog/nuget-packages-pros-cons</guid>
     <pubDate>Sun, 13 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[NuGet packages are essential for .NET developers, offering ease of integration and robust community support. However, they come with challenges like dependency management and security risks. This article explores these aspects in detail.]]></description>
   </item>
   <item>
     <title>Avoiding the Sizzle: Staying Focused</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/sidetrackedbysizzle</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/sidetrackedbysizzle</guid>
+    <link>https://markhazleton.com/blog/sidetracked-by-sizzle</link>
+    <guid>https://markhazleton.com/blog/sidetracked-by-sizzle</guid>
     <pubDate>Sat, 12 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In a world filled with distractions, staying focused on your core goals is essential. This article explores the allure of superficial attractions and offers strategies to maintain focus.]]></description>
   </item>
   <item>
     <title>Building TeachSpark: AI-Powered Educational Technology for Teachers</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-teachspark-ai-powered-educational-technology-for-teachers</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-teachspark-ai-powered-educational-technology-for-teachers</guid>
+    <link>https://markhazleton.com/blog/building-teachspark-ai-powered-educational-technology-for-teachers</link>
+    <guid>https://markhazleton.com/blog/building-teachspark-ai-powered-educational-technology-for-teachers</guid>
     <pubDate>Thu, 03 Jul 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In the ever-evolving landscape of educational technology, the integration of artificial intelligence offers unprecedented opportunities. TeachSpark is a pioneering platform designed to empower teachers by generating Common Core-aligned worksheets using advanced AI capabilities. This article delves into the journey of creating TeachSpark, exploring its technical architecture and providing practical code examples.]]></description>
   </item>
   <item>
     <title>Architecting Agentic Services in .NET 9: Semantic Kernel</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/architecting-agentic-services-in-net-9-semantic-kernel-enterprise-ai-architecture</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/architecting-agentic-services-in-net-9-semantic-kernel-enterprise-ai-architecture</guid>
+    <link>https://markhazleton.com/blog/architecting-agentic-services-in-net-9-semantic-kernel-enterprise-ai-architecture</link>
+    <guid>https://markhazleton.com/blog/architecting-agentic-services-in-net-9-semantic-kernel-enterprise-ai-architecture</guid>
     <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[This guide explores the architecture of agentic AI services using .NET 9 and Microsoft Semantic Kernel. Learn about instruction engineering, security patterns, and enterprise-ready strategies.]]></description>
   </item>
   <item>
     <title>Building ArtSpark: Where AI Meets Art History</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-artspark-where-ai-meets-art-history</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-artspark-where-ai-meets-art-history</guid>
+    <link>https://markhazleton.com/blog/building-artspark-where-ai-meets-art-history</link>
+    <guid>https://markhazleton.com/blog/building-artspark-where-ai-meets-art-history</guid>
     <pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Discover how ArtSpark combines AI and art history, allowing users to interact with artworks through a platform built with .NET 9, Microsoft Semantic Kernel, and GPT-4 Vision. This article explores the creation, challenges, and future developments of ArtSpark.]]></description>
   </item>
   <item>
     <title>From README to Reality: Teaching an Agent to Bootstrap a UI Theme</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/from-readme-to-reality-teaching-an-agent-to-bootstrap-a-ui-theme</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/from-readme-to-reality-teaching-an-agent-to-bootstrap-a-ui-theme</guid>
+    <link>https://markhazleton.com/blog/from-readme-to-reality-teaching-an-agent-to-bootstrap-a-ui-theme</link>
+    <guid>https://markhazleton.com/blog/from-readme-to-reality-teaching-an-agent-to-bootstrap-a-ui-theme</guid>
     <pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In this article, we explore the process of using a smart NuGet package README and Visual Studio Code's agent mode to automate the installation and configuration of a UI theme. By leveraging WebSpark.Bootswatch, we demonstrate a live example of how to streamline theme setup, making it more efficient and less error-prone.]]></description>
   </item>
   <item>
     <title>The New Era of Individual Agency: How AI Tools Empower Self-Starters</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-new-era-of-individual-agency-how-ai-tools-are-empowering-the-self-starter</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-new-era-of-individual-agency-how-ai-tools-are-empowering-the-self-starter</guid>
+    <link>https://markhazleton.com/blog/the-new-era-of-individual-agency-how-ai-tools-are-empowering-the-self-starter</link>
+    <guid>https://markhazleton.com/blog/the-new-era-of-individual-agency-how-ai-tools-are-empowering-the-self-starter</guid>
     <pubDate>Sat, 03 May 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Artificial intelligence is transforming individual agency by making advanced capabilities accessible to all. This article explores how AI tools empower self-starters.]]></description>
   </item>
   <item>
     <title>ReactSpark: A Comprehensive Portfolio Showcase</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/reactspark-a-comprehensive-portfolio-showcase</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/reactspark-a-comprehensive-portfolio-showcase</guid>
+    <link>https://markhazleton.com/blog/reactspark-a-comprehensive-portfolio-showcase</link>
+    <guid>https://markhazleton.com/blog/reactspark-a-comprehensive-portfolio-showcase</guid>
     <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[ReactSpark is a modern, responsive portfolio website built using React 19 and TypeScript. It serves as a demonstration of web development best practices and a reference for building applications with React.]]></description>
   </item>
   <item>
     <title>Pedernales Cellars Winery in Texas Hill Country</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/pedernales-cellars-winery-in-texas-hill-country</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/pedernales-cellars-winery-in-texas-hill-country</guid>
+    <link>https://markhazleton.com/blog/pedernales-cellars-winery-in-texas-hill-country</link>
+    <guid>https://markhazleton.com/blog/pedernales-cellars-winery-in-texas-hill-country</guid>
     <pubDate>Thu, 27 Mar 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Pedernales Cellars, located in the beautiful Texas Hill Country, is a leader in sustainable winemaking. Discover their rich history and unique philosophy that makes their wines exceptional.]]></description>
   </item>
   <item>
     <title>The Impact of Input Case on LLM Categorization</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-impact-of-input-case-on-llm-categorization</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-impact-of-input-case-on-llm-categorization</guid>
+    <link>https://markhazleton.com/blog/the-impact-of-input-case-on-llm-categorization</link>
+    <guid>https://markhazleton.com/blog/the-impact-of-input-case-on-llm-categorization</guid>
     <pubDate>Wed, 19 Mar 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Large Language Models (LLMs) are sensitive to the case of input text, affecting their tokenization and categorization capabilities. This article delves into how input case impacts LLM performance, particularly in NLP tasks like Named Entity Recognition and Sentiment Analysis, and discusses strategies to enhance model robustness.]]></description>
   </item>
   <item>
     <title>AI-Assisted Development: Claude and GitHub Copilot</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/ai-assisted-development-claude-and-github-copilot</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/ai-assisted-development-claude-and-github-copilot</guid>
+    <link>https://markhazleton.com/blog/ai-assisted-development-claude-and-github-copilot</link>
+    <guid>https://markhazleton.com/blog/ai-assisted-development-claude-and-github-copilot</guid>
     <pubDate>Wed, 05 Mar 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In the rapidly evolving field of software development, AI-assisted tools are becoming indispensable. This article explores two leading AI tools, Claude and GitHub Copilot, and how they are transforming the software development lifecycle.]]></description>
   </item>
   <item>
     <title>AI and Critical Thinking in Software Development</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/ai-and-critical-thinking-in-software-development</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/ai-and-critical-thinking-in-software-development</guid>
+    <link>https://markhazleton.com/blog/ai-and-critical-thinking-in-software-development</link>
+    <guid>https://markhazleton.com/blog/ai-and-critical-thinking-in-software-development</guid>
     <pubDate>Thu, 27 Feb 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Artificial Intelligence (AI) is transforming software development by enhancing efficiency and accuracy. However, it also poses challenges to critical thinking and creativity. This article explores the impact of AI on these essential skills and offers strategies to maintain a balance between AI efficiency and human ingenuity.]]></description>
   </item>
   <item>
     <title>The Creation of ShareSmallBiz.com: A Platform for Small Business Success</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-creation-of-sharesmallbizcom-a-platform-for-small-business-success</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-creation-of-sharesmallbizcom-a-platform-for-small-business-success</guid>
+    <link>https://markhazleton.com/blog/the-creation-of-sharesmallbizcom-a-platform-for-small-business-success</link>
+    <guid>https://markhazleton.com/blog/the-creation-of-sharesmallbizcom-a-platform-for-small-business-success</guid>
     <pubDate>Fri, 14 Feb 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In today's competitive market, small businesses often struggle to keep up with larger corporations due to limited resources and marketing budgets. Enter ShareSmallBiz.com, a revolutionary platform designed to level the playing field by offering collaborative marketing tools and shared resources. This article delves into the creation and impact of ShareSmallBiz.com, exploring how it empowers small businesses to achieve success.]]></description>
   </item>
   <item>
     <title>Kendrick Lamar&apos;s Super Bowl LIX Halftime Show</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/kendrick-lamars-super-bowl-lix-halftime-show-a-masterpiece-of-metaphors</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/kendrick-lamars-super-bowl-lix-halftime-show-a-masterpiece-of-metaphors</guid>
+    <link>https://markhazleton.com/blog/kendrick-lamars-super-bowl-lix-halftime-show-a-masterpiece-of-metaphors</link>
+    <guid>https://markhazleton.com/blog/kendrick-lamars-super-bowl-lix-halftime-show-a-masterpiece-of-metaphors</guid>
     <pubDate>Fri, 14 Feb 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Kendrick Lamar's Super Bowl LIX halftime performance was a profound societal commentary delivered through metaphorical visuals and thought-provoking stage design.]]></description>
   </item>
   <item>
     <title>Riffusion AI: Revolutionizing Music Creation</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/riffusion-ai-revolutionizing-music-creation</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/riffusion-ai-revolutionizing-music-creation</guid>
+    <link>https://markhazleton.com/blog/riffusion-ai-revolutionizing-music-creation</link>
+    <guid>https://markhazleton.com/blog/riffusion-ai-revolutionizing-music-creation</guid>
     <pubDate>Tue, 04 Feb 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In the digital era, artificial intelligence is rapidly changing the creative landscape, and the music industry is at the forefront of this transformation. Riffusion AI is a groundbreaking technology that leverages AI to innovate and enhance music creation, offering musicians and producers new tools to explore their creativity.]]></description>
   </item>
   <item>
     <title>Harnessing NLP: Concepts and Real-World Impact</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/harnessing-nlp-concepts-and-real-world-impact</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/harnessing-nlp-concepts-and-real-world-impact</guid>
+    <link>https://markhazleton.com/blog/harnessing-nlp-concepts-and-real-world-impact</link>
+    <guid>https://markhazleton.com/blog/harnessing-nlp-concepts-and-real-world-impact</guid>
     <pubDate>Sun, 26 Jan 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Natural Language Processing (NLP) is revolutionizing the interaction between humans and machines. This article explores key NLP concepts and their real-world applications, highlighting how they enhance business operations and consumer experiences.]]></description>
   </item>
   <item>
     <title>Computer Vision in Machine Learning</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/computer-vision-in-machine-learning</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/computer-vision-in-machine-learning</guid>
+    <link>https://markhazleton.com/blog/computer-vision-in-machine-learning</link>
+    <guid>https://markhazleton.com/blog/computer-vision-in-machine-learning</guid>
     <pubDate>Tue, 21 Jan 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Computer vision is revolutionizing industries by enabling machines to interpret visual data. This article explores its applications, challenges, and future potential.]]></description>
   </item>
   <item>
     <title>Generate Wiki Documentation from Your Code Repository</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/generate-wiki-documentation-from-your-code-repository</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/generate-wiki-documentation-from-your-code-repository</guid>
+    <link>https://markhazleton.com/blog/generate-wiki-documentation-from-your-code-repository</link>
+    <guid>https://markhazleton.com/blog/generate-wiki-documentation-from-your-code-repository</guid>
     <pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[Creating detailed documentation is crucial for any code repository. This guide will walk you through the process of generating wiki documentation directly from your code repository, enhancing project transparency and collaboration.]]></description>
   </item>
   <item>
     <title>Getting Started with PUG: History and Future</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/getting-started-with-pug-history-background-and-future</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/getting-started-with-pug-history-background-and-future</guid>
+    <link>https://markhazleton.com/blog/getting-started-with-pug-history-background-and-future</link>
+    <guid>https://markhazleton.com/blog/getting-started-with-pug-history-background-and-future</guid>
     <pubDate>Sun, 05 Jan 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[PUG, a high-performance template engine for Node.js, has a rich history and a promising future. This article delves into its origins, features, and community, providing insights into its ongoing development and future prospects.]]></description>
   </item>
   <item>
     <title>Adapting with Purpose: Lifelong Learning in the AI Age</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/adapting-with-purpose-lifelong-learning-in-the-ai-age</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/adapting-with-purpose-lifelong-learning-in-the-ai-age</guid>
+    <link>https://markhazleton.com/blog/adapting-with-purpose-lifelong-learning-in-the-ai-age</link>
+    <guid>https://markhazleton.com/blog/adapting-with-purpose-lifelong-learning-in-the-ai-age</guid>
     <pubDate>Thu, 02 Jan 2025 00:00:00 GMT</pubDate>
     <description><![CDATA[In today's AI-driven world, lifelong learning and adaptability are more important than ever. This article explores how AI is transforming the learning landscape, offering personalized experiences and new opportunities for growth.]]></description>
   </item>
   <item>
     <title>Understanding Neural Networks</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/an-introduction-to-neural-networks</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/an-introduction-to-neural-networks</guid>
+    <link>https://markhazleton.com/blog/an-introduction-to-neural-networks</link>
+    <guid>https://markhazleton.com/blog/an-introduction-to-neural-networks</guid>
     <pubDate>Mon, 23 Dec 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Neural networks are a cornerstone of modern artificial intelligence, mimicking the way human brains operate to process information. This guide aims to introduce the basic concepts of neural networks, their architecture, and their applications.]]></description>
   </item>
   <item>
     <title>Creating a Law &amp; Order Episode Generator</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/creating-law-and-order-episode-generator</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/creating-law-and-order-episode-generator</guid>
+    <link>https://markhazleton.com/blog/creating-law-and-order-episode-generator</link>
+    <guid>https://markhazleton.com/blog/creating-law-and-order-episode-generator</guid>
     <pubDate>Mon, 23 Dec 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In this article, we delve into the process of using PromptSpark to create a GPT model capable of generating new episodes of the popular TV series, Law &amp; Order. By analyzing Reddit threads, we can harness the power of community discussions to inspire creative episode ideas.]]></description>
   </item>
   <item>
     <title>The Transformative Power of MCP</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/i-know-ap-the-transformative-power-of-mcp</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/i-know-ap-the-transformative-power-of-mcp</guid>
+    <link>https://markhazleton.com/blog/i-know-ap-the-transformative-power-of-mcp</link>
+    <guid>https://markhazleton.com/blog/i-know-ap-the-transformative-power-of-mcp</guid>
     <pubDate>Mon, 23 Dec 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[The Model Context Protocol (MCP) is a groundbreaking framework that enables artificial intelligence systems to adapt dynamically to various contexts. This adaptability is crucial in transforming repetitive tasks and enhancing business intelligence processes.]]></description>
   </item>
   <item>
     <title>OpenAI Sora: First Impressions and Impact</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/open-ai-sora-first-impressions</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/open-ai-sora-first-impressions</guid>
+    <link>https://markhazleton.com/blog/open-ai-sora-first-impressions</link>
+    <guid>https://markhazleton.com/blog/open-ai-sora-first-impressions</guid>
     <pubDate>Sun, 22 Dec 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[OpenAI Sora is a groundbreaking platform that uses AI to simplify video generation. This article explores its features and potential impact on creative industries.]]></description>
   </item>
   <item>
     <title>Exploring EDS Super Bowl Commercials</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/eds-super-bowl-commercials</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/eds-super-bowl-commercials</guid>
+    <link>https://markhazleton.com/blog/eds-super-bowl-commercials</link>
+    <guid>https://markhazleton.com/blog/eds-super-bowl-commercials</guid>
     <pubDate>Mon, 16 Dec 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[The turn of the millennium marked a significant moment for Electronic Data Systems (EDS) as they launched a series of groundbreaking Super Bowl commercials in 2000 and 2001. These ads not only captured the attention of millions but also highlighted the challenges and intricacies of IT project management in a creative and memorable way.]]></description>
   </item>
   <item>
     <title>Using NotebookLM, Clipchamp, and ChatGPT for Podcasts</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/using-notebooklm-clipchamp-and-chatgpt-for-podcasts</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/using-notebooklm-clipchamp-and-chatgpt-for-podcasts</guid>
+    <link>https://markhazleton.com/blog/using-notebooklm-clipchamp-and-chatgpt-for-podcasts</link>
+    <guid>https://markhazleton.com/blog/using-notebooklm-clipchamp-and-chatgpt-for-podcasts</guid>
     <pubDate>Thu, 12 Dec 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Creating a podcast can be a daunting task, but with the right tools, it becomes a seamless and enjoyable experience. In this guide, we will explore how to use NotebookLM, Microsoft Clipchamp, and ChatGPT to produce high-quality podcast episodes for your Deep Dive playlist.]]></description>
   </item>
   <item>
     <title>Workflow-Driven Chat Applications Powered by Adaptive Cards</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/workflow-driven-chat-applications-powered-by-adaptive-cards</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/workflow-driven-chat-applications-powered-by-adaptive-cards</guid>
+    <link>https://markhazleton.com/blog/workflow-driven-chat-applications-powered-by-adaptive-cards</link>
+    <guid>https://markhazleton.com/blog/workflow-driven-chat-applications-powered-by-adaptive-cards</guid>
     <pubDate>Mon, 18 Nov 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Explore how to design workflow-driven chat applications using Adaptive Cards to enhance AI interactivity and structured conversations. Discover the benefits and implementation strategies.]]></description>
   </item>
   <item>
     <title>Interactive Chat in PromptSpark With SignalR</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/interactive-chat-in-promptspark-with-signalr-and-semantic-kernel-chat-completions</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/interactive-chat-in-promptspark-with-signalr-and-semantic-kernel-chat-completions</guid>
+    <link>https://markhazleton.com/blog/interactive-chat-in-promptspark-with-signalr-and-semantic-kernel-chat-completions</link>
+    <guid>https://markhazleton.com/blog/interactive-chat-in-promptspark-with-signalr-and-semantic-kernel-chat-completions</guid>
     <pubDate>Sun, 27 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In this guide, we will explore how to implement a real-time, AI-driven chat application using PromptSpark. By leveraging ASP.NET SignalR and OpenAI's GPT via Semantic Kernel, you can create a dynamic and interactive chat experience.]]></description>
   </item>
   <item>
     <title>Building Real-Time Chat with React and SignalR</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-real-time-chat-with-react-signalr-and-markdown-streaming</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-real-time-chat-with-react-signalr-and-markdown-streaming</guid>
+    <link>https://markhazleton.com/blog/building-real-time-chat-with-react-signalr-and-markdown-streaming</link>
+    <guid>https://markhazleton.com/blog/building-real-time-chat-with-react-signalr-and-markdown-streaming</guid>
     <pubDate>Sun, 27 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Learn how to build a dynamic chat application using React, SignalR, and Markdown streaming. This guide covers setting up the environment, integrating real-time messaging, and rendering Markdown content.]]></description>
   </item>
   <item>
     <title>Windows to Mac: Broadening My Horizons</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/windows-to-mac-broadening-my-horizons</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/windows-to-mac-broadening-my-horizons</guid>
+    <link>https://markhazleton.com/blog/windows-to-mac-broadening-my-horizons</link>
+    <guid>https://markhazleton.com/blog/windows-to-mac-broadening-my-horizons</guid>
     <pubDate>Wed, 23 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Switching from Windows to macOS can be a transformative experience. This article delves into my journey of learning to use a MacBook Pro and enhancing my tech skills, offering insights into the benefits and challenges of making the switch.]]></description>
   </item>
   <item>
     <title>Adding Weather Component: A TypeScript Learning Journey</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/adding-weather-component-a-typescript-learning-journey</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/adding-weather-component-a-typescript-learning-journey</guid>
+    <link>https://markhazleton.com/blog/adding-weather-component-a-typescript-learning-journey</link>
+    <guid>https://markhazleton.com/blog/adding-weather-component-a-typescript-learning-journey</guid>
     <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In this article, we will explore the process of integrating a weather forecast and map feature into a React Native application using TypeScript. This journey will help you practice key TypeScript concepts such as typed components and error handling, enhancing both your app's functionality and your TypeScript skills.]]></description>
   </item>
   <item>
     <title>Building My First React Site Using Vite</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-my-first-react-site-using-vite</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-my-first-react-site-using-vite</guid>
+    <link>https://markhazleton.com/blog/building-my-first-react-site-using-vite</link>
+    <guid>https://markhazleton.com/blog/building-my-first-react-site-using-vite</guid>
     <pubDate>Sat, 12 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In this guide, we will walk you through the process of building and deploying a React site using Vite and GitHub Pages. We'll cover setup, deployment, and troubleshooting common issues like CORS.]]></description>
   </item>
   <item>
     <title>Canonical URL Troubleshooting for Static Web Apps</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/canonical-url-troubleshooting-for-static-web-apps</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/canonical-url-troubleshooting-for-static-web-apps</guid>
+    <link>https://markhazleton.com/blog/canonical-url-troubleshooting-for-static-web-apps</link>
+    <guid>https://markhazleton.com/blog/canonical-url-troubleshooting-for-static-web-apps</guid>
     <pubDate>Thu, 10 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Canonical URLs are crucial for SEO in static web apps. This guide explores how to manage them using Azure and Cloudflare, ensuring your content is properly indexed.]]></description>
   </item>
   <item>
     <title>Developing MarkHazleton.com: Tools and Approach</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/developing-markhazletoncom-tools-and-approach</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/developing-markhazletoncom-tools-and-approach</guid>
+    <link>https://markhazleton.com/blog/developing-markhazletoncom-tools-and-approach</link>
+    <guid>https://markhazleton.com/blog/developing-markhazletoncom-tools-and-approach</guid>
     <pubDate>Thu, 10 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Creating a website that stands out in today's digital landscape requires a strategic approach and the right set of tools. In this article, we delve into the development process of MarkHazleton.com, exploring the technologies and frameworks that were instrumental in bringing the site to life.]]></description>
   </item>
   <item>
     <title>Exploratory Data Analysis with Python</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/exploratory-data-analysis-eda-using-python</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/exploratory-data-analysis-eda-using-python</guid>
+    <link>https://markhazleton.com/blog/exploratory-data-analysis-eda-using-python</link>
+    <guid>https://markhazleton.com/blog/exploratory-data-analysis-eda-using-python</guid>
     <pubDate>Sun, 06 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Exploratory Data Analysis (EDA) is a crucial step in the data science process, allowing analysts to uncover patterns, spot anomalies, and test hypotheses. This guide delves into the techniques and tools used in EDA, with a focus on Python's capabilities.]]></description>
   </item>
   <item>
     <title>Exploring Nutritional Data Using K-means Clustering</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/exploring-nutritional-data-using-pca-and-k-means-clustering</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/exploring-nutritional-data-using-pca-and-k-means-clustering</guid>
+    <link>https://markhazleton.com/blog/exploring-nutritional-data-using-pca-and-k-means-clustering</link>
+    <guid>https://markhazleton.com/blog/exploring-nutritional-data-using-pca-and-k-means-clustering</guid>
     <pubDate>Fri, 04 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In this article, we explore how K-means clustering can be applied to nutritional data to categorize foods by their nutrient content. Discover practical applications and insights into dietary patterns.]]></description>
   </item>
   <item>
     <title>Python: The Language of Data Science</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/python-the-language-of-data-science</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/python-the-language-of-data-science</guid>
+    <link>https://markhazleton.com/blog/python-the-language-of-data-science</link>
+    <guid>https://markhazleton.com/blog/python-the-language-of-data-science</guid>
     <pubDate>Thu, 03 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Python has become integral to data science due to its simplicity and powerful libraries. This article explores its history, key libraries, and why it's favored by developers.]]></description>
   </item>
   <item>
     <title>Fixing a Runaway Node.js Recursive Folder Issue</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/fixing-a-runaway-nodejs-recursive-folder-issue</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/fixing-a-runaway-nodejs-recursive-folder-issue</guid>
+    <link>https://markhazleton.com/blog/fixing-a-runaway-nodejs-recursive-folder-issue</link>
+    <guid>https://markhazleton.com/blog/fixing-a-runaway-nodejs-recursive-folder-issue</guid>
     <pubDate>Thu, 03 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Node.js applications can sometimes create infinite recursive directories due to improper recursion handling. This article provides solutions to fix the issue and includes a C++ program for cleanup.]]></description>
   </item>
   <item>
     <title>Troubleshooting and Rebuilding My JS-Dev-Env Project</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/troubleshooting-and-rebuilding-my-js-dev-env-project</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/troubleshooting-and-rebuilding-my-js-dev-env-project</guid>
+    <link>https://markhazleton.com/blog/troubleshooting-and-rebuilding-my-js-dev-env-project</link>
+    <guid>https://markhazleton.com/blog/troubleshooting-and-rebuilding-my-js-dev-env-project</guid>
     <pubDate>Wed, 02 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In this article, I share my experience of troubleshooting and rebuilding a JavaScript development environment. Learn how I used Node.js, Nodemon, ESLint, Express, and Bootstrap to overcome challenges and enhance productivity.]]></description>
   </item>
   <item>
     <title>Data Science for .NET Developers</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/data-science-for-net-developers</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/data-science-for-net-developers</guid>
+    <link>https://markhazleton.com/blog/data-science-for-net-developers</link>
+    <guid>https://markhazleton.com/blog/data-science-for-net-developers</guid>
     <pubDate>Wed, 02 Oct 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In today's tech landscape, data science is crucial for developers. This article explores why a .NET developer pursued UT Austin's AI/ML program and its impact.]]></description>
   </item>
   <item>
     <title>Syntax Highlighting with Prism.js for XML, PUG, YAML, and C#</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/syntax-highlighting-using-prismjs-for-xml-pug-yaml-and-csharp</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/syntax-highlighting-using-prismjs-for-xml-pug-yaml-and-csharp</guid>
+    <link>https://markhazleton.com/blog/syntax-highlighting-using-prismjs-for-xml-pug-yaml-and-csharp</link>
+    <guid>https://markhazleton.com/blog/syntax-highlighting-using-prismjs-for-xml-pug-yaml-and-csharp</guid>
     <pubDate>Sun, 29 Sep 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Syntax highlighting is a crucial aspect of code readability and presentation. In this guide, we will explore how to implement syntax highlighting for XML, PUG, YAML, and C# using the powerful Prism.js library. Additionally, we will delve into automating the bundling process with `render-scripts.js` to streamline your workflow.]]></description>
   </item>
   <item>
     <title>Automate GitHub Profile with Latest Blog Posts</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/automating-my-github-profile-with-the-latest-blog-posts-using-github-actions</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/automating-my-github-profile-with-the-latest-blog-posts-using-github-actions</guid>
+    <link>https://markhazleton.com/blog/automating-my-github-profile-with-the-latest-blog-posts-using-github-actions</link>
+    <guid>https://markhazleton.com/blog/automating-my-github-profile-with-the-latest-blog-posts-using-github-actions</guid>
     <pubDate>Wed, 25 Sep 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Keeping your GitHub profile updated with the latest content can be a tedious task. However, with the power of GitHub Actions and Node.js, you can automate this process, ensuring your profile always reflects your most recent blog posts.]]></description>
   </item>
   <item>
     <title>The Brain Behind JShow Trivia Demo</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-brain-behind-the-jshow-trivia-demo-on-webspark-j-show-builder-gpt</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-brain-behind-the-jshow-trivia-demo-on-webspark-j-show-builder-gpt</guid>
+    <link>https://markhazleton.com/blog/the-brain-behind-the-jshow-trivia-demo-on-webspark-j-show-builder-gpt</link>
+    <guid>https://markhazleton.com/blog/the-brain-behind-the-jshow-trivia-demo-on-webspark-j-show-builder-gpt</guid>
     <pubDate>Wed, 25 Sep 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[The JShow Trivia Demo on WebSpark is powered by the innovative J-Show Builder GPT, an AI tool that simplifies the creation of engaging trivia games. Discover its development journey and impact on the platform.]]></description>
   </item>
   <item>
     <title>Migrating SampleMvcCRUD from .NET 8 to .NET 9</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/migrating-samplemvccrud-application-from-net-8-to-net-9</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/migrating-samplemvccrud-application-from-net-8-to-net-9</guid>
+    <link>https://markhazleton.com/blog/migrating-samplemvccrud-application-from-net-8-to-net-9</link>
+    <guid>https://markhazleton.com/blog/migrating-samplemvccrud-application-from-net-8-to-net-9</guid>
     <pubDate>Mon, 23 Sep 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Migrating a .NET MVC CRUD application from .NET 8 to .NET 9 involves several key steps to ensure compatibility, performance improvement, and better visibility through SEO enhancements. This guide covers the entire process, from preparation to execution, helping you achieve a seamless transition.]]></description>
   </item>
   <item>
     <title>Migrating to MarkHazleton.com: A Comprehensive Guide</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/moving-to-markhazletoncom</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/moving-to-markhazletoncom</guid>
+    <link>https://markhazleton.com/blog/moving-to-markhazletoncom</link>
+    <guid>https://markhazleton.com/blog/moving-to-markhazletoncom</guid>
     <pubDate>Mon, 16 Sep 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Migrating a blog to a new domain can be a daunting task, but with the right tools and guidance, it can be a smooth transition. In this article, we will explore the process of moving a blog from markhazleton.controlorigins.com to markhazleton.com. This guide will cover the use of Azure Static Web Apps for hosting and Cloudflare for DNS management, providing detailed steps and best practices to ensure a successful migration.]]></description>
   </item>
   <item>
     <title>The Singleton Advantage: Managing Configurations in .NET</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-singleton-advantage-managing-configurations-in-net</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-singleton-advantage-managing-configurations-in-net</guid>
+    <link>https://markhazleton.com/blog/the-singleton-advantage-managing-configurations-in-net</link>
+    <guid>https://markhazleton.com/blog/the-singleton-advantage-managing-configurations-in-net</guid>
     <pubDate>Tue, 13 Aug 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In the world of software development, managing configurations efficiently is crucial for application performance and security. This article delves into the advantages of using the singleton pattern in .NET Core for configuration management. We will explore techniques such as lazy loading, ensuring thread safety, and securely accessing Azure Key Vault.]]></description>
   </item>
   <item>
     <title>Building Resilient .NET Applications with Polly</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-resilient-net-applications-with-polly</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/building-resilient-net-applications-with-polly</guid>
+    <link>https://markhazleton.com/blog/building-resilient-net-applications-with-polly</link>
+    <guid>https://markhazleton.com/blog/building-resilient-net-applications-with-polly</guid>
     <pubDate>Sat, 10 Aug 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In this article, we delve into the integration of Polly with HttpClient in .NET to build applications that are resilient to failures. Learn how to implement retries, timeouts, and circuit breakers to ensure your applications remain robust and reliable.]]></description>
   </item>
   <item>
     <title>Accelerate Azure DevOps Wiki Writing</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/azure-wiki-expert-gpt-a-game-changer-for-azure-devops-documentation</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/azure-wiki-expert-gpt-a-game-changer-for-azure-devops-documentation</guid>
+    <link>https://markhazleton.com/blog/azure-wiki-expert-gpt-a-game-changer-for-azure-devops-documentation</link>
+    <guid>https://markhazleton.com/blog/azure-wiki-expert-gpt-a-game-changer-for-azure-devops-documentation</guid>
     <pubDate>Fri, 02 Aug 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In the fast-paced world of software development, maintaining up-to-date and comprehensive documentation is crucial. Azure DevOps wikis serve as a central repository for project documentation, but writing and maintaining these wikis can be time-consuming. Enter Azure Wiki Expert GPT, a powerful tool designed to streamline the process of creating and updating Azure DevOps wiki content.]]></description>
   </item>
   <item>
     <title>WebSpark: Transforming Web Project Mechanics</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/webspark-the-next-evolution-of-web-project-mechanics</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/webspark-the-next-evolution-of-web-project-mechanics</guid>
+    <link>https://markhazleton.com/blog/webspark-the-next-evolution-of-web-project-mechanics</link>
+    <guid>https://markhazleton.com/blog/webspark-the-next-evolution-of-web-project-mechanics</guid>
     <pubDate>Fri, 12 Jul 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[WebSpark, developed by Mark Hazleton, is revolutionizing web project mechanics by providing a suite of applications that enhance digital experiences. This article explores how WebSpark streamlines web development processes and improves user engagement.]]></description>
   </item>
   <item>
     <title>Integrating Chat Completion into Prompt Spark</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/integrating-chat-completions-into-prompt-spark</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/integrating-chat-completions-into-prompt-spark</guid>
+    <link>https://markhazleton.com/blog/integrating-chat-completions-into-prompt-spark</link>
+    <guid>https://markhazleton.com/blog/integrating-chat-completions-into-prompt-spark</guid>
     <pubDate>Fri, 07 Jun 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[The integration of chat completion into the Prompt Spark project enhances user interactions by enabling seamless chat functionalities for Core Spark Variants. This advancement allows for more natural and engaging conversations with large language models.]]></description>
   </item>
   <item>
     <title>Using Large Language Models to Generate Structured Data</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/using-large-language-models-to-generate-structured-data</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/using-large-language-models-to-generate-structured-data</guid>
+    <link>https://markhazleton.com/blog/using-large-language-models-to-generate-structured-data</link>
+    <guid>https://markhazleton.com/blog/using-large-language-models-to-generate-structured-data</guid>
     <pubDate>Sun, 19 May 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Large language models like GPT-4 are transforming data structuring by automating processes and ensuring accuracy. This article explores their application in JSON recipe formatting, highlighting benefits such as enhanced productivity and cost-effectiveness.]]></description>
   </item>
   <item>
     <title>Prompt Spark: Revolutionizing LLM System Prompt Management</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/prompt-spark-revolutionizing-llm-system-prompt-management</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/prompt-spark-revolutionizing-llm-system-prompt-management</guid>
+    <link>https://markhazleton.com/blog/prompt-spark-revolutionizing-llm-system-prompt-management</link>
+    <guid>https://markhazleton.com/blog/prompt-spark-revolutionizing-llm-system-prompt-management</guid>
     <pubDate>Sun, 19 May 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In the rapidly evolving field of artificial intelligence, managing and optimizing prompts for large language models (LLMs) is crucial for maximizing performance and efficiency. Prompt Spark emerges as a groundbreaking solution, offering a suite of tools designed to streamline this process. This article delves into the features and benefits of Prompt Spark, including its variants library, performance tracking capabilities, and innovative prompt engineering strategies.]]></description>
   </item>
   <item>
     <title>Taking FastEndpoints for a Test Drive</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/taking-fastendpoints-for-a-test-drive</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/taking-fastendpoints-for-a-test-drive</guid>
+    <link>https://markhazleton.com/blog/taking-fastendpoints-for-a-test-drive</link>
+    <guid>https://markhazleton.com/blog/taking-fastendpoints-for-a-test-drive</guid>
     <pubDate>Sun, 07 Apr 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[FastEndpoints offers a simplified approach to building ASP.NET APIs, enhancing efficiency and productivity. This article explores its features and benefits.]]></description>
   </item>
   <item>
     <title>Transforming SampleMvcCRUD with .NET Aspire</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/transforming-samplemvccrud-with-net-aspire-a-cloud-native-evolution</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/transforming-samplemvccrud-with-net-aspire-a-cloud-native-evolution</guid>
+    <link>https://markhazleton.com/blog/transforming-samplemvccrud-with-net-aspire-a-cloud-native-evolution</link>
+    <guid>https://markhazleton.com/blog/transforming-samplemvccrud-with-net-aspire-a-cloud-native-evolution</guid>
     <pubDate>Thu, 14 Mar 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[The evolution of software development has seen a significant shift towards cloud-native architectures. This transformation is driven by the need for scalability, flexibility, and improved performance. In this article, we explore how the SampleMvcCRUD project can be transformed using .NET Aspire to achieve these goals.]]></description>
   </item>
   <item>
     <title>Embracing Azure Static Web Apps for Static Site Hosting</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/embracing-azure-static-web-apps-for-static-site-hosting</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/embracing-azure-static-web-apps-for-static-site-hosting</guid>
+    <link>https://markhazleton.com/blog/embracing-azure-static-web-apps-for-static-site-hosting</link>
+    <guid>https://markhazleton.com/blog/embracing-azure-static-web-apps-for-static-site-hosting</guid>
     <pubDate>Sun, 10 Mar 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Static websites are gaining traction due to their speed, security, and simplicity. Azure Static Web Apps offers an efficient solution for hosting these sites, providing integrated CI/CD, global reach, and built-in authentication.]]></description>
   </item>
   <item>
     <title>Creating a Key Press Counter with Chat GPT</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/generating-a-key-press-counter-with-chatgpt</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/generating-a-key-press-counter-with-chatgpt</guid>
+    <link>https://markhazleton.com/blog/generating-a-key-press-counter-with-chatgpt</link>
+    <guid>https://markhazleton.com/blog/generating-a-key-press-counter-with-chatgpt</guid>
     <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In this article, we explore how to create a key press counter using Chat GPT. We cover the technical setup, ethical considerations, and practical applications of this tool.]]></description>
   </item>
   <item>
     <title>From Concept to Live: Unveiling WichitaSewer.com</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/wichita-sewer-site-creation</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/wichita-sewer-site-creation</guid>
+    <link>https://markhazleton.com/blog/wichita-sewer-site-creation</link>
+    <guid>https://markhazleton.com/blog/wichita-sewer-site-creation</guid>
     <pubDate>Wed, 21 Feb 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[Creating a website involves meticulous planning and execution. This article explores the journey of WichitaSewer.com from concept to live launch, highlighting key insights and lessons learned.]]></description>
   </item>
   <item>
     <title>The Balanced Equation: Crafting the Perfect Project Team Mix</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-balanced-equation-crafting-the-perfect-project-team-mix</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-balanced-equation-crafting-the-perfect-project-team-mix</guid>
+    <link>https://markhazleton.com/blog/the-balanced-equation-crafting-the-perfect-project-team-mix</link>
+    <guid>https://markhazleton.com/blog/the-balanced-equation-crafting-the-perfect-project-team-mix</guid>
     <pubDate>Mon, 29 Jan 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[In today's fast-paced business environment, assembling the right project team is crucial for success. The perfect mix of internal employees and external consultants can lead to innovative solutions and efficient project execution. This article explores how to achieve this balance and why it's essential.]]></description>
   </item>
   <item>
     <title>Fire and Forget for Enhanced Performance</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/fire-and-forget-for-enhanced-performance</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/fire-and-forget-for-enhanced-performance</guid>
+    <link>https://markhazleton.com/blog/fire-and-forget-for-enhanced-performance</link>
+    <guid>https://markhazleton.com/blog/fire-and-forget-for-enhanced-performance</guid>
     <pubDate>Sun, 21 Jan 2024 00:00:00 GMT</pubDate>
     <description><![CDATA[The Fire and Forget technique is a powerful method to enhance API performance by allowing tasks to proceed without waiting for a response. This approach is particularly beneficial in scenarios like Service Bus updates during user login, where immediate feedback is not required, thus improving overall system efficiency.]]></description>
   </item>
   <item>
     <title>The Art of Making Yourself Replaceable: A Guide to Career Growth</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-art-of-making-yourself-replaceable-a-developers-guide-to-career-growth</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/the-art-of-making-yourself-replaceable-a-developers-guide-to-career-growth</guid>
+    <link>https://markhazleton.com/blog/the-art-of-making-yourself-replaceable-a-developers-guide-to-career-growth</link>
+    <guid>https://markhazleton.com/blog/the-art-of-making-yourself-replaceable-a-developers-guide-to-career-growth</guid>
     <pubDate>Tue, 05 Dec 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[In today's tech-driven world, making yourself replaceable can be a strategic move for career growth. By fostering a culture of knowledge sharing and innovation, you can position yourself as a leader and adapt to the ever-evolving tech landscape.]]></description>
   </item>
   <item>
     <title>Mastering Task List Processing</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/task-list-processor</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/task-list-processor</guid>
+    <link>https://markhazleton.com/blog/task-list-processor</link>
+    <guid>https://markhazleton.com/blog/task-list-processor</guid>
     <pubDate>Thu, 09 Nov 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Task list processing is essential for managing projects and personal productivity. This article explores techniques and tools to streamline task management and boost efficiency.]]></description>
   </item>
   <item>
     <title>Guide to Redis Local Instance Setup </title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/redis-local-instance</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/redis-local-instance</guid>
+    <link>https://markhazleton.com/blog/redis-local-instance</link>
+    <guid>https://markhazleton.com/blog/redis-local-instance</guid>
     <pubDate>Thu, 24 Aug 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Setting up a Redis local instance can significantly enhance your application's performance. This guide walks you through the process, ensuring you configure Redis for maximum efficiency and reliability.]]></description>
   </item>
   <item>
     <title>Mastering Concurrent Processing</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/concurrent-processing</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/concurrent-processing</guid>
+    <link>https://markhazleton.com/blog/concurrent-processing</link>
+    <guid>https://markhazleton.com/blog/concurrent-processing</guid>
     <pubDate>Thu, 17 Aug 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Concurrent processing is a technique that allows multiple tasks to be executed simultaneously, improving efficiency and performance. This article explores its benefits, implementation techniques, and challenges.]]></description>
   </item>
   <item>
     <title>Understanding System Cache: A Comprehensive Guide</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/system-cache</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/system-cache</guid>
+    <link>https://markhazleton.com/blog/system-cache</link>
+    <guid>https://markhazleton.com/blog/system-cache</guid>
     <pubDate>Thu, 10 Aug 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[System cache is crucial for speeding up processes and improving system performance. This guide explores its types, functionality, and benefits, along with management tips.]]></description>
   </item>
   <item>
     <title>The Power of Lifelong Learning</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/lifelong-learning</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/lifelong-learning</guid>
+    <link>https://markhazleton.com/blog/lifelong-learning</link>
+    <guid>https://markhazleton.com/blog/lifelong-learning</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Lifelong learning is essential for personal and professional growth. This article explores its benefits and provides strategies to incorporate continuous education into your life.]]></description>
   </item>
   <item>
     <title>Complete Guide to SampleMvcCRUD Project</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/sample-mvc-crud</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/sample-mvc-crud</guid>
+    <link>https://markhazleton.com/blog/sample-mvc-crud</link>
+    <guid>https://markhazleton.com/blog/sample-mvc-crud</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[The SampleMvcCRUD project is a comprehensive tutorial designed to help developers understand MVC architecture and CRUD operations. This guide provides step-by-step instructions for building robust web applications using ASP.NET.]]></description>
   </item>
   <item>
     <title>Mastering Git Repository Organization</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/git-organized</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/git-organized</guid>
+    <link>https://markhazleton.com/blog/git-organized</link>
+    <guid>https://markhazleton.com/blog/git-organized</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Efficient Git repository organization is crucial for successful software development. This article covers strategies to improve collaboration, manage projects, and reduce errors.]]></description>
   </item>
   <item>
     <title>Mastering Web Project Mechanics</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/web-project-mechanics</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/web-project-mechanics</guid>
+    <link>https://markhazleton.com/blog/web-project-mechanics</link>
+    <guid>https://markhazleton.com/blog/web-project-mechanics</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Web projects are integral to modern business success. This guide explores the essential strategies for managing and executing web projects effectively, ensuring your projects achieve their objectives.]]></description>
   </item>
   <item>
     <title>Mastering Data Analysis Techniques</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/data-analysis-demonstration</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/data-analysis-demonstration</guid>
+    <link>https://markhazleton.com/blog/data-analysis-demonstration</link>
+    <guid>https://markhazleton.com/blog/data-analysis-demonstration</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Data analysis is a critical skill in today's data-driven world. This article explores essential techniques for analyzing data and provides practical demonstrations on how to visualize data effectively.]]></description>
   </item>
   <item>
     <title>CancellationToken for Async Programming</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/cancellation-token</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/cancellation-token</guid>
+    <link>https://markhazleton.com/blog/cancellation-token</link>
+    <guid>https://markhazleton.com/blog/cancellation-token</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Asynchronous programming allows tasks to run without blocking the main thread, but managing these tasks efficiently is crucial. CancellationToken provides a robust mechanism for task cancellation, ensuring resources are not wasted and applications remain responsive.]]></description>
   </item>
   <item>
     <title>Rethinking Git Flow for Developers </title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/git-flow-rethink</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/git-flow-rethink</guid>
+    <link>https://markhazleton.com/blog/git-flow-rethink</link>
+    <guid>https://markhazleton.com/blog/git-flow-rethink</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[In the evolving landscape of software development, traditional Git Flow strategies may need a rethink. This article explores a modern approach to Git Flow, offering insights into optimizing your branching strategy for better efficiency and collaboration.]]></description>
   </item>
   <item>
     <title>Using ChatGPT for C# Development</title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/using-chatgpt-for-developers</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/using-chatgpt-for-developers</guid>
+    <link>https://markhazleton.com/blog/using-chatgpt-for-developers</link>
+    <guid>https://markhazleton.com/blog/using-chatgpt-for-developers</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Explore how ChatGPT can revolutionize C# development by improving code quality and boosting productivity. Discover practical applications and integration tips.]]></description>
   </item>
   <item>
     <title>Explore Trivia Spark With ChatGPT </title>
-    <link>https://markhazleton.github.io/mark-hazleton-s-notes/blog/trivia-spark-development</link>
-    <guid>https://markhazleton.github.io/mark-hazleton-s-notes/blog/trivia-spark-development</guid>
+    <link>https://markhazleton.com/blog/trivia-spark-development</link>
+    <guid>https://markhazleton.com/blog/trivia-spark-development</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Trivia Spark with ChatGPT offers a revolutionary way to engage users through AI-powered quizzes. Explore how this innovative tool transforms interactive gaming experiences.]]></description>
   </item>
