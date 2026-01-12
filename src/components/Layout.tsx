@@ -15,9 +15,17 @@ const navLinks = [
   { href: '/contact', label: 'Contact' },
 ];
 
+const THEME_STORAGE_KEY = 'theme';
+
 export function Layout({ children }: LayoutProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window === 'undefined') {
+      return false;
+    }
+
+    return localStorage.getItem(THEME_STORAGE_KEY) === 'dark';
+  });
   const location = useLocation();
   const handleNavClick = () => setIsMenuOpen(false);
 
@@ -27,6 +35,8 @@ export function Layout({ children }: LayoutProps) {
     } else {
       document.documentElement.classList.remove('dark');
     }
+
+    localStorage.setItem(THEME_STORAGE_KEY, isDark ? 'dark' : 'light');
   }, [isDark]);
 
   return (
