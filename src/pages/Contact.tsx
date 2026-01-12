@@ -22,10 +22,14 @@ export default function Contact() {
               Let's Collaborate
             </h1>
             
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              Most organizations don't fail because they lack technology — they fail 
+              because their systems don't align with how the business actually operates.
+            </p>
+
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Got an interesting problem to solve? Want to chat about architecture, 
-              cloud patterns, or just geek out about distributed systems? 
-              I'm always up for a good conversation.
+              If you're navigating modernization, scaling, or complexity that's starting 
+              to slow your team down, I'd love to compare notes.
             </p>
 
             <p className="text-xl text-foreground font-heading font-medium mb-10">

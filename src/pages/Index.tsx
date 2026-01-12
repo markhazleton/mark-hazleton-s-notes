@@ -13,29 +13,6 @@ import { Seo } from '@/components/Seo';
 import { DEFAULT_DESCRIPTION, DEFAULT_KEYWORDS, DEFAULT_TITLE } from '@/lib/site';
 import { formatDateShort } from '@/lib/date';
 
-const howIWork = [
-  {
-    title: 'Start with discovery',
-    description: 'Understanding the problem deeply before proposing solutions. The best architecture comes from understanding the business context.',
-  },
-  {
-    title: 'Embrace constraints',
-    description: 'Constraints aren\'t obstacles-they\'re design inputs. Budget, timeline, team skills, and existing systems all shape the right solution.',
-  },
-  {
-    title: 'Make tradeoffs explicit',
-    description: 'Every architectural decision involves tradeoffs. I document them clearly so teams can make informed choices.',
-  },
-  {
-    title: 'Document for the future',
-    description: 'Architecture decisions should be understandable by someone joining the team in two years. I write ADRs and keep documentation current.',
-  },
-  {
-    title: 'Ship incrementally',
-    description: 'Big-bang releases are risky. I prefer incremental delivery that provides value early and often while reducing risk.',
-  },
-];
-
 export default function Index() {
   const repositoryState = useRepositoryStats();
   const latestPosts = posts.slice(0, 6);
@@ -100,13 +77,17 @@ export default function Index() {
       <section className="section border-b border-border">
         <div className="container-wide">
           <div className="max-w-3xl animate-fade-up">
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
               Hi, I'm Mark.
-              <span className="block text-primary">I build systems that scale.</span>
             </h1>
+            <p className="font-heading text-2xl sm:text-3xl font-semibold text-primary mb-6">
+              I design systems that help organizations make better decisions at scale.
+            </p>
             <p className="text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-              Technical Solutions Architect helping teams design resilient cloud architectures, 
-              integration patterns, and engineering practices. I write about what I learn along the way.
+              I help business leaders and engineering teams turn complexity into clarity — designing 
+              scalable .NET, Azure, and AI-driven architectures that unlock measurable outcomes without 
+              hype. My work connects strategy, cloud infrastructure, and practical engineering to build 
+              resilient systems that support real operations.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -135,53 +116,33 @@ export default function Index() {
 
             <div className="prose-blog text-lg">
               <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-                I'm Mark Hazleton, a Technical Solutions Architect with a passion for 
-                building systems that are resilient, maintainable, and actually solve 
-                real problems.
+                I'm Mark Hazleton, a Technical Solutions Architect who helps organizations build 
+                systems that stay reliable when the stakes are high.
               </p>
 
               <p>
-                For the past 15+ years, I've been helping teams design and build distributed 
-                systems across healthcare, retail, and financial services. I've seen patterns 
-                that work and patterns that fail spectacularly. I write about both.
+                For over 15 years, I've worked across healthcare, financial services, and complex 
+                enterprise environments where downtime, bad data, or poor integration creates real-world 
+                consequences. I've designed platforms that route millions of transactions, coordinate 
+                distributed teams, and keep critical workflows running when things inevitably go wrong.
               </p>
 
               <p>
-                My approach is pragmatic rather than dogmatic. The "right" architecture depends 
-                on your constraints, your team, and your business context. I'm more interested 
-                in solving problems than following frameworks for their own sake.
+                I specialize in the space between <strong>software and operations</strong> — where APIs, 
+                cloud infrastructure, security, and people collide. That's where most failures happen, 
+                and where good architecture makes the biggest difference.
               </p>
 
               <p>
-                When I'm not architecting systems, I'm probably reading about distributed systems 
-                theory, experimenting with new cloud services, or trying to explain to my family 
-                what exactly I do for a living.
+                My philosophy is pragmatic: there is no "perfect" architecture, only the one that fits 
+                your constraints, your risk tolerance, and your business goals. I care less about 
+                frameworks and more about whether a system will still work at 2 a.m. when something breaks.
               </p>
-            </div>
-          </div>
 
-          <div className="mt-16">
-            <h3 className="font-heading text-2xl font-semibold text-foreground mb-6">
-              How I work
-            </h3>
-            <div className="space-y-4">
-              {howIWork.map((item, index) => (
-                <div 
-                  key={item.title}
-                  className="flex gap-4 p-4 paper-card"
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
-                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="font-heading font-semibold text-foreground mb-1">
-                      {item.title}
-                    </h4>
-                    <p className="text-muted-foreground text-sm">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+              <p>
+                I write to capture what actually works, what doesn't, and how teams can build systems 
+                that are easier to run, easier to change, and harder to break.
+              </p>
             </div>
           </div>
 
@@ -201,60 +162,40 @@ export default function Index() {
             </h3>
             <div className="prose-blog">
               <p>
-                I started my career as a developer, building line-of-business applications 
-                in .NET. Over time, I became increasingly interested in how systems fit 
-                together-the integration patterns, the failure modes, the operational 
-                characteristics that determine whether a system thrives or struggles in production.
+                My path into architecture started in the early 1990s with large consulting firms — 
+                EDS and Price Waterhouse — where I learned structured enterprise systems delivery 
+                and technical architecture fundamentals. Those years gave me experience building 
+                petroleum marketing applications and working within rigorous delivery methodologies.
               </p>
               <p>
-                That curiosity led me into architecture roles, where I could think about 
-                systems holistically. I've led architecture practices, built platform teams, 
-                and consulted for organizations ranging from startups to enterprises.
+                In the late '90s, I shifted to boutique web consulting, working on early digital 
+                initiatives like Hilton.com and portal solutions built on platforms like Epicentric 
+                and BEA Portal. This was the era when organizations were first figuring out what 
+                the web meant for their business — managing client relationships, building ROI cases, 
+                and leading delivery teams.
               </p>
               <p>
-                These days, I focus on cloud-native architectures, particularly on Azure. 
-                I'm especially interested in event-driven systems, observability, and the 
-                organizational patterns that enable teams to build and operate complex systems 
-                sustainably.
+                From there, I moved through project management roles at firms like Agency.com and 
+                FileNet integrators, eventually founding my own consulting practice in 2002. That's 
+                when I started specializing in the technical architecture work I still do today — 
+                designing web publishing platforms, integration solutions, and cloud-based systems 
+                that align with how businesses actually operate.
+              </p>
+              <p>
+                Over the years, I've held roles ranging from Digital Solutions Architect at CEC 
+                Entertainment to Senior Software Developer at Baylor Scott & White Health, where 
+                I've migrated legacy APIs to modern .NET Core platforms and mentored development 
+                teams. I've worked in healthcare, financial services, retail, and entertainment — 
+                industries where system failures have real consequences.
+              </p>
+              <p>
+                Today, my focus is on <strong>Azure-based cloud platforms, event-driven architectures, 
+                AI-powered systems, and observability-first design</strong> — the foundations required 
+                to run large, distributed systems without burning out the people who maintain them. 
+                I combine 25+ years of architecture and delivery experience with current technical 
+                expertise to help organizations build systems that stay reliable when it matters most.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Areas */}
-      <section className="section border-b border-border">
-        <div className="container-wide">
-          <div className="mb-10">
-            <h2 className="font-heading text-2xl font-semibold text-foreground mb-2">
-              What I write about
-            </h2>
-            <p className="text-muted-foreground">
-              Practical insights from building and scaling production systems.
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3 stagger-children">
-            <FeatureCard
-              title="Architecture Notes"
-              description="Patterns, tradeoffs, and lessons learned from designing distributed systems at scale."
-              icon={Server}
-              href="/blog?tag=Architecture"
-              color="primary"
-            />
-            <FeatureCard
-              title="Azure & Cloud"
-              description="Deep dives into Azure services, cloud-native patterns, and infrastructure as code."
-              icon={Cloud}
-              href="/blog?tag=Azure"
-              color="accent"
-            />
-            <FeatureCard
-              title="Integration & APIs"
-              description="Building robust integrations, API design, and event-driven architectures."
-              icon={Workflow}
-              href="/blog?tag=APIs"
-              color="muted"
-            />
           </div>
         </div>
       </section>

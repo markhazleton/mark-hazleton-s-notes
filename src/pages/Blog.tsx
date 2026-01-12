@@ -1,5 +1,5 @@
-import { useState, useMemo, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useState, useMemo } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Layout } from '@/components/Layout';
 import { BlogCard } from '@/components/BlogCard';
 import { SearchInput } from '@/components/SearchInput';
@@ -23,23 +23,14 @@ const parseTagsFromSearch = (search: string) => {
     .filter(Boolean);
 };
 
-const areTagsEqual = (left: string[], right: string[]) =>
-  left.length === right.length && left.every((tag, index) => tag === right[index]);
-
 export default function Blog() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [search, setSearch] = useState('');
-  const [selectedTags, setSelectedTags] = useState<string[]>(() =>
-    parseTagsFromSearch(location.search)
-  );
   const [sortNewest, setSortNewest] = useState(true);
-
-  useEffect(() => {
-    const tagsFromQuery = parseTagsFromSearch(location.search);
-    setSelectedTags((prev) =>
-      areTagsEqual(prev, tagsFromQuery) ? prev : tagsFromQuery
-    );
-  }, [location.search]);
+  
+  // Parse tags from URL on each render when location.search changes
+  const selectedTags = parseTagsFromSearch(location.search);
 
   const filteredPosts = useMemo(() => {
     let result = posts;
@@ -74,9 +65,14 @@ export default function Blog() {
   }, [search, selectedTags, sortNewest]);
 
   const toggleTag = (tag: string) => {
-    setSelectedTags((prev) =>
-      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
-    );
+    const currentTags = parseTagsFromSearch(location.search);
+    const newTags = currentTags.includes(tag)
+      ? currentTags.filter((t) => t !== tag)
+      : [...currentTags, tag];
+    
+    const params = new URLSearchParams();
+    newTags.forEach((t) => params.append('tag', t));
+    navigate({ search: params.toString() }, { replace: true });
   };
 
   return (
@@ -148,7 +144,7 @@ export default function Blog() {
                 className="mt-4"
                 onClick={() => {
                   setSearch('');
-                  setSelectedTags([]);
+                  navigate({ search: '' }, { replace: true });
                 }}
               >
                 Clear filters

@@ -14,9 +14,7 @@ import {
 const tools = [
   { name: 'Azure', icon: Cloud },
   { name: '.NET', icon: Code2 },
-  { name: 'Terraform', icon: Boxes },
-  { name: 'Kubernetes', icon: Container },
-  { name: 'SQL Server', icon: Database },
+  { name: 'Databases', icon: Database },
   { name: 'APIs & Integration', icon: Workflow },
   { name: 'DevOps', icon: GitBranch },
   { name: 'Security', icon: Shield },
