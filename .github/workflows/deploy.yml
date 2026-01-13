@@ -46,6 +46,28 @@ jobs:
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          echo "Checking docs directory..."
+          ls -la docs/
+          echo ""
+          echo "Checking for index.html..."
+          if [ ! -f "docs/index.html" ]; then
+            echo "Error: docs/index.html not found!"
+            exit 1
+          fi
+          echo "✓ index.html found"
+          echo ""
+          echo "Checking for .nojekyll..."
+          if [ ! -f "docs/.nojekyll" ]; then
+            echo "Warning: .nojekyll not found, creating it..."
+            touch docs/.nojekyll
+          fi
+          echo "✓ .nojekyll present"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -58,6 +80,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        timeout-minutes: 10
