@@ -112,6 +112,12 @@ async function fetchYouTubeVideosWithCache() {
     // Combine cached and newly fetched videos
     const allVideos = [...cachedVideos, ...fetchedVideos];
 
+    // If no videos were fetched and we have existing data, use it
+    if (allVideos.length === 0 && existingData.videos.length > 0) {
+      console.log(`\n⚠️  All fetches failed. Using existing data with ${existingData.videos.length} videos.`);
+      allVideos.push(...existingData.videos);
+    }
+
     // Sort by published date (newest first)
     allVideos.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
@@ -133,6 +139,12 @@ async function fetchYouTubeVideosWithCache() {
       },
     };
 
+    // Check if we have any videos to save
+    if (allVideos.length === 0) {
+      console.log(`\n⚠️  No videos available - all fetches failed and no existing data`);
+      throw new Error("No video data available");
+    }
+
     // Save output file
     await fs.writeFile(
       outputPath,
@@ -151,11 +163,15 @@ async function fetchYouTubeVideosWithCache() {
     await fs.writeFile(cacheMetaPath, JSON.stringify(newCacheMetadata, null, 2));
 
     console.log(`\n✓ Saved ${allVideos.length} videos to ${outputPath}`);
-    console.log(
-      `✓ Cache efficiency: ${cachedVideos.length}/${allVideos.length} videos reused (${Math.round(
-        (cachedVideos.length / allVideos.length) * 100
-      )}%)`
-    );
+    if (fetchedVideos.length > 0) {
+      console.log(
+        `✓ Cache efficiency: ${cachedVideos.length}/${allVideos.length} videos reused (${Math.round(
+          (cachedVideos.length / allVideos.length) * 100
+        )}%)`
+      );
+    } else if (existingData.videos.length > 0) {
+      console.log(`✓ Using 100% existing data (YouTube fetch blocked/failed)`);
+    }
   } catch (error) {
     console.error("Error fetching YouTube videos:", error.message);
     console.error(error.stack);

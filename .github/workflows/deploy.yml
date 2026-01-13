@@ -45,6 +45,7 @@ jobs:
           VITE_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
         run: npm run build
+        continue-on-error: false
 
       - name: Verify build output
         run: |
