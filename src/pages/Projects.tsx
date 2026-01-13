@@ -7,9 +7,9 @@ export default function Projects() {
   return (
     <Layout>
       <Seo
-        title="Projects | Mark Hazleton"
-        description="Selected work across web applications, tooling, and product experiments from Mark Hazleton."
-        keywords="Mark Hazleton projects, software architecture, developer tools, web applications, product experiments"
+        title="Software Projects & Architecture Portfolio | Mark Hazleton"
+        description="Explore Mark Hazleton's software architecture projects: .NET applications, Azure cloud solutions, developer tools, and open-source contributions."
+        keywords="software architecture projects, .NET applications, Azure solutions, developer tools, cloud architecture portfolio, open source projects, Mark Hazleton projects"
         canonical="/projects"
       />
       <section className="section">
@@ -17,10 +17,12 @@ export default function Projects() {
           {/* Header */}
           <div className="max-w-2xl mb-12 animate-fade-up">
             <h1 className="font-heading text-4xl font-bold text-foreground mb-4">
-              Projects
+              Software Architecture Portfolio
             </h1>
             <p className="text-lg text-muted-foreground">
-              Selected work across web applications, tooling, and product experiments.
+              Selected work across <strong>web applications</strong>, <strong>cloud solutions</strong>, 
+              <strong> developer tooling</strong>, and <strong>open-source contributions</strong>. 
+              Demonstrating practical architecture and engineering patterns.
             </p>
           </div>
 

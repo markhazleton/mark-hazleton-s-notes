@@ -15,6 +15,7 @@ export type HeadState = {
   title: string;
   metas: HeadMeta[];
   links: HeadLink[];
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 };
 
 export type HeadManager = {

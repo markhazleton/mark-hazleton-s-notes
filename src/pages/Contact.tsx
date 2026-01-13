@@ -6,9 +6,9 @@ export default function Contact() {
   return (
     <Layout>
       <Seo
-        title="Contact Mark Hazleton"
-        description="Get in touch with Mark Hazleton to collaborate on cloud architecture, integration patterns, and distributed systems."
-        keywords="contact Mark Hazleton, cloud architecture consulting, distributed systems, integration patterns, technical solutions architect"
+        title="Contact Mark Hazleton | Technical Solutions Architect"
+        description="Connect with Mark Hazleton for cloud architecture consulting, Azure solutions, .NET system design, and distributed systems expertise. Available for collaboration and consulting."
+        keywords="contact Mark Hazleton, cloud architecture consulting, Azure consultant, .NET architect, distributed systems consulting, technical solutions architect, system design consultant"
         canonical="/contact"
       />
       <section className="section">
@@ -19,7 +19,7 @@ export default function Contact() {
             </div>
             
             <h1 className="font-heading text-4xl font-bold text-foreground mb-4">
-              Let's Collaborate
+              Let's Collaborate on Your Next Project
             </h1>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">

@@ -17,6 +17,40 @@ export default function Index() {
   const repositoryState = useRepositoryStats();
   const latestPosts = posts.slice(0, 6);
 
+  // Person schema markup for SEO
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mark Hazleton",
+    "jobTitle": "Technical Solutions Architect",
+    "url": "https://markhazleton.com",
+    "sameAs": [
+      "https://github.com/markhazleton",
+      "https://linkedin.com/in/markhazleton"
+    ],
+    "knowsAbout": [
+      "Cloud Architecture",
+      ".NET",
+      "Azure",
+      "System Design",
+      "Healthcare System Architecture",
+      "Enterprise Cloud Migration",
+      "API Design",
+      "Event-Driven Architecture",
+      "Resilient Systems"
+    ],
+    "description": "Technical Solutions Architect designing resilient .NET and Azure systems for healthcare and enterprise. 15+ years turning complexity into clarity through scalable cloud architecture.",
+    "workLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wichita",
+        "addressRegion": "KS",
+        "addressCountry": "US"
+      }
+    }
+  };
+
   const getMostRecentRepository = (repositories: Repository[]) => {
     let latestRepo: Repository | null = null;
     let latestDate: Date | null = null;
@@ -72,22 +106,23 @@ export default function Index() {
         description={DEFAULT_DESCRIPTION}
         keywords={DEFAULT_KEYWORDS}
         canonical="/"
+        jsonLd={personSchema}
       />
       {/* Hero Section */}
       <section className="section border-b border-border">
         <div className="container-wide">
           <div className="max-w-3xl animate-fade-up">
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
-              Hi, I'm Mark.
+              Mark Hazleton – Technical Solutions Architect
             </h1>
             <p className="font-heading text-2xl sm:text-3xl font-semibold text-primary mb-6">
-              I design systems that help organizations make better decisions at scale.
+              Scalable System Architecture for Healthcare & Enterprise
             </p>
             <p className="text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-              I help business leaders and engineering teams turn complexity into clarity — designing 
-              scalable .NET, Azure, and AI-driven architectures that unlock measurable outcomes without 
-              hype. My work connects strategy, cloud infrastructure, and practical engineering to build 
-              resilient systems that support real operations.
+              Technical Solutions Architect specializing in <strong>.NET</strong>, <strong>Azure</strong>, and <strong>resilient system design</strong>. 
+              I help business leaders and engineering teams design scalable cloud architectures, build robust API patterns, 
+              and implement AI-driven solutions that deliver measurable outcomes. My work connects strategy, cloud infrastructure, 
+              and practical engineering to build systems that stay reliable when the stakes are high.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -116,33 +151,89 @@ export default function Index() {
 
             <div className="prose-blog text-lg">
               <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-                I'm Mark Hazleton, a Technical Solutions Architect who helps organizations build 
-                systems that stay reliable when the stakes are high.
+                I'm Mark Hazleton, a <strong>Technical Solutions Architect</strong> specializing in resilient systems at scale.
               </p>
 
+              <h3 className="font-heading text-2xl font-semibold text-foreground mb-4 mt-8">
+                Expertise
+              </h3>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Cloud Architecture:</strong> Azure infrastructure design, .NET solutions, API design patterns</li>
+                <li><strong>System Reliability:</strong> Designing for resilience under load and failure scenarios</li>
+                <li><strong>Integration Patterns:</strong> Data flow, event-driven architectures, distributed systems</li>
+                <li><strong>Healthcare & Enterprise:</strong> Compliance-aware solutions for regulated industries</li>
+                <li><strong>AI-Driven Systems:</strong> Practical AI integration and observability-first design</li>
+              </ul>
+
+              <h3 className="font-heading text-2xl font-semibold text-foreground mb-4 mt-8">
+                Experience
+              </h3>
               <p>
-                For over 15 years, I've worked across healthcare, financial services, and complex 
-                enterprise environments where downtime, bad data, or poor integration creates real-world 
+                For over 15 years, I've worked across <strong>healthcare</strong>, <strong>financial services</strong>, and complex 
+                <strong> enterprise environments</strong> where downtime, bad data, or poor integration creates real-world 
                 consequences. I've designed platforms that route millions of transactions, coordinate 
                 distributed teams, and keep critical workflows running when things inevitably go wrong.
               </p>
 
+              <h3 className="font-heading text-2xl font-semibold text-foreground mb-4 mt-8">
+                Philosophy
+              </h3>
               <p>
-                I specialize in the space between <strong>software and operations</strong> — where APIs, 
-                cloud infrastructure, security, and people collide. That's where most failures happen, 
-                and where good architecture makes the biggest difference.
+                <strong>Pragmatic, constraint-aware design.</strong> There is no "perfect" architecture, only the one that fits 
+                your constraints, your risk tolerance, and your business goals. I specialize in the space between 
+                software and operations — where APIs, cloud infrastructure, security, and people collide. That's where 
+                most failures happen, and where good architecture makes the biggest difference.
               </p>
 
               <p>
-                My philosophy is pragmatic: there is no "perfect" architecture, only the one that fits 
-                your constraints, your risk tolerance, and your business goals. I care less about 
-                frameworks and more about whether a system will still work at 2 a.m. when something breaks.
+                I care less about frameworks and more about whether a system will still work at 2 a.m. when something breaks. 
+                I write to capture what actually works, what doesn't, and how teams can build systems that are easier to run, 
+                easier to change, and harder to break.
               </p>
+            </div>
+          </div>
 
-              <p>
-                I write to capture what actually works, what doesn't, and how teams can build systems 
-                that are easier to run, easier to change, and harder to break.
-              </p>
+          <div className="mt-16">
+            <h3 className="font-heading text-2xl font-semibold text-foreground mb-6">
+              What I Help With
+            </h3>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div className="paper-card p-6">
+                <h4 className="font-heading text-lg font-semibold text-foreground mb-2">
+                  Azure Architecture & Migration
+                </h4>
+                <p className="text-muted-foreground">
+                  Cloud infrastructure design, Azure resource optimization, and enterprise cloud migration strategies 
+                  that minimize risk and downtime.
+                </p>
+              </div>
+              <div className="paper-card p-6">
+                <h4 className="font-heading text-lg font-semibold text-foreground mb-2">
+                  .NET System Design
+                </h4>
+                <p className="text-muted-foreground">
+                  Scalable .NET architectures, API design patterns, microservices implementation, and modernization 
+                  of legacy .NET applications to .NET Core.
+                </p>
+              </div>
+              <div className="paper-card p-6">
+                <h4 className="font-heading text-lg font-semibold text-foreground mb-2">
+                  Scalable Data & API Patterns
+                </h4>
+                <p className="text-muted-foreground">
+                  Event-driven architectures, integration patterns, distributed systems design, and data flow 
+                  optimization for high-volume applications.
+                </p>
+              </div>
+              <div className="paper-card p-6">
+                <h4 className="font-heading text-lg font-semibold text-foreground mb-2">
+                  Team Capability Building
+                </h4>
+                <p className="text-muted-foreground">
+                  Architecture guidance, technical mentorship, code reviews, and establishing best practices 
+                  for engineering teams.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -206,10 +297,10 @@ export default function Index() {
           <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="font-heading text-2xl font-semibold text-foreground mb-1">
-                Latest posts
+                Latest Architecture & Engineering Posts
               </h2>
               <p className="text-muted-foreground text-sm">
-                Fresh thoughts and technical deep-dives.
+                Cloud architecture insights, .NET best practices, and system design patterns.
               </p>
             </div>
             <Link 

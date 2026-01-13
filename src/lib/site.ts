@@ -1,5 +1,6 @@
 export const SITE_NAME = "Mark Hazleton";
-export const SITE_URL = import.meta.env.VITE_SITE_URL ?? "https://markhazleton.com";
+export const SITE_URL =
+  import.meta.env.VITE_SITE_URL ?? "https://markhazleton.com";
 export const BASE_PATH = import.meta.env.BASE_URL ?? "/";
 
 export const withBasePath = (value?: string | null) => {
@@ -17,7 +18,7 @@ export const withBasePath = (value?: string | null) => {
 };
 export const DEFAULT_TITLE = "Mark Hazleton | Technical Solutions Architect";
 export const DEFAULT_DESCRIPTION =
-  "Technical Solutions Architect helping teams build resilient, scalable cloud systems. Writing about architecture, Azure, integration patterns, and engineering practices.";
+  "Technical Solutions Architect designing resilient .NET and Azure systems for healthcare and enterprise. 15+ years turning complexity into clarity through scalable cloud architecture.";
 export const DEFAULT_KEYWORDS =
-  "Mark Hazleton, technical solutions architect, cloud architecture, Azure, integration patterns, systems design, event-driven architecture, observability, Wichita KS";
+  "Mark Hazleton, technical solutions architect, cloud architecture, Azure, .NET, healthcare system architecture, enterprise cloud migration, scalable architecture, integration patterns, systems design, event-driven architecture, observability, resilient systems, Wichita KS";
 export const DEFAULT_IMAGE = `${SITE_URL}/placeholder.svg`;

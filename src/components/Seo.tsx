@@ -19,6 +19,7 @@ type SeoProps = {
   image?: string;
   type?: "website" | "article";
   robots?: string;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 };
 
 const normalizeUrl = (value?: string) => {
@@ -69,6 +70,18 @@ const applyHeadToDocument = (head: HeadState) => {
     element.setAttribute("data-head-managed", "true");
     document.head.appendChild(element);
   });
+
+  if (head.jsonLd) {
+    const schemas = Array.isArray(head.jsonLd) ? head.jsonLd : [head.jsonLd];
+    schemas.forEach((schema, index) => {
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.textContent = JSON.stringify(schema);
+      script.setAttribute("data-head-managed", "true");
+      script.setAttribute("data-schema-index", String(index));
+      document.head.appendChild(script);
+    });
+  }
 };
 
 export function Seo({
@@ -79,6 +92,7 @@ export function Seo({
   image,
   type = "website",
   robots,
+  jsonLd,
 }: SeoProps) {
   const headRef = useHeadManager();
   const resolvedTitle = title ?? DEFAULT_TITLE;
@@ -106,6 +120,7 @@ export function Seo({
         { name: "twitter:image", content: resolvedImage },
       ],
       links: [{ rel: "canonical", href: resolvedCanonical }],
+      jsonLd,
     }),
     [
       resolvedTitle,
@@ -115,6 +130,7 @@ export function Seo({
       type,
       resolvedCanonical,
       resolvedImage,
+      jsonLd,
     ],
   );
 

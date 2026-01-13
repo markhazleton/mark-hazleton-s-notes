@@ -78,9 +78,9 @@ export default function Blog() {
   return (
     <Layout>
       <Seo
-        title="Blog | Mark Hazleton"
-        description="Practical notes on cloud architecture, integration patterns, and engineering practices from Mark Hazleton."
-        keywords="Mark Hazleton blog, cloud architecture, Azure, integration patterns, software architecture, engineering practices"
+        title="Cloud Architecture Blog | Mark Hazleton"
+        description="Practical insights on cloud architecture, .NET development, Azure infrastructure, and system design. Technical articles for software architects and engineering teams."
+        keywords="cloud architecture blog, Azure tutorials, .NET best practices, system design patterns, software architecture, integration patterns, distributed systems, Mark Hazleton"
         canonical="/blog"
       />
       <section className="section">
@@ -88,11 +88,11 @@ export default function Blog() {
           {/* Header */}
           <div className="max-w-2xl mb-10 animate-fade-up">
             <h1 className="font-heading text-4xl font-bold text-foreground mb-4">
-              Blog
+              Cloud Architecture & Engineering Insights
             </h1>
             <p className="text-lg text-muted-foreground">
-              Practical notes on cloud architecture, integration patterns, and 
-              engineering practices. Written for builders.
+              Practical notes on <strong>cloud architecture</strong>, <strong>Azure</strong>, <strong>.NET development</strong>, 
+              <strong> integration patterns</strong>, and engineering practices. Written for builders solving real problems.
             </p>
           </div>
 

@@ -277,6 +277,36 @@ export default function BlogPost() {
   const keywordList = post.keywords || post.tags.join(", ");
   const canonicalPath = `/blog/${post.slug}`;
 
+  // Article schema markup for SEO
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": post.image || "https://markhazleton.com/placeholder.svg",
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": {
+      "@type": "Person",
+      "name": "Mark Hazleton",
+      "url": "https://markhazleton.com",
+      "jobTitle": "Technical Solutions Architect"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mark Hazleton",
+      "url": "https://markhazleton.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://markhazleton.com/blog/${post.slug}`
+    },
+    "keywords": keywordList,
+    "articleSection": post.section || "Technology",
+    "wordCount": markdownState.content.split(/\s+/).length,
+    "articleBody": post.excerpt
+  };
+
   return (
     <Layout>
       <Seo
@@ -286,6 +316,7 @@ export default function BlogPost() {
         canonical={canonicalPath}
         image={post.image ?? undefined}
         type="article"
+        jsonLd={articleSchema}
       />
       <article className="section">
         <div className="container-wide">

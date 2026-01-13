@@ -373,9 +373,9 @@ export default function GitHub() {
   return (
     <Layout>
       <Seo
-        title="GitHub Repository Explorer | Mark Hazleton"
-        description="Explore, filter, and sort Mark Hazleton's public GitHub repositories with deep metrics, AI summaries, and activity signals."
-        keywords="Mark Hazleton GitHub, repository explorer, GitHub analytics, repository metrics"
+        title="GitHub Repository Portfolio | Mark Hazleton"
+        description="Explore Mark Hazleton's open-source contributions and GitHub projects. Filter by technology stack, activity metrics, and development patterns across .NET, Azure, and web development repositories."
+        keywords="Mark Hazleton GitHub, open source projects, .NET repositories, Azure projects, GitHub portfolio, software development, repository analytics, code samples"
         canonical="/github"
       />
       <section className="section">
@@ -389,11 +389,11 @@ export default function GitHub() {
                 <span>Last updated: {lastUpdated ? formatDateShort(lastUpdated) : '--'}</span>
               </div>
               <h1 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-4">
-                GitHub Repository Explorer
+                Open-Source Portfolio & GitHub Projects
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Navigate every repository in the live metrics feed. Compare activity,
-                filter by stack signals, and surface the most active work in one place.
+                Navigate my complete repository collection with live metrics. Filter by <strong>technology stack</strong>,{' '}
+                <strong>activity patterns</strong>, and <strong>development velocity</strong> to find relevant projects and code samples.
               </p>
               <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <div className="paper-card p-4">
@@ -479,6 +479,7 @@ export default function GitHub() {
                     onChange={(event) =>
                       setSortOption(event.target.value as SortOption)
                     }
+                    aria-label="Sort by"
                     className="mt-2 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   >
                     <option value="recent">Recently updated</option>
@@ -502,6 +503,7 @@ export default function GitHub() {
                     onChange={(event) =>
                       setVisibilityFilter(event.target.value as VisibilityFilter)
                     }
+                    aria-label="Filter by visibility"
                     className="mt-2 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   >
                     <option value="all">All</option>
@@ -518,6 +520,7 @@ export default function GitHub() {
                     onChange={(event) =>
                       setOriginFilter(event.target.value as OriginFilter)
                     }
+                    aria-label="Filter by origin"
                     className="mt-2 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   >
                     <option value="all">All</option>
@@ -534,6 +537,7 @@ export default function GitHub() {
                     onChange={(event) =>
                       setActivityFilter(event.target.value as ActivityFilter)
                     }
+                    aria-label="Filter by activity window"
                     className="mt-2 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   >
                     <option value="all">All time</option>
@@ -553,6 +557,7 @@ export default function GitHub() {
                     onChange={(event) =>
                       setReadmeFilter(event.target.value as ReadmeFilter)
                     }
+                    aria-label="Filter by README presence"
                     className="mt-2 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   >
                     <option value="all">Any</option>
