@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm-run-all clean fetch:youtube build:client build:ssr prerender publish:docs generate:seo",
-    "build:docs": "cross-env VITE_BASE_PATH=/mark-hazleton-s-notes/ VITE_SITE_URL=https://markhazleton.github.io/mark-hazleton-s-notes SITE_URL=https://markhazleton.github.io/mark-hazleton-s-notes npm run build",
+    "build": "npm-run-all clean build:client build:ssr prerender publish:docs generate:seo",
+    "build:update": "npm-run-all clean fetch:youtube build:client build:ssr prerender publish:docs generate:seo",
+    "build:ci": "npm-run-all clean build:client build:ssr prerender publish:docs generate:seo",
+    "build:docs": "cross-env VITE_BASE_PATH=/mark-hazleton-s-notes/ VITE_SITE_URL=https://markhazleton.github.io/mark-hazleton-s-notes SITE_URL=https://markhazleton.github.io/mark-hazleton-s-notes npm run build:ci",
     "build:client": "vite build",
     "build:ssr": "vite build --ssr src/entry-server.tsx --outDir docs/server",
     "build:dev": "cross-env NODE_ENV=development vite build --mode development",

@@ -247,14 +247,17 @@ function categorizeVideos(channelEntries, existingVideos, cacheMetadata) {
     const cacheEntry = cacheMetadata.videoCache?.[entry.id];
 
     if (!existingVideo) {
-      // Brand new video
+      // Brand new video - doesn't exist in our data
       newVideos.push(entry);
     } else if (cacheEntry && new Date(cacheEntry.cachedAt) > cacheAgeLimit) {
-      // Video exists and cache is fresh
+      // Video exists and cache metadata is fresh
+      cachedVideos.push(existingVideo);
+    } else if (existingVideo && !cacheEntry) {
+      // Video exists but no cache metadata - treat as cached (use existing data)
       cachedVideos.push(existingVideo);
     } else {
-      // Video exists but cache is stale - re-fetch
-      newVideos.push(entry);
+      // Video exists but cache is stale - would re-fetch, but since YouTube is blocking, use existing
+      cachedVideos.push(existingVideo);
     }
   }
 
