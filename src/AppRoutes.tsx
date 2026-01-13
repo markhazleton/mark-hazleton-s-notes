@@ -7,6 +7,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import Contact from "./pages/Contact";
 import GitHub from "./pages/GitHub";
 import RepositoryDetail from "./pages/RepositoryDetail";
+import Videos from "./pages/Videos";
 import NotFound from "./pages/NotFound";
 
 export function AppRoutes() {
@@ -20,6 +21,7 @@ export function AppRoutes() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/github" element={<GitHub />} />
       <Route path="/github/repositories/:name" element={<RepositoryDetail />} />
+      <Route path="/videos" element={<Videos />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
