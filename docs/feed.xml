@@ -5,7 +5,14 @@
     <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Jan 2026 17:24:21 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jan 2026 05:54:50 GMT</lastBuildDate>
+  <item>
+    <title>AI, Confidence, and the Rotary Four-Way Test</title>
+    <link>https://markhazleton.com/blog/ai-confidence-and-rotary-four-way-test</link>
+    <guid>https://markhazleton.com/blog/ai-confidence-and-rotary-four-way-test</guid>
+    <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[A reflection on speaking to the Downtown Wichita Rotary Club about AI, exploring how the technology affects our work and communities, and why Rotary's Four-Way Test offers the perfect ethical framework for responsible AI use.]]></description>
+  </item>
   <item>
     <title>Building a Quick Estimation Template When You Have Almost Nothing to Go On</title>
     <link>https://markhazleton.com/blog/building-a-quick-estimation-template</link>
