@@ -163,6 +163,17 @@ export default function RepositoryDetail() {
               </header>
 
               <div className="space-y-8">
+                {summaryText && (
+                  <div className="paper-card p-6">
+                    <h2 className="font-heading text-xl font-semibold text-foreground mb-4">
+                      Summary
+                    </h2>
+                    <p className="text-muted-foreground whitespace-pre-line">
+                      {summaryText}
+                    </p>
+                  </div>
+                )}
+
                 <div className="paper-card p-6">
                   <h2 className="font-heading text-xl font-semibold text-foreground mb-4">
                     Snapshot
@@ -298,17 +309,6 @@ export default function RepositoryDetail() {
                     </div>
                   </dl>
                 </div>
-
-                {summaryText && (
-                  <div className="paper-card p-6">
-                    <h2 className="font-heading text-xl font-semibold text-foreground mb-4">
-                      Summary
-                    </h2>
-                    <p className="text-muted-foreground whitespace-pre-line">
-                      {summaryText}
-                    </p>
-                  </div>
-                )}
 
                 <div className="paper-card p-6">
                   <h2 className="font-heading text-xl font-semibold text-foreground mb-4">

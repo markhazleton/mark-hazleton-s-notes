@@ -718,7 +718,12 @@ export default function GitHub() {
                           <div className="flex items-start justify-between gap-4">
                             <div>
                               <h3 className="font-heading text-xl font-semibold text-foreground mb-1">
-                                {repo.name}
+                                <Link
+                                  to={getRepositoryDetailPath(repo)}
+                                  className="text-foreground hover:text-primary transition-colors"
+                                >
+                                  {repo.name}
+                                </Link>
                               </h3>
                               <p className="text-sm text-muted-foreground">
                                 {repo.description ?? 'No description yet.'}
