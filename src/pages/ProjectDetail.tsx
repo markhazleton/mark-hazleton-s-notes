@@ -4,6 +4,8 @@ import { Layout } from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { projects } from '@/lib/data/projects';
 import { Seo } from '@/components/Seo';
+import { createBreadcrumbSchema } from '@/lib/structured-data';
+import { SITE_URL } from '@/lib/site';
 
 export default function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -29,9 +31,17 @@ export default function ProjectDetail() {
   const seoType = project.og?.type === "article" ? "article" : "website";
   const seoRobots = project.seo?.robots;
 
+  // Add breadcrumb schema
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: SITE_URL },
+    { name: "Projects", url: `${SITE_URL}/projects` },
+    { name: project.title, url: `${SITE_URL}/projects/${project.slug}` },
+  ]);
+
   return (
     <Layout>
       <Seo
+        jsonLd={breadcrumbSchema}
         title={seoTitle}
         description={seoDescription}
         keywords={seoKeywords}

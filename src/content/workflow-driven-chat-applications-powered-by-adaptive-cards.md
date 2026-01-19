@@ -1,3 +1,45 @@
+---
+id: 57
+Section: AI & Machine Learning
+slug: articles/workflow-driven-chat-applications-powered-by-adaptive-cards.html
+name: Workflow-Driven Chat Applications Powered by Adaptive Cards
+description: Explore how to design workflow-driven chat applications using Adaptive Cards to enhance AI interactivity and structured conversations.
+keywords: workflow-driven chat, Adaptive Cards, AI chat applications, Mark Hazleton, structured interactions, business alignment
+img_src: /img/ScotlandRainbow.jpg
+lastmod: 2024-09-19
+publishedDate: 2024-11-18
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Enhancing AI Interactivity and Structured Conversations
+author: Mark Hazleton
+summary: Explore how to design workflow-driven chat applications using Adaptive Cards to enhance AI interactivity and structured conversations. Discover the benefits and implementation strategies.
+conclusionTitle: Key Takeaways
+conclusionSummary: Adaptive Cards are essential for creating engaging and structured chat applications. They provide consistency, enhance user interaction, and allow for the integration of AI-driven workflows.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: Adaptive Cards transform chat applications by providing a consistent, interactive, and structured user experience.
+conclusionText: Incorporating Adaptive Cards into your chat applications can significantly enhance user engagement and streamline workflows. Start designing your workflow-driven chat applications today to leverage the full potential of AI interactivity.
+seo:
+  title: Workflow-Driven Chat Applications 
+  titleSuffix:  
+  description: Discover how to design workflow-driven chat applications using Adaptive Cards to enhance AI interactivity and structured conversations. Learn more now!
+  keywords: Mark Hazleton, Adaptive Cards, chat applications, AI interactivity, workflow-driven, structured conversations
+  canonical: https://markhazleton.com/articles/workflow-driven-chat-applications-powered-by-adaptive-cards.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Workflow-Driven Chat Applications Powered by Adaptive Cards
+  description: Explore designing workflow-driven chat apps with Adaptive Cards for enhanced AI interactivity and structured conversations.
+  type: article
+  image: null
+  imageAlt: Workflow-Driven Chat Applications Powered by Adaptive Cards - Mark Hazleton
+twitter:
+  title: Workflow-Driven Chat Apps
+  description: Discover how to design workflow-driven chat applications using Adaptive Cards to enhance AI interactivity and structured conversations. Learn more now!
+  image: null
+  imageAlt: Workflow-Driven Chat Applications Powered by Adaptive Cards - Mark Hazleton
+youtubeUrl: https://www.youtube.com/watch?v=cErlh1yQ8ds
+youtubeTitle: Workflow-Driven Chat Applications With Adaptive Cards
+---
+
 # Workflow-Driven Chat Applications Powered by Adaptive Cards
 
 ## Subtitle: Enhancing AI Interactivity and Structured Conversations

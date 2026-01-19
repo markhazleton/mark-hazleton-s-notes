@@ -20,6 +20,8 @@ import { toast } from '@/components/ui/use-toast';
 import { posts } from '@/lib/data/posts';
 import { Seo } from '@/components/Seo';
 import { formatDateLong } from '@/lib/date';
+import { createBlogPostingSchema, createBreadcrumbSchema } from '@/lib/structured-data';
+import { SITE_URL } from '@/lib/site';
 
 type MarkdownState = {
   status: 'idle' | 'loading' | 'success' | 'error';
@@ -43,6 +45,22 @@ const slugify = (value: string) =>
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
+
+const stripFrontmatter = (content: string): string => {
+  // Remove YAML frontmatter (between --- markers)
+  const frontmatterRegex = /^---\s*\n[\s\S]*?\n---\s*\n/;
+  return content.replace(frontmatterRegex, '');
+};
+
+const stripMarkdownFormatting = (text: string): string => {
+  // Remove markdown formatting from text
+  return text
+    .replace(/\*\*(.+?)\*\*/g, '$1')  // Remove bold **text**
+    .replace(/\*(.+?)\*/g, '$1')      // Remove italic *text*
+    .replace(/`(.+?)`/g, '$1')        // Remove code `text`
+    .replace(/\[(.+?)\]\(.+?\)/g, '$1') // Remove links [text](url)
+    .trim();
+};
 
 const getPlainText = (node: ReactNode): string => {
   if (typeof node === 'string') {
@@ -82,7 +100,8 @@ const extractHeadings = (markdown: string): TocItem[] => {
     }
 
     const level = match[1].length;
-    const title = match[2].replace(/\s+#+\s*$/, '').trim();
+    const rawTitle = match[2].replace(/\s+#+\s*$/, '').trim();
+    const title = stripMarkdownFormatting(rawTitle);
     const id = slugify(title);
 
     if (id) {
@@ -163,7 +182,9 @@ export default function BlogPost() {
       try {
         const content = await loader();
         if (isActive) {
-          setMarkdownState({ status: 'success', content, error: null });
+          // Strip frontmatter before setting content
+          const cleanContent = stripFrontmatter(content);
+          setMarkdownState({ status: 'success', content: cleanContent, error: null });
         }
       } catch (error) {
         if (isActive) {
@@ -277,35 +298,27 @@ export default function BlogPost() {
   const keywordList = post.keywords || post.tags.join(", ");
   const canonicalPath = `/blog/${post.slug}`;
 
-  // Article schema markup for SEO
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.title,
-    "description": post.excerpt,
-    "image": post.image || "https://markhazleton.com/placeholder.svg",
-    "datePublished": post.date,
-    "dateModified": post.date,
-    "author": {
-      "@type": "Person",
-      "name": "Mark Hazleton",
-      "url": "https://markhazleton.com",
-      "jobTitle": "Technical Solutions Architect"
-    },
-    "publisher": {
-      "@type": "Person",
-      "name": "Mark Hazleton",
-      "url": "https://markhazleton.com"
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://markhazleton.com/blog/${post.slug}`
-    },
-    "keywords": keywordList,
-    "articleSection": post.section || "Technology",
-    "wordCount": markdownState.content.split(/\s+/).length,
-    "articleBody": post.excerpt
-  };
+  // Generate structured data schemas for SEO
+  const blogPostingSchema = createBlogPostingSchema({
+    title: post.title,
+    description: post.excerpt,
+    slug: `blog/${post.slug}`,
+    publishedDate: post.date,
+    lastmod: post.date,
+    author: "Mark Hazleton",
+    keywords: keywordList,
+    section: post.section,
+    estimatedReadTime: parseInt(post.readingTime) || 5,
+    image: post.image || undefined,
+  });
+
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: SITE_URL },
+    { name: "Blog", url: `${SITE_URL}/blog` },
+    { name: post.title, url: `${SITE_URL}/blog/${post.slug}` },
+  ]);
+
+  const schemas = [blogPostingSchema, breadcrumbSchema];
 
   return (
     <Layout>
@@ -316,7 +329,7 @@ export default function BlogPost() {
         canonical={canonicalPath}
         image={post.image ?? undefined}
         type="article"
-        jsonLd={articleSchema}
+        jsonLd={schemas}
       />
       <article className="section">
         <div className="container-wide">

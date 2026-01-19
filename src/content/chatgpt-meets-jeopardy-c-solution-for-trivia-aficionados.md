@@ -1,3 +1,45 @@
+---
+id: 29
+Section: AI & Machine Learning
+slug: articles/chatgpt-meets-jeopardy-c-solution-for-trivia-aficionados.html
+name: ChatGPT Meets Jeopardy: C# Solution for Trivia Aficionados
+description: "Explore the integration of ChatGPT and C# to create an engaging trivia experience with Jeopardy questions, blending data analysis and interactive quizzes."
+keywords: "Mark Hazleton, C# applications, Jeopardy dataset, trivia, data analysis, .NET"
+img_src: /img/ScotlandHighlands.jpg
+lastmod: 2023-11-16
+publishedDate: 2025-07-17
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Blending Trivia and Technology
+author: Mark Hazleton
+summary: "Explore how the integration of ChatGPT and C# creates a unique trivia experience using Jeopardy questions. This project blends data analysis with interactive quizzes, showcasing the power of .NET."
+conclusionTitle: Key Takeaways
+conclusionSummary: "The integration of Jeopardy questions into C# applications marks a significant milestone, blending trivia with data analysis. This project exemplifies the convergence of diverse interests into a cohesive solution."
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: "C# and ChatGPT offer endless possibilities for creating engaging trivia experiences."
+conclusionText: "This project is a testament to the power of combining trivia, data analysis, and software development. Explore the potential of C# and ChatGPT in creating innovative solutions."
+seo:
+  title: "ChatGPT Meets Jeopardy: C# Solution "
+  titleSuffix: 
+  description: "Explore the integration of ChatGPT and C# to create an engaging trivia experience with Jeopardy questions, blending data analysis and interactive quizzes."
+  keywords: "Mark Hazleton, C#, Jeopardy, trivia, data analysis, .NET, ChatGPT"
+  canonical: https://markhazleton.com/articles/chatgpt-meets-jeopardy-c-solution-for-trivia-aficionados.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "ChatGPT Meets Jeopardy: C# Solution for Trivia Aficionados"
+  description: "Discover how ChatGPT and C# combine to create an engaging trivia experience with Jeopardy questions, blending data analysis and interactive quizzes."
+  type: article
+  image: null
+  imageAlt: "ChatGPT Meets Jeopardy: C# Solution for Trivia Aficionados - Mark Hazleton"
+twitter:
+  title: ChatGPT Meets Jeopardy
+  description: "Discover how ChatGPT and C# combine to create an engaging trivia experience with Jeopardy questions, blending data analysis and interactive quizzes."
+  image: null
+  imageAlt: "ChatGPT Meets Jeopardy: C# Solution for Trivia Aficionados - Mark Hazleton"
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # ChatGPT Meets Jeopardy: C# Solution for Trivia Aficionados
 
 ## Blending Trivia and Technology

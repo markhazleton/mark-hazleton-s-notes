@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import type { Repository, RepositoryStatsPayload } from '@/types/repositories';
+import { withBasePath } from '@/lib/site';
 
-const REPOSITORY_STATS_URL =
+const REPOSITORY_STATS_URL = withBasePath('/data/repositories.json');
+const FALLBACK_URL =
   'https://raw.githubusercontent.com/markhazleton/github-stats-spark/main/data/repositories.json';
 
 type RepositoryStatus = 'idle' | 'loading' | 'success' | 'error';
@@ -56,13 +58,24 @@ export function useRepositoryStats() {
       }));
 
       try {
-        const response = await fetch(REPOSITORY_STATS_URL, {
+        // Try local data file first for better performance
+        let response = await fetch(REPOSITORY_STATS_URL, {
           signal: controller.signal,
-          cache: 'no-store',
           headers: {
             Accept: 'application/json',
           },
         });
+
+        // Fallback to GitHub if local file not available
+        if (!response.ok) {
+          response = await fetch(FALLBACK_URL, {
+            signal: controller.signal,
+            cache: 'no-store',
+            headers: {
+              Accept: 'application/json',
+            },
+          });
+        }
 
         if (!response.ok) {
           throw new Error(`Request failed (${response.status})`);

@@ -8,6 +8,8 @@ import { posts, allTags } from '@/lib/data/posts';
 import { ArrowUpDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Seo } from '@/components/Seo';
+import { createBreadcrumbSchema } from '@/lib/structured-data';
+import { SITE_URL } from '@/lib/site';
 
 const parseTagsFromSearch = (search: string) => {
   if (!search) {
@@ -75,6 +77,12 @@ export default function Blog() {
     navigate({ search: params.toString() }, { replace: true });
   };
 
+  // Add breadcrumb schema
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: SITE_URL },
+    { name: "Blog", url: `${SITE_URL}/blog` },
+  ]);
+
   return (
     <Layout>
       <Seo
@@ -82,6 +90,7 @@ export default function Blog() {
         description="Practical insights on cloud architecture, .NET development, Azure infrastructure, and system design. Technical articles for software architects and engineering teams."
         keywords="cloud architecture blog, Azure tutorials, .NET best practices, system design patterns, software architecture, integration patterns, distributed systems, Mark Hazleton"
         canonical="/blog"
+        jsonLd={breadcrumbSchema}
       />
       <section className="section">
         <div className="container-wide">

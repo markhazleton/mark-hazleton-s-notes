@@ -1,3 +1,45 @@
+---
+id: 50
+Section: Content Strategy
+slug: articles/canonical-url-troubleshooting-for-static-web-apps.html
+name: Canonical URL Troubleshooting for Static Web Apps
+description: Explore strategies for managing canonical URLs in static web apps using Azure and Cloudflare to enhance SEO performance and prevent duplicate content issues.
+keywords: Mark Hazleton, canonical URLs, static web apps, SEO, Azure, Cloudflare, URL management
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2024-07-04
+publishedDate: 2024-10-10
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Optimize Canonical URLs for Better SEO in Static Apps
+author: Mark Hazleton
+summary: Canonical URLs are crucial for SEO in static web apps. This guide explores how to manage them using Azure and Cloudflare, ensuring your content is properly indexed.
+conclusionTitle: Key Takeaways on Canonical URL Management
+conclusionSummary: Managing canonical URLs is vital for SEO in static web apps. Using Azure and Cloudflare can streamline this process.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: Proper canonical URL management is essential for SEO success in static web apps.
+conclusionText: Ensure your static web apps are SEO-friendly by effectively managing canonical URLs with Azure and Cloudflare. Start optimizing today!
+seo:
+  title: Canonical URL Troubleshooting Guide 
+  titleSuffix:  
+  description: Discover how to manage canonical URLs in static web apps with Azure and Cloudflare. Learn strategies to enhance SEO and prevent duplicate content issues.
+  keywords: canonical URLs, static web apps, SEO optimization, Azure, Cloudflare, Mark Hazleton
+  canonical: https://markhazleton.com/articles/canonical-url-troubleshooting-for-static-web-apps.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Canonical URL Troubleshooting for Static Web Apps
+  description: Discover how to manage canonical URLs in static web apps with Azure and Cloudflare. Learn strategies to enhance SEO and prevent duplicate content issues.
+  type: article
+  image: null
+  imageAlt: Canonical URL Troubleshooting for Static Web Apps - Mark Hazleton
+twitter:
+  title: Canonical URL Guide
+  description: Discover how to manage canonical URLs in static web apps with Azure and Cloudflare. Learn strategies to enhance SEO and prevent duplicate content issues.
+  image: null
+  imageAlt: Canonical URL Troubleshooting for Static Web Apps - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Canonical URL Troubleshooting for Static Web Apps
 
 ## Understanding Canonical URLs

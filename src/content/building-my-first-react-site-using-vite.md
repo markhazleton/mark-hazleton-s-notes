@@ -1,3 +1,45 @@
+---
+id: 52
+Section: AI & Machine Learning
+slug: articles/building-my-first-react-site-using-vite.html
+name: Building My First React Site Using Vite
+description: Explore the process of building and deploying a React site using Vite and GitHub Pages, with tips on handling common issues like CORS.
+keywords: Mark Hazleton, React, Vite, GitHub Pages, CORS, web development
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2024-07-26
+publishedDate: 2024-10-12
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: A Step-by-Step Guide to Building and Deploying
+author: Mark Hazleton
+summary: In this guide, we will walk you through the process of building and deploying a React site using Vite and GitHub Pages. We'll cover setup, deployment, and troubleshooting common issues like CORS.
+conclusionTitle: Final Thoughts
+conclusionSummary: Building a React site with Vite is efficient and straightforward. With the steps outlined, you can deploy your site on GitHub Pages and handle CORS issues effectively.
+conclusionKeyHeading: Key Insight
+conclusionKeyText: Vite simplifies the React development process, making it faster and more efficient.
+conclusionText: Start your React project with Vite today and experience the benefits of a modern build tool. Deploy easily with GitHub Pages and overcome common challenges like CORS.
+seo:
+  title: Building My First React Site with Vite 
+  titleSuffix:  
+  description: Discover how to build and deploy a React site using Vite and GitHub Pages. Learn to handle common issues like CORS for a seamless development experience.
+  keywords: Mark Hazleton, React, Vite, GitHub Pages, CORS, web development
+  canonical: https://markhazleton.com/articles/building-my-first-react-site-using-vite.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Building My First React Site Using Vite
+  description: Discover how to build and deploy a React site using Vite and GitHub Pages. Learn to handle common issues like CORS for a seamless development experience.
+  type: article
+  image: null
+  imageAlt:  Building My First React Site Using Vite - Mark Hazleton
+twitter:
+  title: React Site with Vite
+  description: Discover how to build and deploy a React site using Vite and GitHub Pages. Learn to handle common issues like CORS for a seamless development experience.
+  image: null
+  imageAlt:  Building My First React Site Using Vite - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Building My First React Site Using Vite
 
 ## Introduction

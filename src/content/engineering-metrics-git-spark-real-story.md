@@ -1,3 +1,45 @@
+---
+id: 91
+Section: Development
+slug: articles/engineering-metrics-git-spark-real-story.html
+name: Building Git Spark: My First npm Package Journey
+description: "Building git-spark: my first npm package journey from frustration to honest Git analytics. Learn what metrics matter and where Git data falls short."
+keywords: git-spark, npm package, engineering metrics, Git analytics, AI contributions, developer productivity, first npm package, software metrics, honest reporting
+img_src: /img/InksLakeSunset.jpg
+lastmod: 2025-09-28
+publishedDate: 2025-10-07
+estimatedReadTime: 12
+changefreq: weekly
+subtitle: A Weekend Project, AI Agents, and Learning What Git Can't Measure
+author: Mark Hazleton
+summary: Creating git-spark, my first npm package, from frustration to published tool. Learn Git analytics limits and the value of honest metrics.
+conclusionTitle: "Conclusion: Failing Successfully"
+conclusionSummary: I failed to measure AI contributions but succeeded in creating an honest metrics tool. The best analytics admit their limitations.
+conclusionKeyHeading: The Discipline of Honest Measurement
+conclusionKeyText: Not every question has a data-driven answer. Tools that claim to measure everything often measure nothing reliably.
+conclusionText: Building git-spark taught me that honest data with clear limitations is more valuable than authoritative scores built on questionable assumptions. Try git-spark and bring your own context to interpret the patterns.
+seo:
+  title: "Building Git Spark: My First npm Package Story"
+  titleSuffix: 
+  description: Building git-spark from frustration to npm package. Learn what Git analytics honestly measures and where it fails with AI contributions.
+  keywords: git-spark, npm package, engineering metrics, Git analytics, AI contributions, developer productivity, honest metrics, software measurement
+  canonical: https://markhazleton.com/articles/engineering-metrics-git-spark-real-story.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "Building Git Spark: My First npm Package Journey"
+  description: Weekend project to measure AI contributions became my first npm package. Learn what Git history reveals and where honest metrics matter.
+  type: article
+  image: null
+  imageAlt:  - Solutions Architect
+twitter:
+  title: "Building Git Spark: Honest Git Analytics"
+  description: "My journey building git-spark: failed to measure AI contributions, succeeded in creating honest metrics. First npm package lessons learned."
+  image: null
+  imageAlt:  - Solutions Architect
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Building Git Spark: My First npm Package Journey
 
 ## The Problem That Started It All

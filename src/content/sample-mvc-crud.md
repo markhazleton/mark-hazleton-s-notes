@@ -1,3 +1,45 @@
+---
+id: 3
+Section: Case Studies
+slug: sample-mvc-crud.html
+name: Complete Guide to SampleMvcCRUD Project
+description: Discover how to master MVC architecture and CRUD operations in ASP.NET with this comprehensive guide to the SampleMvcCRUD project.
+keywords: SampleMvcCRUD, ASP.Net MVC, CRUD operations, DevOps, Docker, Bogus library
+img_src: /img/ScotlandHighlands.jpg
+lastmod: 2023-02-03
+publishedDate: 2023-07-28
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Master MVC Architecture and CRUD Operations
+author: Mark Hazleton
+summary: The SampleMvcCRUD project is a comprehensive tutorial designed to help developers understand MVC architecture and CRUD operations. This guide provides step-by-step instructions for building robust web applications using ASP.NET.
+conclusionTitle: Key Takeaways
+conclusionSummary: The SampleMvcCRUD project offers a practical approach to mastering MVC architecture and CRUD operations. By following the guide, developers can build scalable ASP.NET applications.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: Mastering MVC and CRUD is crucial for building robust web applications.
+conclusionText: Start your journey with the SampleMvcCRUD project to enhance your skills in MVC architecture and CRUD operations. Dive into the world of ASP.NET and create scalable applications.
+seo:
+  title: Master MVC and CRUD with SampleMvcCRUD
+  titleSuffix: 
+  description: Discover how to master MVC architecture and CRUD operations in ASP.NET with this comprehensive guide to the SampleMvcCRUD project. Learn step-by-step.
+  keywords: MVC architecture, CRUD operations, ASP.NET, SampleMvcCRUD, web applications, tutorial, .NET Framework
+  canonical: https://markhazleton.com/sample-mvc-crud.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Complete Guide to SampleMvcCRUD Project
+  description: Discover how to master MVC architecture and CRUD operations in ASP.NET with this comprehensive guide to the SampleMvcCRUD project. Learn step-by-step.
+  type: article
+  image: null
+  imageAlt: SampleMvcCRUD Project - Mark Hazleton
+twitter:
+  title: Master MVC & CRUD Guide
+  description: Discover how to master MVC architecture and CRUD operations in ASP.NET with this comprehensive guide to the SampleMvcCRUD project. Learn step-by-step.
+  image: null
+  imageAlt: SampleMvcCRUD Project - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Complete Guide to SampleMvcCRUD Project
 
 ## Understanding MVC Architecture

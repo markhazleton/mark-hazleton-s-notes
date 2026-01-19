@@ -1,3 +1,45 @@
+---
+id: 42
+Section: AI & Machine Learning
+slug: articles/the-brain-behind-the-jshow-trivia-demo-on-webspark-j-show-builder-gpt.html
+name: The Brain Behind JShow Trivia Demo
+description: Explore the innovative development of J-Show Builder GPT, an AI tool that revolutionizes trivia game creation for WebSpark's JShow Trivia Demo.
+keywords: J-Show Builder GPT, WebSpark, interactive trivia, AI-powered quiz, Mark Hazleton, trivia games, GPT-4
+img_src: /img/ScotlandRainbow.jpg
+lastmod: 2024-04-07
+publishedDate: 2024-09-25
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Explore the Development of J-Show Builder GPT
+author: Mark Hazleton
+summary: The JShow Trivia Demo on WebSpark is powered by the innovative J-Show Builder GPT, an AI tool that simplifies the creation of engaging trivia games. Discover its development journey and impact on the platform.
+conclusionTitle: Final Thoughts on JShow Trivia Demo
+conclusionSummary: J-Show Builder GPT revolutionizes trivia game creation with AI, enhancing user engagement on WebSpark's platform. Its automated features and customizable content make it a standout tool.
+conclusionKeyHeading: Key Insight
+conclusionKeyText: J-Show Builder GPT automates trivia game creation, offering a seamless experience.
+conclusionText: Explore J-Show Builder GPT on WebSpark to experience the future of trivia games. Visit the platform today and start creating your own engaging trivia experiences.
+seo:
+  title: The Brain Behind JShow Trivia Demo 
+  titleSuffix:  
+  description: Explore the innovative development of J-Show Builder GPT, an AI tool that revolutionizes trivia game creation for WebSpark's JShow Trivia Demo. Discover its
+  keywords: JShow Trivia, WebSpark, AI-powered tool, trivia games, Mark Hazleton
+  canonical: https://markhazleton.com/articles/the-brain-behind-the-jshow-trivia-demo-on-webspark-j-show-builder-gpt.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: The Brain Behind JShow Trivia Demo
+  description: Explore the development of J-Show Builder GPT, an AI tool revolutionizing trivia games for WebSpark's JShow Trivia Demo.
+  type: article
+  image: null
+  imageAlt: The Brain Behind the JShow Trivia Demo on WebSpark J-Show Builder GPT - Mark Hazleton
+twitter:
+  title: JShow Trivia Demo Insights
+  description: Explore the innovative development of J-Show Builder GPT, an AI tool that revolutionizes trivia game creation for WebSpark's JShow Trivia Demo. Discover its
+  image: null
+  imageAlt: The Brain Behind the JShow Trivia Demo on WebSpark J-Show Builder GPT - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # The Brain Behind JShow Trivia Demo
 
 ## Discover the Power of J-Show Builder GPT

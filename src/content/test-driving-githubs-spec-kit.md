@@ -1,3 +1,45 @@
+---
+id: 93
+Section: Case Studies
+slug: articles/test-driving-githubs-spec-kit.html
+name: Test Driving GitHub's Spec Kit: AI-Maintained Documentation That Stays Accurate
+description: "Every developer knows the pattern: specs say one thing, code does another. We tried waterfall's rigid specs and agile's no-specs—both failed. GitHub Spec Kit offers a third option: AI agents that maintain the documentation feedback loop humans never could."
+keywords: GitHub Spec Kit, AI-maintained documentation, documentation drift, zero documentation debt, living specifications, post-implementation feedback loop, spec-driven development, institutional knowledge, WebSpark NuGet package, documentation synchronization
+img_src: /img/Evolution-vs-Revolution-in-history .png
+lastmod: 2025-10-20
+publishedDate: 2025-11-02
+estimatedReadTime: 15
+changefreq: weekly
+subtitle: The post-implementation feedback loop that keeps specs synchronized with reality
+author: Mark Hazleton
+summary: "Specs always become outdated because humans won't maintain them post-implementation. GitHub's Spec Kit solves this with AI agents in the feedback loop: when you fix bugs and tweak implementations, you tell the agent to update the spec. Documentation evolves to match reality. Real-world case: 7 hours implementation + 20 minutes documentation sync = zero documentation debt."
+conclusionTitle: When to Use Spec Kit vs. Skip It
+conclusionSummary: "Spec Kit doesn't eliminate iteration—it ensures iteration improves documentation instead of destroying it. The ROI isn't speed—it's having specs that are still accurate a year later. Use it when institutional knowledge matters: libraries, APIs, multi-year projects. Skip it for throwaway prototypes or solo projects you'll rewrite in 6 months."
+conclusionKeyHeading: The Real Value Proposition
+conclusionKeyText: Implementation time stays the same. But specs stay accurate. 20 minutes of AI-assisted sync vs. never updating documentation. Six months later, new developers read accurate specs instead of reverse-engineering from code.
+conclusionText: "Start small: one SPEC.md with clear acceptance criteria. After implementation, spend 20 minutes having the agent update the spec to match what you actually built. The next developer (or future you) will thank you for documentation that describes what actually works—not what you planned before reality intervened."
+seo:
+  title: "GitHub Spec Kit: AI-Maintained Documentation"
+  titleSuffix: 
+  description: Specs always become outdated. GitHub Spec Kit uses AI agents in the feedback loop to keep documentation synchronized with reality. Zero documentation debt.
+  keywords: GitHub Spec Kit, AI-maintained documentation, documentation drift, zero documentation debt, post-implementation feedback loop, living specifications, documentation synchronization, spec-driven development, institutional knowledge, WebSpark NuGet
+  canonical: https://markhazleton.com/articles/test-driving-githubs-spec-kit.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "GitHub Spec Kit: AI-Maintained Documentation That Stays Accurate"
+  description: Specs always become lies. Humans won't maintain them. GitHub Spec Kit's AI agents keep documentation synchronized with reality through post-implementation feedback loops. Zero documentation debt.
+  type: article
+  image: null
+  imageAlt: GitHub Spec Kit - AI-Maintained Documentation Feedback Loop
+twitter:
+  title: "Spec Kit: AI-Maintained Docs That Stay Accurate"
+  description: "Documentation drift solved: AI agents update specs post-implementation. 20 minutes sync vs. never updating. Zero documentation debt."
+  image: null
+  imageAlt: GitHub Spec Kit Feedback Loop
+youtubeUrl: null
+youtubeTitle: null
+---
+
 ## Executive Summary
 
 I was skeptical. After years of dealing with outdated documentation, the promise of "living documentation" sounded like another attempt to solve an age-old problem. Then I tried it on a production NuGet package. Here's what actually happened.

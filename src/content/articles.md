@@ -1,3 +1,45 @@
+---
+id: 0
+Section: Industry Insights
+slug: articles.html
+name: Explore Mark Hazleton's Technical Insights
+description: Discover 90+ articles by Mark Hazleton on software development, Azure, project management, and leadership. Gain real-world insights and practical advice.
+keywords: Mark Hazleton, technical articles, software development, Azure cloud, project management, technology leadership
+img_src: /img/MarkHazleton.jpg
+lastmod: 2023-01-01
+publishedDate: 2025-07-20
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Complete Collection of Technical Articles
+author: Mark Hazleton
+summary: Comprehensive searchable collection of technology articles and insights organized by topic, covering software development, Azure cloud solutions, and project management.
+conclusionTitle: Stay Updated
+conclusionSummary: Follow along for the latest insights on technology, development, and leadership.
+conclusionKeyHeading: Article Collection
+conclusionKeyText: Over 90 articles covering software development, Azure, and project management.
+conclusionText: Explore the complete collection of technical articles and insights. Follow Mark Hazleton for the latest updates on technology and leadership.
+seo:
+  title: Explore Mark Hazleton's Technical Insights
+  titleSuffix: 
+  description: Discover 90+ articles by Mark Hazleton on software development, Azure, project management, and leadership. Gain real-world insights and practical advice.
+  keywords: Mark Hazleton articles, software development blog, Azure tutorials, project management insights, technology leadership, .NET development, cloud solutions, programming best practices
+  canonical: https://markhazleton.com/articles.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Explore Mark Hazleton's Technical Insights
+  description: Discover 90+ articles by Mark Hazleton on software development, Azure, project management, and leadership. Gain real-world insights and practical advice.
+  type: article
+  image: null
+  imageAlt: Mark Hazleton - Solutions Architect
+twitter:
+  title: Mark Hazleton's Insights
+  description: Discover 90+ articles by Mark Hazleton on software development, Azure, project management, and leadership. Gain real-world insights and practical advice.
+  image: null
+  imageAlt: Mark Hazleton - Solutions Architect
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Explore Mark Hazleton's Technical Insights
 
 ## A Wealth of Knowledge

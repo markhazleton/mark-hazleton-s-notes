@@ -10,46 +10,35 @@ import { posts } from '@/lib/data/posts';
 import { useRepositoryStats } from '@/hooks/use-repository-stats';
 import type { Repository } from '@/types/repositories';
 import { Seo } from '@/components/Seo';
-import { DEFAULT_DESCRIPTION, DEFAULT_KEYWORDS, DEFAULT_TITLE } from '@/lib/site';
+import { DEFAULT_DESCRIPTION, DEFAULT_KEYWORDS, DEFAULT_TITLE, SITE_URL, SITE_NAME } from '@/lib/site';
 import { formatDateShort } from '@/lib/date';
+import { createPersonSchema, createWebSiteSchema } from '@/lib/structured-data';
 
 export default function Index() {
   const repositoryState = useRepositoryStats();
   const latestPosts = posts.slice(0, 6);
 
-  // Person schema markup for SEO
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mark Hazleton",
-    "jobTitle": "Technical Solutions Architect",
-    "url": "https://markhazleton.com",
-    "sameAs": [
+  // Generate structured data schemas for SEO
+  const personSchema = createPersonSchema({
+    name: "Mark Hazleton",
+    url: SITE_URL,
+    jobTitle: "Technical Solutions Architect",
+    description: DEFAULT_DESCRIPTION,
+    sameAs: [
       "https://github.com/markhazleton",
-      "https://linkedin.com/in/markhazleton"
+      "https://www.linkedin.com/in/markhazleton",
+      "https://www.youtube.com/@MarkHazleton"
     ],
-    "knowsAbout": [
-      "Cloud Architecture",
-      ".NET",
-      "Azure",
-      "System Design",
-      "Healthcare System Architecture",
-      "Enterprise Cloud Migration",
-      "API Design",
-      "Event-Driven Architecture",
-      "Resilient Systems"
-    ],
-    "description": "Technical Solutions Architect designing resilient .NET and Azure systems for healthcare and enterprise. 15+ years turning complexity into clarity through scalable cloud architecture.",
-    "workLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Wichita",
-        "addressRegion": "KS",
-        "addressCountry": "US"
-      }
-    }
-  };
+  });
+
+  const webSiteSchema = createWebSiteSchema({
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: DEFAULT_DESCRIPTION,
+    searchUrl: `${SITE_URL}/blog?search=`,
+  });
+
+  const schemas = [personSchema, webSiteSchema];
 
   const getMostRecentRepository = (repositories: Repository[]) => {
     let latestRepo: Repository | null = null;

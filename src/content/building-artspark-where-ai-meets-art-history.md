@@ -1,3 +1,45 @@
+---
+id: 80
+Section: Case Studies
+slug: articles/building-artspark-where-ai-meets-art-history.html
+name: Building ArtSpark: Where AI Meets Art History
+description: Explore how ArtSpark combines AI and art history, allowing users to interact with artworks through a platform built with .NET 9, Microsoft Semantic Kernel, and GPT-4 Vision.
+keywords: Mark Hazleton, AI in museums, interactive art, cultural heritage, museum technology, AI personas, ArtSpark
+img_src: /img/MarkHazleton-ArtSpark-ChatWithArtCurator.png
+lastmod: 2025-05-30
+publishedDate: 2025-06-02
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Explore the Intersection of Technology and Art
+author: Mark Hazleton
+summary: Discover how ArtSpark combines AI and art history, allowing users to interact with artworks through a platform built with .NET 9, Microsoft Semantic Kernel, and GPT-4 Vision. This article explores the creation, challenges, and future developments of ArtSpark.
+conclusionTitle: Conclusion
+conclusionSummary: ArtSpark bridges technology and art, offering interactive experiences with historical artworks. It aims to inspire appreciation for cultural heritage.
+conclusionKeyHeading: Final Thoughts
+conclusionKeyText: ArtSpark is a gateway to exploring art history interactively.
+conclusionText: ArtSpark is more than just a platform; it's a gateway to exploring art history in an interactive and engaging way. We invite you to experience this journey and discover the stories behind the art.
+seo:
+  title: "Building ArtSpark: Where AI Meets Art Histor "
+  titleSuffix:  
+  description: Discover how ArtSpark combines AI and art history, allowing users to interact with artworks through a platform built with .NET 9 and GPT-4 Vision.
+  keywords: Mark Hazleton, AI, art history, ArtSpark, .NET 9, Microsoft Semantic Kernel, GPT-4 Vision
+  canonical: https://markhazleton.com/articles/building-artspark-where-ai-meets-art-history.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "Building ArtSpark: Where AI Meets Art History"
+  description: Discover how ArtSpark combines AI and art history, allowing users to interact with artworks through a platform built with .NET 9 and GPT-4 Vision.
+  type: article
+  image: null
+  imageAlt: "Building ArtSpark: Where AI Meets Art History - Mark Hazleton"
+twitter:
+  title: "Building ArtSpark: AI Meets Art"
+  description: Discover how ArtSpark combines AI and art history, allowing users to interact with artworks through a platform built with .NET 9 and GPT-4 Vision.
+  image: null
+  imageAlt: "Building ArtSpark: Where AI Meets Art History - Mark Hazleton"
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Building ArtSpark: Where AI Meets Art History
 
 ## Discover the Intersection of Technology and Art

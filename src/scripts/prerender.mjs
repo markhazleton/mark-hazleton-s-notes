@@ -48,13 +48,19 @@ const routes = Array.from(
   new Set([...staticRoutes, ...blogRoutes, ...projectRoutes, ...repositoryRoutes]),
 );
 
+// Save repository data to a separate JSON file instead of inlining
+if (repositoryPayload) {
+  const dataDir = path.join(distDir, "data");
+  await fs.mkdir(dataDir, { recursive: true });
+  await fs.writeFile(
+    path.join(dataDir, "repositories.json"),
+    JSON.stringify(repositoryPayload),
+    "utf-8"
+  );
+  console.log("Repository stats saved to /data/repositories.json");
+}
+
 const template = await fs.readFile(path.join(distDir, "index.html"), "utf-8");
-const stateScript = repositoryPayload
-  ? `<script>window.__REPOSITORY_STATS__ = ${JSON.stringify(repositoryPayload).replace(
-      /</g,
-      "\\u003c",
-    )};</script>`
-  : "";
 const resolveEntryServerPath = async () => {
   const candidates = [
     path.join(distDir, "server", "entry-server.js"),
@@ -99,7 +105,6 @@ await Promise.all(
     const { html, head } = render(route);
     const page = template
       .replace("<!--app-head-->", head ?? "")
-      .replace("<!--app-state-->", stateScript)
       .replace("<!--app-html-->", html ?? "");
     const filePath =
       route === "/"

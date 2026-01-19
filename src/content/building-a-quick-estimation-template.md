@@ -1,3 +1,55 @@
+---
+id: 92
+Section: Project Management
+slug: articles/building-a-quick-estimation-template.html
+name: Building a Quick Estimation Template When You Have Almost Nothing to Go On
+description: When faced with vague requirements and tight deadlines, I built a simple three-pillar framework using Innovation, Scope, and People for estimating quickly.
+keywords: estimation framework, Innovation Scope People, project estimation, calibrated multipliers, three-pillar estimation, agile estimation, story point estimation
+img_src: /img/MarkHazleton-CaseStudies.png
+lastmod: 2025-10-09
+publishedDate: 2025-12-28
+estimatedReadTime: 5
+changefreq: weekly
+subtitle: When faced with vague requirements and tight deadlines, I built a simple three-pillar framework. Here's how I use Innovation, Scope, and People to estimate quickly and refine with data.
+author: Mark Hazleton
+summary: "# Building a Quick Estimation Template When You Have Almost Nothing to Go On
+
+> When faced with vague requirements and tight deadlines, I built a simple three-pillar framework using Innovation, Scope, and People for estimating quickly.
+
+Category: Project Management
+
+---
+
+## Why You Need a Quick Estimation Template
+
+There are moments in project management when leadership asks, “How long will this take?” and all you have is a one-liner and a deadline. Requirements are nebulous, resources are uncle..."
+conclusionTitle: From Fog to Forecast in Under an Hour
+conclusionSummary: When you’re asked for a number with almost no details, the three-pillar framework—Innovation, Scope, and People—lets you produce a fast, defensible range. Score each pillar, apply simple multipliers, and translate scope into person-days to deliver P50/P70/P90 estimates with explicit assumptions. Pair it with a 15-minute estimation interview and a one-page template, then calibrate as you learn to improve accuracy over time.
+conclusionKeyHeading: Speed, Clarity, and Credibility Beat Perfection
+conclusionKeyText: Turn uncertainty into transparent assumptions, visible trade-offs, and defensible ranges using I/S/P scores and P50/P70/P90 outputs. The result is an estimate you can explain in minutes and refine as reality unfolds.
+conclusionText: Grab the one-page template, run the 15-minute estimation interview on your next request, and publish a P50/P70/P90 range with assumptions today. Track actuals against your estimate, tighten the multipliers, and plug the JSON/YAML inputs into your tooling so your next estimate is even faster and sharper.
+seo:
+  title: Building a Quick Estimation Template
+  titleSuffix: 
+  description: When faced with vague requirements and tight deadlines, I built a simple three-pillar framework using Innovation, Scope, and People for estimating quickly.
+  keywords: estimation framework, Innovation Scope People, three-pillar estimation, project estimation, calibrated multipliers, agile estimation
+  canonical: https://markhazleton.com/articles/building-a-quick-estimation-template.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Building a Quick Estimation Template With Nothing to Go On
+  description: When faced with vague requirements, I built a simple three-pillar framework using Innovation, Scope, and People to estimate quickly and refine with data.
+  type: article
+  image: null
+  imageAlt: Building a Quick Estimation Template - Mark Hazleton
+twitter:
+  title: Quick Estimation Template
+  description: "My approach to estimating with limited info: (Innovation + Scope + People) × Multiplier. Simple math, calibrated with real data."
+  image: null
+  imageAlt: Building a Quick Estimation Template - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Building a Quick Estimation Template When You Have Almost Nothing to Go On
 
 > When faced with vague requirements and tight deadlines, I built a simple three-pillar framework using Innovation, Scope, and People for estimating quickly.

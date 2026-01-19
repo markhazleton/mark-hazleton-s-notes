@@ -69,7 +69,11 @@ const buildReadingTime = (minutes: number) => {
 const buildTags = (entry: ArticleEntry) => [entry.Section];
 
 export const posts: Post[] = rawArticles
-  .filter((entry) => entry.contentFile && entry.contentFile !== 'articles.md')
+  .filter((entry) => 
+    entry.contentFile && 
+    entry.contentFile !== 'articles.md' &&
+    !entry.contentFile.startsWith('_')
+  )
   .map((entry) => ({
     slug: buildSlug(entry),
     title: entry.name,

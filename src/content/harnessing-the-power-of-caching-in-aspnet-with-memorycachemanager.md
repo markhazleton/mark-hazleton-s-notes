@@ -1,3 +1,45 @@
+---
+id: 20
+Section: Development
+slug: articles/harnessing-the-power-of-caching-in-aspnet-with-memorycachemanager.html
+name: Harnessing the Power of Caching in ASP.NET
+description: Discover how to enhance ASP.NET application performance with MemoryCacheManager. Learn caching strategies to improve scalability and efficiency.
+keywords: Mark Hazleton, ASP.NET, caching, MemoryCacheManager, API optimization, web development, performance enhancement
+img_src: /img/InksLakeSunset.jpg
+lastmod: 2023-08-09
+publishedDate: 2025-07-20
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Enhancing ASP.NET Performance with MemoryCacheManager
+author: Mark Hazleton
+summary: Caching is essential for optimizing ASP.NET applications. This article explores how to use MemoryCacheManager to implement effective caching strategies, improving performance and scalability.
+conclusionTitle: Key Takeaways on ASP.NET Caching
+conclusionSummary: Caching with MemoryCacheManager in ASP.NET can greatly enhance application performance and scalability. By implementing strategic caching, developers can reduce database load and improve data retrieval speeds.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: Effective caching in ASP.NET boosts performance and scalability.
+conclusionText: By leveraging MemoryCacheManager, developers can create more efficient and scalable ASP.NET applications. Start implementing caching strategies today to optimize your web applications.
+seo:
+  title: Harnessing the Power of Caching in ASP.NET 
+  titleSuffix: 
+  description: Discover how to enhance ASP.NET application performance with MemoryCacheManager. Learn caching strategies to improve scalability and efficiency.
+  keywords: ASP.NET, caching, MemoryCacheManager, Mark Hazleton, web development, performance, scalability
+  canonical: https://markhazleton.com/articles/harnessing-the-power-of-caching-in-aspnet-with-memorycachemanager.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Harnessing the Power of Caching in ASP.NET
+  description: Discover how to enhance ASP.NET application performance with MemoryCacheManager. Learn caching strategies to improve scalability and efficiency.
+  type: article
+  image: null
+  imageAlt: Harnessing the Power of Caching in ASP.NET with MemoryCacheManager - Mark Hazleton
+twitter:
+  title: Harnessing the Power of Caching in ASP.NET
+  description: Discover how to enhance ASP.NET application performance with MemoryCacheManager. Learn caching strategies to improve scalability and efficiency.
+  image: null
+  imageAlt: Harnessing the Power of Caching in ASP.NET with MemoryCacheManager - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Harnessing the Power of Caching in ASP.NET
 
 ## Understanding Caching in ASP.NET

@@ -1,3 +1,45 @@
+---
+id: 23
+Section: Development
+slug: articles/fire-and-forget-for-enhanced-performance.html
+name: Fire and Forget for Enhanced Performance
+description: Discover how the Fire and Forget technique can significantly boost API performance by decoupling non-critical tasks, enhancing user experience and system efficiency.
+keywords: Mark Hazleton, fire-and-forget, .NET, WebSpark.HttpClientUtility, async programming, API performance, software development
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2023-09-11
+publishedDate: 2024-01-21
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Leveraging Fire and Forget for API Efficiency
+author: Mark Hazleton
+summary: The Fire and Forget technique is a powerful method to enhance API performance by allowing tasks to proceed without waiting for a response. This approach is particularly beneficial in scenarios like Service Bus updates during user login, where immediate feedback is not required, thus improving overall system efficiency.
+conclusionTitle: Key Takeaways
+conclusionSummary: The Fire and Forget technique offers significant performance improvements by allowing systems to handle tasks without waiting for responses. This is particularly useful in API operations, such as Service Bus updates during user logins.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: Fire and Forget enhances system efficiency by reducing response wait times.
+conclusionText: Implementing the Fire and Forget pattern can greatly improve your application's responsiveness and efficiency. Consider integrating this technique in scenarios where immediate feedback is unnecessary, and ensure robust error handling for background tasks.
+seo:
+  title: Fire and Forget for Enhanced Performance 
+  titleSuffix:  
+  description: Discover how the Fire and Forget technique can significantly boost API performance by decoupling non-critical tasks, enhancing user experience and system
+  keywords: Fire and Forget, API performance, Service Bus, user login, Mark Hazleton, programming pattern, system efficiency
+  canonical: https://markhazleton.com/articles/fire-and-forget-for-enhanced-performance.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Fire and Forget for Enhanced Performance
+  description: Discover how the Fire and Forget technique can significantly boost API performance by decoupling non-critical tasks, enhancing user experience and system
+  type: article
+  image: null
+  imageAlt: Fire and Forget for Enhanced Performance - Mark Hazleton
+twitter:
+  title: Fire and Forget Technique
+  description: Discover how the Fire and Forget technique can significantly boost API performance by decoupling non-critical tasks, enhancing user experience and system
+  image: null
+  imageAlt: Fire and Forget for Enhanced Performance - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Fire and Forget for Enhanced Performance
 
 ## Understanding the Fire and Forget Technique

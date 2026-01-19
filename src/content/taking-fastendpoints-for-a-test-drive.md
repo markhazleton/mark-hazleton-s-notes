@@ -1,3 +1,45 @@
+---
+id: 30
+Section: Case Studies
+slug: articles/taking-fastendpoints-for-a-test-drive.html
+name: Taking FastEndpoints for a Test Drive
+description: Explore how FastEndpoints simplifies ASP.NET API development with the REPR pattern, enhancing efficiency and productivity through minimal boilerplate code.
+keywords: FastEndpoints, ASP.NET APIs, REPR pattern, Mark Hazleton, API development, .NET 9, API efficiency
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2023-11-27
+publishedDate: 2024-04-07
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Exploring the streamlined approach to building ASP.NET APIs
+author: Mark Hazleton
+summary: FastEndpoints offers a simplified approach to building ASP.NET APIs, enhancing efficiency and productivity. This article explores its features and benefits.
+conclusionTitle: Final Thoughts on FastEndpoints
+conclusionSummary: FastEndpoints simplifies ASP.NET API development, reducing complexity and enhancing productivity. It's a valuable tool for developers seeking efficiency.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: FastEndpoints is a powerful tool for simplifying ASP.NET API development, making it faster and more efficient.
+conclusionText: Consider integrating FastEndpoints into your next ASP.NET project to benefit from its streamlined approach and enhanced productivity. Visit the GitHub repository for more details.
+seo:
+  title: Taking FastEndpoints for a Test Drive 
+  titleSuffix:  
+  description: Explore how FastEndpoints simplifies ASP.NET API development with the REPR pattern, enhancing efficiency and productivity through minimal boilerplate code.
+  keywords: FastEndpoints, ASP.NET APIs, Mark Hazleton, API development, software engineering, coding efficiency
+  canonical: https://markhazleton.com/articles/taking-fastendpoints-for-a-test-drive.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Taking FastEndpoints for a Test Drive
+  description: Explore how FastEndpoints simplifies ASP.NET API development with the REPR pattern, enhancing efficiency and productivity through minimal boilerplate code.
+  type: article
+  image: null
+  imageAlt: Taking FastEndpoints for a Test Drive - Mark Hazleton
+twitter:
+  title: FastEndpoints Test Drive
+  description: Explore how FastEndpoints simplifies ASP.NET API development with the REPR pattern, enhancing efficiency and productivity through minimal boilerplate code.
+  image: null
+  imageAlt: Taking FastEndpoints for a Test Drive - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Taking FastEndpoints for a Test Drive
 
 ## Exploring the Streamlined Approach to Building ASP.NET APIs

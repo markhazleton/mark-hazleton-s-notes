@@ -1,3 +1,45 @@
+---
+id: 28
+Section: Development
+slug: articles/transforming-samplemvccrud-with-net-aspire-a-cloud-native-evolution.html
+name: Transforming SampleMvcCRUD with .NET Aspire
+description: Explore how .NET Aspire transforms SampleMvcCRUD into a cloud-native application with enhanced observability and microservices architecture.
+keywords: Mark Hazleton, .NET Aspire, SampleMvcCRUD, cloud-native, microservices, observability
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2023-11-05
+publishedDate: 2024-03-14
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: A Cloud-Native Evolution
+author: Mark Hazleton
+summary: The evolution of software development has seen a significant shift towards cloud-native architectures. This transformation is driven by the need for scalability, flexibility, and improved performance. In this article, we explore how the SampleMvcCRUD project can be transformed using .NET Aspire to achieve these goals.
+conclusionTitle: Key Takeaways
+conclusionSummary: Transforming SampleMvcCRUD with .NET Aspire enhances its capabilities, making it cloud-native with improved observability and microservices architecture.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: Integrating .NET Aspire into SampleMvcCRUD modernizes the application, enabling scalability and performance improvements.
+conclusionText: The integration of .NET Aspire into the SampleMvcCRUD project marks a significant step towards modernizing applications with cloud-native capabilities. By adopting microservices architecture and leveraging advanced telemetry, developers can create robust, scalable, and efficient applications.
+seo:
+  title: Transforming SampleMvcCRUD with .NET Aspire 
+  titleSuffix:  
+  description: Discover how .NET Aspire transforms SampleMvcCRUD into a cloud-native application with enhanced observability and microservices architecture. Learn the steps
+  keywords: Mark Hazleton, .NET Aspire, SampleMvcCRUD, cloud-native, microservices, observability, service orchestration
+  canonical: https://markhazleton.com/articles/transforming-samplemvccrud-with-net-aspire-a-cloud-native-evolution.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Transforming SampleMvcCRUD with .NET Aspire
+  description: Explore the transformation of SampleMvcCRUD with .NET Aspire into a cloud-native application with enhanced observability and microservices architecture.
+  type: article
+  image: null
+  imageAlt: "Transforming SampleMvcCRUD with .NET Aspire: A Cloud-Native Evolution - Mark Hazleton"
+twitter:
+  title: Transforming SampleMvcCRUD
+  description: Discover how .NET Aspire transforms SampleMvcCRUD into a cloud-native application with enhanced observability and microservices architecture. Learn the steps
+  image: null
+  imageAlt: "Transforming SampleMvcCRUD with .NET Aspire: A Cloud-Native Evolution - Mark Hazleton"
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Transforming SampleMvcCRUD with .NET Aspire
 
 ## A Cloud-Native Evolution

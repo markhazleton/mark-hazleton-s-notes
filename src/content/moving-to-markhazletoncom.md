@@ -1,3 +1,45 @@
+---
+id: 39
+Section: Content Strategy
+slug: articles/moving-to-markhazletoncom.html
+name: Migrating to MarkHazleton.com: A Comprehensive Guide
+description: Explore the detailed process of migrating a blog to MarkHazleton.com, hosted on Azure Static Web Apps with Cloudflare DNS, including best practices and step-by-step guidance.
+keywords: Mark Hazleton, blog migration, Azure Static Web Apps, Cloudflare DNS, SEO, domain migration, website hosting
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2024-03-05
+publishedDate: 2024-09-16
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Streamline Your Blog Migration with Azure and Cloudflare
+author: Mark Hazleton
+summary: Migrating a blog to a new domain can be a daunting task, but with the right tools and guidance, it can be a smooth transition. In this article, we will explore the process of moving a blog from markhazleton.controlorigins.com to markhazleton.com. This guide will cover the use of Azure Static Web Apps for hosting and Cloudflare for DNS management, providing detailed steps and best practices to ensure a successful migration.
+conclusionTitle: Key Takeaways
+conclusionSummary: Migrating a blog involves setting up a new hosting environment, transferring content, configuring DNS, and thorough testing. Using Azure and Cloudflare simplifies this process, ensuring a smooth transition.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: Migrating to a new domain requires careful planning and execution. Leveraging Azure and Cloudflare can streamline the process and enhance your site's performance.
+conclusionText: If you're considering migrating your blog, take advantage of the powerful tools offered by Azure and Cloudflare. With the right approach, you can ensure a seamless transition and improved site performance. Start your migration journey today and enjoy the benefits of a modern, efficient web hosting solution.
+seo:
+  title: "Migrating to MarkHazleton.com: A Guide "
+  titleSuffix:  
+  description: Discover the seamless process of migrating your blog to MarkHazleton.com using Azure Static Web Apps and Cloudflare DNS. Learn best practices and step-by-step
+  keywords: Mark Hazleton, blog migration, Azure Static Web Apps, Cloudflare DNS, website hosting, domain transfer
+  canonical: https://markhazleton.com/articles/moving-to-markhazletoncom.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "Migrating to MarkHazleton.com: A Comprehensive Guide"
+  description: Learn how to migrate your blog to MarkHazleton.com with Azure and Cloudflare. Ensure a smooth transition with our detailed guide.
+  type: article
+  image: null
+  imageAlt: Moving to MarkHazleton.com - Mark Hazleton
+twitter:
+  title: Migrating to MarkHazleton.com
+  description: Discover the seamless process of migrating your blog to MarkHazleton.com using Azure Static Web Apps and Cloudflare DNS. Learn best practices and step-by-step
+  image: null
+  imageAlt: Moving to MarkHazleton.com - Mark Hazleton
+youtubeUrl: https://www.youtube.com/watch?v=Rm_hziAo14A
+youtubeTitle: Screaming Frog SEO Spider Tutorial
+---
+
 # Migrating to MarkHazleton.com: A Comprehensive Guide
 
 ## Subtitle: Streamline Your Blog Migration with Azure and Cloudflare

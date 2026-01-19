@@ -1,3 +1,45 @@
+---
+id: 15
+Section: AI & Machine Learning
+slug: crafting-chatgpt-prompt.html
+name: Mastering ChatGPT Prompt Crafting
+description: Discover how to create effective ChatGPT prompts with Mark Hazleton, focusing on context, prompt engineering, and enhancing AI interactions.
+keywords: Mark Hazleton, ChatGPT, prompt crafting, AI interaction, prompt engineering
+img_src: /img/ThreeBearsOfChatGPT.jpg
+lastmod: 2023-06-15
+publishedDate: 2025-07-20
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Unlock the Power of Effective Prompts
+author: Mark Hazleton
+summary: In the rapidly evolving world of AI, crafting effective prompts for models like ChatGPT is crucial for maximizing their potential. In this guide, we will delve into the art of prompt creation, focusing on context, techniques, and practical applications.
+conclusionTitle: Conclusion
+conclusionSummary: Crafting effective prompts is an essential skill for anyone looking to harness the power of AI. By focusing on context, employing prompt engineering techniques, and continuously refining your approach, you can significantly enhance the capabilities of ChatGPT.
+conclusionKeyHeading: Key Insight
+conclusionKeyText: The key to effective AI interaction lies in the art of crafting the perfect prompt.
+conclusionText: For more insights and tips on AI and prompt engineering, follow Mark Hazleton's latest articles and updates.
+seo:
+  title: Mastering ChatGPT Prompt Crafting 
+  titleSuffix: 
+  description: Discover how to create effective ChatGPT prompts with Mark Hazleton, focusing on context, prompt engineering, and enhancing AI interactions.
+  keywords: Mark Hazleton, ChatGPT prompts, prompt engineering, AI conversations, code generation
+  canonical: https://markhazleton.com/crafting-chatgpt-prompt.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Mastering ChatGPT Prompt Crafting
+  description: Discover how to create effective ChatGPT prompts with Mark Hazleton, focusing on context, prompt engineering, and enhancing AI interactions.
+  type: article
+  image: null
+  imageAlt: Crafting ChatGPT Prompt - Mark Hazleton
+twitter:
+  title: Mastering ChatGPT Prompts
+  description: Discover how to create effective ChatGPT prompts with Mark Hazleton, focusing on context, prompt engineering, and enhancing AI interactions.
+  image: null
+  imageAlt: Crafting ChatGPT Prompt - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Mastering ChatGPT Prompt Crafting
 
 ## Unlock the Power of Effective Prompts

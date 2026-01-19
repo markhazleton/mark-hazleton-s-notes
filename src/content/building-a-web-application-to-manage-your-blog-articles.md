@@ -1,3 +1,45 @@
+---
+id: 17
+Section: Content Strategy
+slug: articles/building-a-web-application-to-manage-your-blog-articles.html
+name: Mastering Blog Management Tools
+description: Creating and managing a blog is essential for sharing insights and expertise. This article explores the development of a custom CMS for blog management.
+keywords: Mark Hazleton, blog management, CMS, web development, MVC, ASP.NET Core
+img_src: /img/ChurchWindows.jpg
+lastmod: 2023-07-07
+publishedDate: 2025-07-20
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Creating a Custom CMS for Your Blog
+author: Mark Hazleton
+summary: In today's digital age, creating and managing a blog is essential for sharing insights and expertise. This article explores the development of a custom CMS for blog management, highlighting parallels with the Web Project Mechanics framework.
+conclusionTitle: Conclusion
+conclusionSummary: Crafting bespoke solutions in web development is driven by passion and creativity. The journey to create a CMS for blog management reflects a commitment to improving workflows and sharing insights.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: Creating a CMS for blog management is a testament to blending technology with writing passion.
+conclusionText: Final thoughts emphasize the importance of merging technical skills with creative writing to enhance content management and share insights effectively.
+seo:
+  title: Mastering Blog Management Tools 
+  titleSuffix: 
+  description: Creating and managing a blog is essential for sharing insights and expertise. This article explores the development of a custom CMS for blog management.
+  keywords: Mark Hazleton, blog management, CMS development, web application, content management
+  canonical: https://markhazleton.com/articles/building-a-web-application-to-manage-your-blog-articles.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Mastering Blog Management Tools
+  description: Creating and managing a blog is essential for sharing insights and expertise. This article explores the development of a custom CMS for blog management.
+  type: article
+  image: null
+  imageAlt: Tools to Manage My Blog - Mark Hazleton
+twitter:
+  title: Mastering Blog Management
+  description: Creating and managing a blog is essential for sharing insights and expertise. This article explores the development of a custom CMS for blog management.
+  image: null
+  imageAlt: Tools to Manage My Blog - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Mastering Blog Management Tools
 
 ## Creating a Custom CMS for Your Blog

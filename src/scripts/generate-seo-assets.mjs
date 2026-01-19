@@ -39,6 +39,22 @@ const buildSlug = (entry) => {
   return entry.slug.replace(/^articles\//, "").replace(/\.html$/i, "");
 };
 
+const getLastModDate = (entry) => {
+  // Use lastmod if available, otherwise use publishedDate
+  const date = entry.lastmod || entry.publishedDate;
+  if (!date) return new Date().toISOString().split('T')[0];
+  
+  try {
+    const parsed = new Date(date);
+    if (isNaN(parsed.getTime())) {
+      return new Date().toISOString().split('T')[0];
+    }
+    return parsed.toISOString().split('T')[0];
+  } catch {
+    return new Date().toISOString().split('T')[0];
+  }
+};
+
 const getRepositoryRoutes = async () => {
   try {
     const response = await fetch(
@@ -87,8 +103,14 @@ const buildLastmod = (value) => (value ? `<lastmod>${value}</lastmod>` : "");
 
 const buildDate = normalizeDate(new Date());
 staticRoutes.forEach((route) => addUrl(buildLoc(route), buildDate));
-blogRoutes.forEach((route, index) => addUrl(buildLoc(route), posts[index]?.date));
-projectRoutes.forEach((route) => addUrl(buildLoc(route), buildDate));
+blogRoutes.forEach((route, index) => {
+  const lastmod = getLastModDate(posts[index]);
+  addUrl(buildLoc(route), lastmod);
+});
+projectRoutes.forEach((route, index) => {
+  const lastmod = getLastModDate(projects[index]);
+  addUrl(buildLoc(route), lastmod);
+});
 repositoryRoutes.forEach((route) => addUrl(buildLoc(route), repositoryResult.lastmod ?? buildDate));
 
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n` +

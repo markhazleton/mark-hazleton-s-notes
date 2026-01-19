@@ -21,19 +21,41 @@ export function render(url: string) {
   );
 
   const html = renderToString(app);
-  const head = headManager.current
-    ? [
-        `<title>${headManager.current.title}</title>`,
-        ...headManager.current.metas.map((meta) => {
-          const name = meta.name ? ` name="${meta.name}"` : "";
-          const property = meta.property ? ` property="${meta.property}"` : "";
-          return `<meta${name}${property} content="${meta.content}">`;
-        }),
-        ...headManager.current.links.map(
-          (link) => `<link rel="${link.rel}" href="${link.href}">`,
-        ),
-      ].join("")
-    : "";
+  
+  const headParts: string[] = [];
+  
+  if (headManager.current) {
+    headParts.push(`<title>${headManager.current.title}</title>`);
+    
+    headParts.push(
+      ...headManager.current.metas.map((meta) => {
+        const name = meta.name ? ` name="${meta.name}"` : "";
+        const property = meta.property ? ` property="${meta.property}"` : "";
+        return `<meta${name}${property} content="${meta.content}">`;
+      })
+    );
+    
+    headParts.push(
+      ...headManager.current.links.map(
+        (link) => `<link rel="${link.rel}" href="${link.href}">`
+      )
+    );
+    
+    // Add JSON-LD structured data
+    if (headManager.current.jsonLd) {
+      const jsonLdArray = Array.isArray(headManager.current.jsonLd)
+        ? headManager.current.jsonLd
+        : [headManager.current.jsonLd];
+      
+      jsonLdArray.forEach((schema) => {
+        headParts.push(
+          `<script type="application/ld+json">${JSON.stringify(schema)}</script>`
+        );
+      });
+    }
+  }
+  
+  const head = headParts.join("");
 
   return { html, head };
 }

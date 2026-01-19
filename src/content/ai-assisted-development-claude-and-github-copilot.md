@@ -1,3 +1,45 @@
+---
+id: 73
+Section: Leadership Philosophy
+slug: articles/ai-assisted-development-claude-and-github-copilot.html
+name: AI-Assisted Development: Claude and GitHub Copilot
+description: Discover how AI tools like Claude and GitHub Copilot revolutionize software development by enhancing productivity, creativity, and code quality.
+keywords: AI-assisted development, Claude, GitHub Copilot, software development, Mark Hazleton, AI tools, coding
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2025-03-14
+publishedDate: 2025-03-05
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Revolutionizing Software Development with AI
+author: Mark Hazleton
+summary: In the rapidly evolving field of software development, AI-assisted tools are becoming indispensable. This article explores two leading AI tools, Claude and GitHub Copilot, and how they are transforming the software development lifecycle.
+conclusionTitle: Conclusion
+conclusionSummary: AI-assisted development tools are essential in modern software development, enhancing productivity and creativity. Claude and GitHub Copilot are leading this transformation.
+conclusionKeyHeading: The Future of Development
+conclusionKeyText: AI tools like Claude and GitHub Copilot are shaping efficient and innovative development processes.
+conclusionText: AI-assisted development tools are not just a trend but a necessity in modern software development. By leveraging the capabilities of Claude and GitHub Copilot, developers can enhance their productivity, creativity, and code quality.
+seo:
+  title: "AI-Assisted Development: Claude and GitHub C "
+  titleSuffix:  
+  description: Discover how AI tools like Claude and GitHub Copilot revolutionize software development by enhancing productivity, creativity, and code quality.
+  keywords: AI-assisted development, Claude, GitHub Copilot, software development, Mark Hazleton
+  canonical: https://markhazleton.com/articles/ai-assisted-development-claude-and-github-copilot.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "AI-Assisted Development: Claude and GitHub Copilot"
+  description: Discover how AI tools like Claude and GitHub Copilot revolutionize software development by enhancing productivity, creativity, and code quality.
+  type: article
+  image: null
+  imageAlt: "AI-Assisted Development: Claude and GitHub Copilot - Mark Hazleton"
+twitter:
+  title: AI-Assisted Development
+  description: Discover how AI tools like Claude and GitHub Copilot revolutionize software development by enhancing productivity, creativity, and code quality.
+  image: null
+  imageAlt: "AI-Assisted Development: Claude and GitHub Copilot - Mark Hazleton"
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # AI-Assisted Development: Claude and GitHub Copilot
 
 ## Revolutionizing Software Development with AI

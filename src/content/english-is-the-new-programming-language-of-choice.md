@@ -1,3 +1,45 @@
+---
+id: 31
+Section: AI & Machine Learning
+slug: articles/english-is-the-new-programming-language-of-choice.html
+name: English: The New Programming Language of Choice
+description: Discover how English is transforming software development, becoming as essential as traditional programming languages in the Microsoft Stack.
+keywords: Mark Hazleton, AI, programming, English, prompt engineering, large language models
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2023-12-08
+publishedDate: 2025-07-20
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: How English is Transforming Software Development
+author: Mark Hazleton
+summary: Explore the pivotal role of English in the evolution of the Microsoft .NET technologies. Understand why English is becoming as crucial as traditional programming languages in software development.
+conclusionTitle: Key Takeaways
+conclusionSummary: "English is increasingly vital in the tech industry, enhancing communication, documentation, and code readability. Its role in programming languages like C#, F#, and SQL underscores its importance."
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: English is not just a language; it's a crucial tool in software development.
+conclusionText: As technology advances, mastering English alongside programming languages is essential for developers. Embrace English to enhance your coding skills and global collaboration.
+seo:
+  title: "English: The New Programming Language "
+  titleSuffix: 
+  description: Discover how English is transforming software development, becoming as essential as traditional programming languages in the Microsoft Stack.
+  keywords: "English, programming language, Microsoft Stack, .NET technologies, C#, Mark Hazleton"
+  canonical: https://markhazleton.com/articles/english-is-the-new-programming-language-of-choice.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "English: The New Programming Language of Choice"
+  description: Discover how English is transforming software development, becoming as essential as traditional programming languages in the Microsoft Stack.
+  type: article
+  image: null
+  imageAlt: English is the New Programming Language of Choice - Mark Hazleton
+twitter:
+  title: "English: New Programming Language"
+  description: Discover how English is transforming software development, becoming as essential as traditional programming languages in the Microsoft Stack.
+  image: null
+  imageAlt: English is the New Programming Language of Choice - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # English: The New Programming Language of Choice
 
 ## The Evolution of Language in Programming

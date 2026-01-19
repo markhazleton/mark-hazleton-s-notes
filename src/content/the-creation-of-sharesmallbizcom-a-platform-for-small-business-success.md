@@ -1,3 +1,45 @@
+---
+id: 70
+Section: Case Studies
+slug: articles/the-creation-of-sharesmallbizcom-a-platform-for-small-business-success.html
+name: The Creation of ShareSmallBiz.com: A Platform for Small Business Success
+description: Discover how ShareSmallBiz.com empowers small businesses with collaborative marketing tools and shared resources, enabling them to thrive in competitive markets.
+keywords: ShareSmallBiz, small business collaboration, digital marketing, Mark Hazleton, business growth, networking, entrepreneurship
+img_src: /img/MurdoHighlandCoo.jpg
+lastmod: 2025-02-09
+publishedDate: 2025-02-14
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Empowering Small Businesses with Collaborative Tools
+author: Mark Hazleton
+summary: In today's competitive market, small businesses often struggle to keep up with larger corporations due to limited resources and marketing budgets. Enter ShareSmallBiz.com, a revolutionary platform designed to level the playing field by offering collaborative marketing tools and shared resources. This article delves into the creation and impact of ShareSmallBiz.com, exploring how it empowers small businesses to achieve success.
+conclusionTitle: Key Takeaways from ShareSmallBiz.com
+conclusionSummary: ShareSmallBiz.com is a game-changer for small businesses, providing them with the tools and resources needed to compete in a crowded market. By fostering collaboration and resource sharing, the platform helps businesses grow and succeed.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: ShareSmallBiz.com empowers small businesses by offering a collaborative platform that enhances marketing efforts and drives growth.
+conclusionText: As small businesses continue to navigate the challenges of modern marketing, platforms like ShareSmallBiz.com offer a beacon of hope. By joining forces and leveraging shared resources, small businesses can achieve greater success and sustainability. If you're a small business owner looking to enhance your marketing efforts, consider exploring the opportunities available through ShareSmallBiz.com.
+seo:
+  title: The Creation of ShareSmallBiz.com 
+  titleSuffix:  
+  description: Discover how ShareSmallBiz.com empowers small businesses with collaborative marketing tools and shared resources, enabling them to thrive in competitive
+  keywords: ShareSmallBiz.com, small business marketing, collaborative tools, shared resources, Mark Hazleton
+  canonical: https://markhazleton.com/articles/the-creation-of-sharesmallbizcom-a-platform-for-small-business-success.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "The Creation of ShareSmallBiz.com: A Platform for Small Business Success"
+  description: Discover how ShareSmallBiz.com empowers small businesses with collaborative marketing tools and shared resources, enabling them to thrive in competitive
+  type: article
+  image: null
+  imageAlt: "The Creation of ShareSmallBiz.com: A Platform for Small Business Success - Mark Hazleton"
+twitter:
+  title: "ShareSmallBiz.com: Small Biz Success"
+  description: Discover how ShareSmallBiz.com empowers small businesses with collaborative marketing tools and shared resources, enabling them to thrive in competitive
+  image: null
+  imageAlt: "The Creation of ShareSmallBiz.com: A Platform for Small Business Success - Mark Hazleton"
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # The Creation of ShareSmallBiz.com: A Platform for Small Business Success
 
 ## Subtitle: Empowering Small Businesses with Collaborative Tools

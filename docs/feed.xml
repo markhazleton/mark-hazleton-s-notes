@@ -5,7 +5,21 @@
     <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Jan 2026 14:37:33 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 06:10:28 GMT</lastBuildDate>
+  <item>
+    <title>My New Article Title</title>
+    <link>https://markhazleton.com/blog/_TEMPLATE</link>
+    <guid>https://markhazleton.com/blog/_TEMPLATE</guid>
+    <pubDate>Sun, 18 Jan 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[A longer summary of the article content that will be displayed in previews and listings.]]></description>
+  </item>
+  <item>
+    <title>Building MuseumSpark - Why Context Matters More Than the Latest LLM</title>
+    <link>https://markhazleton.com/blog/building-museumspark-context-matters-llm</link>
+    <guid>https://markhazleton.com/blog/building-museumspark-context-matters-llm</guid>
+    <pubDate>Sun, 18 Jan 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[A deep dive into building MuseumSpark, showing how a modular, context-first architecture with smart caching reduced LLM costs by 67% while improving accuracy from 29% to 95%. Learn why gathering evidence before asking LLMs to judge beats trying to use them as researchers.]]></description>
+  </item>
   <item>
     <title>AI, Confidence, and the Rotary Four-Way Test</title>
     <link>https://markhazleton.com/blog/ai-confidence-and-rotary-four-way-test</link>
@@ -18,17 +32,8 @@
     <link>https://markhazleton.com/blog/building-a-quick-estimation-template</link>
     <guid>https://markhazleton.com/blog/building-a-quick-estimation-template</guid>
     <pubDate>Sun, 28 Dec 2025 00:00:00 GMT</pubDate>
-    <description><![CDATA[# Building a Quick Estimation Template When You Have Almost Nothing to Go On
-
-> When faced with vague requirements and tight deadlines, I built a simple three-pillar framework using Innovation, Scope, and People for estimating quickly.
-
-Category: Project Management
-
----
-
-## Why You Need a Quick Estimation Template
-
-There are moments in project management when leadership asks, “How long will this take?” and all you have is a one-liner and a deadline. Requirements are nebulous, resources are uncle...]]></description>
+    <description><![CDATA["# Building a Quick Estimation Template When You Have Almost Nothing to Go On
+> When faced with vague requirements and tight deadlines, I built a simple three-pillar framework using Innovation, Scope, and People for estimating quickly.]]></description>
   </item>
   <item>
     <title>Test Driving GitHub&apos;s Spec Kit: AI-Maintained Documentation That Stays Accurate</title>
@@ -591,7 +596,7 @@ There are moments in project management when leadership asks, “How long will t
     <description><![CDATA[Task list processing is essential for managing projects and personal productivity. This article explores techniques and tools to streamline task management and boost efficiency.]]></description>
   </item>
   <item>
-    <title>Guide to Redis Local Instance Setup </title>
+    <title>Guide to Redis Local Instance Setup</title>
     <link>https://markhazleton.com/blog/redis-local-instance</link>
     <guid>https://markhazleton.com/blog/redis-local-instance</guid>
     <pubDate>Thu, 24 Aug 2023 00:00:00 GMT</pubDate>
@@ -654,7 +659,7 @@ There are moments in project management when leadership asks, “How long will t
     <description><![CDATA[Asynchronous programming allows tasks to run without blocking the main thread, but managing these tasks efficiently is crucial. CancellationToken provides a robust mechanism for task cancellation, ensuring resources are not wasted and applications remain responsive.]]></description>
   </item>
   <item>
-    <title>Rethinking Git Flow for Developers </title>
+    <title>Rethinking Git Flow for Developers</title>
     <link>https://markhazleton.com/blog/git-flow-rethink</link>
     <guid>https://markhazleton.com/blog/git-flow-rethink</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
@@ -668,7 +673,7 @@ There are moments in project management when leadership asks, “How long will t
     <description><![CDATA[Explore how ChatGPT can revolutionize C# development by improving code quality and boosting productivity. Discover practical applications and integration tips.]]></description>
   </item>
   <item>
-    <title>Explore Trivia Spark With ChatGPT </title>
+    <title>Explore Trivia Spark With ChatGPT</title>
     <link>https://markhazleton.com/blog/trivia-spark-development</link>
     <guid>https://markhazleton.com/blog/trivia-spark-development</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>

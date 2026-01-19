@@ -1,3 +1,45 @@
+---
+id: 76
+Section: AI & Machine Learning
+slug: articles/reactspark-a-comprehensive-portfolio-showcase.html
+name: ReactSpark: A Comprehensive Portfolio Showcase
+description: Explore ReactSpark, a modern portfolio website built with React and TypeScript, showcasing web development best practices and dynamic frontend integration.
+keywords: ReactSpark, modern frontend development, Mark Hazleton, TypeScript, Vite, WebSpark
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2025-04-16
+publishedDate: 2025-04-16
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Showcasing Modern Web Development with React
+author: Mark Hazleton
+summary: ReactSpark is a modern, responsive portfolio website built using React 19 and TypeScript. It serves as a demonstration of web development best practices and a reference for building applications with React.
+conclusionTitle: Final Thoughts on ReactSpark
+conclusionSummary: ReactSpark exemplifies modern web development, offering a practical guide for developers. Its open-source nature encourages collaboration and innovation.
+conclusionKeyHeading: Key Insight
+conclusionKeyText: ReactSpark is a valuable resource for developers, showcasing modern web development techniques.
+conclusionText: ReactSpark not only showcases modern web development techniques but also serves as a practical guide for developers looking to implement similar projects. Its open-source nature invites collaboration and innovation, making it a valuable resource for the developer community.
+seo:
+  title: "ReactSpark: A Portfolio Showcase "
+  titleSuffix:  
+  description: Discover ReactSpark, a modern portfolio built with React and TypeScript. Learn best practices and explore dynamic frontend integration. 
+  keywords: ReactSpark, portfolio website, React, TypeScript, Mark Hazleton, Vite, web development
+  canonical: https://markhazleton.com/articles/reactspark-a-comprehensive-portfolio-showcase.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "ReactSpark: A Comprehensive Portfolio Showcase"
+  description: Discover ReactSpark, a modern portfolio built with React and TypeScript. Learn best practices and explore dynamic frontend integration.
+  type: article
+  image: null
+  imageAlt: ReactSpark A Comprehensive Portfolio Showcase - Mark Hazleton
+twitter:
+  title: ReactSpark Portfolio Showcase
+  description: Discover ReactSpark, a modern portfolio built with React and TypeScript. Learn best practices and explore dynamic frontend integration.
+  image: null
+  imageAlt: ReactSpark A Comprehensive Portfolio Showcase - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # ReactSpark: A Comprehensive Portfolio Showcase
 
 ## Introduction

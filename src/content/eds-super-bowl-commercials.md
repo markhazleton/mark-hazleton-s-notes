@@ -1,3 +1,45 @@
+---
+id: 59
+Section: Case Studies
+slug: articles/eds-super-bowl-commercials.html
+name: Exploring EDS Super Bowl Commercials
+description: Discover the history and impact of EDS's innovative Super Bowl commercials from 2000-2001, highlighting IT project management challenges.
+keywords: Mark Hazleton, EDS commercials, IT project management, Fallon agency, Super Bowl ads
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2024-10-11
+publishedDate: 2024-12-16
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Understanding the Impact of EDS's Iconic Ads
+author: Mark Hazleton
+summary: The turn of the millennium marked a significant moment for Electronic Data Systems (EDS) as they launched a series of groundbreaking Super Bowl commercials in 2000 and 2001. These ads not only captured the attention of millions but also highlighted the challenges and intricacies of IT project management in a creative and memorable way.
+conclusionTitle: Conclusion
+conclusionSummary: EDS's Super Bowl commercials from 2000 and 2001 remain iconic examples of how advertising can elevate a brand's message through creativity and humor. By addressing the challenges of IT project management in a relatable way, EDS not only captured the attention of millions but also solidified their reputation as industry leaders.
+conclusionKeyHeading: Key Insight
+conclusionKeyText: EDS's ads used humor and metaphor to effectively communicate complex IT solutions.
+conclusionText: For more insights into innovative advertising strategies, explore our blog and stay updated with the latest trends in marketing and IT solutions.
+seo:
+  title: Exploring EDS Super Bowl Commercials 
+  titleSuffix:  
+  description: Discover the impact of EDS's Super Bowl commercials from 2000-2001. Learn how humor and metaphor highlighted IT project management challenges.
+  keywords: EDS Super Bowl commercials, IT project management, Mark Hazleton, advertising, marketing, creativity
+  canonical: https://markhazleton.com/articles/eds-super-bowl-commercials.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Exploring EDS Super Bowl Commercials
+  description: Discover the impact of EDS's Super Bowl commercials from 2000-2001. Learn how humor and metaphor highlighted IT project management challenges.
+  type: article
+  image: null
+  imageAlt: EDS Super Bowl Commercials - Mark Hazleton
+twitter:
+  title: EDS Super Bowl Ads
+  description: Discover the impact of EDS's Super Bowl commercials from 2000-2001. Learn how humor and metaphor highlighted IT project management challenges.
+  image: null
+  imageAlt: EDS Super Bowl Commercials - Mark Hazleton
+youtubeUrl: https://www.youtube.com/embed/bA4iIOZzVEg?si=RepvBox62PTkXEEQ
+youtubeTitle: Deep Dive: EDS Super Bowl Commercials
+---
+
 # Exploring EDS Super Bowl Commercials
 
 ## Understanding the Impact of EDS's Iconic Ads

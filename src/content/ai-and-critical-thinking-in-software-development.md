@@ -1,3 +1,45 @@
+---
+id: 72
+Section: Leadership Philosophy
+slug: articles/ai-and-critical-thinking-in-software-development.html
+name: AI and Critical Thinking in Software Development
+description: Explore how AI influences critical thinking in software development and learn strategies to balance AI efficiency with human creativity.
+keywords: AI, critical thinking, problem-solving, automation, Mark Hazleton, cognitive skills, AI tools
+img_src: /img/ScotlandRainbow.jpg
+lastmod: 2025-03-03
+publishedDate: 2025-02-27
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Balancing AI Efficiency with Human Creativity
+author: Mark Hazleton
+summary: Artificial Intelligence (AI) is transforming software development by enhancing efficiency and accuracy. However, it also poses challenges to critical thinking and creativity. This article explores the impact of AI on these essential skills and offers strategies to maintain a balance between AI efficiency and human ingenuity.
+conclusionTitle: Final Thoughts on AI and Critical Thinking
+conclusionSummary: AI offers significant benefits in software development, but it's crucial to maintain a balance to ensure critical thinking and creativity are not compromised. By understanding AI's impact, developers can harness its potential effectively.
+conclusionKeyHeading: Key Insight
+conclusionKeyText: AI enhances efficiency but requires a balance to preserve critical thinking and creativity.
+conclusionText: AI is a powerful tool in software development, but developers must remain vigilant in maintaining their critical thinking and creativity. Continuous learning and critical evaluation of AI tools are essential for leveraging AI's full potential while preserving human ingenuity.
+seo:
+  title: AI and Critical Thinking in Software Develop 
+  titleSuffix:  
+  description: Discover how AI impacts critical thinking in software development and learn strategies to balance AI efficiency with human creativity and problem-solving.
+  keywords: AI, critical thinking, software development, Mark Hazleton, AI efficiency, human creativity, problem-solving
+  canonical: https://markhazleton.com/articles/ai-and-critical-thinking-in-software-development.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: AI and Critical Thinking in Software Development
+  description: Explore the influence of AI on critical thinking in software development and strategies to balance AI efficiency with human creativity.
+  type: article
+  image: null
+  imageAlt: AI and Critical Thinking in Software Development - Mark Hazleton
+twitter:
+  title: AI & Critical Thinking in Dev
+  description: Discover how AI impacts critical thinking in software development and learn strategies to balance AI efficiency with human creativity and problem-solving.
+  image: null
+  imageAlt: AI and Critical Thinking in Software Development - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # AI and Critical Thinking in Software Development
 
 ## Understanding the Role of AI in Software Development

@@ -1,3 +1,45 @@
+---
+id: 45
+Section: Data Science
+slug: articles/data-science-for-net-developers.html
+name: Data Science for .NET Developers
+description: Explore how .NET developers can benefit from integrating data science skills, featuring insights from a seasoned developer's journey through UT Austin's AI/ML program.
+keywords: Mark Hazleton, .NET developers, data science, AI/ML program, UT Austin
+img_src: /img/ScotlandRainbow.jpg
+lastmod: 2024-05-10
+publishedDate: 2024-10-02
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Why .NET Developers Should Consider Data Science
+author: Mark Hazleton
+summary: In today's tech landscape, data science is crucial for developers. This article explores why a .NET developer pursued UT Austin's AI/ML program and its impact.
+conclusionTitle: Conclusion
+conclusionSummary: Data science offers transformative potential for .NET developers, enhancing problem-solving skills and expanding career opportunities.
+conclusionKeyHeading: Embrace the Future
+conclusionKeyText: Data science is a transformative field for .NET developers, offering new skills and career paths.
+conclusionText: For .NET developers, embracing data science is key to staying competitive and innovative in the tech industry.
+seo:
+  title: Data Science for .NET Developers 
+  titleSuffix:  
+  description: Discover how .NET developers can enhance their careers by integrating data science skills. Learn from a seasoned developer's experience with UT Austin's AI/ML
+  keywords: Mark Hazleton, data science, .NET developers, AI/ML program, UT Austin, Great Learning
+  canonical: https://markhazleton.com/articles/data-science-for-net-developers.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Data Science for .NET Developers
+  description: Learn how .NET developers can benefit from data science skills. Insights from a seasoned developer's journey through UT Austin's AI/ML program.
+  type: article
+  image: null
+  imageAlt: Data Science for NET Developers - Mark Hazleton
+twitter:
+  title: Data Science for .NET Devs
+  description: Discover how .NET developers can enhance their careers by integrating data science skills. Learn from a seasoned developer's experience with UT Austin's AI/ML
+  image: null
+  imageAlt: Data Science for NET Developers - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Data Science for .NET Developers
 
 ## Why .NET Developers Should Consider Data Science

@@ -1,3 +1,45 @@
+---
+id: 58
+Section: Case Studies
+slug: articles/using-notebooklm-clipchamp-and-chatgpt-for-podcasts.html
+name: Using NotebookLM, Clipchamp, and ChatGPT for Podcasts
+description: Discover how NotebookLM, Clipchamp, and ChatGPT can streamline your podcast creation, enhancing efficiency and engagement.
+keywords: Mark Hazleton, AI tools, podcast production, NotebookLM, Clipchamp, ChatGPT
+img_src: /img/MurdoHighlandCoo.jpg
+lastmod: 2024-09-30
+publishedDate: 2024-12-12
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Enhance Your Podcast Creation Process
+author: Mark Hazleton
+summary: Creating a podcast can be a daunting task, but with the right tools, it becomes a seamless and enjoyable experience. In this guide, we will explore how to use NotebookLM, Microsoft Clipchamp, and ChatGPT to produce high-quality podcast episodes for your Deep Dive playlist.
+conclusionTitle: Conclusion
+conclusionSummary: Creating a podcast doesn't have to be overwhelming. With tools like NotebookLM, Clipchamp, and ChatGPT, you can enhance your workflow, improve content quality, and engage your audience more effectively.
+conclusionKeyHeading: Streamline Your Podcast Workflow
+conclusionKeyText: Integrate these tools to focus on delivering high-quality content to your audience.
+conclusionText: Start using these tools today to elevate your podcasting game! For more tips, visit Mark Hazleton's Blog for expert insights and guidance.
+seo:
+  title: Using NotebookLM, Clipchamp, and ChatGPT 
+  titleSuffix:  
+  description: Discover how NotebookLM, Clipchamp, and ChatGPT can streamline your podcast creation, enhancing efficiency and engagement. Learn how to elevate your podcasting.
+  keywords: Mark Hazleton, podcast creation, NotebookLM, Clipchamp, ChatGPT, podcast tools
+  canonical: https://markhazleton.com/articles/using-notebooklm-clipchamp-and-chatgpt-for-podcasts.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Using NotebookLM, Clipchamp, and ChatGPT for Podcasts
+  description: Discover how NotebookLM, Clipchamp, and ChatGPT can streamline your podcast creation, enhancing efficiency and engagement. Learn how to elevate your podcasting.
+  type: article
+  image: null
+  imageAlt: Using NotebookLM, Clipchamp, and ChatGPT for Podcasts - Mark Hazleton
+twitter:
+  title: Using NotebookLM & Clipchamp
+  description: Discover how NotebookLM, Clipchamp, and ChatGPT can streamline your podcast creation, enhancing efficiency and engagement. Learn how to elevate your podcasting.
+  image: null
+  imageAlt: Using NotebookLM, Clipchamp, and ChatGPT for Podcasts - Mark Hazleton
+youtubeUrl: https://www.youtube.com/watch?v=Qn8N_ZexISk
+youtubeTitle: Deep Dive: Google NotebookLM
+---
+
 # Using NotebookLM, Clipchamp, and ChatGPT for Podcasts
 
 ## Enhance Your Podcast Creation Process

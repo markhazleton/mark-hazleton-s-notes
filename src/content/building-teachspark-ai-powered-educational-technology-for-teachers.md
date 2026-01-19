@@ -1,3 +1,45 @@
+---
+id: 83
+Section: Case Studies
+slug: articles/building-teachspark-ai-powered-educational-technology-for-teachers.html
+name: Building TeachSpark: AI-Powered Educational Technology for Teachers
+description: Discover how TeachSpark uses .NET 9 and OpenAI to create Common Core-aligned worksheets, offering insights into its architecture and code examples.
+keywords: TeachSpark, AI in education, Mark Hazleton, educational technology, worksheet generation, Common Core, Bloom's taxonomy
+img_src: /img/MurdoHighlandCoo.jpg
+lastmod: 2025-07-02
+publishedDate: 2025-07-03
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Leveraging .NET 9 and OpenAI for Educational Innovation
+author: Mark Hazleton
+summary: In the ever-evolving landscape of educational technology, the integration of artificial intelligence offers unprecedented opportunities. TeachSpark is a pioneering platform designed to empower teachers by generating Common Core-aligned worksheets using advanced AI capabilities. This article delves into the journey of creating TeachSpark, exploring its technical architecture and providing practical code examples.
+conclusionTitle: Conclusion
+conclusionSummary: TeachSpark represents a significant step forward in educational technology, harnessing the power of AI to support teachers in their mission to provide quality education.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: TeachSpark is a testament to how technology can transform education, making it more accessible and effective.
+conclusionText: As educational needs continue to evolve, platforms like TeachSpark will play a crucial role in shaping the future of learning. Teachers and educators are encouraged to explore TeachSpark and see how it can enhance their teaching strategies.
+seo:
+  title: "Building TeachSpark: AI-Powered Educational "
+  titleSuffix:  
+  description: Discover how TeachSpark uses .NET 9 and OpenAI to create Common Core-aligned worksheets, offering insights into its architecture and code examples.
+  keywords: Mark Hazleton, TeachSpark, AI in education, .NET 9, OpenAI, educational technology, Common Core
+  canonical: https://markhazleton.com/articles/building-teachspark-ai-powered-educational-technology-for-teachers.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "Building TeachSpark: AI-Powered Educational Technology for Teachers"
+  description: Discover how TeachSpark uses .NET 9 and OpenAI to create Common Core-aligned worksheets, offering insights into its architecture and code examples.
+  type: article
+  image: null
+  imageAlt: "Building TeachSpark: AI-Powered Educational Technology for Teachers  - Mark Hazleton"
+twitter:
+  title: "Building TeachSpark: AI-Powered EdTech"
+  description: Discover how TeachSpark uses .NET 9 and OpenAI to create Common Core-aligned worksheets, offering insights into its architecture and code examples.
+  image: null
+  imageAlt: "Building TeachSpark: AI-Powered Educational Technology for Teachers  - Mark Hazleton"
+youtubeUrl: null
+youtubeTitle: null
+---
+
 
 # Introduction
 

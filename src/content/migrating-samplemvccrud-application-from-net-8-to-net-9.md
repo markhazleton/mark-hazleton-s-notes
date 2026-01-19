@@ -1,3 +1,45 @@
+---
+id: 40
+Section: Development
+slug: articles/migrating-samplemvccrud-application-from-net-8-to-net-9.html
+name: Migrating SampleMvcCRUD from .NET 8 to .NET 9
+description: Explore the comprehensive process of migrating a SampleMvcCRUD application from .NET 8 to .NET 9, focusing on compatibility, performance, and SEO enhancements.
+keywords: Mark Hazleton, .NET 9 migration, SEO optimization, SampleMvcCRUD, NuGet packages, Docker configuration, code refactoring
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2024-03-16
+publishedDate: 2024-09-23
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: A comprehensive guide to upgrading your application
+author: Mark Hazleton
+summary: Migrating a .NET MVC CRUD application from .NET 8 to .NET 9 involves several key steps to ensure compatibility, performance improvement, and better visibility through SEO enhancements. This guide covers the entire process, from preparation to execution, helping you achieve a seamless transition.
+conclusionTitle: Final Thoughts on Migration
+conclusionSummary: Migrating to .NET 9 provides significant benefits, including enhanced performance and SEO. By following a structured approach, you can ensure a seamless transition.
+conclusionKeyHeading: Key Insight
+conclusionKeyText: A structured migration approach ensures a smooth transition to .NET 9.
+conclusionText: Embrace the new features of .NET 9 for improved application performance and SEO. Start your migration today to stay ahead in technology.
+seo:
+  title: Migrating SampleMvcCRUD from .NET 8 to .NET 
+  titleSuffix:  
+  description: Discover the process of migrating SampleMvcCRUD from .NET 8 to .NET 9, focusing on compatibility, performance, and SEO enhancements for optimal results.
+  keywords: Mark Hazleton, .NET 9 migration, SampleMvcCRUD, .NET 8, SEO, performance optimization
+  canonical: https://markhazleton.com/articles/migrating-samplemvccrud-application-from-net-8-to-net-9.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Migrating SampleMvcCRUD from .NET 8 to .NET 9
+  description: Discover the process of migrating SampleMvcCRUD from .NET 8 to .NET 9, focusing on compatibility, performance, and SEO enhancements for optimal results.
+  type: article
+  image: null
+  imageAlt: Migrating SampleMvcCRUD Application from .NET 8 to .NET 9 - Mark Hazleton
+twitter:
+  title: Migrating SampleMvcCRUD
+  description: Discover the process of migrating SampleMvcCRUD from .NET 8 to .NET 9, focusing on compatibility, performance, and SEO enhancements for optimal results.
+  image: null
+  imageAlt: Migrating SampleMvcCRUD Application from .NET 8 to .NET 9 - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Migrating SampleMvcCRUD from .NET 8 to .NET 9
 
 ## Understanding the Migration Process

@@ -1,3 +1,45 @@
+---
+id: 81
+Section: Development
+slug: articles/architecting-agentic-services-in-net-9-semantic-kernel-enterprise-ai-architecture.html
+name: Architecting Agentic Services in .NET 9: Semantic Kernel
+description: Discover how to architect agentic AI services in .NET 9 using Microsoft Semantic Kernel, focusing on instruction engineering, security, and enterprise strategies.
+keywords: Mark Hazleton, .NET 9, Semantic Kernel, agentic services, AI architecture, instruction engineering, security patterns
+img_src: /img/NewHampshire-Fall.jpg
+lastmod: 2025-06-10
+publishedDate: 2025-06-10
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: A Guide to Building Enterprise AI Solutions with .NET 9
+author: Mark Hazleton
+summary: This guide explores the architecture of agentic AI services using .NET 9 and Microsoft Semantic Kernel. Learn about instruction engineering, security patterns, and enterprise-ready strategies.
+conclusionTitle: Final Thoughts on Agentic AI Services
+conclusionSummary: Architecting agentic services in .NET 9 with Semantic Kernel provides a robust framework for enterprise AI solutions. Focus on instruction engineering and security for success.
+conclusionKeyHeading: Key Insight
+conclusionKeyText: Leveraging .NET 9 and Semantic Kernel can transform enterprise AI capabilities.
+conclusionText: Begin your journey into AI-driven enterprise solutions with .NET 9 and Semantic Kernel. Implement robust security and scalable strategies for success.
+seo:
+  title: Architecting Agentic Services in .NET 9 
+  titleSuffix:  
+  description: Discover how to architect agentic AI services in .NET 9 using Microsoft Semantic Kernel, focusing on instruction engineering, security, and enterprise
+  keywords: Mark Hazleton, .NET 9, Semantic Kernel, agentic services, AI architecture, enterprise AI
+  canonical: https://markhazleton.com/articles/architecting-agentic-services-in-net-9-semantic-kernel-enterprise-ai-architecture.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "Architecting Agentic Services in .NET 9: Semantic Kernel"
+  description: Discover how to architect agentic AI services in .NET 9 using Microsoft Semantic Kernel, focusing on instruction engineering, security, and enterprise
+  type: article
+  image: null
+  imageAlt: "Architecting Agentic Services in .NET 9: Semantic Kernel | Enterprise AI Architecture - Mark Hazleton"
+twitter:
+  title: Agentic Services in .NET 9
+  description: Discover how to architect agentic AI services in .NET 9 using Microsoft Semantic Kernel, focusing on instruction engineering, security, and enterprise
+  image: null
+  imageAlt: "Architecting Agentic Services in .NET 9: Semantic Kernel | Enterprise AI Architecture - Mark Hazleton"
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Architecting Agentic Services in .NET 9: Semantic Kernel
 
 ## Introduction

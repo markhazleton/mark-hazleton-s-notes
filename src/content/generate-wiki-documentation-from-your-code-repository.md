@@ -1,3 +1,45 @@
+---
+id: 66
+Section: Development
+slug: articles/generate-wiki-documentation-from-your-code-repository.html
+name: Generate Wiki Documentation from Your Code Repository
+description: Discover how to create comprehensive wiki documentation directly from your code repository, enhancing project transparency and collaboration.
+keywords: Mark Hazleton, DocSpark, code documentation, .NET, Markdown, JSON, API documentation
+img_src: /img/ArgostoliGreeceBeach.jpg
+lastmod: 2024-12-27
+publishedDate: 2025-01-14
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Enhance Your Project's Transparency
+author: Mark Hazleton
+summary: Creating detailed documentation is crucial for any code repository. This guide will walk you through the process of generating wiki documentation directly from your code repository, enhancing project transparency and collaboration.
+conclusionTitle: Conclusion
+conclusionSummary: Generating wiki documentation from your code repository improves project management and team collaboration. Follow these steps for comprehensive documentation.
+conclusionKeyHeading: Key Insight
+conclusionKeyText: Regularly updated documentation enhances project transparency and team efficiency.
+conclusionText: By generating comprehensive documentation, you ensure that your project remains accessible and understandable to all team members, fostering a collaborative environment. Start implementing these practices today to see immediate benefits.
+seo:
+  title: Generate Wiki Documentation from Code 
+  titleSuffix:  
+  description: Discover how to create comprehensive wiki documentation directly from your code repository, enhancing project transparency and collaboration.
+  keywords: Mark Hazleton, wiki documentation, code repository, developer guide, project transparency
+  canonical: https://markhazleton.com/articles/generate-wiki-documentation-from-your-code-repository.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Generate Wiki Documentation from Your Code Repository
+  description: Discover how to create comprehensive wiki documentation directly from your code repository, enhancing project transparency and collaboration.
+  type: article
+  image: null
+  imageAlt: Generate Wiki Documentation from Your Code Repository - Mark Hazleton
+twitter:
+  title: Generate Wiki Docs from Code
+  description: Discover how to create comprehensive wiki documentation directly from your code repository, enhancing project transparency and collaboration.
+  image: null
+  imageAlt: Generate Wiki Documentation from Your Code Repository - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Generate Wiki Documentation from Your Code Repository
 
 ## Enhance Your Project's Transparency

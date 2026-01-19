@@ -1,3 +1,45 @@
+---
+id: 4
+Section: Development
+slug: decorator-pattern-http-client.html
+name: Enhancing HttpClient with Decorator Pattern
+description: Discover the Decorator Pattern, a powerful tool for enhancing HttpClient functionality in ASP.NET with behaviors like logging without modifying existing code.
+keywords: Decorator Pattern, design patterns, HttpClient, software architecture, telemetry
+img_src: /img/ChurchWindows.jpg
+lastmod: 2023-02-14
+publishedDate: 2025-07-20
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: A guide to extending HttpClient functionality using design patterns
+author: Mark Hazleton
+summary: The Decorator Pattern is a powerful tool for enhancing HttpClient functionality in ASP.NET. This article explores how to dynamically add behaviors like logging without modifying existing code.
+conclusionTitle: Key Takeaways
+conclusionSummary: The Decorator Pattern offers a flexible and maintainable way to extend HttpClient functionality. It adheres to solid design principles, making it ideal for ASP.NET applications.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: The Decorator Pattern enhances HttpClient in a scalable and maintainable way.
+conclusionText: Consider implementing the Decorator Pattern to manage cross-cutting concerns in your ASP.NET projects effectively.
+seo:
+  title: Enhancing HttpClient with Decorator Pattern
+  titleSuffix: 
+  description: Discover the Decorator Pattern, a powerful tool for enhancing HttpClient functionality in ASP.NET with behaviors like logging without modifying existing code.
+  keywords: "Decorator Pattern, HttpClient, ASP.NET, design patterns, logging, software architecture, C#"
+  canonical: https://markhazleton.com/decorator-pattern-http-client.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Enhancing HttpClient with Decorator Pattern
+  description: Discover the Decorator Pattern, a powerful tool for enhancing HttpClient functionality in ASP.NET with behaviors like logging without modifying existing code.
+  type: article
+  image: null
+  imageAlt: The Decorator Pattern with Http Client - Mark Hazleton
+twitter:
+  title: HttpClient Decorator Pattern
+  description: Discover the Decorator Pattern, a powerful tool for enhancing HttpClient functionality in ASP.NET with behaviors like logging without modifying existing code.
+  image: null
+  imageAlt: The Decorator Pattern with Http Client - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Enhancing HttpClient with Decorator Pattern
 
 ## Understanding the Decorator Pattern

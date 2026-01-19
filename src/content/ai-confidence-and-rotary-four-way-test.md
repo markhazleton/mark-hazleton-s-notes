@@ -1,3 +1,45 @@
+---
+id: 94
+Section: Industry Insights
+slug: articles/ai-confidence-and-rotary-four-way-test.html
+name: AI, Confidence, and the Rotary Four-Way Test
+description: Reflecting on a speaking engagement at the Downtown Wichita Rotary Club about artificial intelligence, ethical responsibility, and how Rotary's Four-Way Test provides the perfect framework for evaluating AI use in business and community.
+keywords: artificial intelligence, AI ethics, Rotary Four-Way Test, community leadership, AI responsibility, Downtown Wichita Rotary, ethical AI, AI transparency, human judgment, AI confidence
+img_src: /img/MarkHazleton.jpg
+lastmod: 2026-01-13
+publishedDate: 2026-01-13
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: How Rotary's Ethical Framework Applies to Modern AI Challenges
+author: Mark Hazleton
+summary: A reflection on speaking to the Downtown Wichita Rotary Club about AI, exploring how the technology affects our work and communities, and why Rotary's Four-Way Test offers the perfect ethical framework for responsible AI use.
+conclusionTitle: Shaping AI Through Values
+conclusionSummary: AI is not something happening to us—it's something we are actively shaping through the choices we make, the questions we ask, and the values we apply. Service organizations like Rotary are uniquely positioned to guide these conversations.
+conclusionKeyHeading: The Four-Way Test for AI
+conclusionKeyText: Is it the truth? Is it fair? Will it build goodwill? Will it be beneficial to all concerned? These questions provide the perfect framework for evaluating AI use in any context.
+conclusionText: Conversations about AI's role in our communities are essential. By grounding these discussions in ethical frameworks like Rotary's Four-Way Test, we can ensure powerful tools are used wisely and for the benefit of all.
+seo:
+  title: AI, Confidence, and the Rotary Four-Way Test
+  titleSuffix: 
+  description: How Rotary's Four-Way Test provides the perfect ethical framework for responsible AI use. Reflections from a speaking engagement at Downtown Wichita Rotary Club.
+  keywords: AI ethics, Rotary Four-Way Test, artificial intelligence, community leadership, Downtown Wichita Rotary, ethical AI, AI responsibility, human judgment, AI transparency
+  canonical: https://markhazleton.com/articles/ai-confidence-and-rotary-four-way-test.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: AI, Confidence, and the Rotary Four-Way Test
+  description: How Rotary's ethical framework applies to modern AI challenges. Reflections from a speaking engagement about AI responsibility and community leadership.
+  type: article
+  image: null
+  imageAlt: AI and Rotary Four-Way Test - Mark Hazleton
+twitter:
+  title: AI & Rotary's Four-Way Test
+  description: How Rotary's ethical framework provides perfect guidance for responsible AI use. Reflections from Downtown Wichita Rotary Club.
+  image: null
+  imageAlt: AI Ethics and Rotary - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # AI, Confidence, and the Rotary Four-Way Test
 
 Last week, I had the opportunity to speak with my fellow Rotarians at the **Downtown Wichita Rotary Club** about artificial intelligence — not as a technical deep dive, but as a practical conversation about how AI is already affecting our work, our communities, and our responsibilities as leaders.

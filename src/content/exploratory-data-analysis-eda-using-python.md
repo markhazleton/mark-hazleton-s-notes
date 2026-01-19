@@ -1,3 +1,45 @@
+---
+id: 49
+Section: Data Science
+slug: articles/exploratory-data-analysis-eda-using-python.html
+name: Exploratory Data Analysis with Python
+description: Explore essential techniques of Exploratory Data Analysis (EDA) using Python, focusing on data sanity checks and visualization methods.
+keywords: Exploratory Data Analysis, Python, data visualization, data science, Mark Hazleton, EDA techniques
+img_src: /img/ScotlandHighlands.jpg
+lastmod: 2024-06-23
+publishedDate: 2024-10-06
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Master the art of data exploration and visualization with Python's powerful libraries.
+author: Mark Hazleton
+summary: Exploratory Data Analysis (EDA) is a crucial step in the data science process, allowing analysts to uncover patterns, spot anomalies, and test hypotheses. This guide delves into the techniques and tools used in EDA, with a focus on Python's capabilities.
+conclusionTitle: Key Takeaways from EDA with Python
+conclusionSummary: EDA is a foundational step in data analysis, offering insights and guiding further analysis. Python's libraries provide powerful tools for effective data exploration.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: Mastering EDA with Python empowers data scientists to make data-driven decisions confidently.
+conclusionText: As you continue your journey in data science, remember that EDA is not just a preliminary step but a continuous process of discovery. Utilize Python's tools to enhance your analytical capabilities and drive impactful insights.
+seo:
+  title: Exploratory Data Analysis with Python 
+  titleSuffix:  
+  description: Discover essential techniques for Exploratory Data Analysis using Python. Learn data sanity checks and visualization methods to enhance your data insights.
+  keywords: Exploratory Data Analysis, Python, EDA, data visualization, data science, Mark Hazleton
+  canonical: https://markhazleton.com/articles/exploratory-data-analysis-eda-using-python.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: Exploratory Data Analysis with Python
+  description: Discover essential techniques for Exploratory Data Analysis using Python. Learn data sanity checks and visualization methods to enhance your data insights.
+  type: article
+  image: null
+  imageAlt: Exploratory Data Analysis (EDA) Using Python - Mark Hazleton
+twitter:
+  title: EDA with Python
+  description: Discover essential techniques for Exploratory Data Analysis using Python. Learn data sanity checks and visualization methods to enhance your data insights.
+  image: null
+  imageAlt: Exploratory Data Analysis (EDA) Using Python - Mark Hazleton
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Exploratory Data Analysis with Python
 
 ## Subtitle

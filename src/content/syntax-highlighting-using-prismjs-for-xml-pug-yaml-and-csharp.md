@@ -1,3 +1,45 @@
+---
+id: 43
+Section: Content Strategy
+slug: articles/syntax-highlighting-using-prismjs-for-xml-pug-yaml-and-csharp.html
+name: Syntax Highlighting with Prism.js for XML, PUG, YAML, and C#
+description: "Explore how to implement syntax highlighting for XML, PUG, YAML, and C# using Prism.js, and automate your workflow with render-scripts.js."
+keywords: Prism.js, syntax highlighting, Mark Hazleton, code snippets, web development, SEO optimization, performance
+img_src: /img/ScotlandHighlands.jpg
+lastmod: 2024-04-18
+publishedDate: 2024-09-29
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Enhance Your Code Presentation
+author: Mark Hazleton
+summary: "Syntax highlighting is a crucial aspect of code readability and presentation. In this guide, we will explore how to implement syntax highlighting for XML, PUG, YAML, and C# using the powerful Prism.js library. Additionally, we will delve into automating the bundling process with `render-scripts.js` to streamline your workflow."
+conclusionTitle: Conclusion
+conclusionSummary: By leveraging Prism.js and `render-scripts.js`, you can significantly enhance the readability and management of your code snippets. This approach not only improves the visual appeal of your code but also streamlines your development process.
+conclusionKeyHeading: Enhance Code Readability
+conclusionKeyText: Prism.js offers a lightweight and customizable solution for syntax highlighting.
+conclusionText: Explore Prism.js for effective syntax highlighting and use `render-scripts.js` to automate your script management.
+seo:
+  title: Syntax Highlighting with Prism.js 
+  titleSuffix:  
+  description: "Explore how to implement syntax highlighting for XML, PUG, YAML, and C# using Prism.js, and automate your workflow with render-scripts.js for efficiency."
+  keywords: "Prism.js, syntax highlighting, XML, PUG, YAML, C#, Mark Hazleton"
+  canonical: https://markhazleton.com/articles/syntax-highlighting-using-prismjs-for-xml-pug-yaml-and-csharp.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "Syntax Highlighting with Prism.js for XML, PUG, YAML, and C#"
+  description: "Learn to enhance code readability with Prism.js for XML, PUG, YAML, and C#. Automate with render-scripts.js for streamlined workflows."
+  type: article
+  image: null
+  imageAlt: "Syntax Highlighting Using Prism.js for XML, PUG, YAML, and C# - Mark Hazleton"
+twitter:
+  title: Prism.js Syntax Highlighting Guide
+  description: "Explore how to implement syntax highlighting for XML, PUG, YAML, and C# using Prism.js, and automate your workflow with render-scripts.js for efficiency."
+  image: null
+  imageAlt: "Syntax Highlighting Using Prism.js for XML, PUG, YAML, and C# - Mark Hazleton"
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Syntax Highlighting with Prism.js for XML, PUG, YAML, and C#
 
 ## Enhance Your Code Presentation

@@ -1,3 +1,45 @@
+---
+id: 51
+Section: Content Strategy
+slug: articles/developing-markhazletoncom-tools-and-approach.html
+name: Developing MarkHazleton.com: Tools and Approach
+description: Explore the tools and methodologies used in developing MarkHazleton.com, focusing on modern technologies and strategic planning for a robust website.
+keywords: Mark Hazleton, Node.js, SCSS, Pug, static site development, web development, SEO
+img_src: /img/ScotlandHighlands.jpg
+lastmod: 2024-07-15
+publishedDate: 2024-10-10
+estimatedReadTime: 5
+changefreq: monthly
+subtitle: Building a Modern Website with Cutting-Edge Technologies
+author: Mark Hazleton
+summary: Creating a website that stands out in today's digital landscape requires a strategic approach and the right set of tools. In this article, we delve into the development process of MarkHazleton.com, exploring the technologies and frameworks that were instrumental in bringing the site to life.
+conclusionTitle: Key Takeaways
+conclusionSummary: The development of MarkHazleton.com highlights the importance of choosing the right technologies and following a structured process. From planning to deployment, each step was crucial in creating a functional and engaging website.
+conclusionKeyHeading: Bottom Line
+conclusionKeyText: Using modern tools and frameworks, MarkHazleton.com was developed to provide an optimal user experience and robust functionality.
+conclusionText: For anyone looking to develop a professional website, understanding the technologies and processes involved is essential. By following a strategic approach and utilizing the right tools, you can create a site that not only meets your needs but also stands out in the digital world. Explore the possibilities and start your web development journey today!
+seo:
+  title: "Developing MarkHazleton.com: Tools & Approac "
+  titleSuffix:  
+  description: Discover the tools and methodologies behind MarkHazleton.com. Learn how modern technologies and strategic planning create a robust, engaging website.
+  keywords: Mark Hazleton, web development, React.js, Node.js, MongoDB, website design, frontend development
+  canonical: https://markhazleton.com/articles/developing-markhazletoncom-tools-and-approach.html
+  robots: index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+og:
+  title: "Developing MarkHazleton.com: Tools and Approach"
+  description: Explore the development process of MarkHazleton.com, focusing on modern technologies and strategic planning for a robust website.
+  type: article
+  image: null
+  imageAlt: "Developing MarkHazleton.com: Tools and Approach - Mark Hazleton"
+twitter:
+  title: Developing MarkHazleton.com
+  description: Discover the tools and methodologies behind MarkHazleton.com. Learn how modern technologies and strategic planning create a robust, engaging website.
+  image: null
+  imageAlt: "Developing MarkHazleton.com: Tools and Approach - Mark Hazleton"
+youtubeUrl: null
+youtubeTitle: null
+---
+
 # Developing MarkHazleton.com: Tools and Approach
 
 ## Subtitle: Building a Modern Website with Cutting-Edge Technologies
