@@ -4,9 +4,11 @@ import { ArrowRight, CheckCircle2, Cloud, Workflow, Server, Sparkles } from 'luc
 import { Layout } from '@/components/Layout';
 import { FeatureCard } from '@/components/FeatureCard';
 import { BlogCard } from '@/components/BlogCard';
+import { FeaturedProjectCard } from '@/components/FeaturedProjectCard';
 import { Toolbox } from '@/components/Toolbox';
 import { Button } from '@/components/ui/button';
 import { posts } from '@/lib/data/posts';
+import { featuredProjects } from '@/lib/data/projects';
 import { useRepositoryStats } from '@/hooks/use-repository-stats';
 import type { Repository } from '@/types/repositories';
 import { Seo } from '@/components/Seo';
@@ -280,6 +282,47 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Featured Projects */}
+      {featuredProjects.length > 0 && (
+        <section className="section border-b border-border">
+          <div className="container-wide">
+            <div className="flex items-center justify-between mb-8">
+              <div>
+                <h2 className="font-heading text-2xl font-semibold text-foreground mb-1">
+                  Featured Open Source Packages
+                </h2>
+                <p className="text-muted-foreground text-sm">
+                  NuGet and npm packages I've authored for the developer community.
+                </p>
+              </div>
+              <Link
+                to="/projects"
+                className="hidden sm:inline-flex items-center text-sm font-medium text-primary hover:underline underline-offset-4"
+              >
+                View all projects
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </Link>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {featuredProjects.map((project) => (
+                <FeaturedProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+
+            <div className="mt-6 sm:hidden">
+              <Link
+                to="/projects"
+                className="inline-flex items-center text-sm font-medium text-primary hover:underline underline-offset-4"
+              >
+                View all projects
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Latest Posts */}
       <section className="section border-b border-border">
         <div className="container-wide">
@@ -292,7 +335,7 @@ export default function Index() {
                 Cloud architecture insights, .NET best practices, and system design patterns.
               </p>
             </div>
-            <Link 
+            <Link
               to="/blog"
               className="hidden sm:inline-flex items-center text-sm font-medium text-primary hover:underline underline-offset-4"
             >

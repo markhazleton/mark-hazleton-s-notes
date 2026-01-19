@@ -744,7 +744,9 @@
         "h": "https://markhazleton.github.io/git-spark/",
         "slug": "git-spark",
         "summary": "Enterprise-grade Git analytics tool offering interactive reports and insights.",
-        "keywords": "Git analytics, repository insights, TypeScript, Node.js, enterprise tool",
+        "keywords": "Git analytics, repository insights, TypeScript, Node.js, enterprise tool, npm package",
+        "featured": true,
+        "featuredType": "npm",
         "seo": {
             "title": "Git Spark: Enterprise Git Analytics & Reporting Tool",
             "titleSuffix": "| Mark Hazleton Projects",
@@ -805,7 +807,9 @@
         "h": "https://bootswatch.markhazleton.com/",
         "slug": "websparkbootswatch",
         "summary": "Integrate Bootswatch themes into ASP.NET Core with WebSpark.Bootswatch for dynamic, responsive theming.",
-        "keywords": "NuGet, Bootswatch, .NET 9, ASP.NET Core, Bootstrap 5, theming",
+        "keywords": "NuGet Package, Bootswatch, .NET 9, ASP.NET Core, Bootstrap 5, theming",
+        "featured": true,
+        "featuredType": "nuget",
         "seo": {
             "title": "WebSpark Bootswatch: ASP.NET Core Theme Library",
             "titleSuffix": "| Mark Hazleton Projects",
@@ -916,6 +920,61 @@
                     "version": "1.0.0",
                     "lastPromotedOn": "2025-09-15T00:00:00",
                     "notes": "Production environment with optimized performance and analytics"
+                }
+            ]
+        }
+    },
+    {
+        "id": 19,
+        "image": "/img/MarkHazleton-WebSpark-HttpClientUtility.png",
+        "p": "WebSpark.HttpClientUtility",
+        "d": "WebSpark.HttpClientUtility is a .NET NuGet package that simplifies HTTP client operations with a user-friendly interface, reducing boilerplate code while providing resilience patterns, caching, and telemetry support for robust API integrations.",
+        "h": "https://www.nuget.org/packages/WebSpark.HttpClientUtility",
+        "slug": "webspark-httpclientutility",
+        "summary": "A .NET NuGet package that simplifies HTTP client operations with resilience patterns, caching, and telemetry support.",
+        "keywords": "NuGet Package, .NET, HTTP Client, API Integration, Resilience Patterns, Caching, Telemetry",
+        "featured": true,
+        "featuredType": "nuget",
+        "seo": {
+            "title": "WebSpark.HttpClientUtility: .NET HTTP Client Library",
+            "titleSuffix": "| Mark Hazleton Projects",
+            "description": "Simplify HTTP client operations in .NET with WebSpark.HttpClientUtility. NuGet package by Mark Hazleton featuring resilience patterns and caching.",
+            "keywords": "NuGet, .NET, HTTP Client, API Integration, Resilience, Caching",
+            "canonical": "https://markhazleton.com/projects/webspark-httpclientutility",
+            "robots": "index, follow"
+        },
+        "og": {
+            "title": "WebSpark.HttpClientUtility: .NET HTTP Client Library",
+            "description": "Simplify HTTP client operations with WebSpark.HttpClientUtility, featuring resilience patterns, caching, and telemetry.",
+            "type": "NuGet Package",
+            "image": "/img/MarkHazleton-WebSpark-HttpClientUtility.png",
+            "imageAlt": "WebSpark.HttpClientUtility NuGet package"
+        },
+        "twitter": {
+            "title": "WebSpark.HttpClientUtility",
+            "description": "Simplify .NET HTTP client operations with resilience patterns, caching, and telemetry support.",
+            "image": "/img/MarkHazleton-WebSpark-HttpClientUtility.png",
+            "imageAlt": "WebSpark.HttpClientUtility NuGet package"
+        },
+        "repository": {
+            "provider": "GitHub",
+            "name": "markhazleton/WebSpark.HttpClientUtility",
+            "url": "https://github.com/markhazleton/WebSpark.HttpClientUtility",
+            "branch": "main",
+            "visibility": "Public",
+            "notes": "NuGet package for simplified HTTP client operations with resilience and caching."
+        },
+        "promotion": {
+            "pipeline": ".NET Build and Publish",
+            "currentStage": "Production",
+            "status": "Active",
+            "notes": "Published to NuGet.org with automated CI/CD pipeline.",
+            "environments": [
+                {
+                    "name": "NuGet.org",
+                    "url": "https://www.nuget.org/packages/WebSpark.HttpClientUtility",
+                    "status": "Active",
+                    "notes": "Public NuGet package registry"
                 }
             ]
         }

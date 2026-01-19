@@ -54,6 +54,8 @@ export interface ProjectSource {
   slug: string;
   summary?: string;
   keywords?: string;
+  featured?: boolean;
+  featuredType?: "npm" | "nuget" | "web" | "tool";
   seo?: ProjectSeo;
   og?: ProjectSocial;
   twitter?: ProjectSocial;
@@ -70,6 +72,8 @@ export interface Project {
   url?: string;
   image?: string;
   keywords: string[];
+  featured?: boolean;
+  featuredType?: "npm" | "nuget" | "web" | "tool";
   seo?: ProjectSeo;
   og?: ProjectSocial;
   twitter?: ProjectSocial;
@@ -101,9 +105,13 @@ export const projects: Project[] = rawProjects.map((project) => ({
   url: project.h,
   image: withBasePath(project.image),
   keywords: parseKeywords(project.keywords),
+  featured: project.featured,
+  featuredType: project.featuredType,
   seo: project.seo,
   og: normalizeSocial(project.og),
   twitter: normalizeSocial(project.twitter),
   repository: project.repository,
   promotion: project.promotion,
 }));
+
+export const featuredProjects: Project[] = projects.filter((p) => p.featured);
