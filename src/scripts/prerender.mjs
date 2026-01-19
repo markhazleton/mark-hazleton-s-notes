@@ -34,7 +34,12 @@ const getRepositoryData = async () => {
 
 const articles = await readJson("src/data/articles.json");
 const projects = await readJson("src/data/projects.json");
-const posts = articles.filter((entry) => entry.contentFile && entry.contentFile !== "articles.md");
+const posts = articles.filter(
+  (entry) => 
+    entry.contentFile && 
+    entry.contentFile !== "articles.md" &&
+    !entry.contentFile.startsWith("_")
+);
 
 const staticRoutes = ["/", "/blog", "/projects", "/contact", "/github", "/404"];
 const blogRoutes = posts.map((entry) => `/blog/${buildSlug(entry)}`);
