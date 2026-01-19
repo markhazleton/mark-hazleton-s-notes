@@ -1,0 +1,43 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "/img/*", "/video/*", "*.xml", "*.txt", "*.ico", "*.png", "*.webp", "*.jpg", "*.jpeg", "*.gif", "*.svg", "*.woff", "*.woff2"]
+  },
+  "routes": [
+    {
+      "route": "/blog/*",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/projects/*",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/github/*",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/videos",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/contact",
+      "rewrite": "/index.html"
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html"
+    }
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "X-XSS-Protection": "1; mode=block"
+  },
+  "mimeTypes": {
+    ".json": "application/json",
+    ".xml": "application/xml",
+    ".webp": "image/webp"
+  }
+}
