@@ -5,7 +5,7 @@
     <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Jan 2026 14:20:11 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jan 2026 14:57:26 GMT</lastBuildDate>
   <item>
     <title>Building MuseumSpark - Why Context Matters More Than the Latest LLM</title>
     <link>https://markhazleton.com/blog/building-museumspark-context-matters-llm</link>
@@ -18,22 +18,21 @@
     <link>https://markhazleton.com/blog/ai-confidence-and-rotary-four-way-test</link>
     <guid>https://markhazleton.com/blog/ai-confidence-and-rotary-four-way-test</guid>
     <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
-    <description><![CDATA[A reflection on speaking to the Downtown Wichita Rotary Club about AI, exploring how the technology affects our work and communities, and why Rotary's Four-Way Test offers the perfect ethical framework for responsible AI use.]]></description>
+    <description><![CDATA[A reflection on speaking to the Downtown Wichita Rotary Club about AI, exploring how the technology affects our work and communities, and why Rotary&apos;s Four-Way Test offers the perfect ethical framework for responsible AI use.]]></description>
   </item>
   <item>
     <title>Building a Quick Estimation Template When You Have Almost Nothing to Go On</title>
     <link>https://markhazleton.com/blog/building-a-quick-estimation-template</link>
     <guid>https://markhazleton.com/blog/building-a-quick-estimation-template</guid>
     <pubDate>Sun, 28 Dec 2025 00:00:00 GMT</pubDate>
-    <description><![CDATA["# Building a Quick Estimation Template When You Have Almost Nothing to Go On
-> When faced with vague requirements and tight deadlines, I built a simple three-pillar framework using Innovation, Scope, and People for estimating quickly.]]></description>
+    <description><![CDATA[# Building a Quick Estimation Template When You Have Almost Nothing to Go On When faced with vague requirements and tight deadlines, I built a simple three-pillar framework using Innovation, Scope, and People for estimating quickly.]]></description>
   </item>
   <item>
     <title>Test Driving GitHub&apos;s Spec Kit: AI-Maintained Documentation That Stays Accurate</title>
     <link>https://markhazleton.com/blog/test-driving-githubs-spec-kit</link>
     <guid>https://markhazleton.com/blog/test-driving-githubs-spec-kit</guid>
     <pubDate>Sun, 02 Nov 2025 00:00:00 GMT</pubDate>
-    <description><![CDATA[Specs always become outdated because humans won't maintain them post-implementation. GitHub's Spec Kit solves this with AI agents in the feedback loop: when you fix bugs and tweak implementations, you tell the agent to update the spec. Documentation evolves to match reality. Real-world case: 7 hours implementation + 20 minutes documentation sync = zero documentation debt.]]></description>
+    <description><![CDATA[Specs always become outdated because humans won&apos;t maintain them post-implementation. GitHub&apos;s Spec Kit solves this with AI agents in the feedback loop: when you fix bugs and tweak implementations, you tell the agent to update the spec. Documentation evolves to match reality. Real-world case: 7 hours implementation + 20 minutes documentation sync = zero documentation debt.]]></description>
   </item>
   <item>
     <title>Building Git Spark: My First npm Package Journey</title>
@@ -47,7 +46,7 @@
     <link>https://markhazleton.com/blog/measuring-ais-contribution-to-code</link>
     <guid>https://markhazleton.com/blog/measuring-ais-contribution-to-code</guid>
     <pubDate>Sat, 13 Sep 2025 00:00:00 GMT</pubDate>
-    <description><![CDATA[Artificial Intelligence is reshaping the software development landscape by enhancing productivity, improving code quality, and fostering innovation. This article delves into the metrics and tools used to measure AI's impact on coding.]]></description>
+    <description><![CDATA[Artificial Intelligence is reshaping the software development landscape by enhancing productivity, improving code quality, and fostering innovation. This article delves into the metrics and tools used to measure AI&apos;s impact on coding.]]></description>
   </item>
   <item>
     <title>Modernizing Client Libraries in a .NET 4.8 Framework Application</title>
@@ -110,7 +109,7 @@
     <link>https://markhazleton.com/blog/building-a-web-application-to-manage-your-blog-articles</link>
     <guid>https://markhazleton.com/blog/building-a-web-application-to-manage-your-blog-articles</guid>
     <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
-    <description><![CDATA[In today's digital age, creating and managing a blog is essential for sharing insights and expertise. This article explores the development of a custom CMS for blog management, highlighting parallels with the Web Project Mechanics framework.]]></description>
+    <description><![CDATA[In today&apos;s digital age, creating and managing a blog is essential for sharing insights and expertise. This article explores the development of a custom CMS for blog management, highlighting parallels with the Web Project Mechanics framework.]]></description>
   </item>
   <item>
     <title>Harnessing the Power of Caching in ASP.NET</title>
@@ -201,7 +200,7 @@
     <link>https://markhazleton.com/blog/from-readme-to-reality-teaching-an-agent-to-bootstrap-a-ui-theme</link>
     <guid>https://markhazleton.com/blog/from-readme-to-reality-teaching-an-agent-to-bootstrap-a-ui-theme</guid>
     <pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate>
-    <description><![CDATA[In this article, we explore the process of using a smart NuGet package README and Visual Studio Code's agent mode to automate the installation and configuration of a UI theme. By leveraging WebSpark.Bootswatch, we demonstrate a live example of how to streamline theme setup, making it more efficient and less error-prone.]]></description>
+    <description><![CDATA[In this article, we explore the process of using a smart NuGet package README and Visual Studio Code&apos;s agent mode to automate the installation and configuration of a UI theme. By leveraging WebSpark.Bootswatch, we demonstrate a live example of how to streamline theme setup, making it more efficient and less error-prone.]]></description>
   </item>
   <item>
     <title>The New Era of Individual Agency: How AI Tools Empower Self-Starters</title>
@@ -250,14 +249,14 @@
     <link>https://markhazleton.com/blog/the-creation-of-sharesmallbizcom-a-platform-for-small-business-success</link>
     <guid>https://markhazleton.com/blog/the-creation-of-sharesmallbizcom-a-platform-for-small-business-success</guid>
     <pubDate>Fri, 14 Feb 2025 00:00:00 GMT</pubDate>
-    <description><![CDATA[In today's competitive market, small businesses often struggle to keep up with larger corporations due to limited resources and marketing budgets. Enter ShareSmallBiz.com, a revolutionary platform designed to level the playing field by offering collaborative marketing tools and shared resources. This article delves into the creation and impact of ShareSmallBiz.com, exploring how it empowers small businesses to achieve success.]]></description>
+    <description><![CDATA[In today&apos;s competitive market, small businesses often struggle to keep up with larger corporations due to limited resources and marketing budgets. Enter ShareSmallBiz.com, a revolutionary platform designed to level the playing field by offering collaborative marketing tools and shared resources. This article delves into the creation and impact of ShareSmallBiz.com, exploring how it empowers small businesses to achieve success.]]></description>
   </item>
   <item>
     <title>Kendrick Lamar&apos;s Super Bowl LIX Halftime Show</title>
     <link>https://markhazleton.com/blog/kendrick-lamars-super-bowl-lix-halftime-show-a-masterpiece-of-metaphors</link>
     <guid>https://markhazleton.com/blog/kendrick-lamars-super-bowl-lix-halftime-show-a-masterpiece-of-metaphors</guid>
     <pubDate>Fri, 14 Feb 2025 00:00:00 GMT</pubDate>
-    <description><![CDATA[Kendrick Lamar's Super Bowl LIX halftime performance was a profound societal commentary delivered through metaphorical visuals and thought-provoking stage design.]]></description>
+    <description><![CDATA[Kendrick Lamar&apos;s Super Bowl LIX halftime performance was a profound societal commentary delivered through metaphorical visuals and thought-provoking stage design.]]></description>
   </item>
   <item>
     <title>Riffusion AI: Revolutionizing Music Creation</title>
@@ -299,7 +298,7 @@
     <link>https://markhazleton.com/blog/adapting-with-purpose-lifelong-learning-in-the-ai-age</link>
     <guid>https://markhazleton.com/blog/adapting-with-purpose-lifelong-learning-in-the-ai-age</guid>
     <pubDate>Thu, 02 Jan 2025 00:00:00 GMT</pubDate>
-    <description><![CDATA[In today's AI-driven world, lifelong learning and adaptability are more important than ever. This article explores how AI is transforming the learning landscape, offering personalized experiences and new opportunities for growth.]]></description>
+    <description><![CDATA[In today&apos;s AI-driven world, lifelong learning and adaptability are more important than ever. This article explores how AI is transforming the learning landscape, offering personalized experiences and new opportunities for growth.]]></description>
   </item>
   <item>
     <title>Understanding Neural Networks</title>
@@ -355,7 +354,7 @@
     <link>https://markhazleton.com/blog/interactive-chat-in-promptspark-with-signalr-and-semantic-kernel-chat-completions</link>
     <guid>https://markhazleton.com/blog/interactive-chat-in-promptspark-with-signalr-and-semantic-kernel-chat-completions</guid>
     <pubDate>Sun, 27 Oct 2024 00:00:00 GMT</pubDate>
-    <description><![CDATA[In this guide, we will explore how to implement a real-time, AI-driven chat application using PromptSpark. By leveraging ASP.NET SignalR and OpenAI's GPT via Semantic Kernel, you can create a dynamic and interactive chat experience.]]></description>
+    <description><![CDATA[In this guide, we will explore how to implement a real-time, AI-driven chat application using PromptSpark. By leveraging ASP.NET SignalR and OpenAI&apos;s GPT via Semantic Kernel, you can create a dynamic and interactive chat experience.]]></description>
   </item>
   <item>
     <title>Building Real-Time Chat with React and SignalR</title>
@@ -376,14 +375,14 @@
     <link>https://markhazleton.com/blog/adding-weather-component-a-typescript-learning-journey</link>
     <guid>https://markhazleton.com/blog/adding-weather-component-a-typescript-learning-journey</guid>
     <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
-    <description><![CDATA[In this article, we will explore the process of integrating a weather forecast and map feature into a React Native application using TypeScript. This journey will help you practice key TypeScript concepts such as typed components and error handling, enhancing both your app's functionality and your TypeScript skills.]]></description>
+    <description><![CDATA[In this article, we will explore the process of integrating a weather forecast and map feature into a React Native application using TypeScript. This journey will help you practice key TypeScript concepts such as typed components and error handling, enhancing both your app&apos;s functionality and your TypeScript skills.]]></description>
   </item>
   <item>
     <title>Building My First React Site Using Vite</title>
     <link>https://markhazleton.com/blog/building-my-first-react-site-using-vite</link>
     <guid>https://markhazleton.com/blog/building-my-first-react-site-using-vite</guid>
     <pubDate>Sat, 12 Oct 2024 00:00:00 GMT</pubDate>
-    <description><![CDATA[In this guide, we will walk you through the process of building and deploying a React site using Vite and GitHub Pages. We'll cover setup, deployment, and troubleshooting common issues like CORS.]]></description>
+    <description><![CDATA[In this guide, we will walk you through the process of building and deploying a React site using Vite and GitHub Pages. We&apos;ll cover setup, deployment, and troubleshooting common issues like CORS.]]></description>
   </item>
   <item>
     <title>Canonical URL Troubleshooting for Static Web Apps</title>
@@ -397,14 +396,14 @@
     <link>https://markhazleton.com/blog/developing-markhazletoncom-tools-and-approach</link>
     <guid>https://markhazleton.com/blog/developing-markhazletoncom-tools-and-approach</guid>
     <pubDate>Thu, 10 Oct 2024 00:00:00 GMT</pubDate>
-    <description><![CDATA[Creating a website that stands out in today's digital landscape requires a strategic approach and the right set of tools. In this article, we delve into the development process of MarkHazleton.com, exploring the technologies and frameworks that were instrumental in bringing the site to life.]]></description>
+    <description><![CDATA[Creating a website that stands out in today&apos;s digital landscape requires a strategic approach and the right set of tools. In this article, we delve into the development process of MarkHazleton.com, exploring the technologies and frameworks that were instrumental in bringing the site to life.]]></description>
   </item>
   <item>
     <title>Exploratory Data Analysis with Python</title>
     <link>https://markhazleton.com/blog/exploratory-data-analysis-eda-using-python</link>
     <guid>https://markhazleton.com/blog/exploratory-data-analysis-eda-using-python</guid>
     <pubDate>Sun, 06 Oct 2024 00:00:00 GMT</pubDate>
-    <description><![CDATA[Exploratory Data Analysis (EDA) is a crucial step in the data science process, allowing analysts to uncover patterns, spot anomalies, and test hypotheses. This guide delves into the techniques and tools used in EDA, with a focus on Python's capabilities.]]></description>
+    <description><![CDATA[Exploratory Data Analysis (EDA) is a crucial step in the data science process, allowing analysts to uncover patterns, spot anomalies, and test hypotheses. This guide delves into the techniques and tools used in EDA, with a focus on Python&apos;s capabilities.]]></description>
   </item>
   <item>
     <title>Exploring Nutritional Data Using K-means Clustering</title>
@@ -418,7 +417,7 @@
     <link>https://markhazleton.com/blog/python-the-language-of-data-science</link>
     <guid>https://markhazleton.com/blog/python-the-language-of-data-science</guid>
     <pubDate>Thu, 03 Oct 2024 00:00:00 GMT</pubDate>
-    <description><![CDATA[Python has become integral to data science due to its simplicity and powerful libraries. This article explores its history, key libraries, and why it's favored by developers.]]></description>
+    <description><![CDATA[Python has become integral to data science due to its simplicity and powerful libraries. This article explores its history, key libraries, and why it&apos;s favored by developers.]]></description>
   </item>
   <item>
     <title>Fixing a Runaway Node.js Recursive Folder Issue</title>
@@ -439,14 +438,14 @@
     <link>https://markhazleton.com/blog/data-science-for-net-developers</link>
     <guid>https://markhazleton.com/blog/data-science-for-net-developers</guid>
     <pubDate>Wed, 02 Oct 2024 00:00:00 GMT</pubDate>
-    <description><![CDATA[In today's tech landscape, data science is crucial for developers. This article explores why a .NET developer pursued UT Austin's AI/ML program and its impact.]]></description>
+    <description><![CDATA[In today&apos;s tech landscape, data science is crucial for developers. This article explores why a .NET developer pursued UT Austin&apos;s AI/ML program and its impact.]]></description>
   </item>
   <item>
     <title>Syntax Highlighting with Prism.js for XML, PUG, YAML, and C#</title>
     <link>https://markhazleton.com/blog/syntax-highlighting-using-prismjs-for-xml-pug-yaml-and-csharp</link>
     <guid>https://markhazleton.com/blog/syntax-highlighting-using-prismjs-for-xml-pug-yaml-and-csharp</guid>
     <pubDate>Sun, 29 Sep 2024 00:00:00 GMT</pubDate>
-    <description><![CDATA[Syntax highlighting is a crucial aspect of code readability and presentation. In this guide, we will explore how to implement syntax highlighting for XML, PUG, YAML, and C# using the powerful Prism.js library. Additionally, we will delve into automating the bundling process with `render-scripts.js` to streamline your workflow.]]></description>
+    <description><![CDATA[Syntax highlighting is a crucial aspect of code readability and presentation. In this guide, we will explore how to implement syntax highlighting for XML, PUG, YAML, and C# using the powerful Prism.js library. Additionally, we will delve into automating the bundling process with render-scripts.js to streamline your workflow.]]></description>
   </item>
   <item>
     <title>Automate GitHub Profile with Latest Blog Posts</title>
@@ -565,7 +564,7 @@
     <link>https://markhazleton.com/blog/the-balanced-equation-crafting-the-perfect-project-team-mix</link>
     <guid>https://markhazleton.com/blog/the-balanced-equation-crafting-the-perfect-project-team-mix</guid>
     <pubDate>Mon, 29 Jan 2024 00:00:00 GMT</pubDate>
-    <description><![CDATA[In today's fast-paced business environment, assembling the right project team is crucial for success. The perfect mix of internal employees and external consultants can lead to innovative solutions and efficient project execution. This article explores how to achieve this balance and why it's essential.]]></description>
+    <description><![CDATA[In today&apos;s fast-paced business environment, assembling the right project team is crucial for success. The perfect mix of internal employees and external consultants can lead to innovative solutions and efficient project execution. This article explores how to achieve this balance and why it&apos;s essential.]]></description>
   </item>
   <item>
     <title>Fire and Forget for Enhanced Performance</title>
@@ -579,7 +578,7 @@
     <link>https://markhazleton.com/blog/the-art-of-making-yourself-replaceable-a-developers-guide-to-career-growth</link>
     <guid>https://markhazleton.com/blog/the-art-of-making-yourself-replaceable-a-developers-guide-to-career-growth</guid>
     <pubDate>Tue, 05 Dec 2023 00:00:00 GMT</pubDate>
-    <description><![CDATA[In today's tech-driven world, making yourself replaceable can be a strategic move for career growth. By fostering a culture of knowledge sharing and innovation, you can position yourself as a leader and adapt to the ever-evolving tech landscape.]]></description>
+    <description><![CDATA[In today&apos;s tech-driven world, making yourself replaceable can be a strategic move for career growth. By fostering a culture of knowledge sharing and innovation, you can position yourself as a leader and adapt to the ever-evolving tech landscape.]]></description>
   </item>
   <item>
     <title>Mastering Task List Processing</title>
@@ -593,7 +592,7 @@
     <link>https://markhazleton.com/blog/redis-local-instance</link>
     <guid>https://markhazleton.com/blog/redis-local-instance</guid>
     <pubDate>Thu, 24 Aug 2023 00:00:00 GMT</pubDate>
-    <description><![CDATA[Setting up a Redis local instance can significantly enhance your application's performance. This guide walks you through the process, ensuring you configure Redis for maximum efficiency and reliability.]]></description>
+    <description><![CDATA[Setting up a Redis local instance can significantly enhance your application&apos;s performance. This guide walks you through the process, ensuring you configure Redis for maximum efficiency and reliability.]]></description>
   </item>
   <item>
     <title>Mastering Concurrent Processing</title>
@@ -642,7 +641,7 @@
     <link>https://markhazleton.com/blog/data-analysis-demonstration</link>
     <guid>https://markhazleton.com/blog/data-analysis-demonstration</guid>
     <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
-    <description><![CDATA[Data analysis is a critical skill in today's data-driven world. This article explores essential techniques for analyzing data and provides practical demonstrations on how to visualize data effectively.]]></description>
+    <description><![CDATA[Data analysis is a critical skill in today&apos;s data-driven world. This article explores essential techniques for analyzing data and provides practical demonstrations on how to visualize data effectively.]]></description>
   </item>
   <item>
     <title>CancellationToken for Async Programming</title>

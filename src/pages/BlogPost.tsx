@@ -22,6 +22,8 @@ import { Seo } from '@/components/Seo';
 import { formatDateLong } from '@/lib/date';
 import { createBlogPostingSchema, createBreadcrumbSchema } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/site';
+import { markdownModules as markdownModulesClient } from '@/lib/markdown-modules-client';
+import { markdownModules as markdownModulesSsr } from '@/lib/markdown-modules-ssr';
 
 type MarkdownState = {
   status: 'idle' | 'loading' | 'success' | 'error';
@@ -29,16 +31,15 @@ type MarkdownState = {
   error: string | null;
 };
 
+type MarkdownModule = string | (() => Promise<string>);
+
 type TocItem = {
   id: string;
   title: string;
   level: number;
 };
 
-const markdownModules = import.meta.glob('../content/*.md', {
-  query: '?raw',
-  import: 'default',
-});
+const markdownModules = import.meta.env.SSR ? markdownModulesSsr : markdownModulesClient;
 
 const slugify = (value: string) =>
   value
@@ -112,6 +113,25 @@ const extractHeadings = (markdown: string): TocItem[] => {
   return headings;
 };
 
+const getMarkdownContent = (contentFile?: string): string | null => {
+  if (!contentFile) {
+    return null;
+  }
+
+  const markdownPath = `../content/${contentFile}`;
+  const module = markdownModules[markdownPath];
+
+  if (!module) {
+    return null;
+  }
+
+  if (typeof module === 'string') {
+    return module;
+  }
+
+  return null;
+};
+
 const copyToClipboard = async (value: string) => {
   if (!value) {
     return false;
@@ -150,14 +170,29 @@ export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = posts.find((p) => p.slug === slug);
   const contentFile = post?.contentFile;
-  const [markdownState, setMarkdownState] = useState<MarkdownState>({
-    status: 'idle',
-    content: '',
-    error: null,
+  const [markdownState, setMarkdownState] = useState<MarkdownState>(() => {
+    const initialContent = import.meta.env.SSR ? getMarkdownContent(contentFile) : null;
+    if (initialContent) {
+      return {
+        status: 'success',
+        content: stripFrontmatter(initialContent),
+        error: null,
+      };
+    }
+
+    return {
+      status: 'idle',
+      content: '',
+      error: null,
+    };
   });
 
   useEffect(() => {
     if (!contentFile) {
+      return undefined;
+    }
+
+    if (markdownState.status === 'success' && markdownState.content) {
       return undefined;
     }
 
@@ -202,7 +237,7 @@ export default function BlogPost() {
     return () => {
       isActive = false;
     };
-  }, [contentFile]);
+  }, [contentFile, markdownState.content, markdownState.status]);
 
   useEffect(() => {
     if (markdownState.status !== 'success' || !markdownState.content) {
@@ -349,7 +384,7 @@ export default function BlogPost() {
                 {post.tags.map((tag) => (
                   <Link
                     key={tag}
-                    to={`/blog?tag=${tag}`}
+                    to={`/blog?tag=${encodeURIComponent(tag)}`}
                     className="tag-pill hover:tag-pill-active"
                   >
                     {tag}

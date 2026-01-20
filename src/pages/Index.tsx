@@ -97,7 +97,7 @@ export default function Index() {
         description={DEFAULT_DESCRIPTION}
         keywords={DEFAULT_KEYWORDS}
         canonical="/"
-        jsonLd={personSchema}
+        jsonLd={schemas}
       />
       {/* Hero Section */}
       <section className="section border-b border-border">

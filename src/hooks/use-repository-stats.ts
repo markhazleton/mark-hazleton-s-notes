@@ -5,6 +5,7 @@ import { withBasePath } from '@/lib/site';
 const REPOSITORY_STATS_URL = withBasePath('/data/repositories.json');
 const FALLBACK_URL =
   'https://raw.githubusercontent.com/markhazleton/github-stats-spark/main/data/repositories.json';
+const LOCAL_ONLY = import.meta.env.PROD;
 
 type RepositoryStatus = 'idle' | 'loading' | 'success' | 'error';
 
@@ -58,16 +59,18 @@ export function useRepositoryStats() {
       }));
 
       try {
-        // Try local data file first for better performance
-        let response = await fetch(REPOSITORY_STATS_URL, {
-          signal: controller.signal,
-          headers: {
-            Accept: 'application/json',
-          },
-        });
+        let response: Response | null = null;
 
-        // Fallback to GitHub if local file not available
-        if (!response.ok) {
+        if (LOCAL_ONLY) {
+          // Use local data file in production for faster loads.
+          response = await fetch(REPOSITORY_STATS_URL, {
+            signal: controller.signal,
+            headers: {
+              Accept: 'application/json',
+            },
+          });
+        } else {
+          // Skip local fetch in dev to avoid 404 noise.
           response = await fetch(FALLBACK_URL, {
             signal: controller.signal,
             cache: 'no-store',

@@ -58,8 +58,24 @@ const buildSlug = (entry: ArticleEntry) => {
   return entry.slug.replace(/^articles\//, '').replace(/\.html$/i, '');
 };
 
+const stripMarkdown = (value: string) =>
+  value
+    .replace(/```[\s\S]*?```/g, '')
+    .replace(/^#+\s+/gm, '')
+    .replace(/^\s*>\s?/gm, '')
+    .replace(/!\[[^\]]*]\([^)]+\)/g, '')
+    .replace(/\[([^\]]+)]\([^)]+\)/g, '$1')
+    .replace(/\*\*(.+?)\*\*/g, '$1')
+    .replace(/\*(.+?)\*/g, '$1')
+    .replace(/`(.+?)`/g, '$1')
+    .replace(/[_~]/g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/^"+/, '')
+    .replace(/"+$/, '')
+    .trim();
+
 const buildExcerpt = (entry: ArticleEntry) =>
-  entry.summary?.trim() || entry.description.trim();
+  stripMarkdown(entry.summary?.trim() || entry.description.trim());
 
 const buildReadingTime = (minutes: number) => {
   const safeMinutes = Number.isFinite(minutes) ? Math.max(1, Math.round(minutes)) : 5;

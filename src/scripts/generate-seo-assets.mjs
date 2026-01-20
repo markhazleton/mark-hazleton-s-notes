@@ -32,6 +32,22 @@ const normalizeDate = (value) => {
   return parsed.toISOString();
 };
 
+const stripMarkdown = (value = "") =>
+  value
+    .replace(/```[\s\S]*?```/g, "")
+    .replace(/^#+\s+/gm, "")
+    .replace(/^\s*>\s?/gm, "")
+    .replace(/!\[[^\]]*]\([^)]+\)/g, "")
+    .replace(/\[([^\]]+)]\([^)]+\)/g, "$1")
+    .replace(/\*\*(.+?)\*\*/g, "$1")
+    .replace(/\*(.+?)\*/g, "$1")
+    .replace(/`(.+?)`/g, "$1")
+    .replace(/[_~]/g, "")
+    .replace(/\s+/g, " ")
+    .replace(/^"+/, "")
+    .replace(/"+$/, "")
+    .trim();
+
 const buildSlug = (entry) => {
   if (entry.contentFile) {
     return entry.contentFile.replace(/\.md$/i, "");
@@ -82,7 +98,7 @@ const posts = articles
   .map((entry) => ({
     slug: buildSlug(entry),
     title: entry.name,
-    description: entry.summary || entry.description || "",
+    description: stripMarkdown(entry.summary || entry.description || ""),
     date: normalizeDate(entry.publishedDate || entry.lastmod) ?? null,
   }))
   .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
@@ -124,9 +140,7 @@ const feedItems = posts
   .map((post) => {
     const link = `${siteUrl}/blog/${post.slug}`;
     const pubDate = post.date ? new Date(post.date).toUTCString() : new Date().toUTCString();
-    const description = post.description
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;");
+    const description = escapeXml(post.description);
     return `  <item>\n` +
       `    <title>${escapeXml(post.title)}</title>\n` +
       `    <link>${link}</link>\n` +
