@@ -481,27 +481,6 @@
       "route": "/sidetrackedbysizzle.html",
       "redirect": "/blog/sidetracked-by-sizzle",
       "statusCode": 301
-    },
-
-    {
-      "route": "/blog/*",
-      "rewrite": "/index.html"
-    },
-    {
-      "route": "/projects/*",
-      "rewrite": "/index.html"
-    },
-    {
-      "route": "/github/*",
-      "rewrite": "/index.html"
-    },
-    {
-      "route": "/videos",
-      "rewrite": "/index.html"
-    },
-    {
-      "route": "/contact",
-      "rewrite": "/index.html"
     }
   ],
   "responseOverrides": {
