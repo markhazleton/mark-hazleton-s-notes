@@ -4,6 +4,485 @@
     "exclude": ["/assets/*", "/img/*", "/video/*", "*.xml", "*.txt", "*.ico", "*.png", "*.webp", "*.jpg", "*.jpeg", "*.gif", "*.svg", "*.woff", "*.woff2"]
   },
   "routes": [
+
+    {
+      "route": "/articles.html",
+      "redirect": "/blog",
+      "statusCode": 301
+    },
+    {
+      "route": "/projects.html",
+      "redirect": "/projects",
+      "statusCode": 301
+    },
+
+    {
+      "route": "/articles/test-driving-githubs-spec-kit.html",
+      "redirect": "/blog/test-driving-githubs-spec-kit",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/building-a-quick-estimation-template.html",
+      "redirect": "/blog/building-a-quick-estimation-template",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/engineering-metrics-git-spark-real-story.html",
+      "redirect": "/blog/engineering-metrics-git-spark-real-story",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/measuring-ais-contribution-to-code.html",
+      "redirect": "/blog/measuring-ais-contribution-to-code",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/modernizing-client-libraries-in-a-net-48-framework-application.html",
+      "redirect": "/blog/modernizing-client-libraries-in-a-net-48-framework-application",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/evolving-php-development.html",
+      "redirect": "/blog/evolving-php-development",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/tailwindspark-ignite-your-web-development.html",
+      "redirect": "/blog/tailwindspark-ignite-your-web-development",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/hotfix-prioritization-matrix-decision-framework.html",
+      "redirect": "/blog/hotfix-prioritization-matrix-decision-framework",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/the-building-of-react-native-web-start.html",
+      "redirect": "/blog/the-building-of-react-native-web-start",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/the-ai-confidence-trap.html",
+      "redirect": "/blog/the-ai-confidence-trap",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/building-teachspark-ai-powered-educational-technology-for-teachers.html",
+      "redirect": "/blog/building-teachspark-ai-powered-educational-technology-for-teachers",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/ai-observability-is-no-joke.html",
+      "redirect": "/blog/ai-observability-is-no-joke",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/architecting-agentic-services-in-net-9-semantic-kernel-enterprise-ai-architecture.html",
+      "redirect": "/blog/architecting-agentic-services-in-net-9-semantic-kernel-enterprise-ai-architecture",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/building-artspark-where-ai-meets-art-history.html",
+      "redirect": "/blog/building-artspark-where-ai-meets-art-history",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/nuget-gallery-developer-and-educator.html",
+      "redirect": "/blog/nuget-gallery-developer-and-educator",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/from-readme-to-reality-teaching-an-agent-to-bootstrap-a-ui-theme.html",
+      "redirect": "/blog/from-readme-to-reality-teaching-an-agent-to-bootstrap-a-ui-theme",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/the-new-era-of-individual-agency-how-ai-tools-are-empowering-the-self-starter.html",
+      "redirect": "/blog/the-new-era-of-individual-agency-how-ai-tools-are-empowering-the-self-starter",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/reactspark-a-comprehensive-portfolio-showcase.html",
+      "redirect": "/blog/reactspark-a-comprehensive-portfolio-showcase",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/pedernales-cellars-winery-in-texas-hill-country.html",
+      "redirect": "/blog/pedernales-cellars-winery-in-texas-hill-country",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/the-impact-of-input-case-on-llm-categorization.html",
+      "redirect": "/blog/the-impact-of-input-case-on-llm-categorization",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/ai-assisted-development-claude-and-github-copilot.html",
+      "redirect": "/blog/ai-assisted-development-claude-and-github-copilot",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/ai-and-critical-thinking-in-software-development.html",
+      "redirect": "/blog/ai-and-critical-thinking-in-software-development",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/kendrick-lamars-super-bowl-lix-halftime-show-a-masterpiece-of-metaphors.html",
+      "redirect": "/blog/kendrick-lamars-super-bowl-lix-halftime-show-a-masterpiece-of-metaphors",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/the-creation-of-sharesmallbizcom-a-platform-for-small-business-success.html",
+      "redirect": "/blog/the-creation-of-sharesmallbizcom-a-platform-for-small-business-success",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/riffusion-ai-revolutionizing-music-creation.html",
+      "redirect": "/blog/riffusion-ai-revolutionizing-music-creation",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/harnessing-nlp-concepts-and-real-world-impact.html",
+      "redirect": "/blog/harnessing-nlp-concepts-and-real-world-impact",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/computer-vision-in-machine-learning.html",
+      "redirect": "/blog/computer-vision-in-machine-learning",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/generate-wiki-documentation-from-your-code-repository.html",
+      "redirect": "/blog/generate-wiki-documentation-from-your-code-repository",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/getting-started-with-pug-history-background-and-future.html",
+      "redirect": "/blog/getting-started-with-pug-history-background-and-future",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/adapting-with-purpose-lifelong-learning-in-the-ai-age.html",
+      "redirect": "/blog/adapting-with-purpose-lifelong-learning-in-the-ai-age",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/i-know-ap-the-transformative-power-of-mcp.html",
+      "redirect": "/blog/i-know-ap-the-transformative-power-of-mcp",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/creating-law-and-order-episode-generator.html",
+      "redirect": "/blog/creating-law-and-order-episode-generator",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/an-introduction-to-neural-networks.html",
+      "redirect": "/blog/an-introduction-to-neural-networks",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/open-ai-sora-first-impressions.html",
+      "redirect": "/blog/open-ai-sora-first-impressions",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/eds-super-bowl-commercials.html",
+      "redirect": "/blog/eds-super-bowl-commercials",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/using-notebooklm-clipchamp-and-chatgpt-for-podcasts.html",
+      "redirect": "/blog/using-notebooklm-clipchamp-and-chatgpt-for-podcasts",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/workflow-driven-chat-applications-powered-by-adaptive-cards.html",
+      "redirect": "/blog/workflow-driven-chat-applications-powered-by-adaptive-cards",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/building-real-time-chat-with-react-signalr-and-markdown-streaming.html",
+      "redirect": "/blog/building-real-time-chat-with-react-signalr-and-markdown-streaming",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/interactive-chat-in-promptspark-with-signalr-and-semantic-kernel-chat-completions.html",
+      "redirect": "/blog/interactive-chat-in-promptspark-with-signalr-and-semantic-kernel-chat-completions",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/windows-to-mac-broadening-my-horizons.html",
+      "redirect": "/blog/windows-to-mac-broadening-my-horizons",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/adding-weather-component-a-typescript-learning-journey.html",
+      "redirect": "/blog/adding-weather-component-a-typescript-learning-journey",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/building-my-first-react-site-using-vite.html",
+      "redirect": "/blog/building-my-first-react-site-using-vite",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/developing-markhazletoncom-tools-and-approach.html",
+      "redirect": "/blog/developing-markhazletoncom-tools-and-approach",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/canonical-url-troubleshooting-for-static-web-apps.html",
+      "redirect": "/blog/canonical-url-troubleshooting-for-static-web-apps",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/exploratory-data-analysis-eda-using-python.html",
+      "redirect": "/blog/exploratory-data-analysis-eda-using-python",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/exploring-nutritional-data-using-pca-and-k-means-clustering.html",
+      "redirect": "/blog/exploring-nutritional-data-using-pca-and-k-means-clustering",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/fixing-a-runaway-nodejs-recursive-folder-issue.html",
+      "redirect": "/blog/fixing-a-runaway-nodejs-recursive-folder-issue",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/python-the-language-of-data-science.html",
+      "redirect": "/blog/python-the-language-of-data-science",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/data-science-for-net-developers.html",
+      "redirect": "/blog/data-science-for-net-developers",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/troubleshooting-and-rebuilding-my-js-dev-env-project.html",
+      "redirect": "/blog/troubleshooting-and-rebuilding-my-js-dev-env-project",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/syntax-highlighting-using-prismjs-for-xml-pug-yaml-and-csharp.html",
+      "redirect": "/blog/syntax-highlighting-using-prismjs-for-xml-pug-yaml-and-csharp",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/the-brain-behind-the-jshow-trivia-demo-on-webspark-j-show-builder-gpt.html",
+      "redirect": "/blog/the-brain-behind-the-jshow-trivia-demo-on-webspark-j-show-builder-gpt",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/automating-my-github-profile-with-the-latest-blog-posts-using-github-actions.html",
+      "redirect": "/blog/automating-my-github-profile-with-the-latest-blog-posts-using-github-actions",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/migrating-samplemvccrud-application-from-net-8-to-net-9.html",
+      "redirect": "/blog/migrating-samplemvccrud-application-from-net-8-to-net-9",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/moving-to-markhazletoncom.html",
+      "redirect": "/blog/moving-to-markhazletoncom",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/the-singleton-advantage-managing-configurations-in-net.html",
+      "redirect": "/blog/the-singleton-advantage-managing-configurations-in-net",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/building-resilient-net-applications-with-polly.html",
+      "redirect": "/blog/building-resilient-net-applications-with-polly",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/azure-wiki-expert-gpt-a-game-changer-for-azure-devops-documentation.html",
+      "redirect": "/blog/azure-wiki-expert-gpt-a-game-changer-for-azure-devops-documentation",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/webspark-the-next-evolution-of-web-project-mechanics.html",
+      "redirect": "/blog/webspark-the-next-evolution-of-web-project-mechanics",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/integrating-chat-completions-into-prompt-spark.html",
+      "redirect": "/blog/integrating-chat-completions-into-prompt-spark",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/prompt-spark-revolutionizing-llm-system-prompt-management.html",
+      "redirect": "/blog/prompt-spark-revolutionizing-llm-system-prompt-management",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/using-large-language-models-to-generate-structured-data.html",
+      "redirect": "/blog/using-large-language-models-to-generate-structured-data",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/english-is-the-new-programming-language-of-choice.html",
+      "redirect": "/blog/english-is-the-new-programming-language-of-choice",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/taking-fastendpoints-for-a-test-drive.html",
+      "redirect": "/blog/taking-fastendpoints-for-a-test-drive",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/chatgpt-meets-jeopardy-c-solution-for-trivia-aficionados.html",
+      "redirect": "/blog/chatgpt-meets-jeopardy-c-solution-for-trivia-aficionados",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/transforming-samplemvccrud-with-net-aspire-a-cloud-native-evolution.html",
+      "redirect": "/blog/transforming-samplemvccrud-with-net-aspire-a-cloud-native-evolution",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/embracing-azure-static-web-apps-for-static-site-hosting.html",
+      "redirect": "/blog/embracing-azure-static-web-apps-for-static-site-hosting",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/generating-a-key-press-counter-with-chatgpt.html",
+      "redirect": "/blog/generating-a-key-press-counter-with-chatgpt",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/wichita-sewer-site-creation.html",
+      "redirect": "/blog/wichita-sewer-site-creation",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/the-balanced-equation-crafting-the-perfect-project-team-mix.html",
+      "redirect": "/blog/the-balanced-equation-crafting-the-perfect-project-team-mix",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/fire-and-forget-for-enhanced-performance.html",
+      "redirect": "/blog/fire-and-forget-for-enhanced-performance",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/the-art-of-making-yourself-replaceable-a-developers-guide-to-career-growth.html",
+      "redirect": "/blog/the-art-of-making-yourself-replaceable-a-developers-guide-to-career-growth",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/nuget-packages-pros-cons.html",
+      "redirect": "/blog/nuget-packages-pros-cons",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/building-a-web-application-to-manage-your-blog-articles.html",
+      "redirect": "/blog/building-a-web-application-to-manage-your-blog-articles",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/harnessing-the-power-of-caching-in-aspnet-with-memorycachemanager.html",
+      "redirect": "/blog/harnessing-the-power-of-caching-in-aspnet-with-memorycachemanager",
+      "statusCode": 301
+    },
+    {
+      "route": "/articles/taking-microsoft-copilot-studio-for-a-test-drive.html",
+      "redirect": "/blog/taking-microsoft-copilot-studio-for-a-test-drive",
+      "statusCode": 301
+    },
+
+    {
+      "route": "/task-list-processor.html",
+      "redirect": "/blog/task-list-processor",
+      "statusCode": 301
+    },
+    {
+      "route": "/creating-a-php-website-with-chat-gpt.html",
+      "redirect": "/blog/creating-a-php-website-with-chat-gpt",
+      "statusCode": 301
+    },
+    {
+      "route": "/system-cache.html",
+      "redirect": "/blog/system-cache",
+      "statusCode": 301
+    },
+    {
+      "route": "/crafting-chatgpt-prompt.html",
+      "redirect": "/blog/crafting-chatgpt-prompt",
+      "statusCode": 301
+    },
+    {
+      "route": "/trivia-spark-development.html",
+      "redirect": "/blog/trivia-spark-development",
+      "statusCode": 301
+    },
+    {
+      "route": "/using-chatgpt-for-developers.html",
+      "redirect": "/blog/using-chatgpt-for-developers",
+      "statusCode": 301
+    },
+    {
+      "route": "/git-flow-rethink.html",
+      "redirect": "/blog/git-flow-rethink",
+      "statusCode": 301
+    },
+    {
+      "route": "/concurrent-processing.html",
+      "redirect": "/blog/concurrent-processing",
+      "statusCode": 301
+    },
+    {
+      "route": "/cancellation-token.html",
+      "redirect": "/blog/cancellation-token",
+      "statusCode": 301
+    },
+    {
+      "route": "/redis-local-instance.html",
+      "redirect": "/blog/redis-local-instance",
+      "statusCode": 301
+    },
+    {
+      "route": "/data-analysis-demonstration.html",
+      "redirect": "/blog/data-analysis-demonstration",
+      "statusCode": 301
+    },
+    {
+      "route": "/web-project-mechanics.html",
+      "redirect": "/blog/web-project-mechanics",
+      "statusCode": 301
+    },
+    {
+      "route": "/git-organized.html",
+      "redirect": "/blog/git-organized",
+      "statusCode": 301
+    },
+    {
+      "route": "/decorator-pattern-http-client.html",
+      "redirect": "/blog/decorator-pattern-http-client",
+      "statusCode": 301
+    },
+    {
+      "route": "/sample-mvc-crud.html",
+      "redirect": "/blog/sample-mvc-crud",
+      "statusCode": 301
+    },
+    {
+      "route": "/lifelong-learning.html",
+      "redirect": "/blog/lifelong-learning",
+      "statusCode": 301
+    },
+    {
+      "route": "/sidetrackedbysizzle.html",
+      "redirect": "/blog/sidetracked-by-sizzle",
+      "statusCode": 301
+    },
+
     {
       "route": "/blog/*",
       "rewrite": "/index.html"
@@ -33,7 +512,9 @@
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "DENY",
-    "X-XSS-Protection": "1; mode=block"
+    "X-XSS-Protection": "1; mode=block",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
   },
   "mimeTypes": {
     ".json": "application/json",

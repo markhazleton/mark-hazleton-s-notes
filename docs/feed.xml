@@ -5,14 +5,7 @@
     <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Jan 2026 17:46:30 GMT</lastBuildDate>
-  <item>
-    <title>My New Article Title</title>
-    <link>https://markhazleton.com/blog/_TEMPLATE</link>
-    <guid>https://markhazleton.com/blog/_TEMPLATE</guid>
-    <pubDate>Sun, 18 Jan 2026 00:00:00 GMT</pubDate>
-    <description><![CDATA[A longer summary of the article content that will be displayed in previews and listings.]]></description>
-  </item>
+    <lastBuildDate>Tue, 20 Jan 2026 14:20:11 GMT</lastBuildDate>
   <item>
     <title>Building MuseumSpark - Why Context Matters More Than the Latest LLM</title>
     <link>https://markhazleton.com/blog/building-museumspark-context-matters-llm</link>

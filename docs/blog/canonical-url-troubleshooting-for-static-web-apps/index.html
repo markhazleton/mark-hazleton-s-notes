@@ -20,6 +20,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     
     <!-- Preconnect to fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +29,24 @@
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://i.ytimg.com" />
     <link rel="preconnect" href="https://api.allorigins.win" />
+
+    <!-- DNS prefetch for faster resolution -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8GVZNDH0B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L8GVZNDH0B');
+    </script>
+
     <title>Canonical URL Troubleshooting for Static Web Apps | Mark Hazleton</title><meta name="description" content="Canonical URLs are crucial for SEO in static web apps. This guide explores how to manage them using Azure and Cloudflare, ensuring your content is properly indexed."><meta name="keywords" content="canonical URLs, static web apps, SEO optimization, Azure, Cloudflare, Mark Hazleton"><meta property="og:type" content="article"><meta property="og:title" content="Canonical URL Troubleshooting for Static Web Apps | Mark Hazleton"><meta property="og:description" content="Canonical URLs are crucial for SEO in static web apps. This guide explores how to manage them using Azure and Cloudflare, ensuring your content is properly indexed."><meta property="og:url" content="https://markhazleton.com/blog/canonical-url-troubleshooting-for-static-web-apps"><meta property="og:site_name" content="Mark Hazleton"><meta property="og:image" content="https://markhazleton.com/img/ArgostoliGreeceBeach.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Canonical URL Troubleshooting for Static Web Apps | Mark Hazleton"><meta name="twitter:description" content="Canonical URLs are crucial for SEO in static web apps. This guide explores how to manage them using Azure and Cloudflare, ensuring your content is properly indexed."><meta name="twitter:image" content="https://markhazleton.com/img/ArgostoliGreeceBeach.jpg"><link rel="canonical" href="https://markhazleton.com/blog/canonical-url-troubleshooting-for-static-web-apps"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Canonical URL Troubleshooting for Static Web Apps","description":"Canonical URLs are crucial for SEO in static web apps. This guide explores how to manage them using Azure and Cloudflare, ensuring your content is properly indexed.","author":{"@type":"Person","name":"Mark Hazleton","url":"https://markhazleton.com"},"datePublished":"2024-10-10","publisher":{"@type":"Person","name":"Mark Hazleton"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://markhazleton.com/blog/canonical-url-troubleshooting-for-static-web-apps"},"dateModified":"2024-10-10","image":"https://markhazleton.com/img/ArgostoliGreeceBeach.jpg","keywords":"canonical URLs, static web apps, SEO optimization, Azure, Cloudflare, Mark Hazleton","articleSection":"Content Strategy","timeRequired":"PT5M"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://markhazleton.com"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://markhazleton.com/blog"},{"@type":"ListItem","position":3,"name":"Canonical URL Troubleshooting for Static Web Apps","item":"https://markhazleton.com/blog/canonical-url-troubleshooting-for-static-web-apps"}]}</script>
     <script type="module" crossorigin src="/assets/site.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/site.css">

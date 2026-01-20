@@ -20,6 +20,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     
     <!-- Preconnect to fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +29,24 @@
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://i.ytimg.com" />
     <link rel="preconnect" href="https://api.allorigins.win" />
+
+    <!-- DNS prefetch for faster resolution -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8GVZNDH0B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L8GVZNDH0B');
+    </script>
+
     <title>Building Git Spark: My First npm Package Journey | Mark Hazleton</title><meta name="description" content="Creating git-spark, my first npm package, from frustration to published tool. Learn Git analytics limits and the value of honest metrics."><meta name="keywords" content="git-spark, npm package, engineering metrics, Git analytics, AI contributions, developer productivity, honest metrics, software measurement"><meta property="og:type" content="article"><meta property="og:title" content="Building Git Spark: My First npm Package Journey | Mark Hazleton"><meta property="og:description" content="Creating git-spark, my first npm package, from frustration to published tool. Learn Git analytics limits and the value of honest metrics."><meta property="og:url" content="https://markhazleton.com/blog/engineering-metrics-git-spark-real-story"><meta property="og:site_name" content="Mark Hazleton"><meta property="og:image" content="https://markhazleton.com/img/InksLakeSunset.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Building Git Spark: My First npm Package Journey | Mark Hazleton"><meta name="twitter:description" content="Creating git-spark, my first npm package, from frustration to published tool. Learn Git analytics limits and the value of honest metrics."><meta name="twitter:image" content="https://markhazleton.com/img/InksLakeSunset.jpg"><link rel="canonical" href="https://markhazleton.com/blog/engineering-metrics-git-spark-real-story"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Building Git Spark: My First npm Package Journey","description":"Creating git-spark, my first npm package, from frustration to published tool. Learn Git analytics limits and the value of honest metrics.","author":{"@type":"Person","name":"Mark Hazleton","url":"https://markhazleton.com"},"datePublished":"2025-10-07","publisher":{"@type":"Person","name":"Mark Hazleton"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://markhazleton.com/blog/engineering-metrics-git-spark-real-story"},"dateModified":"2025-10-07","image":"https://markhazleton.com/img/InksLakeSunset.jpg","keywords":"git-spark, npm package, engineering metrics, Git analytics, AI contributions, developer productivity, honest metrics, software measurement","articleSection":"Development","timeRequired":"PT12M"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://markhazleton.com"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://markhazleton.com/blog"},{"@type":"ListItem","position":3,"name":"Building Git Spark: My First npm Package Journey","item":"https://markhazleton.com/blog/engineering-metrics-git-spark-real-story"}]}</script>
     <script type="module" crossorigin src="/assets/site.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/site.css">

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/GitHub/MarkHazleton/markhazleton-blog/**)",
+      "Read(//c/GitHub/MarkHazleton/markhazleton-blog/src/**)",
+      "Bash(ls:*)"
+    ]
+  }
+}

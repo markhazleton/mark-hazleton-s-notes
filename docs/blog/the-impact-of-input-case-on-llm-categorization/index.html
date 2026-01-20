@@ -20,6 +20,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     
     <!-- Preconnect to fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +29,24 @@
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://i.ytimg.com" />
     <link rel="preconnect" href="https://api.allorigins.win" />
+
+    <!-- DNS prefetch for faster resolution -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8GVZNDH0B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L8GVZNDH0B');
+    </script>
+
     <title>The Impact of Input Case on LLM Categorization | Mark Hazleton</title><meta name="description" content="Large Language Models (LLMs) are sensitive to the case of input text, affecting their tokenization and categorization capabilities. This article delves into how input case impacts LLM performance, particularly in NLP tasks like Named Entity Recognition and Sentiment Analysis, and discusses strategies to enhance model robustness."><meta name="keywords" content="Mark Hazleton, input case, LLM categorization, tokenization, NLP, model robustness"><meta property="og:type" content="article"><meta property="og:title" content="The Impact of Input Case on LLM Categorization | Mark Hazleton"><meta property="og:description" content="Large Language Models (LLMs) are sensitive to the case of input text, affecting their tokenization and categorization capabilities. This article delves into how input case impacts LLM performance, particularly in NLP tasks like Named Entity Recognition and Sentiment Analysis, and discusses strategies to enhance model robustness."><meta property="og:url" content="https://markhazleton.com/blog/the-impact-of-input-case-on-llm-categorization"><meta property="og:site_name" content="Mark Hazleton"><meta property="og:image" content="https://markhazleton.com/img/MurdoHighlandCoo.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="The Impact of Input Case on LLM Categorization | Mark Hazleton"><meta name="twitter:description" content="Large Language Models (LLMs) are sensitive to the case of input text, affecting their tokenization and categorization capabilities. This article delves into how input case impacts LLM performance, particularly in NLP tasks like Named Entity Recognition and Sentiment Analysis, and discusses strategies to enhance model robustness."><meta name="twitter:image" content="https://markhazleton.com/img/MurdoHighlandCoo.jpg"><link rel="canonical" href="https://markhazleton.com/blog/the-impact-of-input-case-on-llm-categorization"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"The Impact of Input Case on LLM Categorization","description":"Large Language Models (LLMs) are sensitive to the case of input text, affecting their tokenization and categorization capabilities. This article delves into how input case impacts LLM performance, particularly in NLP tasks like Named Entity Recognition and Sentiment Analysis, and discusses strategies to enhance model robustness.","author":{"@type":"Person","name":"Mark Hazleton","url":"https://markhazleton.com"},"datePublished":"2025-03-19","publisher":{"@type":"Person","name":"Mark Hazleton"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://markhazleton.com/blog/the-impact-of-input-case-on-llm-categorization"},"dateModified":"2025-03-19","image":"https://markhazleton.com/img/MurdoHighlandCoo.jpg","keywords":"Mark Hazleton, input case, LLM categorization, tokenization, NLP, model robustness","articleSection":"AI & Machine Learning","timeRequired":"PT5M"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://markhazleton.com"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://markhazleton.com/blog"},{"@type":"ListItem","position":3,"name":"The Impact of Input Case on LLM Categorization","item":"https://markhazleton.com/blog/the-impact-of-input-case-on-llm-categorization"}]}</script>
     <script type="module" crossorigin src="/assets/site.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/site.css">

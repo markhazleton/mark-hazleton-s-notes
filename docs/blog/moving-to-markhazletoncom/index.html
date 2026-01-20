@@ -20,6 +20,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     
     <!-- Preconnect to fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +29,24 @@
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://i.ytimg.com" />
     <link rel="preconnect" href="https://api.allorigins.win" />
+
+    <!-- DNS prefetch for faster resolution -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8GVZNDH0B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L8GVZNDH0B');
+    </script>
+
     <title>Migrating to MarkHazleton.com: A Comprehensive Guide | Mark Hazleton</title><meta name="description" content="Migrating a blog to a new domain can be a daunting task, but with the right tools and guidance, it can be a smooth transition. In this article, we will explore the process of moving a blog from markhazleton.controlorigins.com to markhazleton.com. This guide will cover the use of Azure Static Web Apps for hosting and Cloudflare for DNS management, providing detailed steps and best practices to ensure a successful migration."><meta name="keywords" content="Mark Hazleton, blog migration, Azure Static Web Apps, Cloudflare DNS, website hosting, domain transfer"><meta property="og:type" content="article"><meta property="og:title" content="Migrating to MarkHazleton.com: A Comprehensive Guide | Mark Hazleton"><meta property="og:description" content="Migrating a blog to a new domain can be a daunting task, but with the right tools and guidance, it can be a smooth transition. In this article, we will explore the process of moving a blog from markhazleton.controlorigins.com to markhazleton.com. This guide will cover the use of Azure Static Web Apps for hosting and Cloudflare for DNS management, providing detailed steps and best practices to ensure a successful migration."><meta property="og:url" content="https://markhazleton.com/blog/moving-to-markhazletoncom"><meta property="og:site_name" content="Mark Hazleton"><meta property="og:image" content="https://markhazleton.com/img/ArgostoliGreeceBeach.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Migrating to MarkHazleton.com: A Comprehensive Guide | Mark Hazleton"><meta name="twitter:description" content="Migrating a blog to a new domain can be a daunting task, but with the right tools and guidance, it can be a smooth transition. In this article, we will explore the process of moving a blog from markhazleton.controlorigins.com to markhazleton.com. This guide will cover the use of Azure Static Web Apps for hosting and Cloudflare for DNS management, providing detailed steps and best practices to ensure a successful migration."><meta name="twitter:image" content="https://markhazleton.com/img/ArgostoliGreeceBeach.jpg"><link rel="canonical" href="https://markhazleton.com/blog/moving-to-markhazletoncom"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Migrating to MarkHazleton.com: A Comprehensive Guide","description":"Migrating a blog to a new domain can be a daunting task, but with the right tools and guidance, it can be a smooth transition. In this article, we will explore the process of moving a blog from markhazleton.controlorigins.com to markhazleton.com. This guide will cover the use of Azure Static Web Apps for hosting and Cloudflare for DNS management, providing detailed steps and best practices to ensure a successful migration.","author":{"@type":"Person","name":"Mark Hazleton","url":"https://markhazleton.com"},"datePublished":"2024-09-16","publisher":{"@type":"Person","name":"Mark Hazleton"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://markhazleton.com/blog/moving-to-markhazletoncom"},"dateModified":"2024-09-16","image":"https://markhazleton.com/img/ArgostoliGreeceBeach.jpg","keywords":"Mark Hazleton, blog migration, Azure Static Web Apps, Cloudflare DNS, website hosting, domain transfer","articleSection":"Content Strategy","timeRequired":"PT5M"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://markhazleton.com"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://markhazleton.com/blog"},{"@type":"ListItem","position":3,"name":"Migrating to MarkHazleton.com: A Comprehensive Guide","item":"https://markhazleton.com/blog/moving-to-markhazletoncom"}]}</script>
     <script type="module" crossorigin src="/assets/site.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/site.css">
