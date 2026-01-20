@@ -3,7 +3,9 @@
     "allow": [
       "Read(//c/GitHub/MarkHazleton/markhazleton-blog/**)",
       "Read(//c/GitHub/MarkHazleton/markhazleton-blog/src/**)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(node:*)",
+      "Bash(npm run build:client:*)"
     ]
   }
 }

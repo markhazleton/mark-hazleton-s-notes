@@ -2,6 +2,7 @@ import { ReactNode, useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Sun, Moon, Linkedin, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import buildInfo from '@/lib/build-info.json';
 
 interface LayoutProps {
   children: ReactNode;
@@ -196,6 +197,16 @@ export function Layout({ children }: LayoutProps) {
             <p>
               © <span suppressHydrationWarning>{new Date().getFullYear()}</span>{" "}
               Mark Hazleton. Built with curiosity and caffeine.
+            </p>
+            <p className="mt-2 text-xs text-muted-foreground/60" suppressHydrationWarning>
+              Build v{buildInfo.version} • {buildInfo.buildTime ? new Date(buildInfo.buildTime).toLocaleString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit',
+                timeZoneName: 'short'
+              }) : 'Development'}
             </p>
           </div>
         </div>
