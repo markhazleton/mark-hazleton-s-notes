@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/j5Hm-iceT_M/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Observability Is No Joke</video:title>
+      <video:description>What happens when a simple joke request exposes a fundamental flaw in AI system design? In this episode, we unpack a deceptively simple scenario that reveals the massive observability gap in modern AI agent development. When an AI agent claims to fetch a joke from an external API, how can you verify it actually made that HTTP request instead of just pulling from its training data?
+This deep dive explores the critical distinction between black box and white box testing in AI systems, revealing why traditional quality assurance approaches fall short with AI agents. We&apos;ll examine real-world scenarios where this transparency gap becomes problematic—from customer service agents that may not actually check account status to healthcare AI that claims to reference the latest research but might be operating on outdated information.
+The discussion centers on the Model Context Protocol (MCP) as a promising solution to AI&apos;s black box problem. We&apos;ll break down how MCP transforms opaque AI systems into &quot;gray boxes&quot; through structured logging, request tracing, and real-time monitoring. Learn about the eight severity levels of MCP logging, JSON-RPC message tracking, and how enterprise solutions like New Relic and Dynatrace are adapting to monitor AI agent behavior.
+We&apos;ll also explore practical implementation strategies, including the &quot;trust but verify&quot; principle, boundary testing techniques, and why observability should be foundational rather than an afterthought. Whether you&apos;re developing AI agents for customer service, financial applications, or healthcare systems, this episode provides essential insights for building trustworthy, transparent AI systems that you can actually verify and debug.
+The episode concludes with actionable best practices and a look at emerging observability tools that are making AI systems more accountable and reliable in production environments.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=j5Hm-iceT_M</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/j5Hm-iceT_M</video:player_loc>
+      <video:publication_date>2025-06-17T00:00:00.000Z</video:publication_date>
+      <video:duration>934</video:duration>
+      <video:view_count>23</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/fXy1DSW2ee0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: WebSpark.ArtSpark</video:title>
+      <video:description>What happens when you give a 500-year-old African mask the ability to tell its own story?
+In this episode of Deep Dive, we explore **ArtSpark** - the groundbreaking AI project that lets you have actual conversations with artworks from the Art Institute of Chicago. 
+
+The Deep Dive team walks us through the fascinating intersection of artificial intelligence, cultural preservation, and interactive education.
+
+Try it yourself at https://artspark.markhazleton.com 
+
+Read the full article: 
+https://markhazleton.com/articles/building-artspark-where-ai-meets-art-history.html</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=fXy1DSW2ee0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/fXy1DSW2ee0</video:player_loc>
+      <video:publication_date>2025-06-02T00:00:00.000Z</video:publication_date>
+      <video:duration>802</video:duration>
+      <video:view_count>13</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/3KO0GuTkPew/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive:  EDA with Python</video:title>
+      <video:description>Unlock the full potential of your data with Exploratory Data Analysis (EDA) in Python! This in-depth video tutorial is based on the companion article over at MarkHazleton.com, designed to give you a structured, hands-on walkthrough of essential EDA techniques.
+
+📖 Read the full article here:
+👉 https://markhazleton.com/articles/exploratory-data-analysis-eda-using-python.html
+
+📌 What You’ll Learn in This Video:
+
+Why EDA is the first critical step in any data science project
+
+How to clean and prepare your data using pandas
+
+Visualization techniques with Seaborn and Matplotlib
+
+Identifying outliers, missing values, and skewed distributions
+
+Performing univariate and bivariate analysis
+
+Using correlation heatmaps, box plots, and histograms effectively
+
+🛠 Tools &amp; Libraries Covered:
+
+Python 🐍
+
+Pandas 📊
+
+Seaborn 🎨
+
+Matplotlib 📈
+
+Jupyter Notebook 💻
+
+💡 Whether you’re analyzing business trends, building machine learning models, or doing academic research, EDA provides the foundation for informed, data-driven decisions.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=3KO0GuTkPew</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/3KO0GuTkPew</video:player_loc>
+      <video:publication_date>2025-05-21T00:00:00.000Z</video:publication_date>
+      <video:duration>1286</video:duration>
+      <video:view_count>34</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/To7SxGIoEg0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive:  Agency in the Age of AI</video:title>
+      <video:description>In the age where AI is transforming our world, what becomes the most critical factor for success? It&apos;s **agency**.
+
+Agency is the **capacity of an actor to act in a given environment**. It is the **power people have to think for themselves and act in ways that shape their experiences and life trajectories**. More simply, it&apos;s the **raw determination to make things happen without waiting for permission**.
+
+Historically, intelligence and specialization were key, but as AI makes **intelligence everywhere**, the value of traditional specialization is eroded. AI **amplifies human ingenuity** and a person&apos;s ability to take action and create value. The bottleneck shifts from capability to **human initiative**.
+
+High-agency individuals leverage AI to **accomplish what previously required teams**, leading to lean and successful ventures.
+
+Learn why agency is the **new superpower** and how cultivating your own agency can empower you to thrive in this new era.
+
+Read more: 
+https://markhazleton.com/articles/the-new-era-of-individual-agency-how-ai-tools-are-empowering-the-self-starter.html</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=To7SxGIoEg0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/To7SxGIoEg0</video:player_loc>
+      <video:publication_date>2025-05-13T00:00:00.000Z</video:publication_date>
+      <video:duration>778</video:duration>
+      <video:view_count>16</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/jOQHPafhW5Y/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: ReactSpark: A Comprehensive Guide</video:title>
+      <video:description>Welcome to a deep dive into ReactSpark, a comprehensive and modern portfolio showcase project by Mark Hazleton! In this video, we&apos;ll explore this meticulously crafted website built with React 19, TypeScript, and the lightning-fast Vite build tool.
+ReactSpark isn&apos;t just a portfolio; it&apos;s a demonstration of modern web development best practices and a reference implementation for building robust React applications. As part of the WebSpark suite, ReactSpark illustrates how dynamic frontends can be seamlessly powered by well-structured APIs.
+
+Read more about the project here:
+https://markhazleton.com/articles/reactspark-a-comprehensive-portfolio-showcase.html</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=jOQHPafhW5Y</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/jOQHPafhW5Y</video:player_loc>
+      <video:publication_date>2025-04-17T00:00:00.000Z</video:publication_date>
+      <video:duration>827</video:duration>
+      <video:view_count>32</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Dyj8u2KipdA/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Pedernales Cellars</video:title>
+      <video:description>Join us for a deep dive into Pedernales Cellars, a family-run winery nestled in the scenic Texas Hill Country. Discover how siblings David and Julie Kuhlken built upon their parents&apos; pioneering viticulture to create award-winning, sustainable wines using Texas-grown grapes. From Spanish and Rhône-style varieties like Tempranillo, Viognier, and Albariño, to innovative styles like pet-nat rosé, explore how Pedernales Cellars blends traditional craftsmanship with modern sustainability practices, including geothermal cooling, organic vineyard management, and habitat-friendly viticulture. Don’t miss insights into their exciting upcoming releases and commitment to environmental stewardship.
+
+🍷 Learn more: https://markhazleton.com/articles/pedernales-cellars-winery-in-texas-hill-country.html</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Dyj8u2KipdA</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Dyj8u2KipdA</video:player_loc>
+      <video:publication_date>2025-03-27T00:00:00.000Z</video:publication_date>
+      <video:duration>916</video:duration>
+      <video:view_count>20</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/2hI79aKyaK0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive:  LLM Prompt Case Sensitivity</video:title>
+      <video:description>Unlock the secrets of LLM prompt case sensitivity! This deep dive explores how the seemingly simple act of capitalization in your AI prompts can drastically impact the responses you receive from Large Language Models (LLMs). We&apos;ll analyze how different input cases (uppercase vs. lowercase) influence LLM tokenization, which in turn can alter the AI&apos;s interpretation and the final output [52, our conversation]. Discover why case sensitivity matters in prompt engineering, affecting tasks like sentiment analysis where emphasis can be key, and topic classification where proper nouns and acronyms are crucial [53, 57, our conversation]. Learn best practices for case-specific prompt engineering to enhance the accuracy and clarity of your AI interactions and avoid unexpected results. Whether you&apos;re a beginner or an experienced prompt engineer, understanding LLM response variations based on prompt case is essential for maximizing AI utility.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=2hI79aKyaK0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/2hI79aKyaK0</video:player_loc>
+      <video:publication_date>2025-03-19T00:00:00.000Z</video:publication_date>
+      <video:duration>1567</video:duration>
+      <video:view_count>68</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/pfLUVM2bIU4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: AI Impact On Critical Thinking</video:title>
+      <video:description>In this episode, we dive deep into the transformative role of Artificial Intelligence (AI) on critical thinking and decision-making. Join us as we explore how AI tools are reshaping education, creativity, and problem-solving in the digital age. Discover expert insights, case studies, and practical tips on harnessing AI&apos;s potential while safeguarding human cognitive abilities. Stay ahead in the ever-evolving tech landscape with our engaging discussions on AI’s impact on critical thinking.
+
+Read More About It -- https://markhazleton.com/articles/ai-and-critical-thinking-in-software-development.html</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=pfLUVM2bIU4</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/pfLUVM2bIU4</video:player_loc>
+      <video:publication_date>2025-02-27T00:00:00.000Z</video:publication_date>
+      <video:duration>1231</video:duration>
+      <video:view_count>94</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/FYZX7OmPUS0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Kendrick Lamar Superbowl Explained</video:title>
+      <video:description>🔥 Kendrick Lamar’s Super Bowl LIX Halftime Show: Hidden Messages &amp; Symbolism Explained! 🎤🏈
+
+Kendrick Lamar’s Super Bowl LIX halftime performance was more than just a show—it was a masterpiece of metaphors and social commentary. From the PlayStation-inspired stage design to the Squid Game card symbolism (🔻🟥🔴), Lamar used every detail to highlight themes of control, societal manipulation, and conformity.
+
+In this Deep Dive podcast, we break down the hidden messages behind: 
+✅ The ‘game’ metaphor and how the Super Bowl itself represents societal control
+✅ The PlayStation stage design and its connection to media influence
+✅ Squid Game references and the puppet strings motif in &quot;Squabble Up&quot;
+✅ Guest appearances by Samuel L. Jackson &amp; Serena Williams—what do they mean?
+✅ The deeper meaning behind Lamar’s minimalist performance style
+
+🔔 Don’t forget to LIKE, COMMENT, and SUBSCRIBE for more deep dives into music, culture, and hidden symbolism in entertainment!
+
+Read the full article:
+https://markhazleton.com/articles/kendrick-lamars-super-bowl-lix-halftime-show-a-masterpiece-of-metaphors.html
+
+
+#KendrickLamar #SuperBowlLIX #HalftimeShow #KendrickLamarSuperBowl #SuperBowlHalftime #KendrickLamarPerformance #SquidGame #MusicAnalysis #PlayStationStage #HipHopCulture #NotLikeUs #SquabbleUp #HiddenMeanings #SymbolismExplained #SocialCommentary #HipHopAnalysis #KendrickLamarLive</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=FYZX7OmPUS0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/FYZX7OmPUS0</video:player_loc>
+      <video:publication_date>2025-02-10T00:00:00.000Z</video:publication_date>
+      <video:duration>801</video:duration>
+      <video:view_count>562</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/1tg4DdIGHfg/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Riffusion AI Music Generator</video:title>
+      <video:description>Riffusion is a free and open-source AI platform that generates music from text, audio, or image prompts using a spectrogram-based diffusion model. Its key features include real-time processing, customizable outputs, and multi-modal input options. While the audio quality isn&apos;t yet perfect and style diversity is developing, Riffusion is impacting the music industry by democratizing music creation and offering a collaborative AI tool for professionals and hobbyists alike. Future development includes enhanced model training and DAW integrations.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=1tg4DdIGHfg</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/1tg4DdIGHfg</video:player_loc>
+      <video:publication_date>2025-02-04T00:00:00.000Z</video:publication_date>
+      <video:duration>729</video:duration>
+      <video:view_count>248</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/BXLDyU6DkiQ/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Natural Language Processing</video:title>
+      <video:description>Welcome to Deep Dive, where we explore complex topics in a clear, engaging way! In this episode, we unravel the fascinating world of Natural Language Processing (NLP) — the technology powering chatbots, voice assistants, machine translation, and more.
+
+Discover the origins of NLP, from early rules-based systems to the transformative power of deep learning models like BERT and GPT. Learn about foundational concepts, including tokenization, word embeddings, and attention mechanisms, and explore how NLP has revolutionized the way machines understand and generate human language.
+
+Whether you&apos;re a tech enthusiast, a budding data scientist, or just curious about how your favorite apps work, this episode offers a comprehensive introduction to the past, present, and future of NLP.
+
+Don’t forget to like, share, and subscribe to Deep Dive for more insights into cutting-edge technologies and ideas!</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=BXLDyU6DkiQ</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/BXLDyU6DkiQ</video:player_loc>
+      <video:publication_date>2025-01-26T00:00:00.000Z</video:publication_date>
+      <video:duration>1038</video:duration>
+      <video:view_count>192</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/PhY-2G7KIks/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Lifelong Learning and AI</video:title>
+      <video:description>As AI revolutionizes industries, the key to staying relevant is adapting with purpose. Lifelong learning is no longer an option; it’s a necessity. In this video, we explore:
+
+📚 Proven methods to embrace a learning mindset.
+🌐 Real-world examples of AI-driven changes.
+🛠 Tools and resources to enhance your skills effectively.
+Whether you&apos;re a professional, student, or lifelong learner, this guide is tailored to help you thrive in an AI-powered age. Hit play and start your journey towards a smarter, brighter future today!
+
+💡 Keywords: AI revolution, lifelong learning, adapting to AI, skills for the future, future-proof career.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=PhY-2G7KIks</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/PhY-2G7KIks</video:player_loc>
+      <video:publication_date>2025-01-17T00:00:00.000Z</video:publication_date>
+      <video:duration>720</video:duration>
+      <video:view_count>36</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/W1ehT3Qgyyo/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHSBoAC4AOKAgwIABABGH8gSCgmMA8=&amp;rs=AOn4CLD911iRpEsRvYPmlwSsaTdUTBZcnA</video:thumbnail_loc>
+      <video:title>Deep Dive: MCP Transforming AI</video:title>
+      <video:description>Explore the transformative potential of the Model Context Protocol (MCP) in this deep dive podcast. Discover how MCP enables AI to seamlessly integrate with business processes, instantly adapt to workflows, and revolutionize decision-making. Through compelling analogies, real-world stories, and expert insights, we discuss how MCP is set to redefine AI&apos;s role in enterprises, from automating accounts payable to driving innovation. Whether you&apos;re a business leader, tech enthusiast, or curious learner, this episode will inspire you to envision a future powered by adaptive, context-aware AI.  With insights into industry adoption and practical applications, this is your guide to the future of intelligent automation and AI-driven efficiency.
+
+Read the full article 
+https://markhazleton.com/articles/i-know-ap-the-transformative-power-of-mcp.html</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=W1ehT3Qgyyo</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/W1ehT3Qgyyo</video:player_loc>
+      <video:publication_date>2024-12-24T00:00:00.000Z</video:publication_date>
+      <video:duration>616</video:duration>
+      <video:view_count>33</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/qq4OXQVQUMs/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHSBoAC4AOKAgwIABABGH8gSCgmMA8=&amp;rs=AOn4CLDKBkLsfDo59J7XXNJVSs2TX1Gyeg</video:thumbnail_loc>
+      <video:title>Deep Dive: Breach Of Trust AI Generated</video:title>
+      <video:description>In this compelling episode, the Deep Dive team uncovers the groundbreaking truth behind the Law &amp; Order episode &quot;Breach of Trust.&quot; What initially seemed like another expertly crafted storyline by Dick Wolf&apos;s team turns out to be a product of advanced AI storytelling.
+
+As the investigation unfolds, the team delves into how the episode&apos;s gripping themes of corporate greed, betrayal, and justice were directly inspired by viral online discussions. They highlight how an AI agent, trained on the iconic Law &amp; Order formula, analyzed trending Reddit threads and transformed public discourse into a compelling narrative.
+
+Through interviews with developers, media experts, and legal analysts, the Deep Dive crew explores the implications of AI in creative industries. They question whether the human touch is being overshadowed by technological efficiency and ponder the ethical dimensions of AI-driven storytelling.
+
+In a dramatic twist, they analyze scenes from &quot;Breach of Trust&quot; with forensic precision, revealing how AI emulated the show&apos;s bifurcated structure and moral complexity so convincingly that even dedicated fans were none the wiser. The episode concludes with a heated debate: Is AI the future of TV drama, or does this revelation mark the beginning of the end for human-driven storytelling?
+
+With their usual mix of wit, insight, and skepticism, the Deep Dive team leaves viewers contemplating the boundaries of creativity in the age of artificial intelligence.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=qq4OXQVQUMs</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/qq4OXQVQUMs</video:player_loc>
+      <video:publication_date>2024-12-24T00:00:00.000Z</video:publication_date>
+      <video:duration>916</video:duration>
+      <video:view_count>27</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/yrX6EFPdmZ0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Breach Of Trust</video:title>
+      <video:description>Combining the analytical power of AI with creative storytelling has led to exciting innovations, such as using PromptSpark to develop a GPT that generates Law &amp; Order-style episodes.  The Deep Dive team takes on an AI Episode called &quot;Breach of Trust&quot;.  
+
+Here is a link to the source episode outline:
+https://webspark.markhazleton.com/PromptSpark/explorer/details/law%20and%20order%20writer?UserPromptId=141</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=yrX6EFPdmZ0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/yrX6EFPdmZ0</video:player_loc>
+      <video:publication_date>2024-12-23T00:00:00.000Z</video:publication_date>
+      <video:duration>556</video:duration>
+      <video:view_count>9</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/0SVpUdvms0E/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Sora First Impressions</video:title>
+      <video:description>Step into the world of Sora with our first impressions video! From the shadowy allure of a film noir alley to the vibrant energy of a hipster office, and finally, the breathtaking slopes of snowy mountains, this showcase is packed with creative storytelling and unique adventures. Oh, and there&apos;s a cat weaving through it all—because every great story needs a star! Watch now and discover the magic of Sora.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=0SVpUdvms0E</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/0SVpUdvms0E</video:player_loc>
+      <video:publication_date>2024-12-22T00:00:00.000Z</video:publication_date>
+      <video:duration>89</video:duration>
+      <video:view_count>63</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Vb9_lFLHrqQ/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Lifelong Learning</video:title>
+      <video:description>In this episode of the Deep Dive Podcast, the team explores the transformative philosophy of Lifelong Learning, inspired by Mark Hazleton&apos;s article, &quot;Lifelong Learning&quot;. Discover how embracing continuous learning can empower you to adapt, grow, and achieve your full potential. Join us as we unpack key strategies, practical tips, and inspiring insights that will reshape your approach to learning in every stage of life.
+
+Whether you’re a student, professional, or lifelong knowledge seeker, this episode provides actionable advice to keep your curiosity alive and your skills sharp. Don&apos;t miss this deep dive into a mindset that can revolutionize how you think, learn, and live.
+
+Links from Podcast
+https://markhazleton.com/lifelong-learning.html
+
+💡 What’s your take on lifelong learning? Share your thoughts in the comments below, and don’t forget to like, subscribe, and hit the bell icon for more insightful episodes!</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Vb9_lFLHrqQ</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Vb9_lFLHrqQ</video:player_loc>
+      <video:publication_date>2024-12-19T00:00:00.000Z</video:publication_date>
+      <video:duration>835</video:duration>
+      <video:view_count>7</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/EEFXTcARvGY/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Project Mechanics</video:title>
+      <video:description>&quot;Deep Dive: Project Mechanics&quot; is your go-to podcast episode for mastering the intricate world of project management. Explore in-depth discussions about the core principles of Project Mechanics, as presented by experts who simplify complex processes. Learn actionable tips, strategies, and secrets to success in managing any project effectively.
+
+In this episode, we delve into the best practices, common pitfalls, and real-life examples to help you streamline workflows and achieve outstanding results. Whether you&apos;re a seasoned project manager or just starting, this episode equips you with everything you need to excel.
+
+💡 Visit Project Mechanics for additional resources and tools to elevate your project management game.
+https://markhazleton.com/projectmechanics/
+
+🎙 Don’t forget to like, share, and subscribe for more insightful podcasts!</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=EEFXTcARvGY</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/EEFXTcARvGY</video:player_loc>
+      <video:publication_date>2024-12-18T00:00:00.000Z</video:publication_date>
+      <video:duration>911</video:duration>
+      <video:view_count>22</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/bA4iIOZzVEg/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: EDS Comercials</video:title>
+      <video:description>🎥 Deep Dive: EDS Super Bowl Ads | Iconic IT Project Management Commercials 🏆
+
+Description:
+🚀 Dive into the legendary EDS Super Bowl commercials that captivated millions and showcased the chaos and innovation of IT project management. From herding cats to building airplanes mid-flight, these ads are masterful metaphors for the challenges faced by IT professionals. In this episode, we explore:
+
+🐱 Cat Herders (2000): How managing IT chaos became a cultural phenomenon.
+✈️ Airplane Mid-Flight (2000): A creative spin on business continuity and system upgrades.
+🐿️ Running with the Squirrels (2001): A hilarious nod to agility in the digital age.
+💡 These iconic commercials didn’t just entertain—they redefined IT advertising and project management storytelling. Perfect for tech enthusiasts, marketers, and advertising fans, this deep dive unpacks their legacy and lessons.
+
+👉 Read the full article here: https://markhazleton.com/articles/eds-super-bowl-commercials.html
+💬 Don’t forget to like, comment, and subscribe for more compelling stories about tech, marketing, and innovation!</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=bA4iIOZzVEg</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/bA4iIOZzVEg</video:player_loc>
+      <video:publication_date>2024-12-18T00:00:00.000Z</video:publication_date>
+      <video:duration>1218</video:duration>
+      <video:view_count>34</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/GVAhKtAn0Sk/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Prompt Spark</video:title>
+      <video:description>🌟 Deep Dive: Unpacking PromptSpark with the Deep Dive Team 🌟
+
+In this episode, the Deep Dive team explores PromptSpark, the brainchild of Mark Hazleton, a revolutionary tool designed to optimize how developers and businesses leverage Large Language Models (LLMs). 🚀
+
+Discover how PromptSpark is reshaping prompt engineering with its innovative approach:
+✅ Core Sparks: The backbone for defining LLM behavior and output.
+✅ Spark Variants: Customizable implementations for testing and fine-tuning.
+✅ User Prompts: Real-world scenarios to evaluate and enhance LLM performance.
+✅ Insights into how PromptSpark helps tailor AI solutions to meet diverse business needs.
+
+Whether you&apos;re a developer, data enthusiast, or business leader, this deep dive will provide valuable insights into how PromptSpark can elevate your AI-driven projects.
+
+💡 Mark Hazleton, the inventor of PromptSpark, is a seasoned solutions architect dedicated to empowering businesses with innovative AI tools.
+
+📢 Don’t forget to:
+👍 Like this video
+📩 Subscribe for more content on AI, tech, and innovation
+🔔 Hit the bell icon for updates on future episodes!
+
+💬 Got questions or comments? Let us know below!
+
+Links and Resources:
+🔗 Learn more about PromptSpark: https://webspark.markhazleton.com/PromptSpark/Home/LearnMore
+🔗 Explore Mark&apos;s blog: https://markhazleton.com</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=GVAhKtAn0Sk</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/GVAhKtAn0Sk</video:player_loc>
+      <video:publication_date>2024-12-13T00:00:00.000Z</video:publication_date>
+      <video:duration>1606</video:duration>
+      <video:view_count>60</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Qn8N_ZexISk/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: NotebookLM Deep Dive</video:title>
+      <video:description>🎙️ Create Engaging Deep Dive Podcast Episodes with Google&apos;s NotebookLM! 🚀
+
+Discover how to use Google&apos;s NotebookLM to take your podcasting game to the next level! This video provides step-by-step instructions for setting up your notebook, uploading sources, and generating AI-driven podcast audio overviews. Learn how to optimize your content and make the most of NotebookLM’s advanced features. Whether you&apos;re a creator, educator, or AI enthusiast, this guide will help you craft compelling podcast episodes easily. 🎧✨
+
+🔗 Read the full article: https://markhazleton.com/articles/using-notebooklm-clipchamp-and-chatgpt-for-podcasts.html
+
+🔥 What You&apos;ll Learn:
+
+How to set up and use NotebookLM for podcast creation
+Tips for uploading and managing sources effectively
+Generating AI-driven podcast overviews and summaries
+💡 Don’t forget to like, comment, and subscribe for more tech-driven insights!</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Qn8N_ZexISk</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Qn8N_ZexISk</video:player_loc>
+      <video:publication_date>2024-12-12T00:00:00.000Z</video:publication_date>
+      <video:duration>715</video:duration>
+      <video:view_count>212</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/CgpMrZp_iiI/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGD0gWShyMA8=&amp;rs=AOn4CLAL8FEfy60j5zpNthg8Apevsud1Xw</video:thumbnail_loc>
+      <video:title>Deep Dive: Jared Hazleton</video:title>
+      <video:description>Join us for a deep dive into Dr. Jared E. Hazleton, a distinguished economist, academic, and leader. From his groundbreaking analysis of the Sulfur industry to his transformative leadership at the Texas Research League, we explore how Dr. Hazleton&apos;s work has shaped economic thought and policy. This episode covers his prolific career, influential publications, impact on public resource management, and contributions to higher education and economic research. Whether you&apos;re an economist, history enthusiast, or just curious about influential thinkers, this episode offers insights into the remarkable journey of Dr. Jared Hazleton
+
+For more information visit https://texecon.com</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=CgpMrZp_iiI</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/CgpMrZp_iiI</video:player_loc>
+      <video:publication_date>2024-12-12T00:00:00.000Z</video:publication_date>
+      <video:duration>760</video:duration>
+      <video:view_count>53</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Lrh9hnntKUA/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Project Mechanics Conflict Resolution</video:title>
+      <video:description>How can conflict be a catalyst for project success? In this episode of the Deep Dive podcast, we explore conflict management through the lens of Project Mechanics philosophy, inspired by Mark Hazleton&apos;s article on effective conflict resolution.
+Join us as we discuss:
+- How to transform disagreements into drivers of innovation.
+- The role of systems in channeling conflict productively.
+- Practical strategies for leveraging tension to improve alignment and outcomes.
+Don’t miss this insightful conversation on turning challenges into opportunities in project management.
+
+📖 Read the original article: Conflict Management and Project Mechanics
+https://markhazleton.com/projectmechanics/conflict-management/</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Lrh9hnntKUA</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Lrh9hnntKUA</video:player_loc>
+      <video:publication_date>2024-12-10T00:00:00.000Z</video:publication_date>
+      <video:duration>314</video:duration>
+      <video:view_count>11</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/R9UPM9fHW-Y/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Joke Explainer</video:title>
+      <video:description>In this episode of Deep Dive, we explore the fascinating (and funny) world of the AI Joke Explainer! Join us as we break down how this innovative tool pulls jokes using an API and uses cutting-edge AI to explain why they’re funny—even the technical ones. Whether you&apos;re an engineer struggling with punchlines or just curious about AI’s sense of humor, this podcast will leave you laughing and learning.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=R9UPM9fHW-Y</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/R9UPM9fHW-Y</video:player_loc>
+      <video:publication_date>2024-12-09T00:00:00.000Z</video:publication_date>
+      <video:duration>442</video:duration>
+      <video:view_count>58</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/cErlh1yQ8ds/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Chat Applications and AI</video:title>
+      <video:description>Chat applications with artificial intelligence (AI) are leading us into the era of intelligent interaction and set in motion an era of application development. This has the potential to revolutionize chat applications, enabling intelligent, context-aware interactions that can improve the user experience of the classic rigid decision tree interactions. The opportunities chat applications enhanced AI brings to the developer are impressive. But as with any powerful tool, it&apos;s imperative to remember that if you&apos;re not careful with how you use it, you can end up misspending its incredible potential. In this case, you can end up building a chat application that doesn&apos;t achieve the desired business goals of the application.
+
+https://markhazleton.com/articles/workflow-driven-chat-applications-powered-by-adaptive-cards.html</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=cErlh1yQ8ds</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/cErlh1yQ8ds</video:player_loc>
+      <video:publication_date>2024-12-09T00:00:00.000Z</video:publication_date>
+      <video:duration>866</video:duration>
+      <video:view_count>50</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/eDsRcxtfqZ4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Sidetracked By Sizzle</video:title>
+      <video:description>In this episode of the Deep Dive Podcast, we explore Mark Hazleton&apos;s impactful article, &quot;Sidetracked by Sizzle.&quot; Why do businesses get distracted by flashy, superficial technology that doesn’t deliver real value? More importantly, how can leaders avoid these pitfalls and focus on solutions that align with their core objectives?
+
+Join us for a conversation filled with actionable insights, real-world examples, and tips for staying grounded in the ever-changing landscape of technology. Whether you&apos;re a tech enthusiast, business leader, or entrepreneur, this discussion will help you sharpen your focus and prioritize what truly matters.
+
+📖 Check out Mark Hazleton’s original article: https://markhazleton.com/sidetrackedbysizzle 
+
+
+🔔 Don’t forget to like, subscribe, and share for more thought-provoking discussions!</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=eDsRcxtfqZ4</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/eDsRcxtfqZ4</video:player_loc>
+      <video:publication_date>2024-12-06T00:00:00.000Z</video:publication_date>
+      <video:duration>971</video:duration>
+      <video:view_count>10</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/D82StHCr6ig/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>PromptSpark Joke Explainer</video:title>
+      <video:description>A demo of the Joke Explainer using PromptSpark
+
+Link to Site 
+https://markhazleton.github.io/ReactSparkPortfolio/#/joke</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=D82StHCr6ig</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/D82StHCr6ig</video:player_loc>
+      <video:publication_date>2024-10-27T00:00:00.000Z</video:publication_date>
+      <video:duration>74</video:duration>
+      <video:view_count>56</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/5OHkBAc_bpQ/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>PromptSpark React Chat</video:title>
+      <video:description>A demo of the PromptSpark SignalR hub using React with TypeScript</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=5OHkBAc_bpQ</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/5OHkBAc_bpQ</video:player_loc>
+      <video:publication_date>2024-10-27T00:00:00.000Z</video:publication_date>
+      <video:duration>64</video:duration>
+      <video:view_count>8</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/wY-aOTac7s4/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Prompt Spark Promo</video:title>
+      <video:description>Prompt Spark Introduction
+https://webspark.markhazleton.com/promptspark</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=wY-aOTac7s4</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/wY-aOTac7s4</video:player_loc>
+      <video:publication_date>2024-05-31T00:00:00.000Z</video:publication_date>
+      <video:duration>30</video:duration>
+      <video:view_count>29</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/TY8zKxYld1E/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Mechanics of Motherhood - Recipe GPT</video:title>
+      <video:description>Discover the power of AI in simplifying meal planning for busy moms with our detailed walkthrough of the Mechanics of Motherhood recipe management tool. This video demonstrates the seamless integration of AI technology, specifically the OpenAI API, to streamline the process of adding, editing, and managing nutritious and kid-friendly meals. Learn how to use our user-friendly website to quickly add recipes like the featured &quot;Summer Sunburst&quot; and &quot;Peach Iced Tea&quot; and see them go live instantly on your personal cooking dashboard. Whether you&apos;re looking for quick weeknight dinners or delicious treats for the family, Mechanics of Motherhood makes meal preparation a breeze. Don&apos;t miss out on learning how to utilize this innovative tool to save time and enhance your cooking experience. Visit us at https://mechanicsofmotherhood.com for more recipes and tips tailored for working mothers.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=TY8zKxYld1E</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/TY8zKxYld1E</video:player_loc>
+      <video:publication_date>2024-04-19T00:00:00.000Z</video:publication_date>
+      <video:duration>168</video:duration>
+      <video:view_count>37</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/9gM94EOHda0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Six Flags Texas Batman front POV</video:title>
+      <video:description></video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=9gM94EOHda0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/9gM94EOHda0</video:player_loc>
+      <video:publication_date>2014-03-11T00:00:00.000Z</video:publication_date>
+      <video:duration>79</video:duration>
+      <video:view_count>100</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/yBJWU5p-BXo/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>SharePoint 2010 and DevExpress Introduction</video:title>
+      <video:description>A demo of how to get started with SharePoint 2010 and DevExpress</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=yBJWU5p-BXo</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/yBJWU5p-BXo</video:player_loc>
+      <video:publication_date>2013-05-23T00:00:00.000Z</video:publication_date>
+      <video:duration>295</video:duration>
+      <video:view_count>579</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/TyLJMB-YAXU/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Fireworks from Anadarko patio in the woodlands</video:title>
+      <video:description></video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=TyLJMB-YAXU</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/TyLJMB-YAXU</video:player_loc>
+      <video:publication_date>2012-07-05T00:00:00.000Z</video:publication_date>
+      <video:duration>124</video:duration>
+      <video:view_count>68</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/videos</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/-gZwObI5oUk/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGHIgSCg5MA8=&amp;rs=AOn4CLAy9acjAnvljEjnyDC2zN4BuQicpA</video:thumbnail_loc>
+      <video:title>Riddle of Berlin - Cym Lowell and Cynthia Chartier</video:title>
+      <video:description>Cym Lowell and Cynthia Chartier discuss &quot;Riddle of Berlin&quot; the new novel from author Cym Lowell.  More information at http://CymLowell.com</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=-gZwObI5oUk</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/-gZwObI5oUk</video:player_loc>
+      <video:publication_date>2008-09-12T00:00:00.000Z</video:publication_date>
+      <video:duration>549</video:duration>
+      <video:view_count>378</video:view_count>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/using-large-language-models-to-generate-structured-data.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/TY8zKxYld1E/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Using Large Language Models to Generate Structured Data</video:title>
+      <video:description>Explore how GPT-4 and AI models transform data structuring, focusing on JSON formatting. Discover benefits like enhanced productivity and cost-effectiveness.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=TY8zKxYld1E</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/TY8zKxYld1E</video:player_loc>
+      <video:publication_date>2024-05-19</video:publication_date>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/moving-to-markhazletoncom.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Rm_hziAo14A/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Screaming Frog SEO Spider Tutorial</video:title>
+      <video:description>Discover the seamless process of migrating your blog to MarkHazleton.com using Azure Static Web Apps and Cloudflare DNS. Learn best practices and step-by-step</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Rm_hziAo14A</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Rm_hziAo14A</video:player_loc>
+      <video:publication_date>2024-09-16</video:publication_date>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/building-real-time-chat-with-react-signalr-and-markdown-streaming.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/D82StHCr6ig/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Building Real-Time Chat with React, SignalR, and Markdown Streaming</video:title>
+      <video:description>Learn how to create a real-time chat application using React, SignalR, and Markdown streaming. Discover dynamic messaging and rendering techniques.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=D82StHCr6ig</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/D82StHCr6ig</video:player_loc>
+      <video:publication_date>2024-10-27</video:publication_date>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/workflow-driven-chat-applications-powered-by-adaptive-cards.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/cErlh1yQ8ds/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Workflow-Driven Chat Applications With Adaptive Cards</video:title>
+      <video:description>Discover how to design workflow-driven chat applications using Adaptive Cards to enhance AI interactivity and structured conversations. Learn more now!</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=cErlh1yQ8ds</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/cErlh1yQ8ds</video:player_loc>
+      <video:publication_date>2024-11-18</video:publication_date>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/using-notebooklm-clipchamp-and-chatgpt-for-podcasts.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/Qn8N_ZexISk/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: Google NotebookLM</video:title>
+      <video:description>Discover how NotebookLM, Clipchamp, and ChatGPT can streamline your podcast creation, enhancing efficiency and engagement. Learn how to elevate your podcasting.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Qn8N_ZexISk</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Qn8N_ZexISk</video:player_loc>
+      <video:publication_date>2024-12-12</video:publication_date>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/the-impact-of-input-case-on-llm-categorization.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/2hI79aKyaK0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The Impact of Input Case on LLM Categorization</video:title>
+      <video:description>Discover how input case affects tokenization and categorization in LLMs, influencing model robustness and performance in NLP tasks. Learn best practices.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=2hI79aKyaK0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/2hI79aKyaK0</video:player_loc>
+      <video:publication_date>2025-03-19</video:publication_date>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/the-new-era-of-individual-agency-how-ai-tools-are-empowering-the-self-starter.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/To7SxGIoEg0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>The New Era of Individual Agency: How AI Tools Are Empowering the Self-Starter</video:title>
+      <video:description>Discover how AI tools are transforming individual agency by democratizing capabilities, empowering self-starters to achieve unprecedented autonomy.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=To7SxGIoEg0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/To7SxGIoEg0</video:player_loc>
+      <video:publication_date>2025-05-03</video:publication_date>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/building-artspark-where-ai-meets-art-history.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/fXy1DSW2ee0/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive: WebSpark.ArtSpark</video:title>
+      <video:description>Discover how ArtSpark combines AI and art history, allowing users to interact with artworks through a platform built with .NET 9 and GPT-4 Vision.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=fXy1DSW2ee0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/fXy1DSW2ee0</video:player_loc>
+      <video:publication_date>2025-06-02</video:publication_date>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/ai-observability-is-no-joke.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/j5Hm-iceT_M/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>AI Observability Is No Joke - Deep Dive Discussion</video:title>
+      <video:description>Discover the importance of AI observability in enhancing transparency and accountability in AI systems. Learn how it ensures ethical AI development.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=j5Hm-iceT_M</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/j5Hm-iceT_M</video:player_loc>
+      <video:publication_date>2025-07-20</video:publication_date>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+</urlset>
