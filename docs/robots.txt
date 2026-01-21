@@ -14,3 +14,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://markhazleton.com/sitemap.xml
+Sitemap: https://markhazleton.com/video-sitemap.xml

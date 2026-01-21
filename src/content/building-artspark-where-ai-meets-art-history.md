@@ -36,8 +36,8 @@ twitter:
   description: Discover how ArtSpark combines AI and art history, allowing users to interact with artworks through a platform built with .NET 9 and GPT-4 Vision.
   image: null
   imageAlt: "Building ArtSpark: Where AI Meets Art History - Mark Hazleton"
-youtubeUrl: null
-youtubeTitle: null
+youtubeUrl: https://www.youtube.com/watch?v=fXy1DSW2ee0
+youtubeTitle: "Deep Dive: WebSpark.ArtSpark"
 ---
 
 # Building ArtSpark: Where AI Meets Art History

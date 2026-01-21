@@ -18,6 +18,8 @@ type ArticleEntry = {
   subtitle?: string;
   author?: string;
   summary?: string;
+  youtubeUrl?: string | null;
+  youtubeTitle?: string | null;
 };
 
 export interface Post {
@@ -33,6 +35,8 @@ export interface Post {
   section: string;
   keywords: string;
   image?: string | null;
+  youtubeUrl?: string | null;
+  youtubeTitle?: string | null;
 }
 
 const rawArticles = articlesData as ArticleEntry[];
@@ -102,6 +106,8 @@ export const posts: Post[] = rawArticles
     section: entry.Section,
     keywords: entry.keywords,
     image: withBasePath(entry.img_src),
+    youtubeUrl: entry.youtubeUrl,
+    youtubeTitle: entry.youtubeTitle,
   }))
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 

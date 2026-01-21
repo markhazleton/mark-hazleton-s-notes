@@ -15,6 +15,7 @@ import { ArrowLeft, Calendar, Clock, Copy, Share2 } from 'lucide-react';
 import { Layout } from '@/components/Layout';
 import { BlogCard } from '@/components/BlogCard';
 import { TableOfContents } from '@/components/TableOfContents';
+import { YouTubeEmbed } from '@/components/YouTubeEmbed';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
 import { posts } from '@/lib/data/posts';
@@ -353,7 +354,41 @@ export default function BlogPost() {
     { name: post.title, url: `${SITE_URL}/blog/${post.slug}` },
   ]);
 
-  const schemas = [blogPostingSchema, breadcrumbSchema];
+  // Extract YouTube video ID from URL if present
+  const youtubeVideoId = useMemo(() => {
+    if (!post.youtubeUrl) return null;
+    const match = post.youtubeUrl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/);
+    return match ? match[1] : null;
+  }, [post.youtubeUrl]);
+
+  // Add VideoObject schema if YouTube video is present
+  const videoSchema = useMemo(() => {
+    if (!youtubeVideoId) return null;
+    
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: post.youtubeTitle || post.title,
+      description: post.excerpt,
+      thumbnailUrl: `https://i.ytimg.com/vi/${youtubeVideoId}/maxresdefault.jpg`,
+      uploadDate: post.date,
+      contentUrl: post.youtubeUrl,
+      embedUrl: `https://www.youtube.com/embed/${youtubeVideoId}`,
+      publisher: {
+        '@type': 'Person',
+        name: 'Mark Hazleton',
+        url: SITE_URL
+      },
+      author: {
+        '@type': 'Person',
+        name: 'Mark Hazleton'
+      }
+    };
+  }, [youtubeVideoId, post]);
+
+  const schemas = videoSchema 
+    ? [blogPostingSchema, breadcrumbSchema, videoSchema]
+    : [blogPostingSchema, breadcrumbSchema];
 
   return (
     <Layout>
@@ -415,6 +450,22 @@ export default function BlogPost() {
                 {post.excerpt}
               </p>
             </header>
+
+            {/* YouTube Video Embed */}
+            {youtubeVideoId && (
+              <div className="mb-12 animate-fade-up">
+                <YouTubeEmbed
+                  videoId={youtubeVideoId}
+                  title={post.youtubeTitle || post.title}
+                  className="max-w-4xl mx-auto"
+                />
+                {post.youtubeTitle && (
+                  <p className="text-sm text-muted-foreground text-center mt-4">
+                    {post.youtubeTitle}
+                  </p>
+                )}
+              </div>
+            )}
 
             {/* Content Layout */}
             <div className="lg:grid lg:grid-cols-[1fr_200px] lg:gap-8">

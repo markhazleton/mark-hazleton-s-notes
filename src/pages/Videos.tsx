@@ -34,6 +34,40 @@ export default function Videos() {
 
   const selectedCategory = parseCategoryFromSearch(location.search);
 
+  // Generate VideoObject structured data for all videos
+  const videoStructuredData = useMemo(() => {
+    if (status !== 'success' || allVideos.length === 0) return null;
+
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      itemListElement: allVideos.map((video, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: {
+          '@type': 'VideoObject',
+          '@id': video.videoUrl,
+          name: video.title,
+          description: video.description,
+          thumbnailUrl: video.thumbnailUrl,
+          uploadDate: video.publishedAt,
+          contentUrl: video.videoUrl,
+          embedUrl: `https://www.youtube.com/embed/${video.id}`,
+          duration: video.duration ? `PT${video.duration}S` : undefined,
+          publisher: {
+            '@type': 'Person',
+            name: 'Mark Hazleton',
+            url: 'https://markhazleton.com'
+          },
+          author: {
+            '@type': 'Person',
+            name: video.channelTitle
+          }
+        }
+      }))
+    };
+  }, [status, allVideos]);
+
   const filteredVideos = useMemo(() => {
     let result = allVideos;
 
@@ -92,6 +126,15 @@ export default function Videos() {
         keywords="Mark Hazleton videos, cloud architecture tutorials, Azure tutorials, .NET videos, system design tutorials"
         canonical="/videos"
       />
+      
+      {/* VideoObject Structured Data for Google Search */}
+      {videoStructuredData && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoStructuredData) }}
+        />
+      )}
+      
       <section className="section">
         <div className="container-wide">
           {/* Header */}

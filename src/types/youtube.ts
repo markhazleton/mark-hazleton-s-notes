@@ -6,6 +6,8 @@ export interface YouTubeVideo {
   thumbnailUrl: string;
   videoUrl: string;
   channelTitle: string;
+  duration?: number; // Duration in seconds
+  viewCount?: number; // View count
 }
 
 export interface YouTubeChannel {
