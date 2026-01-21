@@ -5,7 +5,14 @@
     <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Jan 2026 00:30:04 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Jan 2026 02:19:26 GMT</lastBuildDate>
+  <item>
+    <title>Safely Launching a New MarkHazleton.com</title>
+    <link>https://markhazleton.com/blog/safely-launching-new-markhazleton-com</link>
+    <guid>https://markhazleton.com/blog/safely-launching-new-markhazleton-com</guid>
+    <pubDate>Tue, 20 Jan 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[A detailed account of migrating MarkHazleton.com to a modern React-based static site, solving critical SEO crawlability issues, implementing build tracking, and safely switching production domains between Azure Static Web Apps.]]></description>
+  </item>
   <item>
     <title>Building MuseumSpark - Why Context Matters More Than the Latest LLM</title>
     <link>https://markhazleton.com/blog/building-museumspark-context-matters-llm</link>

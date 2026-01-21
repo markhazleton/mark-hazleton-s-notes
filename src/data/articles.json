@@ -2732,5 +2732,33 @@
     "twitter": {},
     "youtubeUrl": null,
     "youtubeTitle": null
+  },
+  {
+    "id": 98,
+    "Section": "Case Studies",
+    "slug": "safely-launching-new-markhazleton-com",
+    "name": "Safely Launching a New MarkHazleton.com",
+    "contentFile": "safely-launching-new-markhazleton-com.md",
+    "description": "Solving SEO crawlability, implementing build tracking, and migrating production domains safely on Azure Static Web Apps.",
+    "keywords": "static site deployment, SEO crawlability, Azure Static Web Apps, React pre-rendering, Screaming Frog, build versioning, domain migration",
+    "img_src": "/img/ArgostoliGreeceBeach.jpg",
+    "lastmod": "2026-01-20",
+    "publishedDate": "2026-01-20",
+    "estimatedReadTime": 12,
+    "changefreq": "monthly",
+    "source": "/src/content/safely-launching-new-markhazleton-com.md",
+    "subtitle": "Technical Challenges and Solutions in Modern Static Site Deployment",
+    "author": "Mark Hazleton",
+    "summary": "A detailed account of migrating MarkHazleton.com to a modern React-based static site, solving critical SEO crawlability issues, implementing build tracking, and safely switching production domains between Azure Static Web Apps.",
+    "conclusionTitle": "Lessons Learned",
+    "conclusionSummary": "Modern static sites require careful attention to pre-rendering, crawler compatibility, and deployment validation. Simple solutions like hidden navigation fallbacks and build versioning can prevent production issues.",
+    "conclusionKeyHeading": "Bottom Line",
+    "conclusionKeyText": "Pre-rendered content means nothing if crawlers can't parse it. Always validate with actual SEO tools before going live.",
+    "conclusionText": "Building a beautiful, fast site is only half the battle. Ensuring search engines can crawl it, tracking deployments accurately, and migrating safely are equally critical. Test with real tools, implement fallbacks, and always have a way to verify what's in production.",
+    "seo": {},
+    "og": {},
+    "twitter": {},
+    "youtubeUrl": null,
+    "youtubeTitle": null
   }
 ]

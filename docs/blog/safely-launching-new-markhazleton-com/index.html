@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mark Hazleton" />
+    
+    <!-- RSS Feed -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Mark Hazleton's Blog"
+      href="/feed.xml"
+    />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Preconnect to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link rel="preconnect" href="https://api.allorigins.win" />
+
+    <!-- DNS prefetch for faster resolution -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8GVZNDH0B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L8GVZNDH0B');
+    </script>
+
+    <title>Safely Launching a New MarkHazleton.com | Mark Hazleton</title><meta name="description" content="A detailed account of migrating MarkHazleton.com to a modern React-based static site, solving critical SEO crawlability issues, implementing build tracking, and safely switching production domains between Azure Static Web Apps."><meta name="keywords" content="static site deployment, SEO crawlability, Azure Static Web Apps, React pre-rendering, Screaming Frog, build versioning, domain migration"><meta property="og:type" content="article"><meta property="og:title" content="Safely Launching a New MarkHazleton.com | Mark Hazleton"><meta property="og:description" content="A detailed account of migrating MarkHazleton.com to a modern React-based static site, solving critical SEO crawlability issues, implementing build tracking, and safely switching production domains between Azure Static Web Apps."><meta property="og:url" content="https://markhazleton.com/blog/safely-launching-new-markhazleton-com"><meta property="og:site_name" content="Mark Hazleton"><meta property="og:image" content="https://markhazleton.com/img/ArgostoliGreeceBeach.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Safely Launching a New MarkHazleton.com | Mark Hazleton"><meta name="twitter:description" content="A detailed account of migrating MarkHazleton.com to a modern React-based static site, solving critical SEO crawlability issues, implementing build tracking, and safely switching production domains between Azure Static Web Apps."><meta name="twitter:image" content="https://markhazleton.com/img/ArgostoliGreeceBeach.jpg"><link rel="canonical" href="https://markhazleton.com/blog/safely-launching-new-markhazleton-com"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Safely Launching a New MarkHazleton.com","description":"A detailed account of migrating MarkHazleton.com to a modern React-based static site, solving critical SEO crawlability issues, implementing build tracking, and safely switching production domains between Azure Static Web Apps.","author":{"@type":"Person","name":"Mark Hazleton","url":"https://markhazleton.com"},"datePublished":"2026-01-20","publisher":{"@type":"Person","name":"Mark Hazleton"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://markhazleton.com/blog/safely-launching-new-markhazleton-com"},"dateModified":"2026-01-20","image":"https://markhazleton.com/img/ArgostoliGreeceBeach.jpg","keywords":"static site deployment, SEO crawlability, Azure Static Web Apps, React pre-rendering, Screaming Frog, build versioning, domain migration","articleSection":"Case Studies","timeRequired":"PT12M"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://markhazleton.com"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://markhazleton.com/blog"},{"@type":"ListItem","position":3,"name":"Safely Launching a New MarkHazleton.com","item":"https://markhazleton.com/blog/safely-launching-new-markhazleton-com"}]}</script>
+    <script type="module" crossorigin src="/assets/site.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/site.css">
+  </head>
+  <body>
+    <div id="root"><div class="min-h-screen flex flex-col"><header class="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border"><div class="container-wide"><div class="flex h-16 items-center justify-between"><a class="font-heading text-xl font-semibold text-foreground hover:text-primary transition-colors" href="/" data-discover="true">Mark Hazleton</a><nav class="hidden md:flex items-center gap-1"><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/" data-discover="true">Home</a><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/blog" data-discover="true">Blog</a><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/projects" data-discover="true">Projects</a><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/github" data-discover="true">GitHub</a><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/videos" data-discover="true">Videos</a><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/contact" data-discover="true">Contact</a><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10 ml-2" aria-label="Toggle dark mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon h-4 w-4" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button></nav><div class="flex items-center gap-2 md:hidden"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10" aria-label="Toggle dark mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon h-4 w-4" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10" aria-label="Toggle menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-5 w-5" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></div></div></header><main class="flex-1"><article class="section"><div class="container-wide"><div class="max-w-4xl mx-auto"><a class="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-8" href="/blog" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left h-4 w-4 mr-2" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>Back to blog</a><header class="mb-8 animate-fade-up"><div class="flex flex-wrap gap-2 mb-4"><a class="tag-pill hover:tag-pill-active" href="/blog?tag=Case%20Studies" data-discover="true">Case Studies</a></div><h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">Safely Launching a New MarkHazleton.com</h1><div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6"><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>January 20, 2026</span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>12 min<!-- --> read</span><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 lucide-share-2 h-4 w-4 mr-2" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>Share</button></div><p class="text-xl text-muted-foreground leading-relaxed">A detailed account of migrating MarkHazleton.com to a modern React-based static site, solving critical SEO crawlability issues, implementing build tracking, and safely switching production domains between Azure Static Web Apps.</p></header><div class="lg:grid lg:grid-cols-[1fr_200px] lg:gap-8"><div class="prose-blog"><h1>Safely Launching a New MarkHazleton.com</h1>
+<h2 id="the-challenge-when-your-beautiful-site-is-invisible-to-crawlers">The Challenge: When Your Beautiful Site Is Invisible to Crawlers</h2>
+<p>The new site looked perfect. React + Vite for blazing-fast performance. Pre-rendered static HTML for every page. Clean URLs. A proper sitemap. Everything Google&#x27;s documentation said to do.</p>
+<p>Then I ran Screaming Frog SEO Spider against it. The homepage showed <strong>0 outlinks</strong>. Zero. As if the navigation didn&#x27;t exist.</p>
+<p>This is the story of rebuilding MarkHazleton.com with modern tools, discovering a critical SEO issue hours before launch, and implementing solutions that work for both human visitors and non-JavaScript crawlers.</p>
+<h2 id="why-rework-the-site">Why Rework the Site?</h2>
+<p>The old site worked. It had content. It ranked well. But every time I looked at it, something felt off.</p>
+<p><strong>It felt like a marketing sales pitch.</strong> Every paragraph seemed designed to sell something rather than share something. I didn&#x27;t want to convince anyone of anything—I just wanted to tell my developer story in a clean, easy-to-read way.</p>
+<h3 id="saying-goodbye-to-pug">Saying Goodbye to Pug</h3>
+<p>The old site was built with Pug (formerly Jade) templates. For those unfamiliar, Pug uses indentation-based syntax that compiles to HTML:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-pug">.article
+  h1.title= article.title
+  .content
+    p= article.description</code></pre></div>
+<p>Pug was fine when I set it up years ago. But editing content meant navigating template syntax, understanding indentation rules, and keeping data separate from presentation. Want to update an article? Edit a JSON file, maybe a Pug template, remember the build process, hope nothing broke.</p>
+<h3 id="the-markdown-revelation">The Markdown Revelation</h3>
+<p>I wanted to write like a developer, not maintain a template system. Markdown with frontmatter metadata solved this perfectly:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-markdown">---
+title: My Article Title
+publishedDate: 2026-01-20
+description: This is what the article is about
+---
+
+# My Article Title
+
+Actual content goes here. No template syntax. No build system quirks.
+Just write.</code></pre></div>
+<p>All the metadata at the top of the document. The content below in clean, readable Markdown. Edit in any text editor. Preview anywhere. Git diffs that make sense.</p>
+<p>This isn&#x27;t revolutionary—it&#x27;s what most modern static site generators use. But for someone who&#x27;d been maintaining a custom Pug-based system for years, it felt like coming home.</p>
+<h3 id="the-real-goal">The Real Goal</h3>
+<p>I wanted a site that felt like me:</p>
+<ul>
+<li><strong>Direct</strong> - Say what I mean without marketing speak</li>
+<li><strong>Technical</strong> - Show real code, real problems, real solutions</li>
+<li><strong>Honest</strong> - Document failures alongside successes</li>
+<li><strong>Maintainable</strong> - Easy to update without remembering custom build quirks</li>
+</ul>
+<p>The React + Vite + Markdown stack delivered all of this. The site looks cleaner, reads better, and—most importantly—I actually want to write for it now.</p>
+<h2 id="the-architecture-modern-static-site-with-react">The Architecture: Modern Static Site with React</h2>
+<h3 id="the-build-process">The Build Process</h3>
+<p>The site uses a sophisticated pre-rendering approach:</p>
+<ol>
+<li><strong>Vite</strong> builds the React application for optimal performance</li>
+<li><strong>React Router</strong> handles client-side routing</li>
+<li><strong>Custom pre-render script</strong> generates static HTML for all routes</li>
+<li><strong>Azure Static Web Apps</strong> hosts everything with automatic deployments</li>
+</ol>
+<p>The pre-render script crawls every route and saves fully-rendered HTML:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-javascript">// Simplified version of the prerender process
+const routes = [&#x27;/&#x27;, &#x27;/blog&#x27;, &#x27;/projects&#x27;, &#x27;/github&#x27;, &#x27;/videos&#x27;, &#x27;/contact&#x27;];
+
+for (const route of routes) {
+  const html = await renderToString(&lt;App location={route} /&gt;);
+  await fs.writeFile(`docs${route}/index.html`, html);
+}</code></pre></div>
+<p>Every page exists as a complete, pre-rendered HTML file. Perfect for crawlers, right?</p>
+<h2 id="the-problem-crawlers-couldn-t-see-the-links">The Problem: Crawlers Couldn&#x27;t See the Links</h2>
+<h3 id="discovery-with-screaming-frog">Discovery with Screaming Frog</h3>
+<p>When I tested the staging site with Screaming Frog SEO Spider (a tool that crawls websites the way Google does), it only discovered the homepage. None of the navigation links. None of the blog posts. Just one page.</p>
+<p>Looking at the HTML source, all the links were there:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-html">&lt;a href=&quot;/blog&quot; data-discover=&quot;true&quot;&gt;Blog&lt;/a&gt;
+&lt;a href=&quot;/projects&quot; data-discover=&quot;true&quot;&gt;Projects&lt;/a&gt;
+&lt;a href=&quot;/github&quot; data-discover=&quot;true&quot;&gt;GitHub&lt;/a&gt;</code></pre></div>
+<p>But Screaming Frog showed 0 outlinks from the homepage.</p>
+<h3 id="root-cause-analysis">Root Cause Analysis</h3>
+<p>The issue wasn&#x27;t the links themselves—it was how the HTML was structured. React&#x27;s <div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>renderToString</code></pre></div> outputs everything on a single, extremely long line. The entire <div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>&lt;div id=&quot;root&quot;&gt;</code></pre></div> content with all navigation, all links, all content—one massive line of minified HTML.</p>
+<p>While browsers handle this fine, some crawlers struggle to parse HTML that isn&#x27;t properly formatted. Screaming Frog was failing to extract links from this compressed structure, especially from the homepage where the initial React shell lived.</p>
+<p><strong>The critical insight:</strong> Pre-rendered HTML means nothing if crawlers can&#x27;t parse it.</p>
+<h2 id="the-solutions-making-crawlers-happy">The Solutions: Making Crawlers Happy</h2>
+<h3 id="solution-1-crawler-friendly-fallback-navigation">Solution 1: Crawler-Friendly Fallback Navigation</h3>
+<p>I added a hidden navigation block at the end of the HTML template with plain, simple links:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-html">&lt;!-- Crawler-friendly navigation links (hidden from visual browsers) --&gt;
+&lt;nav aria-hidden=&quot;true&quot; style=&quot;position:absolute;left:-9999px;top:-9999px;&quot;&gt;
+  &lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;/blog&quot;&gt;Blog&lt;/a&gt;
+  &lt;a href=&quot;/projects&quot;&gt;Projects&lt;/a&gt;
+  &lt;a href=&quot;/github&quot;&gt;GitHub&lt;/a&gt;
+  &lt;a href=&quot;/videos&quot;&gt;Videos&lt;/a&gt;
+  &lt;a href=&quot;/contact&quot;&gt;Contact&lt;/a&gt;
+  &lt;a href=&quot;/sitemap&quot;&gt;Site Map&lt;/a&gt;
+&lt;/nav&gt;</code></pre></div>
+<p>This navigation:</p>
+<ul>
+<li>Is positioned off-screen (invisible to sighted users)</li>
+<li>Uses <div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>aria-hidden=&quot;true&quot;</code></pre></div> (invisible to screen readers)</li>
+<li>Contains plain HTML links with no React attributes</li>
+<li>Lives outside the React root element</li>
+<li>Provides a fallback for crawlers that struggle with minified HTML</li>
+</ul>
+<p><strong>Result:</strong> Screaming Frog immediately found all links and started crawling the entire site.</p>
+<h3 id="solution-2-html-sitemap-page">Solution 2: HTML Sitemap Page</h3>
+<p>I created a user-friendly HTML sitemap at <div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>/sitemap</code></pre></div> that lists every page:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-typescript">// Sitemap page component structure
+&lt;Layout&gt;
+  &lt;section&gt;
+    &lt;h2&gt;Main Pages&lt;/h2&gt;
+    &lt;nav&gt;
+      {mainPages.map(page =&gt; &lt;Link to={page.path}&gt;{page.label}&lt;/Link&gt;)}
+    &lt;/nav&gt;
+
+    &lt;h2&gt;Projects ({projects.length})&lt;/h2&gt;
+    {projects.map(project =&gt; &lt;Link to={`/projects/${project.slug}`}&gt;...)}
+
+    &lt;h2&gt;Blog Posts by Section ({posts.length})&lt;/h2&gt;
+    {Object.entries(postsBySection).map(([section, posts]) =&gt; (
+      &lt;div&gt;
+        &lt;h3&gt;{section} ({posts.length})&lt;/h3&gt;
+        {posts.map(post =&gt; &lt;Link to={`/blog/${post.slug}`}&gt;...)}
+      &lt;/div&gt;
+    ))}
+  &lt;/section&gt;
+&lt;/Layout&gt;</code></pre></div>
+<p>This provides:</p>
+<ul>
+<li>A single page with links to all content</li>
+<li>Human-readable structure grouped by category</li>
+<li>Fallback for crawlers that need explicit discovery</li>
+<li>User-friendly navigation aid</li>
+</ul>
+<h3 id="solution-3-fixed-azure-static-web-apps-routing">Solution 3: Fixed Azure Static Web Apps Routing</h3>
+<p>The initial <div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>staticwebapp.config.json</code></pre></div> had wildcard rewrite rules that intercepted requests:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-json">// BEFORE - This broke pre-rendered pages
+{
+  &quot;route&quot;: &quot;/blog/*&quot;,
+  &quot;rewrite&quot;: &quot;/index.html&quot;
+}</code></pre></div>
+<p>This meant requests to <div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>/blog</code></pre></div> were being rewritten to serve the root SPA shell instead of the pre-rendered <div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>/blog/index.html</code></pre></div> file. Crawlers never saw the actual content.</p>
+<p><strong>The fix:</strong> Remove the wildcard rewrites and let Azure serve the static files:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-json">// AFTER - Let static files be served naturally
+{
+  &quot;navigationFallback&quot;: {
+    &quot;rewrite&quot;: &quot;/index.html&quot;,
+    &quot;exclude&quot;: [&quot;/assets/*&quot;, &quot;/img/*&quot;, &quot;/*.{json,xml,txt,ico,png,jpg,svg}&quot;]
+  }
+}</code></pre></div>
+<p>Now the <div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>navigationFallback</code></pre></div> only triggers for actual 404s, while pre-rendered HTML files are served directly.</p>
+<h2 id="build-tracking-knowing-what-s-in-production">Build Tracking: Knowing What&#x27;s in Production</h2>
+<h3 id="the-deployment-visibility-problem">The Deployment Visibility Problem</h3>
+<p>When you&#x27;re testing a staging site versus production, you need to know exactly which build you&#x27;re looking at. Version numbers in <div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>package.json</code></pre></div> don&#x27;t help—they don&#x27;t auto-increment on every deployment.</p>
+<h3 id="auto-incrementing-build-versions">Auto-Incrementing Build Versions</h3>
+<p>I created a build info system that:</p>
+<ol>
+<li><strong>Generates a version on every build</strong> with timestamp</li>
+<li><strong>Auto-increments</strong> the build number</li>
+<li><strong>Displays in the footer</strong> on every page</li>
+</ol>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-javascript">// src/scripts/generate-build-info.mjs
+let buildInfo = { version: 0, buildTime: null };
+
+if (fs.existsSync(buildInfoPath)) {
+  buildInfo = JSON.parse(fs.readFileSync(buildInfoPath, &#x27;utf8&#x27;));
+}
+
+buildInfo.version = (buildInfo.version || 0) + 1;
+buildInfo.buildTime = new Date().toISOString();
+
+fs.writeFileSync(buildInfoPath, JSON.stringify(buildInfo, null, 2));</code></pre></div>
+<p>The footer now shows:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>© 2026 Mark Hazleton. Built with curiosity and caffeine.
+Build v5 • Jan 20, 2026, 6:23 PM CST</code></pre></div>
+<p>This solves multiple problems:</p>
+<ul>
+<li>Confirms deployments are live</li>
+<li>Identifies which build is in production vs. staging</li>
+<li>Provides audit trail for debugging</li>
+<li>Validates cache invalidation</li>
+</ul>
+<h2 id="domain-migration-strategy">Domain Migration Strategy</h2>
+<h3 id="the-scenario">The Scenario</h3>
+<ul>
+<li><strong>Old site:</strong> Running on Azure Static Web App A with custom domain markhazleton.com</li>
+<li><strong>New site:</strong> Built and tested on Azure Static Web App B (staging URL)</li>
+<li><strong>Goal:</strong> Switch the production domain to the new site with zero downtime</li>
+</ul>
+<h3 id="safe-migration-steps">Safe Migration Steps</h3>
+<p><strong>Phase 1: Preparation</strong></p>
+<ol>
+<li>Verify DNS TXT record for domain validation is present</li>
+<li>Test new site thoroughly on staging URL</li>
+<li>Run Screaming Frog crawl to verify SEO</li>
+<li>Check build version in footer to confirm latest deployment</li>
+</ol>
+<p><strong>Phase 2: Domain Transfer</strong></p>
+<ol>
+<li>Remove custom domain from OLD Static Web App in Azure Portal</li>
+<li>Immediately add custom domain to NEW Static Web App</li>
+<li>Azure provides DNS validation requirements</li>
+<li>Update DNS records if needed (usually CNAME stays the same)</li>
+<li>Azure auto-provisions SSL certificate</li>
+</ol>
+<p><strong>Phase 3: Validation</strong></p>
+<ol>
+<li>Wait for DNS propagation (5-30 minutes typically)</li>
+<li>Visit <a href="https://markhazleton.com">https://markhazleton.com</a></li>
+<li>Check footer build version to confirm new site</li>
+<li>Run Screaming Frog against production domain</li>
+<li>Monitor for any 404s or issues</li>
+</ol>
+<p><strong>Timeline:</strong> Total switchover typically 30-45 minutes including DNS propagation.</p>
+<h2 id="exposing-data-apis">Exposing Data APIs</h2>
+<p>The new site needed to expose the same JSON data files at the root level for external consumption, I have a few applications that needed these routes to work:</p>
+<ul>
+<li><div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>articles.json</code></pre></div> - All blog post metadata</li>
+<li><div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>projects.json</code></pre></div> - All project information</li>
+<li><div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>repositories.json</code></pre></div> - GitHub activity data</li>
+</ul>
+<p>These files exist in <div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>/src/data/</code></pre></div> during development, so I updated the publish script:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-javascript">// Copy data files to docs root for public API access
+const dataFiles = [&#x27;articles.json&#x27;, &#x27;projects.json&#x27;, &#x27;repositories.json&#x27;];
+
+for (const file of dataFiles) {
+  const sourcePath = path.join(rootDir, &#x27;src/data&#x27;, file);
+  const destPath = path.join(docsDir, file);
+  
+  if (fs.existsSync(sourcePath)) {
+    fs.copyFileSync(sourcePath, destPath);
+    console.log(`Copied ${file} to /docs root`);
+  } else if (fs.existsSync(path.join(docsDir, &#x27;data&#x27;, file))) {
+    fs.copyFileSync(
+      path.join(docsDir, &#x27;data&#x27;, file),
+      destPath
+    );
+  }
+}</code></pre></div>
+<p>Now external tools can access:</p>
+<ul>
+<li><div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>https://markhazleton.com/articles.json</code></pre></div></li>
+<li><div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>https://markhazleton.com/projects.json</code></pre></div></li>
+<li><div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>https://markhazleton.com/repositories.json</code></pre></div></li>
+</ul>
+<h2 id="key-lessons-learned">Key Lessons Learned</h2>
+<h3 id="1-test-with-real-seo-tools">1. Test with Real SEO Tools</h3>
+<p>Google&#x27;s documentation says pre-rendered HTML is enough for SEO. But real crawlers (like Screaming Frog) sometimes struggle with minified output. Test with actual tools, not assumptions.</p>
+<h3 id="2-always-provide-fallbacks">2. Always Provide Fallbacks</h3>
+<p>The hidden navigation fallback seems like overkill—until it isn&#x27;t. It&#x27;s invisible to users, helps crawlers that struggle with complex HTML, and takes minutes to implement.</p>
+<h3 id="3-make-deployments-verifiable">3. Make Deployments Verifiable</h3>
+<p>Build numbers in the footer solved countless &quot;Is this the latest version?&quot; questions. It&#x27;s visible to everyone, updates automatically, and provides clear audit trails.</p>
+<h3 id="4-routing-configuration-matters">4. Routing Configuration Matters</h3>
+<p>Azure Static Web Apps routing rules can override your carefully pre-rendered content. Understand the difference between rewrites (which replace content) and redirects (which change URLs).</p>
+<h3 id="5-domain-migration-is-low-risk">5. Domain Migration Is Low-Risk</h3>
+<p>Switching custom domains between Azure Static Web Apps is straightforward:</p>
+<ul>
+<li>Remove from old</li>
+<li>Add to new</li>
+<li>Wait for DNS</li>
+<li>Verify with build version</li>
+</ul>
+<p>The process is designed for zero-downtime migrations.</p>
+<h2 id="the-technical-stack">The Technical Stack</h2>
+<p><strong>Frontend</strong></p>
+<ul>
+<li>React 18 with TypeScript</li>
+<li>Vite for build tooling</li>
+<li>React Router for routing</li>
+<li>Tailwind CSS for styling</li>
+<li>shadcn/ui component library</li>
+</ul>
+<p><strong>Build Process</strong></p>
+<ul>
+<li>Custom pre-render script for static HTML generation</li>
+<li>Automated SEO asset generation (sitemap.xml, robots.txt, feed.xml)</li>
+<li>Build info tracking with auto-increment versioning</li>
+<li>GitHub Actions for CI/CD</li>
+</ul>
+<p><strong>Hosting</strong></p>
+<ul>
+<li>Azure Static Web Apps</li>
+<li>Custom domain with auto SSL</li>
+<li>Global CDN distribution</li>
+<li>Automatic deployments from GitHub</li>
+</ul>
+<p><strong>SEO Infrastructure</strong></p>
+<ul>
+<li>Pre-rendered HTML for all routes</li>
+<li>XML sitemap with all pages</li>
+<li>RSS feed for blog posts</li>
+<li>Crawler-friendly fallback navigation</li>
+<li>HTML sitemap page</li>
+<li>Structured data (JSON-LD)</li>
+<li>Open Graph and Twitter Cards</li>
+</ul>
+<h2 id="validation-results">Validation Results</h2>
+<p>After implementing all fixes:</p>
+<p><strong>Screaming Frog Results</strong></p>
+<ul>
+<li>✅ Homepage shows all navigation links</li>
+<li>✅ Successfully crawls entire site structure</li>
+<li>✅ Discovers all blog posts and projects</li>
+<li>✅ Validates all internal links</li>
+<li>✅ Hits 500 URL limit (free version) confirming full crawl</li>
+</ul>
+<p><strong>Build Tracking</strong></p>
+<ul>
+<li>✅ Footer shows current build version</li>
+<li>✅ Confirms deployment is live</li>
+<li>✅ Easy to verify staging vs. production</li>
+</ul>
+<p><strong>Performance</strong></p>
+<ul>
+<li>✅ All pages pre-rendered as static HTML</li>
+<li>✅ Sub-second page loads globally</li>
+<li>✅ Perfect Lighthouse scores possible</li>
+</ul>
+<h2 id="conclusion-modern-doesn-t-mean-invisible">Conclusion: Modern Doesn&#x27;t Mean Invisible</h2>
+<p>Building a modern, fast, React-based site is easier than ever with tools like Vite and Azure Static Web Apps. But modern architecture creates new challenges:</p>
+<ul>
+<li>Pre-rendered HTML doesn&#x27;t guarantee crawler compatibility</li>
+<li>Minified output can break link extraction</li>
+<li>Routing configuration can override static files</li>
+<li>You need explicit validation of what&#x27;s in production</li>
+</ul>
+<p>The solutions aren&#x27;t complex:</p>
+<ul>
+<li>Simple HTML fallbacks for crawler compatibility</li>
+<li>User-friendly HTML sitemaps</li>
+<li>Correct hosting configuration</li>
+<li>Build version tracking</li>
+</ul>
+<p>Before going live with any static site:</p>
+<ol>
+<li>Test with actual SEO tools (Screaming Frog, Google Search Console)</li>
+<li>Verify the homepage shows outlinks</li>
+<li>Check that all major pages are discoverable</li>
+<li>Implement build tracking for deployment verification</li>
+<li>Have a clear domain migration plan</li>
+</ol>
+<p>The goal isn&#x27;t just a site that works—it&#x27;s a site that works for everyone: users, search engines, and your future self when debugging production issues.</p>
+<hr/>
+<p><em>The new MarkHazleton.com is live, fully crawlable, and tracked with build v5. You can verify the implementation by viewing the page source and checking the footer. Everything in this article is running in production right now.</em></p></div><aside class="hidden lg:block"><div class="sticky top-24"><nav class="paper-card p-4"><h4 class="font-heading font-semibold text-sm text-foreground mb-3">On this page</h4><ul class="space-y-2"><li style="padding-left:0px"><a href="#the-challenge-when-your-beautiful-site-is-invisible-to-crawlers" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Challenge: When Your Beautiful Site Is Invisible to Crawlers</a></li><li style="padding-left:0px"><a href="#why-rework-the-site" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Why Rework the Site?</a></li><li style="padding-left:12px"><a href="#saying-goodbye-to-pug" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Saying Goodbye to Pug</a></li><li style="padding-left:12px"><a href="#the-markdown-revelation" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Markdown Revelation</a></li><li style="padding-left:12px"><a href="#the-real-goal" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Real Goal</a></li><li style="padding-left:0px"><a href="#the-architecture-modern-static-site-with-react" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Architecture: Modern Static Site with React</a></li><li style="padding-left:12px"><a href="#the-build-process" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Build Process</a></li><li style="padding-left:0px"><a href="#the-problem-crawlers-couldn-t-see-the-links" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Problem: Crawlers Couldn&#x27;t See the Links</a></li><li style="padding-left:12px"><a href="#discovery-with-screaming-frog" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Discovery with Screaming Frog</a></li><li style="padding-left:12px"><a href="#root-cause-analysis" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Root Cause Analysis</a></li><li style="padding-left:0px"><a href="#the-solutions-making-crawlers-happy" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Solutions: Making Crawlers Happy</a></li><li style="padding-left:12px"><a href="#solution-1-crawler-friendly-fallback-navigation" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Solution 1: Crawler-Friendly Fallback Navigation</a></li><li style="padding-left:12px"><a href="#solution-2-html-sitemap-page" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Solution 2: HTML Sitemap Page</a></li><li style="padding-left:12px"><a href="#solution-3-fixed-azure-static-web-apps-routing" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Solution 3: Fixed Azure Static Web Apps Routing</a></li><li style="padding-left:0px"><a href="#build-tracking-knowing-what-s-in-production" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Build Tracking: Knowing What&#x27;s in Production</a></li><li style="padding-left:12px"><a href="#the-deployment-visibility-problem" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Deployment Visibility Problem</a></li><li style="padding-left:12px"><a href="#auto-incrementing-build-versions" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Auto-Incrementing Build Versions</a></li><li style="padding-left:0px"><a href="#domain-migration-strategy" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Domain Migration Strategy</a></li><li style="padding-left:12px"><a href="#the-scenario" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Scenario</a></li><li style="padding-left:12px"><a href="#safe-migration-steps" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Safe Migration Steps</a></li><li style="padding-left:0px"><a href="#exposing-data-apis" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Exposing Data APIs</a></li><li style="padding-left:0px"><a href="#key-lessons-learned" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Key Lessons Learned</a></li><li style="padding-left:12px"><a href="#1-test-with-real-seo-tools" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">1. Test with Real SEO Tools</a></li><li style="padding-left:12px"><a href="#2-always-provide-fallbacks" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">2. Always Provide Fallbacks</a></li><li style="padding-left:12px"><a href="#3-make-deployments-verifiable" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">3. Make Deployments Verifiable</a></li><li style="padding-left:12px"><a href="#4-routing-configuration-matters" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">4. Routing Configuration Matters</a></li><li style="padding-left:12px"><a href="#5-domain-migration-is-low-risk" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">5. Domain Migration Is Low-Risk</a></li><li style="padding-left:0px"><a href="#the-technical-stack" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Technical Stack</a></li><li style="padding-left:0px"><a href="#validation-results" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Validation Results</a></li><li style="padding-left:0px"><a href="#conclusion-modern-doesn-t-mean-invisible" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Conclusion: Modern Doesn&#x27;t Mean Invisible</a></li></ul></nav></div></aside></div></div></div></article><section class="section bg-muted/30 border-t border-border"><div class="container-wide"><h2 class="font-heading text-2xl font-semibold text-foreground mb-8">Related posts</h2><div class="grid gap-6 md:grid-cols-3"><a class="group block paper-card p-6 transition-all duration-300 hover:-translate-y-1" href="/blog/test-driving-githubs-spec-kit" data-discover="true"><div class="mb-4 overflow-hidden rounded-md border border-border"><img src="/img/Evolution-vs-Revolution-in-history .png" alt="Test Driving GitHub&#x27;s Spec Kit: AI-Maintained Documentation That Stays Accurate" loading="lazy" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"/></div><div class="flex flex-wrap gap-1.5 mb-3"><span class="tag-pill">Case Studies</span></div><h3 class="font-heading text-xl font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Test Driving GitHub&#x27;s Spec Kit: AI-Maintained Documentation That Stays Accurate</h3><p class="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">Specs always become outdated because humans won&#x27;t maintain them post-implementation. GitHub&#x27;s Spec Kit solves this with AI agents in the feedback loop: when you fix bugs and tweak implementations, you tell the agent to update the spec. Documentation evolves to match reality. Real-world case: 7 hours implementation + 20 minutes documentation sync = zero documentation debt.</p><div class="flex items-center gap-4 text-sm text-muted-foreground"><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Nov 2, 2025</span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>15 min</span></div></a><a class="group block paper-card p-6 transition-all duration-300 hover:-translate-y-1" href="/blog/taking-microsoft-copilot-studio-for-a-test-drive" data-discover="true"><div class="mb-4 overflow-hidden rounded-md border border-border"><img src="/img/ArgostoliGreeceBeach.jpg" alt="Exploring Microsoft Copilot Studio" loading="lazy" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"/></div><div class="flex flex-wrap gap-1.5 mb-3"><span class="tag-pill">Case Studies</span></div><h3 class="font-heading text-xl font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Exploring Microsoft Copilot Studio</h3><p class="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">In this article, we take a deep dive into Microsoft Copilot Studio, a cutting-edge platform that allows users to create personalized AI chatbots. Led by Mark Hazleton, we explore the features and functionalities of this innovative tool and its potential to transform digital interactions.</p><div class="flex items-center gap-4 text-sm text-muted-foreground"><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Jul 20, 2025</span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>5 min</span></div></a><a class="group block paper-card p-6 transition-all duration-300 hover:-translate-y-1" href="/blog/building-teachspark-ai-powered-educational-technology-for-teachers" data-discover="true"><div class="mb-4 overflow-hidden rounded-md border border-border"><img src="/img/MurdoHighlandCoo.jpg" alt="Building TeachSpark: AI-Powered Educational Technology for Teachers" loading="lazy" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"/></div><div class="flex flex-wrap gap-1.5 mb-3"><span class="tag-pill">Case Studies</span></div><h3 class="font-heading text-xl font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Building TeachSpark: AI-Powered Educational Technology for Teachers</h3><p class="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">In the ever-evolving landscape of educational technology, the integration of artificial intelligence offers unprecedented opportunities. TeachSpark is a pioneering platform designed to empower teachers by generating Common Core-aligned worksheets using advanced AI capabilities. This article delves into the journey of creating TeachSpark, exploring its technical architecture and providing practical code examples.</p><div class="flex items-center gap-4 text-sm text-muted-foreground"><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Jul 3, 2025</span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>5 min</span></div></a></div></div></section></main><footer class="border-t border-border bg-card"><div class="container-wide py-12"><div class="grid gap-8 md:grid-cols-3"><div><h3 class="font-heading text-lg font-semibold mb-3">Mark Hazleton</h3><p class="text-sm text-muted-foreground leading-relaxed">Technical Solutions Architect helping teams build resilient, scalable systems. Writing about cloud architecture, integration patterns, and engineering practices.</p></div><div><h3 class="font-heading text-lg font-semibold mb-3">Quick Links</h3><ul class="space-y-2 text-sm"><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/" data-discover="true">Home</a></li><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/blog" data-discover="true">Blog</a></li><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/projects" data-discover="true">Projects</a></li><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/github" data-discover="true">GitHub</a></li><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/videos" data-discover="true">Videos</a></li><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/contact" data-discover="true">Contact</a></li></ul></div><div><h3 class="font-heading text-lg font-semibold mb-3">Stay Connected</h3><p class="text-sm text-muted-foreground mb-4">Occasional thoughts on architecture and engineering.</p><div class="flex items-center gap-3"><a href="https://github.com/markhazleton" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://linkedin.com/in/markhazleton" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin h-5 w-5" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></div></div></div><div class="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground"><p>© <span>2026</span> <!-- -->Mark Hazleton. Built with curiosity and caffeine.</p><p class="mt-2 text-xs text-muted-foreground/60">Build v<!-- -->7<!-- --> • <!-- -->Jan 20, 2026, 8:19 PM CST</p></div></div></footer></div></div>
+
+    <!-- Crawler-friendly navigation links (hidden from visual browsers) -->
+    <nav aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;">
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+      <a href="/projects">Projects</a>
+      <a href="/github">GitHub</a>
+      <a href="/videos">Videos</a>
+      <a href="/contact">Contact</a>
+      <a href="/sitemap">Site Map</a>
+    </nav>
+  </body>
+</html>

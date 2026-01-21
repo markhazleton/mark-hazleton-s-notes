@@ -5,7 +5,9 @@
       "Read(//c/GitHub/MarkHazleton/markhazleton-blog/src/**)",
       "Bash(ls:*)",
       "Bash(node:*)",
-      "Bash(npm run build:client:*)"
+      "Bash(npm run build:client:*)",
+      "Bash(nslookup -type=TXT _dnsauth.markhazleton.com)",
+      "Bash(dig TXT _dnsauth.markhazleton.com +short)"
     ]
   }
 }

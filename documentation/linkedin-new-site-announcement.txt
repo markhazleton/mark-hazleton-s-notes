@@ -1,0 +1,75 @@
+🚀 Just launched the new MarkHazleton.com
+
+My old site worked. It had content. It ranked well. But every time I looked at it, something felt off.
+
+**It felt like a marketing sales pitch.**
+
+Every paragraph seemed designed to convince rather than share. I didn't want to sell anyone on anything—I just wanted to tell my developer story in a clean, honest way.
+
+So I rebuilt from scratch.
+
+**Said goodbye to Pug templates.** Years of maintaining indentation-based syntax, keeping data separate from presentation, remembering custom build quirks. Every content update felt like navigating a maze.
+
+**Moved everything to Markdown.** All metadata at the top of the document. Content below in plain text. Edit in any editor. Preview anywhere. Git diffs that actually make sense.
+
+The new stack: React + Vite + Markdown. Modern, fast, and most importantly—I actually *want* to write for it now.
+
+The site feels like me:
+• Direct (no marketing speak)
+• Technical (real code, real problems)
+• Honest (failures alongside successes)
+• Maintainable (easy to update without arcane knowledge)
+
+The migration had some interesting technical challenges too—turns out pre-rendered HTML isn't automatically crawlable, Azure Static Web Apps routing can override your static files, and build versioning in the footer is surprisingly useful.
+
+But the real win? I can now focus on sharing what I've learned rather than fighting a template system.
+
+Sometimes the best technology choice is the one that gets out of your way and lets you create.
+
+Read the full technical case study: https://markhazleton.com/blog/safely-launching-new-markhazleton-com
+
+Have you ever rebuilt something just because the old version didn't *feel* right? What made you pull the trigger?
+
+#WebDevelopment #DeveloperStories #TechnicalWriting #React #Markdown
+
+---
+
+ALTERNATIVE SHORTER VERSION (for less formal approach):
+
+---
+
+Spent weeks building the perfect site. Pre-rendered HTML. Fast. Clean. Beautiful.
+
+Then tested with Screaming Frog: 0 outlinks. 🤦‍♂️
+
+Turns out "pre-rendered" doesn't mean "crawlable" if your HTML is minified on one massive line.
+
+Fixed it with a hidden nav fallback. Added build versioning. Migrated production domains. Now it's actually live and discoverable.
+
+Also ditched Pug templates for Markdown because I wanted to write like a developer, not maintain a template system.
+
+Full story with all the technical details: https://markhazleton.com/blog/safely-launching-new-markhazleton-com
+
+Ever ship something "perfect" with a glaring flaw? Share your war stories below. 👇
+
+#WebDev #SEO #React
+
+---
+
+EVEN SHORTER VERSION (for maximum engagement):
+
+---
+
+Built a beautiful new site. Pre-rendered HTML. Perfect performance.
+
+SEO crawler: "I see nothing." 😐
+
+The problem? React's minified output broke link extraction.
+
+The fix? A hidden nav fallback. 5 minutes to implement. Critical for SEO.
+
+Sometimes the best solutions are the simplest.
+
+Full technical breakdown: https://markhazleton.com/blog/safely-launching-new-markhazleton-com
+
+#WebDevelopment #SEO #React
