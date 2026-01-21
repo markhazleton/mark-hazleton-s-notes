@@ -17,7 +17,7 @@ Personal site for Mark Hazleton, a Technical Solutions Architect. The site combi
 - TypeScript
 - Tailwind CSS, shadcn/ui, Radix UI
 - React Markdown + remark-gfm for article content
-- GitHub Pages deployment via GitHub Actions
+- Azure Static Web Apps deployment via GitHub Actions
 
 ## Architecture and data flow
 
@@ -38,6 +38,7 @@ Personal site for Mark Hazleton, a Technical Solutions Architect. The site combi
 - SEO:
   - `src/scripts/generate-seo-assets.mjs` builds `docs/sitemap.xml`, `docs/robots.txt`, and `docs/feed.xml`.
   - The `Seo` component manages canonical URLs, Open Graph, and Twitter meta tags.
+  - Deployed to Azure Static Web Apps at https://markhazleton.com
 
 ## Local development
 
@@ -68,13 +69,13 @@ The build pipeline:
 - Syncs static assets into `docs/`.
 - Generates SEO assets in `docs/`.
 
-GitHub Pages deployment is automated in `.github/workflows/deploy.yml` on pushes to `main`.
+Azure Static Web Apps deployment is automated in `.github/workflows/azure-static-web-apps-salmon-forest-0131a0a10.yml` on pushes to `main`.
 
 ## Common scripts
 
 - `npm run dev` - local development server
 - `npm run build` - full production build + prerender + publish to `docs/`
-- `npm run build:docs` - GitHub Pages build with base path and site URL
+- `npm run build:ci` - Production build for Azure Static Web Apps deployment
 - `npm run preview` - preview the production build locally
 - `npm run lint` - lint with ESLint
 - `npm run type-check` - TypeScript type check
@@ -83,8 +84,7 @@ GitHub Pages deployment is automated in `.github/workflows/deploy.yml` on pushes
 
 Build-time environment variables:
 
-- `VITE_BASE_PATH` - base path for assets and routing (e.g. `/mark-hazleton-s-notes/` for GitHub Pages).
-- `VITE_SITE_URL` - canonical site URL used in SEO metadata.
+- `VITE_SITE_URL` - canonical site URL used in SEO metadata (https://markhazleton.com).
 - `SITE_URL` - used by SEO asset generation scripts; defaults to `VITE_SITE_URL` if provided.
 
 ## Repository structure
