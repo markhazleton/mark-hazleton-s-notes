@@ -49,15 +49,18 @@ export default defineConfig(({ mode, ssrBuild }) => {
       ? {}
       : {
           outDir: "docs",
+          // Note: emptyOutDir handled by npm run clean (rimraf docs)
           rollupOptions: {
             output: {
-              entryFileNames: "assets/site.js",
-              chunkFileNames: "assets/site.js",
+              // Use content hash for cache busting (industry standard)
+              // Format: site-[hash].js - hash changes only when content changes
+              entryFileNames: "assets/site-[hash].js",
+              chunkFileNames: "assets/chunk-[hash].js",
               assetFileNames: (assetInfo) => {
                 if (assetInfo.name?.endsWith(".css")) {
-                  return "assets/site.css";
+                  return "assets/site-[hash].css";
                 }
-                return "assets/[name].[ext]";
+                return "assets/[name]-[hash].[ext]";
               },
             },
           },

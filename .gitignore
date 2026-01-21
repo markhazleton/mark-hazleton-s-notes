@@ -38,3 +38,7 @@ yarn.lock
 # Downloaded binaries
 yt-dlp.exe
 yt-dlp
+
+# Cleanup scripts (local use only)
+cleanup.ps1
+cleanup.sh
