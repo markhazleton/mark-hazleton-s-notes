@@ -52,5 +52,16 @@
   <body>
     <div id="root"><!--app-html--></div>
     <script type="module" src="/src/entry-client.tsx"></script>
+
+    <!-- Crawler-friendly navigation links (hidden from visual browsers) -->
+    <nav aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;">
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+      <a href="/projects">Projects</a>
+      <a href="/github">GitHub</a>
+      <a href="/videos">Videos</a>
+      <a href="/contact">Contact</a>
+      <a href="/sitemap">Site Map</a>
+    </nav>
   </body>
 </html>

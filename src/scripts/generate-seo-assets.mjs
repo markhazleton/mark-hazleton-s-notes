@@ -103,7 +103,7 @@ const posts = articles
   }))
   .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
 
-const staticRoutes = ["/", "/blog", "/projects", "/contact", "/github", "/videos"];
+const staticRoutes = ["/", "/blog", "/projects", "/contact", "/github", "/videos", "/sitemap"];
 const blogRoutes = posts.map((post) => `/blog/${post.slug}`);
 const projectRoutes = projects.map((project) => `/projects/${project.slug}`);
 const repositoryResult = await getRepositoryRoutes();

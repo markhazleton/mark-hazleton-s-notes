@@ -41,7 +41,7 @@ const posts = articles.filter(
     !entry.contentFile.startsWith("_")
 );
 
-const staticRoutes = ["/", "/blog", "/projects", "/contact", "/github", "/404"];
+const staticRoutes = ["/", "/blog", "/projects", "/contact", "/github", "/videos", "/sitemap", "/404"];
 const blogRoutes = posts.map((entry) => `/blog/${buildSlug(entry)}`);
 const projectRoutes = projects.map((project) => `/projects/${project.slug}`);
 const repositoryPayload = await getRepositoryData();
