@@ -762,6 +762,20 @@ https://webspark.markhazleton.com/promptspark</video:description>
     </video:video>
   </url>
   <url>
+    <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/exploratory-data-analysis-eda-using-python.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/3KO0GuTkPew/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Deep Dive:  EDA with Python</video:title>
+      <video:description>Discover essential techniques for Exploratory Data Analysis using Python. Learn data sanity checks and visualization methods to enhance your data insights.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=3KO0GuTkPew</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/3KO0GuTkPew</video:player_loc>
+      <video:publication_date>2024-10-06</video:publication_date>
+      <video:uploader info="https://markhazleton.github.io/mark-hazleton-s-notes">Mark Hazleton</video:uploader>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+    </video:video>
+  </url>
+  <url>
     <loc>https://markhazleton.github.io/mark-hazleton-s-notes/blog/articles/building-real-time-chat-with-react-signalr-and-markdown-streaming.html</loc>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/D82StHCr6ig/maxresdefault.jpg</video:thumbnail_loc>

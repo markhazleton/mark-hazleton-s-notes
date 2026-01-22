@@ -5,7 +5,14 @@
     <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Jan 2026 02:27:30 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Jan 2026 00:12:00 GMT</lastBuildDate>
+  <item>
+    <title>Concurrent Processing in C#</title>
+    <link>https://markhazleton.com/blog/concurrent-processing</link>
+    <guid>https://markhazleton.com/blog/concurrent-processing</guid>
+    <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Learn concurrent processing through hands-on C# development. Explore SemaphoreSlim, task management, and best practices for building scalable multi-threaded applications.]]></description>
+  </item>
   <item>
     <title>Safely Launching a New MarkHazleton.com</title>
     <link>https://markhazleton.com/blog/safely-launching-new-markhazleton-com</link>
@@ -600,13 +607,6 @@
     <guid>https://markhazleton.com/blog/redis-local-instance</guid>
     <pubDate>Thu, 24 Aug 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Setting up a Redis local instance can significantly enhance your application&apos;s performance. This guide walks you through the process, ensuring you configure Redis for maximum efficiency and reliability.]]></description>
-  </item>
-  <item>
-    <title>Mastering Concurrent Processing</title>
-    <link>https://markhazleton.com/blog/concurrent-processing</link>
-    <guid>https://markhazleton.com/blog/concurrent-processing</guid>
-    <pubDate>Thu, 17 Aug 2023 00:00:00 GMT</pubDate>
-    <description><![CDATA[Concurrent processing is a technique that allows multiple tasks to be executed simultaneously, improving efficiency and performance. This article explores its benefits, implementation techniques, and challenges.]]></description>
   </item>
   <item>
     <title>Understanding System Cache: A Comprehensive Guide</title>
