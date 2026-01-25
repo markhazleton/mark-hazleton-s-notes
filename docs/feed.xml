@@ -5,13 +5,20 @@
     <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Jan 2026 01:52:29 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 01:08:03 GMT</lastBuildDate>
   <item>
     <title>Concurrent Processing in C#</title>
     <link>https://markhazleton.com/blog/concurrent-processing</link>
     <guid>https://markhazleton.com/blog/concurrent-processing</guid>
-    <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+    <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
     <description><![CDATA[Learn concurrent processing through hands-on C# development. Explore SemaphoreSlim, task management, and best practices for building scalable multi-threaded applications.]]></description>
+  </item>
+  <item>
+    <title>Extending GitHub Spec Kit for Constitution-Based Pull Request Reviews</title>
+    <link>https://markhazleton.com/blog/github-spec-kit-constitution-based-pr-reviews</link>
+    <guid>https://markhazleton.com/blog/github-spec-kit-constitution-based-pr-reviews</guid>
+    <pubDate>Sat, 24 Jan 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Every mature codebase accumulates institutional knowledge that lives in scattered places. This article explores how to extend a SpecKit-based development workflow to perform AI-powered pull request reviews that validate changes against a project constitution—a living document capturing architectural principles, anti-patterns, and non-negotiable standards.]]></description>
   </item>
   <item>
     <title>Safely Launching a New MarkHazleton.com</title>

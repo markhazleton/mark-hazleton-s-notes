@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mark Hazleton" />
+    
+    <!-- RSS Feed -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Mark Hazleton's Blog"
+      href="/feed.xml"
+    />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Preconnect to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link rel="preconnect" href="https://api.allorigins.win" />
+
+    <!-- DNS prefetch for faster resolution -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://www.clarity.ms" />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8GVZNDH0B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L8GVZNDH0B');
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "d628hovv63");
+    </script>
+
+    <title>Extending GitHub Spec Kit for Constitution-Based Pull Request Reviews | Mark Hazleton</title><meta name="description" content="Every mature codebase accumulates institutional knowledge that lives in scattered places. This article explores how to extend a SpecKit-based development workflow to perform AI-powered pull request reviews that validate changes against a project constitution—a living document capturing architectural principles, anti-patterns, and non-negotiable standards."><meta name="keywords" content="GitHub Spec Kit, constitutional PR reviews, code review automation, AI-assisted code review, specification-driven development, architectural principles"><meta property="og:type" content="article"><meta property="og:title" content="Extending GitHub Spec Kit for Constitution-Based Pull Request Reviews | Mark Hazleton"><meta property="og:description" content="Every mature codebase accumulates institutional knowledge that lives in scattered places. This article explores how to extend a SpecKit-based development workflow to perform AI-powered pull request reviews that validate changes against a project constitution—a living document capturing architectural principles, anti-patterns, and non-negotiable standards."><meta property="og:url" content="https://markhazleton.com/blog/github-spec-kit-constitution-based-pr-reviews"><meta property="og:site_name" content="Mark Hazleton"><meta property="og:image" content="https://markhazleton.com/img/MarkHazleton.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Extending GitHub Spec Kit for Constitution-Based Pull Request Reviews | Mark Hazleton"><meta name="twitter:description" content="Every mature codebase accumulates institutional knowledge that lives in scattered places. This article explores how to extend a SpecKit-based development workflow to perform AI-powered pull request reviews that validate changes against a project constitution—a living document capturing architectural principles, anti-patterns, and non-negotiable standards."><meta name="twitter:image" content="https://markhazleton.com/img/MarkHazleton.jpg"><link rel="canonical" href="https://markhazleton.com/blog/github-spec-kit-constitution-based-pr-reviews"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Extending GitHub Spec Kit for Constitution-Based Pull Request Reviews","description":"Every mature codebase accumulates institutional knowledge that lives in scattered places. This article explores how to extend a SpecKit-based development workflow to perform AI-powered pull request reviews that validate changes against a project constitution—a living document capturing architectural principles, anti-patterns, and non-negotiable standards.","author":{"@type":"Person","name":"Mark Hazleton","url":"https://markhazleton.com"},"datePublished":"2026-01-24","publisher":{"@type":"Person","name":"Mark Hazleton"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://markhazleton.com/blog/github-spec-kit-constitution-based-pr-reviews"},"dateModified":"2026-01-24","image":"https://markhazleton.com/img/MarkHazleton.jpg","keywords":"GitHub Spec Kit, constitutional PR reviews, code review automation, AI-assisted code review, specification-driven development, architectural principles","articleSection":"Case Studies","timeRequired":"PT10M"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://markhazleton.com"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://markhazleton.com/blog"},{"@type":"ListItem","position":3,"name":"Extending GitHub Spec Kit for Constitution-Based Pull Request Reviews","item":"https://markhazleton.com/blog/github-spec-kit-constitution-based-pr-reviews"}]}</script>
+    <script type="module" crossorigin src="/assets/site-CXV_bFaW.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/site-CCRkRcvr.css">
+  </head>
+  <body>
+    <div id="root"><div class="min-h-screen flex flex-col"><header class="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border"><div class="container-wide"><div class="flex h-16 items-center justify-between"><a class="font-heading text-xl font-semibold text-foreground hover:text-primary transition-colors" href="/" data-discover="true">Mark Hazleton</a><nav class="hidden md:flex items-center gap-1"><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/" data-discover="true">Home</a><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/blog" data-discover="true">Blog</a><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/projects" data-discover="true">Projects</a><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/github" data-discover="true">GitHub</a><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/videos" data-discover="true">Videos</a><a class="px-3 py-2 text-sm font-medium rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-muted" href="/contact" data-discover="true">Contact</a><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10 ml-2" aria-label="Toggle dark mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon h-4 w-4" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button></nav><div class="flex items-center gap-2 md:hidden"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10" aria-label="Toggle dark mode"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon h-4 w-4" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10" aria-label="Toggle menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-5 w-5" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></div></div></header><main class="flex-1"><article class="section"><div class="container-wide"><div class="max-w-4xl mx-auto"><a class="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-8" href="/blog" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left h-4 w-4 mr-2" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>Back to blog</a><header class="mb-8 animate-fade-up"><div class="flex flex-wrap gap-2 mb-4"><a class="tag-pill hover:tag-pill-active" href="/blog?tag=Case%20Studies" data-discover="true">Case Studies</a></div><h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">Extending GitHub Spec Kit for Constitution-Based Pull Request Reviews</h1><div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6"><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>January 24, 2026</span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>10 min<!-- --> read</span><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 lucide-share-2 h-4 w-4 mr-2" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>Share</button></div><p class="text-xl text-muted-foreground leading-relaxed">Every mature codebase accumulates institutional knowledge that lives in scattered places. This article explores how to extend a SpecKit-based development workflow to perform AI-powered pull request reviews that validate changes against a project constitution—a living document capturing architectural principles, anti-patterns, and non-negotiable standards.</p></header><div class="lg:grid lg:grid-cols-[1fr_200px] lg:gap-8"><div class="prose-blog"><h2 id="executive-summary">Executive Summary</h2>
+<p>Every mature codebase accumulates institutional knowledge that lives in scattered places: senior developers&#x27; heads, buried code comments, outdated wiki pages, or lost PR discussions. This article explores how I extended a SpecKit-based development workflow to perform AI-powered pull request reviews that validate changes against a project &quot;constitution&quot;—a living document capturing architectural principles, anti-patterns, and non-negotiable standards.</p>
+<p>The result is code reviews that understand <em>why</em> certain patterns exist, not just <em>what</em> the code does. Constitutional references in review feedback transform subjective disagreements into objective governance, making code review conversations more productive and less adversarial.</p>
+<p>If you&#x27;ve struggled with inconsistent code reviews, lost tribal knowledge, or onboarding new team members to your codebase&#x27;s unwritten rules, this approach offers a path forward.</p>
+<h2 id="the-problem-code-reviews-without-context">The Problem: Code Reviews Without Context</h2>
+<p>Every codebase has rules. Most are implicit, scattered, contradictory, or forgotten. This knowledge traditionally lives in problematic places:</p>
+<div class="table-wrapper"><table node="[object Object]"><thead><tr><th>Location</th><th>Problem</th></tr></thead><tbody><tr><td>Senior developers&#x27; heads</td><td>Single point of failure</td></tr><tr><td>Scattered code comments</td><td>Nobody reads them</td></tr><tr><td>Wiki pages</td><td>Always outdated</td></tr><tr><td>PR review comments</td><td>Lost after merge</td></tr></tbody></table></div>
+<p>The result? Reviewers re-discover the same issues repeatedly. Junior developers unknowingly break conventions. Everyone wastes time explaining context that should be obvious.</p>
+<hr/>
+<h2 id="the-solution-a-living-constitution">The Solution: A Living Constitution</h2>
+<p>A GitHub Spec Kit constitution is a governing document for a repo that captures the <strong>fundamental</strong> rules your project must always follow. It encodes things like coding standards, testing requirements, security and privacy constraints, UX and accessibility expectations, and any architectural “musts” or “must nots.” The idea is that every spec, plan, and change generated with Spec Kit has to respect this constitution, so your system stays coherent over time instead of drifting with each new feature.</p>
+<p>Because it acts as the project’s “source of truth” for intent, a good constitution is concrete and enforceable, not aspirational fluff. Rather than saying “we care about performance,” it might say “API p95 latency must stay under 300 ms for core operations” and “every new endpoint requires contract tests.” The clearer and more testable the rules are, the easier it is for both humans and AI to make consistent decisions without having to re-negotiate standards on every change.</p>
+<p>In practice, you usually create the constitution early, then evolve it carefully as the system and organization mature. Many teams treat it as “slow to change but not frozen”: updates go through review, are versioned, and are communicated explicitly. That way, when you adjust something big—like adopting a new auth model, enforcing WCAG AA, or mandating feature flags for risky changes—you do it once in the constitution, and every subsequent spec generated by Spec Kit naturally follows the new rules.</p>
+<p>The constitution includes:</p>
+<ul>
+<li><strong>Architectural Principles</strong>: What patterns are required and why</li>
+<li><strong>Anti-Patterns</strong>: What mistakes we&#x27;ve made before (with code examples)</li>
+<li><strong>Enforcement Mechanisms</strong>: How violations are detected</li>
+<li><strong>Amendment Process</strong>: How to change the rules (requires approval)</li>
+</ul>
+<p>The difference between a constitution and documentation matters. A constitution is designed for machine parsing and automated enforcement.</p>
+<hr/>
+<h2 id="connecting-the-constitution-to-pr-reviews">Connecting the Constitution to PR Reviews</h2>
+<p>If you&#x27;re already using SpecKit for specification-driven development (the <strong>/speckit.specify</strong>, <strong>speckit.plan</strong>, <strong>speckit.implement</strong> workflows), you can extend that same agentic approach for code reviews.</p>
+<h3 id="the-architecture">The Architecture</h3>
+<p>The implementation of a SpecKit PR Review has three layers:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code>+-------------------------------------+
+|  /speckit.pr-review 99999           |  &lt;- GitHub Copilot prompt file
++-------------------------------------+
+|  pr-review.ps1                      |  &lt;- PowerShell script (Azure DevOps API)
++-------------------------------------+
+|  constitution.md                    |  &lt;- Source of truth for review criteria
++-------------------------------------+</code></pre></div>
+<p><strong>Layer 1: The Prompt</strong> (<em><strong>speckit.pr-review.prompt.md</strong></em>)</p>
+<p>This structured prompt transforms your AI assistant from a generic code reviewer into a <em>constitutional lawyer</em> for your codebase:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-markdown">## Goal
+Perform a comprehensive code review of an Azure DevOps pull request,
+validating all changes against the project constitution
+(`.specify/memory/constitution.md`) and coding standards.
+
+### 1. Load Constitutional Framework
+Read the project constitution and extract:
+- Architectural Principles
+- Development Workflow Standards
+- Quality &amp; Consistency Standards
+- Anti-Patterns to Detect (Appendix A)</code></pre></div>
+<p><strong>Layer 2: The API Integration</strong> (<em><strong>pr-review.ps1</strong></em>)</p>
+<p>A PowerShell script fetches PR metadata from Azure DevOps:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-powershell">function Get-PullRequestMetadata {
+    param(
+        [string]$PrId,
+        [hashtable]$Headers
+    )
+
+    $endpoint = &quot;git/pullRequests/$PrId&quot;
+    return Invoke-AzureDevOpsApi -Endpoint $endpoint -Headers $Headers
+}</code></pre></div>
+<p>The script authenticates via Azure CLI, fetches PR details, retrieves changed files, and classifies files by code area. That classification triggers different constitutional principles:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-powershell">function Classify-FileByArea {
+    param([string]$FilePath)
+
+    switch -Regex ($FilePath) {
+        &#x27;app/api/routes/&#x27; { return &#x27;API Routes&#x27; }        # -&gt; Principle VI (Security)
+        &#x27;app/core/azure/&#x27; { return &#x27;Azure Integration&#x27; } # -&gt; Principle IV
+        &#x27;app/tests/&#x27; { return &#x27;Tests&#x27; }                  # -&gt; Testing Requirements
+        &#x27;specs/&#x27; { return &#x27;Specifications&#x27; }             # -&gt; Spec Workflow
+    }
+}</code></pre></div>
+<p><strong>Layer 3: The Constitution</strong></p>
+<p>The living document organized for machine parsing:</p>
+<ol>
+<li>Principles with clear MUST/SHOULD/PROHIBITED language</li>
+<li>Implementation patterns with code examples</li>
+<li>Anti-patterns in appendices with explicit wrong/correct comparisons</li>
+<li>Enforcement mechanisms that map to reviewable checks</li>
+</ol>
+<hr/>
+<h2 id="the-review-framework">The Review Framework</h2>
+<p>When the AI processes a PR, it applies a multi-dimensional review framework.</p>
+<h3 id="constitutional-compliance-matrix">Constitutional Compliance Matrix</h3>
+<div class="table-wrapper"><table node="[object Object]"><thead><tr><th>Principle</th><th>What It Checks</th></tr></thead><tbody><tr><td>I. Template-Driven</td><td>Logic externalized to JSON? No hardcoded workflows?</td></tr><tr><td>II. Schema Stability</td><td>No new top-level fields?</td></tr><tr><td>III. API Versioning</td><td>Breaking changes in new version? Deprecation warnings?</td></tr><tr><td>IV. Azure-First</td><td>Sync Cosmos calls without await? Proper parameters?</td></tr><tr><td>V. Fire-and-Forget</td><td>Try/except/finally pattern? Single log entry?</td></tr><tr><td>VI. API Security</td><td><em><strong>Depends(check_api_key)</strong></em>? Type normalization?</td></tr></tbody></table></div>
+<h3 id="file-specific-checks">File-Specific Checks</h3>
+<p>For a route file, the review verifies:</p>
+<ul>
+<li><em><strong>Depends(check_api_key)</strong></em> used (not Header-only)</li>
+<li>Type normalization before Pydantic instantiation</li>
+<li>Module aliasing when parameter shadows import</li>
+<li>Proper HTTP status codes (401 for auth, not 422)</li>
+</ul>
+<h3 id="severity-classification">Severity Classification</h3>
+<p>Issues are classified using constitutional language:</p>
+<ul>
+<li><strong>CRITICAL</strong>: Violates MUST requirement (blocks merge)</li>
+<li><strong>HIGH</strong>: Violates SHOULD requirement (should fix before merge)</li>
+<li><strong>MEDIUM</strong>: Style inconsistency (consider addressing)</li>
+<li><strong>LOW</strong>: Suggestion for improvement (optional)</li>
+</ul>
+<h2 id="why-this-approach-works">Why This Approach Works</h2>
+<h3 id="1-consistency-without-memorization">1. Consistency Without Memorization</h3>
+<p>Human reviewers forget edge cases. They have good days and bad days. They might catch an anti-pattern on Monday but miss it on Friday. The constitution-based review applies the same standards every time.</p>
+<h3 id="2-knowledge-transfer-at-scale">2. Knowledge Transfer at Scale</h3>
+<p>New team members don&#x27;t need to absorb months of tribal knowledge. They see constitutional violations in their first PR, with explanations and references. The review process <em>teaches</em> the architecture.</p>
+<h3 id="3-reduced-review-friction">3. Reduced Review Friction</h3>
+<p>Instead of &quot;I don&#x27;t like this pattern,&quot; the feedback becomes &quot;This violates Principle VI.&quot; It&#x27;s not personal—it&#x27;s constitutional. This makes code review conversations more productive and less adversarial.</p>
+<h3 id="4-governance-documentation-that-gets-read">4. Governance Documentation That Gets Read</h3>
+<p>Most architecture documents rot on the vine. Nobody reads them because they&#x27;re disconnected from daily work. A constitution that powers PR reviews gets read <em>every time</em> a PR is submitted. Developers encounter the principles when they matter most.</p>
+<hr/>
+<h2 id="implementation-tips">Implementation Tips</h2>
+<p>If you want to implement something similar:</p>
+<h3 id="1-start-with-your-actual-pain-points">1. Start with your actual pain points</h3>
+<p>Your constitution should evolve from real bugs. The schema stability principle exists because someone added a top-level field and broke the analytics pipeline. The API security pattern exists because endpoints were returning 422 instead of 401. Document what you&#x27;ve learned the hard way.</p>
+<h3 id="2-use-normative-language">2. Use normative language</h3>
+<p>Not &quot;we generally prefer&quot;—use MUST, SHOULD, PROHIBITED. Make violations objectively detectable.</p>
+<h3 id="3-include-code-examples-for-anti-patterns">3. Include code examples for anti-patterns</h3>
+<p>Abstract principles are hard to review against. Concrete examples make detection trivial:</p>
+<div class="code-block"><button type="button" class="code-copy" aria-label="Copy code to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><pre><code class="language-python"># WRONG
+document = await get_document(...)
+
+# CORRECT
+document = get_document(...)</code></pre></div>
+<h3 id="4-organize-for-machine-parsing">4. Organize for machine parsing</h3>
+<p>Section headers, consistent formatting, categorized appendices. The AI needs to extract patterns—make that easy.</p>
+<h3 id="5-keep-it-living">5. Keep it living</h3>
+<p>Your constitution should have a version history. Changes require documented approval. It evolves with the codebase.</p>
+<hr/>
+<h2 id="conclusion">Conclusion</h2>
+<p>This approach exemplifies a shift in how I think about AI coding assistants. The best results don&#x27;t come from asking an AI to &quot;review my code&quot;—they come from giving it <em>context</em> about what matters.</p>
+<p>A constitution is that context, formalized.</p>
+<p>Making architectural rules explicit and using them to power automated reviews turns governance from an afterthought into a competitive advantage. Your codebase has rules. Write them down. Then make your AI assistant enforce them.</p>
+<p>This approach works with any AI that can process structured prompts and read files—GitHub Copilot, Claude, GPT-4, or others. The key insight is treating your architectural principles as a reviewable specification, not just documentation.</p>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>A &quot;constitution&quot; formalizes your codebase&#x27;s unwritten rules using normative language (MUST, SHOULD, PROHIBITED)</li>
+<li>AI-powered PR reviews can validate changes against constitutional principles, not just syntax</li>
+<li>Constitutional references transform subjective code review feedback into objective governance</li>
+<li>The constitution becomes living documentation because it&#x27;s encountered during every PR review</li>
+<li>Start with real pain points—document what you&#x27;ve learned the hard way</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li>GitHub Copilot: <a href="https://github.com/features/copilot">https://github.com/features/copilot</a></li>
+<li>SpecKit Repository: <a href="https://github.com/Villamor-bot/specify">https://github.com/Villamor-bot/specify</a></li>
+<li>RFC 2119 (Key words for RFCs): <a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a></li>
+</ul></div><aside class="hidden lg:block"><div class="sticky top-24"><nav class="paper-card p-4"><h4 class="font-heading font-semibold text-sm text-foreground mb-3">On this page</h4><ul class="space-y-2"><li style="padding-left:0px"><a href="#executive-summary" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Executive Summary</a></li><li style="padding-left:0px"><a href="#the-problem-code-reviews-without-context" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Problem: Code Reviews Without Context</a></li><li style="padding-left:0px"><a href="#the-solution-a-living-constitution" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Solution: A Living Constitution</a></li><li style="padding-left:0px"><a href="#connecting-the-constitution-to-pr-reviews" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Connecting the Constitution to PR Reviews</a></li><li style="padding-left:12px"><a href="#the-architecture" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Architecture</a></li><li style="padding-left:0px"><a href="#the-review-framework" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">The Review Framework</a></li><li style="padding-left:12px"><a href="#constitutional-compliance-matrix" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Constitutional Compliance Matrix</a></li><li style="padding-left:12px"><a href="#file-specific-checks" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">File-Specific Checks</a></li><li style="padding-left:12px"><a href="#severity-classification" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Severity Classification</a></li><li style="padding-left:0px"><a href="#why-this-approach-works" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Why This Approach Works</a></li><li style="padding-left:12px"><a href="#1-consistency-without-memorization" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">1. Consistency Without Memorization</a></li><li style="padding-left:12px"><a href="#2-knowledge-transfer-at-scale" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">2. Knowledge Transfer at Scale</a></li><li style="padding-left:12px"><a href="#3-reduced-review-friction" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">3. Reduced Review Friction</a></li><li style="padding-left:12px"><a href="#4-governance-documentation-that-gets-read" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">4. Governance Documentation That Gets Read</a></li><li style="padding-left:0px"><a href="#implementation-tips" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Implementation Tips</a></li><li style="padding-left:12px"><a href="#1-start-with-your-actual-pain-points" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">1. Start with your actual pain points</a></li><li style="padding-left:12px"><a href="#2-use-normative-language" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">2. Use normative language</a></li><li style="padding-left:12px"><a href="#3-include-code-examples-for-anti-patterns" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">3. Include code examples for anti-patterns</a></li><li style="padding-left:12px"><a href="#4-organize-for-machine-parsing" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">4. Organize for machine parsing</a></li><li style="padding-left:12px"><a href="#5-keep-it-living" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">5. Keep it living</a></li><li style="padding-left:0px"><a href="#conclusion" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Conclusion</a></li><li style="padding-left:0px"><a href="#key-takeaways" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">Key Takeaways</a></li><li style="padding-left:0px"><a href="#references" class="text-sm text-muted-foreground hover:text-primary transition-colors line-clamp-1">References</a></li></ul></nav></div></aside></div></div></div></article><section class="section bg-muted/30 border-t border-border"><div class="container-wide"><h2 class="font-heading text-2xl font-semibold text-foreground mb-8">Related posts</h2><div class="grid gap-6 md:grid-cols-3"><a class="group block paper-card p-6 transition-all duration-300 hover:-translate-y-1" href="/blog/safely-launching-new-markhazleton-com" data-discover="true"><div class="mb-4 overflow-hidden rounded-md border border-border"><img src="/img/ArgostoliGreeceBeach.jpg" alt="Safely Launching a New MarkHazleton.com" loading="lazy" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"/></div><div class="flex flex-wrap gap-1.5 mb-3"><span class="tag-pill">Case Studies</span></div><h3 class="font-heading text-xl font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Safely Launching a New MarkHazleton.com</h3><p class="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">A detailed account of migrating MarkHazleton.com to a modern React-based static site, solving critical SEO crawlability issues, implementing build tracking, and safely switching production domains between Azure Static Web Apps.</p><div class="flex items-center gap-4 text-sm text-muted-foreground"><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Jan 20, 2026</span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>12 min</span></div></a><a class="group block paper-card p-6 transition-all duration-300 hover:-translate-y-1" href="/blog/test-driving-githubs-spec-kit" data-discover="true"><div class="mb-4 overflow-hidden rounded-md border border-border"><img src="/img/Evolution-vs-Revolution-in-history .png" alt="Test Driving GitHub&#x27;s Spec Kit: AI-Maintained Documentation That Stays Accurate" loading="lazy" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"/></div><div class="flex flex-wrap gap-1.5 mb-3"><span class="tag-pill">Case Studies</span></div><h3 class="font-heading text-xl font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Test Driving GitHub&#x27;s Spec Kit: AI-Maintained Documentation That Stays Accurate</h3><p class="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">Specs always become outdated because humans won&#x27;t maintain them post-implementation. GitHub&#x27;s Spec Kit solves this with AI agents in the feedback loop: when you fix bugs and tweak implementations, you tell the agent to update the spec. Documentation evolves to match reality. Real-world case: 7 hours implementation + 20 minutes documentation sync = zero documentation debt.</p><div class="flex items-center gap-4 text-sm text-muted-foreground"><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Nov 2, 2025</span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>15 min</span></div></a><a class="group block paper-card p-6 transition-all duration-300 hover:-translate-y-1" href="/blog/taking-microsoft-copilot-studio-for-a-test-drive" data-discover="true"><div class="mb-4 overflow-hidden rounded-md border border-border"><img src="/img/ArgostoliGreeceBeach.jpg" alt="Exploring Microsoft Copilot Studio" loading="lazy" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"/></div><div class="flex flex-wrap gap-1.5 mb-3"><span class="tag-pill">Case Studies</span></div><h3 class="font-heading text-xl font-semibold text-foreground group-hover:text-primary transition-colors mb-2">Exploring Microsoft Copilot Studio</h3><p class="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">In this article, we take a deep dive into Microsoft Copilot Studio, a cutting-edge platform that allows users to create personalized AI chatbots. Led by Mark Hazleton, we explore the features and functionalities of this innovative tool and its potential to transform digital interactions.</p><div class="flex items-center gap-4 text-sm text-muted-foreground"><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar h-4 w-4" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Jul 20, 2025</span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-4 w-4" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>5 min</span></div></a></div></div></section></main><footer class="border-t border-border bg-card"><div class="container-wide py-12"><div class="grid gap-8 md:grid-cols-3"><div><h3 class="font-heading text-lg font-semibold mb-3">Mark Hazleton</h3><p class="text-sm text-muted-foreground leading-relaxed">Technical Solutions Architect helping teams build resilient, scalable systems. Writing about cloud architecture, integration patterns, and engineering practices.</p></div><div><h3 class="font-heading text-lg font-semibold mb-3">Quick Links</h3><ul class="space-y-2 text-sm"><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/" data-discover="true">Home</a></li><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/blog" data-discover="true">Blog</a></li><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/projects" data-discover="true">Projects</a></li><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/github" data-discover="true">GitHub</a></li><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/videos" data-discover="true">Videos</a></li><li><a class="text-muted-foreground hover:text-primary transition-colors" href="/contact" data-discover="true">Contact</a></li></ul></div><div><h3 class="font-heading text-lg font-semibold mb-3">Stay Connected</h3><p class="text-sm text-muted-foreground mb-4">Occasional thoughts on architecture and engineering.</p><div class="flex items-center gap-3"><a href="https://github.com/markhazleton" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><a href="https://linkedin.com/in/markhazleton" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin h-5 w-5" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></div></div></div><div class="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground"><p>© <span>2026</span> <!-- -->Mark Hazleton. Built with curiosity and caffeine.</p><p class="mt-2 text-xs text-muted-foreground/60">Build v<!-- -->18<!-- --> • <!-- -->Jan 24, 2026, 7:07 PM CST</p></div></div></footer></div></div>
+
+    <!-- Crawler-friendly navigation links (hidden from visual browsers) -->
+    <nav aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;">
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+      <a href="/projects">Projects</a>
+      <a href="/github">GitHub</a>
+      <a href="/videos">Videos</a>
+      <a href="/contact">Contact</a>
+      <a href="/sitemap">Site Map</a>
+    </nav>
+  </body>
+</html>
