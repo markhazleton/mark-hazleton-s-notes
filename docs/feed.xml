@@ -5,7 +5,7 @@
     <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jan 2026 15:41:54 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 17:14:05 GMT</lastBuildDate>
   <item>
     <title>Concurrent Processing in C#</title>
     <link>https://markhazleton.com/blog/concurrent-processing</link>
@@ -49,11 +49,11 @@
     <description><![CDATA[# Building a Quick Estimation Template When You Have Almost Nothing to Go On When faced with vague requirements and tight deadlines, I built a simple three-pillar framework using Innovation, Scope, and People for estimating quickly.]]></description>
   </item>
   <item>
-    <title>Test Driving GitHub&apos;s Spec Kit: AI-Maintained Documentation That Stays Accurate</title>
+    <title>Test Driving GitHub&apos;s Spec Kit: Requirements Quality Matters</title>
     <link>https://markhazleton.com/blog/test-driving-githubs-spec-kit</link>
     <guid>https://markhazleton.com/blog/test-driving-githubs-spec-kit</guid>
     <pubDate>Sun, 02 Nov 2025 00:00:00 GMT</pubDate>
-    <description><![CDATA[Specs always become outdated because humans won&apos;t maintain them post-implementation. GitHub&apos;s Spec Kit solves this with AI agents in the feedback loop: when you fix bugs and tweak implementations, you tell the agent to update the spec. Documentation evolves to match reality. Real-world case: 7 hours implementation + 20 minutes documentation sync = zero documentation debt.]]></description>
+    <description><![CDATA[Bad requirements produce bad code—this was true with humans and is exponentially worse with AI. Vague prompts force AI to guess at thousands of unstated constraints, generating code that looks right but fails under real-world conditions. GitHub Spec Kit addresses this through structured phases: Constitution guardrails, mandatory clarification loops, discrete pipeline gates, and human verification. Requirements quality matters more than coding speed.]]></description>
   </item>
   <item>
     <title>Building Git Spark: My First npm Package Journey</title>

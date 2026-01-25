@@ -1,25 +1,20 @@
 # Documentation
 
-This folder contains development documentation, guides, and temporary content that are **not** part of the published site or source code.
+This folder contains development documentation and guides that are **not** part of the published site or source code.
 
 ## Contents
 
-### Deployment & Configuration Guides
-- **GITHUB_PAGES_DEPLOYMENT.md** - GitHub Pages deployment process
-- **QUICK_FIX_DEPLOYMENT.md** - Quick fixes for common deployment issues
-- **MIGRATION_GUIDE.md** - Guide for migrating content and features
+### Deployment & Configuration
+- **GITHUB_PAGES_DEPLOYMENT.md** - GitHub Pages deployment process and troubleshooting
 
-### Implementation Documentation
-- **ARTICLES_MANAGEMENT.md** - How to manage articles and content
-- **SCHEMA_REFERENCE.md** - Schema and data structure reference
-- **SEO_IMPROVEMENTS.md** - SEO optimization documentation
-- **YOUTUBE_CACHING_IMPLEMENTATION.md** - YouTube video caching system
+### Content Management
+- **ARTICLES_MANAGEMENT.md** - How to manage blog articles and content
+- **ADD_VIDEO_GUIDE.md** - How to add YouTube videos to articles
+- **VIDEO_INTEGRATION_GUIDE.md** - Video embedding and integration guide
 
-### Temporary & Work-in-Progress
-- **TEMP/** - Temporary files, drafts, and work-in-progress content
-  - LinkedIn posts
-  - Blog post drafts
-  - Markdown backups
+### SEO & Structured Data
+- **SCHEMA_REFERENCE.md** - Schema.org structured data reference and examples
+- **VIDEO_SEO_GUIDE.md** - Video SEO implementation and Google indexing
 
 ## Purpose
 

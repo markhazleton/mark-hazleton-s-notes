@@ -15,19 +15,9 @@ Location: `.github/workflows/deploy.yml`
 - **Static Assets**: `docs/assets/`
 - **SSR Server**: `docs/server/`
 
-## Recent Updates
-
-### ✅ Improvements Made
-
-1. **Added YouTube Video Caching** - Reduces build time by caching video metadata
-2. **Added Build Verification Step** - Ensures output is valid before upload
-3. **Added Pages Setup Step** - Configures GitHub Pages environment
-4. **Added Deployment Timeout** - Prevents hanging deployments
-5. **Added .nojekyll Check** - Ensures proper file handling
-
 ### Build Verification
 
-The workflow now includes a verification step that:
+The workflow includes verification that:
 - Lists the contents of the `docs/` directory
 - Confirms `index.html` exists
 - Ensures `.nojekyll` file is present
