@@ -5,12 +5,12 @@
     <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jan 2026 17:14:05 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jan 2026 05:14:53 GMT</lastBuildDate>
   <item>
     <title>Concurrent Processing in C#</title>
     <link>https://markhazleton.com/blog/concurrent-processing</link>
     <guid>https://markhazleton.com/blog/concurrent-processing</guid>
-    <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
+    <pubDate>Mon, 26 Jan 2026 00:00:00 GMT</pubDate>
     <description><![CDATA[Learn concurrent processing through hands-on C# development. Explore SemaphoreSlim, task management, and best practices for building scalable multi-threaded applications.]]></description>
   </item>
   <item>

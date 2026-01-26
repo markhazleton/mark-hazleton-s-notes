@@ -109,7 +109,7 @@ The framework enforces quality through structure:
 4. **Human verification gates**: Review and validate before proceeding to next phase
 5. **Executable artifacts**: Specifications become source of truth for code generation
 
-I tested this on a production NuGet package. Two distinct features across an existing codebase. The discipline of writing precise specifications changed how I thought about requirements—and the code quality reflected it. Here's what happened.
+I tested this on a production NuGet package. Two distinct features across an existing codebase. The discipline of writing precise specifications changed how I thought about requirements—and the code quality reflected it.
 
 ## What Is Spec Kit?
 
@@ -117,7 +117,7 @@ GitHub Spec Kit is a framework that enforces **requirements quality through stru
 
 **SPEC.md** → **PLAN.md** → **TASKS.md** → **Implementation**
 
-You use slash commands in Copilot (`/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement`) to generate these artifacts. But the real value isn't the markdown files—it's the **quality gates** between each phase.
+You use slash commands in Copilot (***speckit.specify***,***speckit.plan***, ***speckit.tasks,***speckit.implement***) to generate these artifacts. But the real value isn't the markdown files—it's the **quality gates** between each phase.
 
 ### Five Mechanisms That Prevent "Garbage In"
 
@@ -129,7 +129,7 @@ Example: "All public APIs must have XML documentation. No #pragma suppressions a
 
 **2. Mandatory Clarification Loops**
 
-The `/speckit.clarify` command forces the AI to analyze your spec for ambiguities and ask targeted questions **before planning begins**. This exposes the gaps you didn't know you had.
+The ***speckit.clarify*** command forces the AI to analyze your spec for ambiguities and ask targeted questions **before planning begins**. This exposes the gaps you didn't know you had.
 
 Example questions AI might ask:
 - "What should happen when the API rate limit is exceeded?"
@@ -175,9 +175,9 @@ I picked WebSpark.HttpClientUtility, a production .NET NuGet package I maintain.
 
 **Required clarification:** Where will this be deployed? What path structure? What's the base URL? How should navigation work across environments?
 
-**Updated requirement:** "Eleventy site deployed to GitHub Pages at `/WebSpark.HttpClientUtility/`. All paths must be relative, calculated dynamically. No environment-specific configuration in templates."
+**Updated requirement:** "Eleventy site deployed to GitHub Pages at ***WebSpark.HttpClientUtility***. All paths must be relative, calculated dynamically. No environment-specific configuration in templates."
 
-**Result:** Custom `relativePath` filter that works correctly. But more importantly—this **path resolution requirement** is now captured in SPEC.md so future features inherit it.
+**Result:** Custom ***relativePath*** filter that works correctly. But more importantly, this **path resolution requirement** is now captured in SPEC.md so future features inherit it.
 
 **Spec 002: Zero compiler warnings.**
 
