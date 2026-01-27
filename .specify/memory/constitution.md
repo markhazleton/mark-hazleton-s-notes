@@ -1,12 +1,13 @@
 <!--
 Sync Impact Report:
-Version: 1.0.0 (Initial Constitution)
-Modified Principles: All (initial creation)
-Added Sections: Core Principles, Technical Standards, Content Standards, Development Workflow, Security & Privacy, Governance
+Version: 1.1.0 (Added Content Voice & Tone)
+Modified Principles: Content Standards (added Voice & Tone section)
+Added Sections: Content Voice & Tone under Content Standards
 Templates Status:
   ✅ plan-template.md - Reviewed, aligns with constitution
   ✅ spec-template.md - Reviewed, aligns with constitution
   ✅ tasks-template.md - Reviewed, aligns with constitution
+  ✅ copilot-instructions.md - Updated to reference constitution for content guidance
 Follow-up TODOs: None
 -->
 
@@ -174,6 +175,53 @@ Every project entry MUST:
 - **Videos**: Prefer YouTube embeds over self-hosted; use `YouTubeEmbed` component
 - **Thumbnails**: YouTube maxresdefault preferred; include alt text
 
+### Content Voice & Tone
+
+All content MUST maintain Mark Hazleton's professional but approachable voice.
+
+**Voice Principles**:
+
+- **Discussion over Preaching**: Present ideas as explorations, not declarations. Use "worth examining," "suggests," "raises questions" rather than "you must" or "the truth is"
+- **Invitational Language**: Write as if thinking through problems alongside the reader, not lecturing at them
+- **Acknowledge Complexity**: Embrace nuance. Use phrases like "There's a tension here," "This isn't straightforward," "These aren't easy questions"
+- **Tentative over Absolute**: Prefer "might," "could," "suggests," "appears to" over absolute statements
+- **Practical Experience**: Ground insights in real-world scenarios and technical implementation details
+- **Question-Driven**: End sections with questions that invite reflection rather than prescriptive takeaways
+
+**Tone Characteristics**:
+
+- Professional but conversational
+- Educational without being condescending
+- Analytical with practical application
+- Confident but not dogmatic
+- Detail-oriented with big-picture awareness
+
+**Avoid**:
+
+- Heavy use of bold for emphasis on every key point
+- Bullet lists of "Key Takeaways" that sound like directives
+- "Here's what you need to know" framing
+- Absolute declarations without acknowledging trade-offs
+- Preaching or prescriptive language ("you must," "always," "never")
+
+**Example Patterns**:
+
+- ✅ "There's an interesting dynamic worth exploring..."
+- ❌ "Here's the uncomfortable truth you need to understand..."
+- ✅ "This suggests a pattern that might apply elsewhere"
+- ❌ "This proves that organizations must always..."
+- ✅ "What would evolution look like vs. protection?"
+- ❌ "The key takeaway is to always prioritize X over Y"
+
+**Audience Context**:
+
+Write for technical professionals, potential collaborators, and hiring managers who value:
+- Deep technical knowledge over superficial trends
+- Practical experience over theoretical perfection
+- Thoughtful analysis over hot takes
+- Resilient systems and scalable architecture
+- Learning from both successes and failures
+
 ## Development Workflow
 
 ### Local Development
@@ -297,4 +345,4 @@ The templates in `.specify/templates/` MUST remain aligned with this constitutio
 
 ---
 
-**Version**: 1.0.0 | **Ratified**: 2026-01-21 | **Last Amended**: 2026-01-21
+**Version**: 1.1.0 | **Ratified**: 2026-01-21 | **Last Amended**: 2026-01-27

@@ -127,7 +127,8 @@ function parseValue(value) {
  */
 function processMarkdownFiles() {
   const articles = [];
-  const files = fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md'));
+  const files = fs.readdirSync(CONTENT_DIR)
+    .filter(f => f.endsWith('.md') && f !== '_TEMPLATE.md');
   
   console.log(`Found ${files.length} markdown files`);
   

@@ -5,13 +5,13 @@
     <link>https://markhazleton.com/blog</link>
     <description>Technical notes on cloud architecture, integration patterns, and engineering practices.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jan 2026 05:14:53 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jan 2026 19:47:54 GMT</lastBuildDate>
   <item>
-    <title>Concurrent Processing in C#</title>
-    <link>https://markhazleton.com/blog/concurrent-processing</link>
-    <guid>https://markhazleton.com/blog/concurrent-processing</guid>
-    <pubDate>Mon, 26 Jan 2026 00:00:00 GMT</pubDate>
-    <description><![CDATA[Learn concurrent processing through hands-on C# development. Explore SemaphoreSlim, task management, and best practices for building scalable multi-threaded applications.]]></description>
+    <title>Thinking About Stack Overflow Made Me Ponder the Real Lessons of Disruption</title>
+    <link>https://markhazleton.com/blog/stack-overflow-disruption-lesson</link>
+    <guid>https://markhazleton.com/blog/stack-overflow-disruption-lesson</guid>
+    <pubDate>Tue, 27 Jan 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[Thinking about Stack Overflow made me ponder the deeper lessons of how organizations respond to market disruption. Stack Overflow did pivot—it just didn&apos;t pivot in a way that preserved the developer Q&amp;A community that defined its cultural relevance.]]></description>
   </item>
   <item>
     <title>Extending GitHub Spec Kit for Constitution-Based Pull Request Reviews</title>
@@ -614,6 +614,13 @@
     <guid>https://markhazleton.com/blog/redis-local-instance</guid>
     <pubDate>Thu, 24 Aug 2023 00:00:00 GMT</pubDate>
     <description><![CDATA[Setting up a Redis local instance can significantly enhance your application&apos;s performance. This guide walks you through the process, ensuring you configure Redis for maximum efficiency and reliability.]]></description>
+  </item>
+  <item>
+    <title>Concurrent Processing in C#</title>
+    <link>https://markhazleton.com/blog/concurrent-processing</link>
+    <guid>https://markhazleton.com/blog/concurrent-processing</guid>
+    <pubDate>Thu, 17 Aug 2023 00:00:00 GMT</pubDate>
+    <description><![CDATA[Learn concurrent processing through hands-on C# development. Explore SemaphoreSlim, task management, and best practices for building scalable multi-threaded applications.]]></description>
   </item>
   <item>
     <title>Understanding System Cache: A Comprehensive Guide</title>

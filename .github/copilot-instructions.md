@@ -8,6 +8,8 @@ Mark Hazleton's Notes is a personal technical blog and portfolio site built as a
 
 **Deployment**: Static site hosted on GitHub Pages at `https://markhazleton.github.io/mark-hazleton-s-notes/`
 
+> **📖 Governance**: For architectural principles, content standards, voice & tone guidelines, and governance rules, refer to [`.specify/memory/constitution.md`](.specify/memory/constitution.md). This document provides practical implementation guidance.
+
 ## Architecture Context
 
 ### Stack
@@ -83,6 +85,8 @@ documentation/    - Development guides and reference docs
 
 ### When Working with Content
 
+> **📖 Content Standards**: See [constitution.md - Content Standards](.specify/memory/constitution.md#content-standards) for complete requirements including voice & tone principles.
+
 1. **Blog Posts**: Create Markdown files in `src/content/` with YAML frontmatter:
    ```yaml
    ---
@@ -110,6 +114,13 @@ documentation/    - Development guides and reference docs
      }
    }
    ```
+
+4. **Voice & Tone**: Maintain Mark's professional but approachable style:
+   - Write as exploration, not lecture ("worth examining" vs. "you must know")
+   - Ask questions, acknowledge complexity
+   - Ground in practical experience
+   - Avoid heavy bold emphasis and prescriptive "key takeaways"
+   - See [constitution.md - Content Voice & Tone](.specify/memory/constitution.md#content-voice--tone) for detailed guidance
 
 ### When Modifying Build Scripts
 
@@ -277,31 +288,9 @@ npm run publish:docs           # Copy static assets to docs/
 
 ### SEO Assets Missing
 
-- Ensure `npm run generate:seo` runs after `prerender` in build pipeline
-- Verify `SITE_URL` environment variable is set
+---
 
-### GitHub Pages 404
-
-- Check `docs/.nojekyll` exists
-- Verify `VITE_BASE_PATH` matches repository name
-- Confirm routes use base path correctly
-
-## Constitution Reference
-
-For governance and architectural decisions, refer to [`.specify/memory/constitution.md`](../.specify/memory/constitution.md).
-
-Key constitutional principles:
-
-1. **Static-First Architecture**: No server runtime dependencies
-2. **Content-First Development**: Content structure drives technical decisions
-3. **SEO & Discoverability**: First-class concern, not afterthought
-4. **Performance & Accessibility**: Lighthouse 90+, WCAG AA compliance
-5. **Dual Licensing**: MIT for code, CC BY-NC 4.0 for content
-6. **Automated Quality Gates**: CI must pass before deployment
-7. **Documentation-Driven Development**: Document before implementing
-
-## Contact & Context
-
+**For complete governance, principles, and standards**: See [`.specify/memory/constitution.md`](.specify/memory/constitution.md)
 **Author**: Mark Hazleton (Technical Solutions Architect)
 
 **Content Focus**: Cloud architecture, .NET/Azure, AI/ML, integration patterns, software engineering practices

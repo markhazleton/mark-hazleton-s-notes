@@ -1,13 +1,20 @@
 ---
+id: 26
+Section: Software Development
+slug: concurrent-processing
+name: Concurrent Processing in C#
 title: "Concurrent Processing in C#"
-date: "2023-08-17"
 description: "Learn concurrent processing through hands-on C# development. Explore SemaphoreSlim, task management, and best practices for building scalable multi-threaded applications."
 tags: ["C#", "Concurrent Programming", "Async", "Performance", "Architecture"]
 author: "Mark Hazleton"
-slug: "concurrent-processing"
 keywords: "concurrent processing, C#, SemaphoreSlim, async programming, multithreading, task parallelism, thread safety, scalability"
 estimatedReadTime: 12
 img_src: "/img/ArgostoliGreeceBeach.jpg"
+lastmod: "2023-08-17"
+publishedDate: "2023-08-17"
+changefreq: monthly
+subtitle: "Learning Concurrent Processing Through Code"
+summary: "Learn concurrent processing through hands-on C# development. Explore SemaphoreSlim, task management, and best practices for building scalable multi-threaded applications."
 ---
 
 # Concurrent Processing in C#
