@@ -21,6 +21,7 @@ const THEME_STORAGE_KEY = 'theme';
 
 export function Layout({ children }: LayoutProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === 'undefined') {
       return false;
@@ -29,6 +30,10 @@ export function Layout({ children }: LayoutProps) {
     return localStorage.getItem(THEME_STORAGE_KEY) === 'dark';
   });
   const location = useLocation();
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   const handleNavClick = () => setIsMenuOpen(false);
 
   useEffect(() => {
@@ -194,20 +199,21 @@ export function Layout({ children }: LayoutProps) {
           </div>
 
           <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            <p>
-              © <span suppressHydrationWarning>{new Date().getFullYear()}</span>{" "}
-              Mark Hazleton. Built with curiosity and caffeine.
+            <p suppressHydrationWarning>
+              © {isClient ? new Date().getFullYear() : '2026'} Mark Hazleton. Built with curiosity and caffeine.
             </p>
-            <p className="mt-2 text-xs text-muted-foreground/60" suppressHydrationWarning>
-              Build v{buildInfo.version} • {buildInfo.buildTime ? new Date(buildInfo.buildTime).toLocaleString('en-US', {
-                month: 'short',
-                day: 'numeric',
-                year: 'numeric',
-                hour: 'numeric',
-                minute: '2-digit',
-                timeZoneName: 'short'
-              }) : 'Development'}
-            </p>
+            {isClient && (
+              <p className="mt-2 text-xs text-muted-foreground/60">
+                Build v{buildInfo.version} • {buildInfo.buildTime ? new Date(buildInfo.buildTime).toLocaleString('en-US', {
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric',
+                  hour: 'numeric',
+                  minute: '2-digit',
+                  timeZoneName: 'short'
+                }) : 'Development'}
+              </p>
+            )}
           </div>
         </div>
       </footer>

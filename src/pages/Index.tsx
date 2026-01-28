@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, Cloud, Workflow, Server, Sparkles } from 'lucide-react';
 import { Layout } from '@/components/Layout';
@@ -17,8 +17,13 @@ import { formatDateShort } from '@/lib/date';
 import { createPersonSchema, createWebSiteSchema } from '@/lib/structured-data';
 
 export default function Index() {
+  const [isClient, setIsClient] = useState(false);
   const repositoryState = useRepositoryStats();
   const latestPosts = posts.slice(0, 6);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   // Generate structured data schemas for SEO
   const personSchema = createPersonSchema({
@@ -363,52 +368,54 @@ export default function Index() {
       </section>
 
       {/* GitHub Strip */}
-      <section className="py-12 border-b border-border">
-        <div className="container-wide">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <Sparkles className="h-5 w-5 text-primary" />
+      {isClient && (
+        <section className="py-12 border-b border-border">
+          <div className="container-wide">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Sparkles className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-heading font-semibold text-foreground">GitHub activity</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Updated {githubUpdated ? formatDateShort(githubUpdated) : '--'}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-heading font-semibold text-foreground">GitHub activity</h3>
-                <p className="text-sm text-muted-foreground">
-                  Updated {githubUpdated ? formatDateShort(githubUpdated) : '--'}
-                </p>
-              </div>
-            </div>
-            <div className="flex-1 text-muted-foreground">
-              <div className="flex flex-col gap-2 text-sm">
-                {latestRepositoryInfo.repo ? (
-                  <span>
-                    Latest repository update:{' '}
-                    <Link
-                      to={`/github/repositories/${encodeURIComponent(latestRepositoryInfo.repo.name)}`}
-                      className="text-primary hover:underline underline-offset-2"
-                    >
-                      {latestRepositoryInfo.repo.name}
-                    </Link>
-                    {latestRepositoryInfo.date && (
-                      <span className="text-muted-foreground">
-                        {' '}
-                        on {formatDateShort(latestRepositoryInfo.date)}
-                      </span>
-                    )}
-                  </span>
-                ) : (
-                  <span>
-                    Latest repository update:{' '}
-                    {repositoryState.status === 'loading' ? 'Loading...' : 'Unavailable'}
-                  </span>
-                )}
-                <Link to="/github" className="text-primary hover:underline underline-offset-2">
-                  See the full GitHub activity
-                </Link>
+              <div className="flex-1 text-muted-foreground">
+                <div className="flex flex-col gap-2 text-sm">
+                  {latestRepositoryInfo.repo ? (
+                    <span>
+                      Latest repository update:{' '}
+                      <Link
+                        to={`/github/repositories/${encodeURIComponent(latestRepositoryInfo.repo.name)}`}
+                        className="text-primary hover:underline underline-offset-2"
+                      >
+                        {latestRepositoryInfo.repo.name}
+                      </Link>
+                      {latestRepositoryInfo.date && (
+                        <span className="text-muted-foreground">
+                          {' '}
+                          on {formatDateShort(latestRepositoryInfo.date)}
+                        </span>
+                      )}
+                    </span>
+                  ) : (
+                    <span>
+                      Latest repository update:{' '}
+                      {repositoryState.status === 'loading' ? 'Loading...' : 'Unavailable'}
+                    </span>
+                  )}
+                  <Link to="/github" className="text-primary hover:underline underline-offset-2">
+                    See the full GitHub activity
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </Layout>
   );
 }
